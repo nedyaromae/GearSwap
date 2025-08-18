@@ -103,16 +103,16 @@ function init_gear_sets()
     sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Raging Rush'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
-    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",body="Sakpata's Plate",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back})
+    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back})
     sets.precast.WS["Ukko's Fury"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["King's Justice"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 
-	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back})
+	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila",back=gear.critrate_jse_back})
 
-	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",legs="Sakpata's Cuisses",ammo="Yetshila",back=gear.critrate_jse_back,neck="Fotia Gorget"})
+	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back,neck="Fotia Gorget"})
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {head="Sakpata's Helm",body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back})
 	
