@@ -299,7 +299,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 		elseif spell.english == 'Berserk' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Berserk'].OutOfCombat then   equip(sets.precast.JA['Berserk'].OutOfCombat) 
 		elseif spell.english == 'Warcry' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Warcry'].OutOfCombat then   equip(sets.precast.JA['Warcry'].OutOfCombat)   
 		elseif spell.english == 'Restraint' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Restraint'].OutOfCombat then   equip(sets.precast.JA['Restraint'].OutOfCombat)   
-		elseif spell.english == 'Aggressor' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Aggressor'].OutOfCombat then   equip(sets.precast.JA['Aggresor'].OutOfCombat) 
+		elseif spell.english == 'Aggressor' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Aggressor'].OutOfCombat then   equip(sets.precast.JA['Aggressor'].OutOfCombat) 
 		elseif spell.english == 'Retaliation' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Retaliation'].OutOfCombat then   equip(sets.precast.JA['Retaliation'].OutOfCombat)
 		elseif spell.english == 'Meditate' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Meditate'].OutOfCombat then   equip(sets.precast.JA['Meditate'].OutOfCombat)
 
