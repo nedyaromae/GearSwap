@@ -166,13 +166,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1265 naegling 1266 loxotic 1287 lycurgos 1234 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1270 naegling 1271 loxotic 1292 lycurgos 1245 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1311 lycurgos 1289 naegling 1290 loxotic 1258 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1316 lycurgos 1294 naegling 1295 loxotic 1269 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +4"}

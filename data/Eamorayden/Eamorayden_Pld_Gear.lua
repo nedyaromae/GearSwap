@@ -97,7 +97,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=50},ear2={name="Loquac. Earring",priority=4},
+        head={name="Carmine Mask",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +3",priority=254},hands={name="Leyline Gloves",priority=25},ring1=gear.left_moonbeam,{priority=99},ring2={name="Naji's Loop",priority=7},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Enif Cosciales",priority=40},feet={name="Chev. Sabatons +2",priority=42}}
 	
@@ -178,7 +178,7 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
     sets.midcast.Cure.Meva=  {ammo={name="Pemphredo Tathlum",priority=1},
-        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=250},ear1={name="Eabani Earring",priority=45},ear2={name="Chev. Earring +1",priority=3},
+        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Eabani Earring",priority=45},ear2={name="Chev. Earring +1",priority=3},
         body={name="Sakpata's Plate",priority=171},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=100},ring2=gear.right_moonbeam,{priority=101},
         back=gear.CP_jse_back,{priority=60},waist={name="Sroda Belt",priority=4},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 		
@@ -293,7 +293,7 @@ function init_gear_sets()
 	-- Weapons sets
     sets.weapons.SakpataDuban = {main="Sakpata's Sword",sub="Duban"} --normal tank shit
     sets.weapons.Cleave = {main="Malevolence",sub="Duban"} --rdm AE cleaving
-	sets.weapons.ClubDuban = {main="Mafic Cudgel",sub="Duban"} --club tanking --mafic is on my mule as i never use this shit    
+--	sets.weapons.ClubDuban = {main="Mafic Cudgel",sub="Duban"} --club tanking --mafic is on my mule as i never use this shit    
     sets.weapons.SakpataAegis ={main="Sakpata's Sword",sub="Aegis"} --normal aeigs shit
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --Not really used anymore
