@@ -42,6 +42,7 @@ function init_gear_sets()
 	sets.precast.JA['Restraint'] = {}
 	sets.precast.JA['Restraint'].OutOfCombat={main="Naegling",sub="Diamond Aspis"}
 	sets.precast.JA['Blood Rage'] = {body="Boii Lorica +2"}
+	sets.precast.JA['Blood Rage'].OutOfCombat = {main="Naegling",sub="Diamond Aspis",body="Boii Lorica +2"}
 	sets.precast.JA['Brazen Rush'] = {}
 	sets.precast.JA['Meditate']={}
 	sets.precast.JA['Meditate'].OutOfCombat={main="Naegling",sub="Diamond Aspis"}
@@ -298,6 +299,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 		end
 		elseif spell.english == 'Berserk' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Berserk'].OutOfCombat then   equip(sets.precast.JA['Berserk'].OutOfCombat) 
 		elseif spell.english == 'Warcry' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Warcry'].OutOfCombat then   equip(sets.precast.JA['Warcry'].OutOfCombat)   
+		elseif spell.english == 'Blood Rage' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Blood Rage'].OutOfCombat then   equip(sets.precast.JA['Blood Rage'].OutOfCombat)  
 		elseif spell.english == 'Restraint' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Restraint'].OutOfCombat then   equip(sets.precast.JA['Restraint'].OutOfCombat)   
 		elseif spell.english == 'Aggressor' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Aggressor'].OutOfCombat then   equip(sets.precast.JA['Aggressor'].OutOfCombat) 
 		elseif spell.english == 'Retaliation' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Retaliation'].OutOfCombat then   equip(sets.precast.JA['Retaliation'].OutOfCombat)
