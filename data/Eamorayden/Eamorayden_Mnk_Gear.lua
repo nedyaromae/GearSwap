@@ -71,9 +71,9 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",legs="Nyame Flanchard",ring1="Sroda Ring"})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ring2="Sroda Ring",ear1="Odr earring"})
-	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",back=gear.dex_jse_back})
-	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr earring"})
+	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
+	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Moonbeam Necklace",ear1="Moonshade Earring",ear2="Bhikku Earring +1",

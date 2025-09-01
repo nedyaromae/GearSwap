@@ -48,7 +48,8 @@ function init_gear_sets()
     right_ring="Lebeche Ring", --2 QC
     back="Alaunus's Cape" } --10 
 	
- 
+ sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pant. +2"})
+ sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
 
 --	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
@@ -248,7 +249,7 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {legs="Shedir Seraweels"})
 
-    sets.midcast.Haste= sets.midcast['Enhancing Magic'].NoSkill
+    sets.midcast.Haste= set_combine(sets.midcast['Enhancing Magic'].NoSkill,{})
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {feet="Ebers Duckbills +2"})
 
@@ -264,10 +265,9 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 	
     sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring1="Sheltered Ring"})
-    sets.midcast.Protect=sets.midcast.Protectra
+    sets.midcast.Protect=set_combine(sets.midcast.Protectra,{})
     sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring1="Sheltered Ring"})
-    sets.midcast.Shell=sets.midcast.Shellra
-
+    sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
 	sets.midcast.BarElement = {main="Beneficus",sub="Diamond Aspis",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Andoaa Earring",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Stikini Ring",ring2="Defending Ring",
@@ -296,11 +296,11 @@ function init_gear_sets()
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Korin Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
 		
-	sets.midcast.CureNuke=sets.midcast.Holy
-	sets.midcast.HolyII=sets.midcast.Holy
-	sets.midcast.Banish=sets.midcast.Holy
-	sets.midcast.BanishII=sets.midcast.Banish
-	sets.midcast.BanishIII=sets.midcast.Banish
+	sets.midcast.CureNuke=set_combine(sets.midcast.Holy,{})
+	sets.midcast.HolyII=set_combine(sets.midcast.Holy,{})
+	sets.midcast.Banish=set_combine(sets.midcast.Holy,{})
+	sets.midcast.BanishII=set_combine(sets.midcast.Banish,{})
+	sets.midcast.BanishIII=set_combine(sets.midcast.Banish,{})
 	sets.midcast.Banishga=set_combine(sets.midcast.Holy, {hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}})
 	sets.midcast.BanishgaII=set_combine(sets.midcast.Holy, {hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}})
 	
@@ -313,8 +313,8 @@ function init_gear_sets()
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
 
 
-    sets.midcast.Aspir = sets.midcast.Drain
-    sets.midcast.Tractor=sets.midcast.FastRecast
+    sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
+    sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
@@ -352,9 +352,9 @@ function init_gear_sets()
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
-	sets.midcast['Dia II'] = sets.midcast.StatusRemoval
+	sets.midcast['Dia II'] = set_combine(sets.midcast.StatusRemoval,{})
 	sets.midcast.Bio = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
-	sets.midcast['Bio II'] = sets.midcast.StatusRemoval
+	sets.midcast['Bio II'] = set_combine(sets.midcast.StatusRemoval,{})
 
  --   sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {})
 

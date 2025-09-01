@@ -3,7 +3,7 @@ function user_job_setup()
 	state.OffenseMode:options('Normal','FullAcc')
 	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne')
 	state.WeaponskillMode:options('Normal','PDL')
-	state.HybridMode:options('Normal','EP','Meva')
+	state.HybridMode:options('Normal','Meva')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 
 	gear.da_jse_back = {name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
@@ -23,7 +23,7 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	
-    sets.Enmity = {ammo="Sapience Orb",head="Pummeler's Mask +2",hands="Pumm. Mufflers +2",ring1="Supershear Ring",ring2="Apeile Ring +1",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam Necklace"}
+    sets.Enmity = {ammo="Sapience Orb",head="Pummeler's Mask +2",ring1="Eihwaz Ring",ring2="Apeile Ring +1",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam Necklace"}
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
@@ -58,7 +58,7 @@ function init_gear_sets()
 	
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = sets.precast.FC
+	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})
                    
 	sets.midcast.Cure = {}
 	
@@ -75,19 +75,19 @@ function init_gear_sets()
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"}
 		
-	sets.precast.WS.FullAcc=sets.precast.WS
+	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
-    sets.precast.WS['Savage Blade'] =sets.precast.WS
+    sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{})
     sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 
-	sets.precast.WS['Judgment']=sets.precast.WS['Savage Blade']
-	sets.precast.WS['Black Halo']=sets.precast.WS['Savage Blade']
+	sets.precast.WS['Judgment']=set_combine(sets.precast.WS['Savage Blade'],{})
+	sets.precast.WS['Black Halo']=set_combine(sets.precast.WS['Savage Blade'],{})
 	
 	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",feet="Nyame Sollerets",waist="Eschan Stone"})
-	sets.precast.WS['Fell Cleave']=sets.precast.WS['Savage Blade']
+	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{})
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -115,12 +115,12 @@ function init_gear_sets()
 
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back,neck="Fotia Gorget"})
 
-	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {head="Sakpata's Helm",body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back})
+	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
-	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Boii Lorica +2",hands="Boii Mufflers +2",legs="Nyame Flanchard",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Moonbeam Necklace",ear2="Boii Earring"})
-	sets.precast.WS["Full Break"]=sets.precast.WS["Armor Break"]
-	sets.precast.WS["Weapon Break"]=sets.precast.WS["Armor Break"]
-	sets.precast.WS["Shield Break"]=sets.precast.WS["Armor Break"]
+	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Nyame Flanchard",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Moonbeam Necklace",ear2="Boii Earring"})
+	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -159,10 +159,10 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
-	sets.midcast.Escape=sets.midcast.Warp
+	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})
 	
 
---	sets.Kiting = {ring1="Shneddick Ring" 
+--	sets.Kiting = {ring1="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
@@ -176,13 +176,9 @@ function init_gear_sets()
 	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1316 lycurgos 1294 naegling 1295 loxotic 1269 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +4"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +3",feet="Pumm. Calligae +4"}
 	
 
-	sets.engaged.EP={ammo="Coiste Bodhar",
-		head="Boii Mask +2",neck="War. Beads +1",ear1="Brutal Earring",ear2="Boii Earring",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Petrov Ring",
-		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Pumm. Cuisses +2",feet="Pumm. Calligae +4"}
 		
 	sets.engaged.Meva= {ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
@@ -190,10 +186,6 @@ function init_gear_sets()
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 
 	
-	sets.engaged.Naegling=sets.engaged 
-	sets.engaged.Loxotic=sets.engaged.Naegling
-	sets.engaged.Naegling.FullAcc=sets.engaged.FullAcc
-	sets.engaged.Loxotic.FullAcc=sets.engaged.Naegling.FullAcc
     
 
 
