@@ -89,9 +89,9 @@ function init_gear_sets()
 		head="Vanya Hood",waist="Austerity Belt",   
 		back="Solemnity Cape",feet="Kaykaus Boots"}
 		
-	sets.midcast.Teleport = sets.ConserveMP
-	sets.midcast.Warp=sets.ConserveMP
-	sets.midcast.Escape=sets.ConserveMP
+	sets.midcast.Teleport = set_combine(sets.ConserveMP,{})
+	sets.midcast.Warp=set_combine(sets.ConserveMP,{})
+	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
 	
 	
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
@@ -99,15 +99,15 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
 		
-		sets.midcast['Arise']=sets.midcast.FastRecast
-		sets.midcast['Raise III']=sets.midcast.FastRecast
-		sets.midcast['Raise II']=sets.midcast.FastRecast
-		sets.midcast['Raise']=sets.midcast.FastRecast
-		sets.midcast['Reraise IV']=sets.ConserveMP
+		sets.midcast['Arise']=set_combine(sets.midcast.FastRecast,{})
+		sets.midcast['Raise III']=set_combine(sets.midcast.FastRecast,{})
+		sets.midcast['Raise II']=set_combine(sets.midcast.FastRecast,{})
+		sets.midcast['Raise']=set_combine(sets.midcast.FastRecast,{})
+		sets.midcast['Reraise IV']=set_combine(sets.ConserveMP,{})
 		
     -- Cure sets
 
-	sets.midcast['Full Cure'] = sets.midcast.FastRecast
+	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
 	
 	sets.midcast.Cure = {main="Queller Rod",
     sub="Genbu's shield",
