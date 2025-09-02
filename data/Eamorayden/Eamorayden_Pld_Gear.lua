@@ -14,6 +14,7 @@ function user_job_setup()
 	gear.idle_jse_back = {name="Rudianos's Mantle",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Chance of successful block +5',}}
 	gear.CP_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%',}}
     gear.enmity_jse_back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Phys. dmg. taken-10%',}}
+    gear.wsd_jse_back={name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 
 	-- Additional local binds
 	
@@ -107,8 +108,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Sroda Ring",priority=8},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.left_moonbeam,{priority=100},
+        back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     sets.precast.WS.DD={ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=1},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
