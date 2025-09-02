@@ -117,7 +117,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
-	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Nyame Flanchard",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Moonbeam Necklace",ear2="Boii Earring"})
+	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Moonbeam Necklace",ear2="Boii Earring"})
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -173,10 +173,10 @@ function init_gear_sets()
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1316 lycurgos 1294 naegling 1295 loxotic 1269 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1341 lycurgos 1319 naegling 1321 loxotic 1291 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +3",feet="Pumm. Calligae +4"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	
 
 		
