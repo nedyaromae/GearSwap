@@ -7,7 +7,7 @@ function user_job_setup()
 	state.Weapons:options('SakpataDuban','SakpataAegis','NaeglingBlurred','Cleave','NaeglingAspis')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
-	state.HybridMode:options('Normal','DD')
+	state.HybridMode:options('Normal')
     state.WeaponskillMode:options('Normal','DD')
 	
 	gear.fastcast_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
@@ -118,9 +118,9 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Requiescat']={ammo={name="Coiste Bodhar",priority=3},
-    head={name="Sakpata's Helm",priority=91},neck={name="Fotia Gorget",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Moonshade Earring",priority=4},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=92},ring1={name="Cornelia's Ring",priority=5},ring2={name="Stikini Ring",priority=7},
-    back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+    head={name="Sakpata's Helm",priority=91},neck={name="Fotia Gorget",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Brutal Earring",priority=4},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=92},ring1={name="Sroda Ring",priority=5},ring2=gear.right_moonbeam,{priority=100},
+    back=gear.wsd_jse_back,{priority=7},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
 	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS['Requiescat'],{})
 
@@ -302,20 +302,15 @@ function init_gear_sets()
     sets.weapons.NaeglingAspis ={main="Naegling",sub="Diamond Aspis"} --Mostly for 6 step objectives still need prob sam's roll and capped magic haste
     sets.weapons.NaeglingAegis={main="Naegling",sub="Aegis"} --yeah i'm not sure
 	sets.weapons.MaligPriwen={main="Malignance Sword",sub="Priwen"} --Resist and pretty much nothing else
-    sets.weapons.ShiningOne={main="Shining One",sub="Immolation Grip"}
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
     
 	 sets.engaged = {ammo={name="Coiste Bodhar",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-        body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2={name="Chirich Ring +1",priority=7},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Sailfi Belt +1",priority=7},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}
-
-    sets.engaged.DD = {ammo={name="Coiste Bodhar",priority=3},
-        head={name="Sakpata's Helm",priority=91},neck={name="Lissome Necklace",priority=1},ear1={name="Brutal Earring",priority=6},ear2={name="Cessance Earring",priority=4},
+        head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cessance Earring",priority=5},ear2={name="Chev. Earring +1",priority=6},
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2=gear.right_moonbeam,{priority=100},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Sailfi Belt +1",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+        back=gear.idle_jse_back,{priority=60},waist={name="Sailfi Belt +1",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+
 
 
     sets.engaged.Cleave=set_combine(sets.idle.Cleave,{})

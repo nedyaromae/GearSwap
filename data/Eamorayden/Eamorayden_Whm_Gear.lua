@@ -110,7 +110,7 @@ function init_gear_sets()
 	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
 	
 	sets.midcast.Cure = {main="Queller Rod",
-    sub="Genbu's shield",
+    sub="Genmei Shield",
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
@@ -128,7 +128,7 @@ function init_gear_sets()
 		
 	sets.midcast.CureSolace = {
 	main="Queller Rod",
-    sub="Genbu's Shield",
+    sub="Genmei Shield",
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
@@ -177,7 +177,7 @@ function init_gear_sets()
 		
 
 	sets.midcast.Curaga = {main="Queller Rod",
-    sub="Genbu's Shield",
+    sub="Genmei Shield",
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
@@ -237,12 +237,12 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Witful Belt",legs="Nyame Flanchard",feet="Ebers Duckbills +2"}
 		
 
-	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Telchine Cap",neck="Melic torque",ear1="Mimir Earring",ear2="Andoaa Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
-    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Telchine Cap",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
@@ -253,13 +253,13 @@ function init_gear_sets()
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {feet="Ebers Duckbills +2"})
 
-	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
 		body="Ros. Jaseran +1",hands="Chironic Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 
-	sets.midcast.Regen = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.midcast.Regen = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}

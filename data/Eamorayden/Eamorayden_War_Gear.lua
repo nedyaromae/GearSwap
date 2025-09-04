@@ -9,7 +9,7 @@ function user_job_setup()
 	gear.da_jse_back = {name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 	gear.wsd_jse_back ={name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
 	gear.critrate_jse_back={name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10','Damage taken-5%',}}
-	gear.vit_wsd_jse_back={name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+9','Weapon skill damage +10%',}}
+	gear.vit_wsd_jse_back={name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}}
 
 	--Ikenga_axe_bonus = 300  -- It is 300 at R25. Uncomment if you need to manually adjust because you are using below R25 or above
 	
@@ -167,13 +167,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1270 naegling 1271 loxotic 1292 lycurgos 1245 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1277 naegling 1278 loxotic 1324 lycurgos 1273 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1341 lycurgos 1319 naegling 1321 loxotic 1291 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1368 lycurgos 1321 naegling 1322 loxotic 1317 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
@@ -205,12 +205,13 @@ function init_gear_sets()
 	sets.buff.Restraint = {}
 	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",hands="Souv. Handsch. +1",legs="Sakpata's leggings",feet="Souveran Schuhs +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {head=gear.valorousTH})
+	sets.Refresh_Received ={waist="Gishdubar Sash"}
 	
 	-- Weapons sets
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
 	sets.weapons.Loxotic= {main="Loxotic mace +1", sub="Blurred shield +1"}
-	sets.weapons.ShiningOne= {main="Shining One", sub="Immolation grip"}
-	sets.weapons.Gaxe = {main="Lycurgos", sub="Immolation grip"}
+	sets.weapons.ShiningOne= {main="Shining One", sub="Kaja grip"}
+	sets.weapons.Gaxe = {main="Lycurgos", sub="Kaja grip"}
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 
 end

@@ -70,15 +70,15 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",legs="Nyame Flanchard",ring1="Sroda Ring"})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr earring"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Oshasha's Treatise"})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring",ring2="Sroda Ring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Moonbeam Necklace",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Mummu Wrists +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
-		back=gear.str_jse_back,waist="Eschan Stone",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
+		back=gear.dex_jse_back,waist="Eschan Stone",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 	
 	sets.precast.WS["Raging Fists"].Acc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
 	sets.precast.WS["Howling Fist"].Acc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
@@ -144,9 +144,9 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Coiste Bodhar", --1264 imp down 1256 imp up
+	sets.engaged = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
 		sets.engaged.Acc = {ammo="Coiste Bodhar", --1325 imp down 1318 imp up 

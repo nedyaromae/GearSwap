@@ -197,7 +197,7 @@ function init_gear_sets()
 		
     sets.precast.WS['Aeolian Edge'] = {ammo="Pemphredo Tathlum",
         head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Cornelia's Ring ",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
         back="Toutatis's Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
