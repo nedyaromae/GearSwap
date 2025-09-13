@@ -45,7 +45,6 @@ function init_gear_sets()
 	sets.precast.JA['Blood Rage'].OutOfCombat = {main="Naegling",sub="Diamond Aspis",body="Boii Lorica +2"}
 	sets.precast.JA['Brazen Rush'] = {}
 	sets.precast.JA['Meditate']={}
-	sets.precast.JA['Meditate'].OutOfCombat={main="Naegling",sub="Diamond Aspis"}
 	sets.precast.JA['Provoke'] = set_combine(sets.Enmity,{})
                    
 		   
@@ -87,7 +86,7 @@ function init_gear_sets()
 	sets.precast.WS['Black Halo']=set_combine(sets.precast.WS['Savage Blade'],{})
 	
 	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",feet="Nyame Sollerets",waist="Eschan Stone"})
-	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{})
+	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{ear1="Schere Earring"})
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -111,13 +110,13 @@ function init_gear_sets()
     sets.precast.WS["King's Justice"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 
-	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila",back=gear.critrate_jse_back})
+	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila",back=gear.critrate_jse_back,ear2="Schere Earring"})
 
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila",back=gear.critrate_jse_back,neck="Fotia Gorget"})
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
-	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Moonbeam Necklace",ear2="Boii Earring"})
+	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Null Loop",ear2="Boii Earring"})
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -142,8 +141,8 @@ function init_gear_sets()
            
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Sakpata's Helm",neck="Elite Royal Collar",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	
@@ -167,13 +166,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1277 naegling 1278 loxotic 1324 lycurgos 1273 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1281 naegling 1283 loxotic 1328 lycurgos 1281 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1368 lycurgos 1321 naegling 1322 loxotic 1317 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1369 lycurgos 1323 naegling 1327 loxotic 1323 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
@@ -296,7 +295,6 @@ function job_post_precast(spell, spellMap, eventArgs)
 		elseif spell.english == 'Restraint' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Restraint'].OutOfCombat then   equip(sets.precast.JA['Restraint'].OutOfCombat)   
 		elseif spell.english == 'Aggressor' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Aggressor'].OutOfCombat then   equip(sets.precast.JA['Aggressor'].OutOfCombat) 
 		elseif spell.english == 'Retaliation' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Retaliation'].OutOfCombat then   equip(sets.precast.JA['Retaliation'].OutOfCombat)
-		elseif spell.english == 'Meditate' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Meditate'].OutOfCombat then   equip(sets.precast.JA['Meditate'].OutOfCombat)
 
 
 					

@@ -70,8 +70,8 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Oshasha's Treatise"})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring",ring2="Sroda Ring"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Oshasha's Treatise",})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring",ring2="Sroda Ring",hands="Mummu Wrists +2"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
@@ -123,7 +123,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Nyame Helm",neck="Elite Royal Collar",ear1="Mimir Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Elite Royal Collar",ear1="Mimir Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

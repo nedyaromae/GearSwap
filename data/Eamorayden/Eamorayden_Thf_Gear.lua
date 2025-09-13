@@ -250,7 +250,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Nyame Helm",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Mimir Earring",
+        head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Mimir Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
         back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		

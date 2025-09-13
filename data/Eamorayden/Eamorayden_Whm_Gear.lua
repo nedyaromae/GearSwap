@@ -114,7 +114,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -132,7 +132,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -148,7 +148,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -164,7 +164,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -181,7 +181,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -197,7 +197,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
     body="Theo. Bliaut +2",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
@@ -276,7 +276,7 @@ function init_gear_sets()
 	sets.midcast.BarStatus = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {neck="Sroda Necklace"})
 
 --	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
---		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Ebers Earring",
+--		head=empty,neck="Null Loop",ear1="Regal Earring",ear2="Ebers Earring",
 --		body="Twilight Cloak",hands="Inyan. Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
 --		back="Toro Cape",waist="Eschan Stone",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 		
@@ -287,7 +287,7 @@ function init_gear_sets()
 
 
 	sets.midcast['Divine Magic'] = {main="Daybreak",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head="Ebers Cap +2",neck="Erra Pendant",ear1="Malignance Earring",ear2="Ebers Earring",
+		head="Ebers Cap +2",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
 		body="Ebers Bliaut +2",hands="Inyanga Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Eschan Stone",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 		
@@ -306,7 +306,7 @@ function init_gear_sets()
 	
 	
 	sets.midcast['Dark Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head="Ebers Cap +2",neck="Erra Pendant",ear1="Malignance Earring",ear2="Ebers Earring",
+		head="Ebers Cap +2",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
 		body="Ebers Bliaut +2",hands="Inyanga Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Eschan Stone",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 
@@ -328,10 +328,10 @@ function init_gear_sets()
     ammo="Pemphredo Tathlum",
     head="Theophany Cap +2",
     body="Theo. Bliaut +2",
-    hands="Inyan. Dastanas +2",
+    hands="Theophany Mitts +4",
     legs=gear.Chironic_Enfeeblingpants,
     feet="Theo. Duckbills +4",
-    neck="Erra Pendant",
+    neck="Null Loop",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring",
@@ -387,7 +387,7 @@ sets.idle={
 	sets.idle.PDT = {main="Daybreak",
    sub="Diamond Aspis",
    ammo="Homiliary",
-   head="Nyame Helm",
+   head="Null Masque",
    body="Ebers Bliaut +2",
    hands="Nyame Gauntlets",
    legs="Nyame Flanchard",
@@ -403,7 +403,7 @@ sets.idle={
 	sets.idle.MDT = {main="Daybreak",
    sub="Diamond Aspis",
    ammo="Homiliary",
-   head="Bunzi's Hat",
+   head="Null Masque",
    body="Ebers Bliaut +2",
    hands="Bunzi's Gloves",
    legs="Bunzi's Pants",
@@ -454,7 +454,7 @@ sets.IdleWakeUp = {main="Prime Maul"}
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Basic set for if no TP weapon is defined.
-    sets.engaged = {main="Kaja Rod",sub="Diamond Aspis",ammo="Oshasha's treatise",
+    sets.engaged = {main="Maxentius",sub="Diamond Aspis",ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Chirich Ring",
         back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
