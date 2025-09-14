@@ -96,7 +96,7 @@ function init_gear_sets()
 	
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
 		
 		sets.midcast['Arise']=set_combine(sets.midcast.FastRecast,{})
@@ -121,7 +121,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",
 }
@@ -139,7 +139,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",}
 
@@ -155,7 +155,7 @@ function init_gear_sets()
     waist="Korin Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",}
 
@@ -171,7 +171,7 @@ function init_gear_sets()
     waist="Korin Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",}
 		
@@ -188,7 +188,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
    back="Alaunus's Cape",}
 		
@@ -204,7 +204,7 @@ function init_gear_sets()
     waist="Korin Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gelatinous Ring +1",
+    left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",}
 		
@@ -228,12 +228,12 @@ function init_gear_sets()
 
     sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
 
 	sets.midcast.StatusRemoval = {Main="Daybreak",sub="Diamond Aspis",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Lebeche Ring",ring2="Defending Ring",
+		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Lebeche Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Nyame Flanchard",feet="Ebers Duckbills +2"}
 		
 
@@ -244,7 +244,7 @@ function init_gear_sets()
       
     sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Telchine Cap",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {legs="Shedir Seraweels"})
@@ -255,13 +255,13 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Ros. Jaseran +1",hands="Chironic Gloves",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Ros. Jaseran +1",hands="Chironic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 
 	sets.midcast.Regen = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 	
     sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring1="Sheltered Ring"})
@@ -270,7 +270,7 @@ function init_gear_sets()
     sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
 	sets.midcast.BarElement = {main="Beneficus",sub="Diamond Aspis",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Andoaa Earring",
-		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Stikini Ring",ring2="Defending Ring",
+		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Stikini Ring",ring2="Murky Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
 		
 	sets.midcast.BarStatus = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {neck="Sroda Necklace"})
@@ -318,7 +318,7 @@ function init_gear_sets()
 
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Lebeche Ring",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
 		
 	
@@ -347,7 +347,7 @@ function init_gear_sets()
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Staunch Tathlum",
 		head="Bunzi's Hat",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Malignance Earring",
-		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Nyame Sollerets"}
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
@@ -379,8 +379,8 @@ sets.idle={
     waist="Carrier's Sash",
     left_ear="Etiolation Earring",
     right_ear="Eabani Earring",
-    left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
     back="Alaunus's Cape"
 }
 
@@ -396,7 +396,7 @@ sets.idle={
    waist="Carrier's Sash",
    left_ear="Mimir Earring",
    right_ear="Eabani Earring",
-   left_ring="Gelatinous Ring +1", 
+   left_ring="Murky Ring", 
    right_ring="Defending Ring",
    back="Shadow Mantle" }
 
@@ -412,16 +412,16 @@ sets.idle={
    waist="Carrier's Sash",
    left_ear="Etiolation Earring",
    right_ear="Eabani Earring",
-   left_ring="Shadow Ring", 
-   right_ring="Defending Ring",
+   left_ring="Murky Ring", 
+   right_ring="Shadow Ring",
     back="Alaunus's Cape"
 }
 sets.IdleWakeUp = {main="Prime Maul"}
     -- Defense sets
 
 	sets.defense.PDT = {main="Daybreak",sub="Diamond Aspis",ammo="Eluder's Sachet",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Defending Ring",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
   
@@ -442,8 +442,8 @@ sets.IdleWakeUp = {main="Prime Maul"}
     waist="Austerity Belt",
     left_ear="Meili Earring",
     right_ear="Eabani Earring",
-    left_ring="Chirich Ring +1",
-    right_ring="Defending Ring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
     back="Alaunus's Cape"
 }
 		-- Engaged sets

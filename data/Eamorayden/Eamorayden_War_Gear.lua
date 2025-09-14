@@ -149,13 +149,13 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Defending Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 
 	sets.midcast.Warp=	{ammo="Staunch Tathlum",
 		head="Souv. Schaller +1",neck="Moonbeam Necklace",ear1="Meili Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Defending Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
 		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
 	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})

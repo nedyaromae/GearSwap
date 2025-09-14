@@ -251,7 +251,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum",
         head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Mimir Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shneddick Ring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
         back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -266,7 +266,7 @@ function init_gear_sets()
 
     sets.defense.PDT = {ammo="Eluder's Sachet",
         head="Nyame helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Mimir Earring",
-        body="Nyame mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
+        body="Nyame mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
         back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 

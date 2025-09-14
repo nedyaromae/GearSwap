@@ -110,7 +110,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Midcast Sets
 --	sets.midcast.FastRecast = {ammo="Staunch Tathlum +1",
 --		head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
---		body="Dread Jupon",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
+--		body="Dread Jupon",hands="Leyline Gloves",ring1="Murky Ring",ring2="Prolix Ring",
 --		back="Moonlight Cape",waist="Moonbow belt",legs="Nyame Flanchard",feet="Hippo. Socks +1"}
 		
 --	-Specific spells
@@ -124,13 +124,13 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Defending Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 
