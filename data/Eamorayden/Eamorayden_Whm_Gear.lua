@@ -212,12 +212,12 @@ function init_gear_sets()
 
 
 sets.midcast.Cure.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish Earring +1",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
 
 sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish Earring +1",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Ebers Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
 
