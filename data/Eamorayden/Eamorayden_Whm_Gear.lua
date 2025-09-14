@@ -270,7 +270,7 @@ function init_gear_sets()
     sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
 	sets.midcast.BarElement = {main="Beneficus",sub="Diamond Aspis",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Andoaa Earring",
-		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Stikini Ring",ring2="Murky Ring",
+		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
 		
 	sets.midcast.BarStatus = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {neck="Sroda Necklace"})
