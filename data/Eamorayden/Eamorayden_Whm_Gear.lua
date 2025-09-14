@@ -2,6 +2,7 @@
 function user_job_setup()
     state.IdleMode:options('PDT','MDT','Normal')
 	state.PhysicalDefenseMode:options('PDT')
+    state.CastingMode:options('Normal','SIRD')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','MeleeWeapons')
@@ -207,7 +208,21 @@ function init_gear_sets()
     left_ring="Murky Ring",
     right_ring="Defending Ring",
     back="Alaunus's Cape",}
-		
+
+
+
+sets.midcast.Cure.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish Earring +1",
+		body="Theo. Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
+		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
+
+sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish Earring +1",
+		body="Ebers Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
+		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
+
+sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})	
+
 
 	sets.midcast.Cursna = {main="Gada",
     sub="Thuellaic Ecu +1",
@@ -255,7 +270,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
-		body="Ros. Jaseran +1",hands="Chironic Gloves",ring1="Murky Ring",ring2="Defending Ring",
+		body="Ros. Jaseran +1",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 
