@@ -112,9 +112,9 @@ function init_gear_sets()
 	
 	sets.midcast.Cure = {main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Staunch Tathlum",
+    ammo="Pemphredo Tathlum",
     head="Ebers cap +2",
-    body="Theo. Bliaut +2",
+    body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
@@ -126,11 +126,13 @@ function init_gear_sets()
     right_ring="Defending Ring",
     back="Alaunus's Cape",
 }
+
+sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 		
 	sets.midcast.CureSolace = {
 	main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Staunch Tathlum",
+    ammo="Pemphredo Tathlum",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
     hands="Theophany Mitts +4",
@@ -148,7 +150,7 @@ function init_gear_sets()
     sub="Mensch Strap",
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
-    body="Theo. Bliaut +2",
+    body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
@@ -179,9 +181,9 @@ function init_gear_sets()
 
 	sets.midcast.Curaga = {main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Staunch Tathlum",
+    ammo="Pemphredo Tathlum",
     head="Ebers cap +2",
-    body="Theo. Bliaut +2",
+    body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
@@ -192,12 +194,14 @@ function init_gear_sets()
     left_ring="Murky Ring",
     right_ring="Defending Ring",
    back="Alaunus's Cape",}
+
+   sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
 		
 	sets.midcast.LightWeatherCuraga = {main="Chatoyant Staff",
     sub="Mensch Strap",
     ammo="Staunch Tathlum",
     head="Ebers cap +2",
-    body="Theo. Bliaut +2",
+    body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
@@ -213,7 +217,7 @@ function init_gear_sets()
 
 sets.midcast.Cure.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
-		body="Theo. Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
+		body="Theo. Bliaut +3",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
 
 sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum",
@@ -310,6 +314,13 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 		head="Bunzi's Hat",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Malignance Earring",
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Korin Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
+
+    sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
+		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
+		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Eihwaz Ring",
+		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
+    
+    sets.midcast.Flash.DT=set_combine(sets.midcast.Flash,{})
 		
 	sets.midcast.CureNuke=set_combine(sets.midcast.Holy,{})
 	sets.midcast.HolyII=set_combine(sets.midcast.Holy,{})
@@ -342,7 +353,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sub="Diamond Aspis",
     ammo="Pemphredo Tathlum",
     head="Theophany Cap +2",
-    body="Theo. Bliaut +2",
+    body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs=gear.Chironic_Enfeeblingpants,
     feet="Theo. Duckbills +4",

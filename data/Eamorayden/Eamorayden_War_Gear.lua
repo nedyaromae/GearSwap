@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
 	state.OffenseMode:options('Normal','FullAcc')
-	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne')
+	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne','Aspis')
 	state.WeaponskillMode:options('Normal','PDL')
 	state.HybridMode:options('Normal','Meva')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
@@ -108,6 +108,14 @@ function init_gear_sets()
 	
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["King's Justice"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+	
+
+	sets.precast.WS["Burning Blade"]={ammo="Staunch Tathlum",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Cryptic Earring",ear2="Brutal Earring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		back="Solemnity Cape",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+
+	sets.precast.WS["Flat Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
 
 
 	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila",back=gear.critrate_jse_back,ear2="Schere Earring"})
@@ -120,6 +128,7 @@ function init_gear_sets()
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
 	
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -176,7 +185,13 @@ function init_gear_sets()
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
-	
+
+
+	sets.engaged.Aspis= {ammo="Coiste Bodhar", 
+		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
+		
 
 		
 	sets.engaged.Meva= {ammo="Coiste Bodhar", 

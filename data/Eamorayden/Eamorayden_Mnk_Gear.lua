@@ -123,7 +123,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Null Masque",neck="Elite Royal Collar",ear1="Mimir Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
