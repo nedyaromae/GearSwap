@@ -110,10 +110,10 @@ function init_gear_sets()
     sets.precast.WS["King's Justice"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
 
-	sets.precast.WS["Burning Blade"]={ammo="Staunch Tathlum",
-		head="Null Masque",neck="Loricate Torque +1",ear1="Cryptic Earring",ear2="Brutal Earring",
+	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
+		head="Null Masque",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+		back="Solemnity Cape",waist="Null Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 
 	sets.precast.WS["Flat Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
 
@@ -124,7 +124,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
-	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Eschan Stone",Ammo="Pemphredo Tathlum",neck="Null Loop",ear2="Boii Earring"})
+	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Null Belt",Ammo="Pemphredo Tathlum",neck="Null Loop",ear2="Boii Earring"})
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -152,7 +152,7 @@ function init_gear_sets()
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
-		back="Shadow Mantle",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	
 	-- Defense sets
@@ -163,8 +163,8 @@ function init_gear_sets()
 		
 
 	sets.midcast.Warp=	{ammo="Staunch Tathlum",
-		head="Souv. Schaller +1",neck="Moonbeam Necklace",ear1="Meili Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
+		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Meili Earring",ear2="Eabani Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Murky Ring",
 		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
 	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})
@@ -175,13 +175,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1281 naegling 1283 loxotic 1328 lycurgos 1281 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1287 naegling 1288 loxotic 1333 lycurgos 1286 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1369 lycurgos 1323 naegling 1327 loxotic 1323 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1377 lycurgos 1331 naegling 1332 loxotic 1330 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}

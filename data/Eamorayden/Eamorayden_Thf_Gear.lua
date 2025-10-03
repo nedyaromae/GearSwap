@@ -250,9 +250,9 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Mimir Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
-        back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Infused Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Murky Ring",ring2="Shneddick Ring",
+        back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 

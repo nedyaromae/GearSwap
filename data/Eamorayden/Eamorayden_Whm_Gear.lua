@@ -331,16 +331,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.BanishgaII=set_combine(sets.midcast.Holy, {hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}})
 	
 	
-	sets.midcast['Dark Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head="Ebers Cap +2",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
-		body="Ebers Bliaut +2",hands="Inyanga Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
-		back="Alaunus's Cape",waist="Eschan Stone",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
-
-    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
-
-
-    sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
-    sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
+	
 
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
@@ -352,19 +343,25 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",
     sub="Diamond Aspis",
     ammo="Pemphredo Tathlum",
-    head="Theophany Cap +2",
+    head="Null Masque",
     body="Theo. Bliaut +3",
     hands="Theophany Mitts +4",
     legs=gear.Chironic_Enfeeblingpants,
     feet="Theo. Duckbills +4",
     neck="Null Loop",
-    waist="Eschan Stone",
+    waist="Null Belt",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring",
     left_ring=gear.left_stinky,
     right_ring=gear.right_stinky,
     back="Alaunus's Cape" }
 
+    sets.midcast['Dark Magic'] =  set_combine(sets.midcast['Enfeebling Magic'], {})
+    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
+
+
+    sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
+    sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
 	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
     sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
@@ -378,7 +375,10 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
-	sets.midcast['Dia II'] = set_combine(sets.midcast.StatusRemoval,{})
+	sets.midcast['Dia II'] = {Main="Daybreak",sub="Diamond Aspis",ammo="Staunch Tathlum",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
+		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
+		back="Alaunus's Cape",waist="Witful Belt",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 	sets.midcast.Bio = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast.StatusRemoval,{})
 
@@ -436,6 +436,24 @@ sets.idle={
    feet="Ebers Duckbills +2",
    neck="Warder's Charm +1",
    waist="Carrier's Sash",
+   left_ear="Etiolation Earring",
+   right_ear="Eabani Earring",
+   left_ring="Murky Ring", 
+   right_ring="Shadow Ring",
+    back="Alaunus's Cape"
+}
+
+
+sets.idle.Meva={main="Daybreak",
+   sub="Diamond Aspis",
+   ammo="Homiliary",
+   head="Bunzi's Hat",
+   body="Ebers Bliaut +2",
+   hands="Bunzi's Gloves",
+   legs="Ebers Pant. +2",
+   feet="Theo. Duckbills +4",
+   neck="Warder's Charm +1",
+   waist="Null Belt",
    left_ear="Etiolation Earring",
    right_ear="Eabani Earring",
    left_ring="Murky Ring", 

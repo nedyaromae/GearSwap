@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','Acc','FullAcc')
-    state.WeaponskillMode:options('Match','PDL')
+    state.WeaponskillMode:options('Match','PDL','Acc')
     state.HybridMode:options('Normal', 'PDT')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
@@ -76,14 +76,14 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
-		head="Mpaca's Cap",neck="Moonbeam Necklace",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
+		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Mummu Wrists +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
-		back=gear.dex_jse_back,waist="Eschan Stone",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
+		back=gear.dex_jse_back,waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 	
 	sets.precast.WS["Raging Fists"].Acc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
 	sets.precast.WS["Howling Fist"].Acc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
 	sets.precast.WS["Asuran Fists"].Acc = set_combine(sets.precast.WS["Asuran Fists"], sets.precast.WSAcc)
-	sets.precast.WS["Victory Smite"].Acc = set_combine(sets.precast.WS["Victory Smite"], sets.precast.WS.Acc, {})
+	sets.precast.WS["Victory Smite"].Acc = set_combine(sets.precast.WS["Victory Smite"], sets.precast.WS.Acc, {ear1="Odr Earring"})
 	sets.precast.WS["Shijin Spiral"].Acc = set_combine(sets.precast.WS["Shijin Spiral"], sets.precast.WS.Acc,{head="Malignance Chapeau",body="Malignance Tabard"})
 	sets.precast.WS["Dragon Kick"].Acc = set_combine(sets.precast.WS["Dragon Kick"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
 	sets.precast.WS["Tornado Kick"].Acc = set_combine(sets.precast.WS["Tornado Kick"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
