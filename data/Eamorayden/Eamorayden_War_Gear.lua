@@ -175,13 +175,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1287 naegling 1288 loxotic 1333 lycurgos 1286 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1287 naegling 1288 loxotic 1338 lycurgos 1281 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1377 lycurgos 1331 naegling 1332 loxotic 1330 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1382 lycurgos 1331 naegling 1332 loxotic 1335 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
@@ -224,8 +224,8 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
 	sets.weapons.Loxotic= {main="Loxotic mace +1", sub="Blurred shield +1"}
-	sets.weapons.ShiningOne= {main="Shining One", sub="Kaja grip"}
-	sets.weapons.Gaxe = {main="Lycurgos", sub="Kaja grip"}
+	sets.weapons.ShiningOne= {main="Shining One", sub="Utu Grip"}
+	sets.weapons.Gaxe = {main="Lycurgos", sub="Utu Grip"}
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 
 end
