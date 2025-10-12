@@ -3,8 +3,8 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal')
-	state.IdleMode:options('Idle','Magic','Segs','Cleave') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','NaeglingBlurred','Cleave','NaeglingAspis')
+	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
+	state.Weapons:options('SakpataDuban','SakpataAegis')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal')
@@ -50,30 +50,30 @@ function init_gear_sets()
    
 		
     -- Precast sets to enhance JAs
-    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches",priority=24})
+    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1",priority=24})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +2",priority=33})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet",priority=59}) 
-    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat",priority=70})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1",priority=59}) 
+    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1",priority=70})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +2",priority=42})
-    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --head="Rev. Coronet +1",body="Cab. Surcoat"
-    --Meva shit for ody bosses that i may or may not even do lmfao
-    sets.precast.JA['Invincible'].Meva = set_combine(sets.Enmity.Meva,{legs="Cab. Breeches",priority=24})
+    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --head="Rev. Coronet +1",body="Cab. Surcoat +1"
+    --Meva shit for ody bosses 
+    sets.precast.JA['Invincible'].Meva = set_combine(sets.Enmity.Meva,{legs="Cab. Breeches +1",priority=24})
     sets.precast.JA['Holy Circle'].Meva = set_combine(sets.Enmity.Meva,{})
     sets.precast.JA['Sentinel'].Meva = set_combine(sets.Enmity.Meva,{feet="Cab. Leggings +2",priority=33})
-    sets.precast.JA['Rampart'].Meva = set_combine(sets.Enmity.Meva,{head="Cab. Coronet",priority=59}) 
-    sets.precast.JA['Fealty'].Meva = set_combine(sets.Enmity.Meva,{body="Cab. Surcoat",priority=70})
+    sets.precast.JA['Rampart'].Meva = set_combine(sets.Enmity.Meva,{head="Cab. Coronet +1",priority=59}) 
+    sets.precast.JA['Fealty'].Meva = set_combine(sets.Enmity.Meva,{body="Cab. Surcoat +1",priority=70})
     sets.precast.JA['Divine Emblem'].Meva = set_combine(sets.Enmity.Meva,{feet="Chev. Sabatons +2",priority=42})
-    sets.precast.JA['Cover'].Meva = set_combine(sets.Enmity.Meva, {}) --head="Rev. Coronet +1",body="Cab. Surcoat"
+    sets.precast.JA['Cover'].Meva = set_combine(sets.Enmity.Meva, {}) --head="Rev. Coronet +1",body="Cab. Surcoat +1"
 
-    --WAR stuff unlikely to ever use but fuck it 
+    --WAR stuff 
 	sets.precast.JA['Provoke'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Warcry'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Berserk'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Defender'] = set_combine(sets.Enmity,{})
     sets.precast.JA['Aggressor'] = set_combine(sets.Enmity,{})
    
-   --RUN stuff unlikely to ever use but fuck it 
+   --RUN stuff 
     sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Valiance'] = set_combine(sets.Enmity,{})
@@ -127,9 +127,9 @@ function init_gear_sets()
     sets.precast.WS['Atonement'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
 
     sets.precast.WS['Sanguine Blade']= {ammo={name="Oshasha's treatise",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Friomisi Earring",priority=5},ear2={name="Thrud Earring",priority=3},
+        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=3},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.right_moonbeam,{priority=100},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Eschan Stone",priority=4},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+        back=gear.wsd_jse_back,{priority=5},waist={name="Eschan Stone",priority=20},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 		
     sets.precast.WS['Aeolian Edge'] = {ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Friomisi Earring",priority=5},ear2={name="Thrud Earring",priority=7},
@@ -270,6 +270,11 @@ function init_gear_sets()
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}
 
+    sets.idle.ConvertMP= {ammo={name="Eluder's Sachet",priority=3},
+    head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
+    back=gear.idle_jse_back,{priority=60},waist={name="Flume Belt",priority=2},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}
+
     sets.idle.Cleave = {ammo={name="Staunch Tathlum",priority=3},
     head={name="Chev. Armet +2",priority=135},neck={name="Elite Royal Collar",priority=1},ear1={name="Eabani Earring",priority=45},ear2={name="Chev. Earring +1",priority=6},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=3},ring2={name="Shneddick Ring",priority=4},
@@ -280,7 +285,7 @@ function init_gear_sets()
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shadow Ring",priority=30},
     back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
-    sets.idle.Evasion={ammo={name="Amar Cluster",priority=3}, --This is for limbus nms as apparently they have really low acc not great but best i can manage
+    sets.idle.Evasion={ammo={name="Amar Cluster",priority=3}, --This is for limbus nms 
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shadow Ring",priority=30},
     back=gear.idle_jse_back,{priority=60},waist={name="Null Belt",priority=25},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
@@ -302,8 +307,8 @@ function init_gear_sets()
 --	sets.weapons.ClubDuban = {main="Mafic Cudgel",sub="Duban"} --club tanking --mafic is on my mule as i never use this shit    
     sets.weapons.SakpataAegis ={main="Sakpata's Sword",sub="Aegis"} --normal aeigs shit
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
-    sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --Not really used anymore
-    sets.weapons.MaligAegis ={main="Malignance Sword",sub="Aegis"} --What's magic damage
+    sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} 
+    sets.weapons.MaligAegis ={main="Malignance Sword",sub="Aegis"} 
     sets.weapons.NaeglingAspis ={main="Naegling",sub="Diamond Aspis"} --Mostly for 6 step objectives still need prob sam's roll and capped magic haste
     sets.weapons.NaeglingAegis={main="Naegling",sub="Aegis"} --this was for aegis trials and almost nothing else
 	sets.weapons.MaligPriwen={main="Malignance Sword",sub="Priwen"} --Resist and pretty much nothing else

@@ -125,7 +125,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
-		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
@@ -183,7 +183,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Weapons sets
 	sets.weapons.Karambit = {main="Karambit"}
 --	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Malignance Pole",sub="Immolation Grip"}
+	sets.weapons.Staff = {main="Malignance Pole",sub=""}
 --	sets.weapons.ProcStaff = {main="Erudite's Staff"}
 --	sets.weapons.ProcClub = {main="Mafic Cudgel"}
 --	sets.weapons.ProcSword = {main="Kyukoto",sub=empty}

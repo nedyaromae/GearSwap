@@ -64,12 +64,12 @@ function init_gear_sets()
 						                   
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Oshasha's treatise",
+    sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Sulev. Leggings +2"}
 
-	sets.precast.WS.PDL={ammo="Oshasha's treatise",
+	sets.precast.WS.PDL={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"}
