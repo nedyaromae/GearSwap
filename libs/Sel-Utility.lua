@@ -1080,6 +1080,7 @@ function just_acted(spell, spellMap, eventArgs)
 		if eventArgs and not state.RngHelper.value and state.MiniQueue.value and not (spell.type:startswith('BloodPact') and state.Buff["Astral Conduit"]) then
 			cancel_spell()
 			eventArgs.cancel = true
+			delayed_prefix = spell.prefix or ''
 			delayed_cast = spell.english or ''
 			delayed_target = spell.target.id or ''
 		end
@@ -1206,6 +1207,7 @@ function check_recast(spell, spellMap, eventArgs)
 					local seconds = seconds_to_clock(abil_recasts[spell.recast_id], 'seconds')
 					add_to_chat(123,'Abort: ['..spell.english..'] waiting on recast, attempting to cast in ('..seconds..') seconds.')
 					eventArgs.cancel = true
+					delayed_prefix = spell.prefix or ''
 					delayed_cast = spell.english or ''
 					delayed_target = spell.target.id or ''
 					add_tick_delay(tonumber(seconds) +.1)
@@ -1227,6 +1229,7 @@ function check_recast(spell, spellMap, eventArgs)
 					local seconds = seconds_to_clock(spell_recasts[spell.recast_id]/60, 'seconds')
 					add_to_chat(123,'Abort: ['..spell.english..'] waiting on recast, attempting to cast in ('..seconds..') seconds.')
 					eventArgs.cancel = true
+					delayed_prefix = spell.prefix or ''
 					delayed_cast = spell.english or ''
 					delayed_target = spell.target.id or ''
 					add_tick_delay(tonumber(seconds) +.1)
@@ -1778,9 +1781,14 @@ function check_doomed()
 end
 
 function check_delayed_cast()
-	if delayed_cast ~= '' then
-		send_command(''..delayed_cast..' '..delayed_target..'')
+	if delayed_prefix ~= '' and delayed_cast ~= '' then
+		if delayed_cast == 'Ranged' then
+			windower.chat.input(''..delayed_prefix..' '..delayed_target..'')
+		else
+			windower.chat.input(''..delayed_prefix..' "'..delayed_cast..'" '..delayed_target..'')
+		end
 		add_tick_delay()
+		delayed_prefix = ''
 		delayed_cast = ''
 		delayed_target = ''
 		return true
@@ -2584,7 +2592,11 @@ function get_item_table(item)
 end
 
 function is_rare(item)
-	return get_item_table(item).flags:contains('Rare')
+	if item ~= 'empty' then
+		return get_item_table(item).flags:contains('Rare')
+	else
+		return false
+	end
 end
 
 function set_to_item(set)
