@@ -51,7 +51,7 @@ function init_gear_sets()
 		
     -- Precast sets to enhance JAs
     sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1",priority=24})
-    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{})
+    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1"})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +2",priority=33})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1",priority=59}) 
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1",priority=70})
@@ -59,7 +59,7 @@ function init_gear_sets()
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --head="Rev. Coronet +1",body="Cab. Surcoat +1"
     --Meva shit for ody bosses 
     sets.precast.JA['Invincible'].Meva = set_combine(sets.Enmity.Meva,{legs="Cab. Breeches +1",priority=24})
-    sets.precast.JA['Holy Circle'].Meva = set_combine(sets.Enmity.Meva,{})
+    sets.precast.JA['Holy Circle'].Meva = set_combine(sets.Enmity.Meva,{feet="Rev. Leggings +1"})
     sets.precast.JA['Sentinel'].Meva = set_combine(sets.Enmity.Meva,{feet="Cab. Leggings +2",priority=33})
     sets.precast.JA['Rampart'].Meva = set_combine(sets.Enmity.Meva,{head="Cab. Coronet +1",priority=59}) 
     sets.precast.JA['Fealty'].Meva = set_combine(sets.Enmity.Meva,{body="Cab. Surcoat +1",priority=70})

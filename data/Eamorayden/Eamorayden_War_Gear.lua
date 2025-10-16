@@ -85,7 +85,7 @@ function init_gear_sets()
 	sets.precast.WS['Judgment']=set_combine(sets.precast.WS['Savage Blade'],{})
 	sets.precast.WS['Black Halo']=set_combine(sets.precast.WS['Savage Blade'],{})
 	
-	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",feet="Nyame Sollerets",waist="Eschan Stone"})
+	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",hands="Nyame Gauntlets",feet="Nyame Sollerets",waist="Eschan Stone"})
 	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{ear1="Schere Earring"})
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
