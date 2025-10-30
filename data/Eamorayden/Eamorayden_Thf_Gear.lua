@@ -249,10 +249,10 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {ammo="Staunch Tathlum",
+    sets.idle = {ammo="Amar Cluster",
         head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Infused Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Murky Ring",ring2="Shneddick Ring",
-        back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
+        back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -280,7 +280,7 @@ function init_gear_sets()
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs="Mummu Kecks +2",
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Lissome Necklace",
     waist="Sailfi Belt +1",
@@ -288,7 +288,7 @@ function init_gear_sets()
     right_ear="Suppanomimi",
     left_ring="Moonbeam Ring",
     right_ring="Epona's Ring",
-    back="Solemnity Cape" }
+    back="Null Shawl" }
 	
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",

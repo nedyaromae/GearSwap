@@ -262,7 +262,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
     sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Telchine Cap",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
+		head="Telchine Cap",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
 
@@ -279,7 +279,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 
 
 	sets.midcast.Regen = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
+		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
 	
@@ -354,7 +354,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     right_ear="Ebers Earring",
     left_ring=gear.left_stinky,
     right_ring=gear.right_stinky,
-    back="Alaunus's Cape" }
+    back="Null Shawl" }
 
     sets.midcast['Dark Magic'] =  set_combine(sets.midcast['Enfeebling Magic'], {})
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
@@ -363,13 +363,13 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
-	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
-    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
-	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
+	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
+    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
+	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Staunch Tathlum",
-		head="Bunzi's Hat",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Malignance Earring",
+		head="Bunzi's Hat",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Malignance Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Nyame Sollerets"}
 
@@ -432,7 +432,7 @@ sets.idle={
    head="Null Masque",
    body="Ebers Bliaut +2",
    hands="Bunzi's Gloves",
-   legs="Bunzi's Pants",
+   legs="Ebers Pant. +2",
    feet="Ebers Duckbills +2",
    neck="Warder's Charm +1",
    waist="Carrier's Sash",
@@ -440,7 +440,7 @@ sets.idle={
    right_ear="Eabani Earring",
    left_ring="Murky Ring", 
    right_ring="Shadow Ring",
-    back="Alaunus's Cape"
+    back="Null Shawl"
 }
 
 
@@ -501,7 +501,7 @@ sets.IdleWakeUp = {main="Prime Maul"}
     sets.engaged = {main="Maxentius",sub="Diamond Aspis",ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Chirich Ring",
-        back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Divine Caress'] = {hands="Ebers Mitts +2"}

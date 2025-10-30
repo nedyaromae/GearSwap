@@ -23,7 +23,7 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	
-    sets.Enmity = {ammo="Sapience Orb",head="Pummeler's Mask +2",ring1="Eihwaz Ring",ring2="Apeile Ring +1",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam Necklace"}
+    sets.Enmity = {ammo="Sapience Orb",head="Pummeler's Mask +2",body="Souv. Cuirass +1",legs="Souv. Diechlings +1",ring1="Eihwaz Ring",ring2="Apeile Ring +1",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam Necklace"}
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
@@ -124,7 +124,10 @@ function init_gear_sets()
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
-	sets.precast.WS["Armor Break"]=set_combine(sets.precast.WS, {head="Boii Mask +2",body="Pumm. Lorica +4",hands="Boii Mufflers +2",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4",ring1=gear.left_stinky,ring2=gear.right_stinky,waist="Null Belt",Ammo="Pemphredo Tathlum",neck="Null Loop",ear2="Boii Earring"})
+	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
+		head="Boii Masque +2",neck="Null Loop",ear1="Alabaster Earring",ear2="Boii Earring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
+		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -152,7 +155,7 @@ function init_gear_sets()
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
-		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	
 	-- Defense sets
@@ -197,7 +200,7 @@ function init_gear_sets()
 	sets.engaged.Meva= {ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
+		back="Null Shawl",waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 
 	
     
