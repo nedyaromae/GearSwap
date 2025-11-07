@@ -422,7 +422,7 @@ function handle_update(cmdParams)
 		handle_equipping_gear(player.status)
 	end
 
-	if cmdParams == 'user' then
+	if cmdParams[1] == 'user' then
 		display_current_state()
 	end
 
@@ -479,6 +479,7 @@ function handle_naked()
 end
 
 function handle_weapons(cmdParams)
+	local cached_weapon_state = state.Weapons.value
 	local weaponSet
 
 	if type(cmdParams) == 'string' then
@@ -489,7 +490,7 @@ function handle_weapons(cmdParams)
 
 	if weaponSet == nil then
 	elseif weaponSet:lower() == 'default' then
-		if not data.jobs.dual_wield_jobs:contains(player.main_job) and (player.sub_job == 'DNC' or player.sub_job == 'NIN') and state.Weapons:contains(default_dual_weapons) and sets.weapons[default_dual_weapons] then
+		if not data.jobs.dual_wield_jobs:contains(player.main_job) and can_dual_wield and state.Weapons:contains(default_dual_weapons) and sets.weapons[default_dual_weapons] then
 			state.Weapons:set(default_dual_weapons)
 		elseif default_weapons and state.Weapons:contains(default_weapons) and sets.weapons[default_weapons] then
 			state.Weapons:set(default_weapons)
@@ -497,7 +498,7 @@ function handle_weapons(cmdParams)
 			state.Weapons:reset()
 		end
 	elseif weaponSet:lower() == 'initialize' then
-		if not data.jobs.dual_wield_jobs:contains(player.main_job) and (player.sub_job == 'DNC' or player.sub_job == 'NIN') and weapon_sets['Dual'] then
+		if not data.jobs.dual_wield_jobs:contains(player.main_job) and can_dual_wield and weapon_sets['Dual'] then
 			state.WeaponSets:set('Dual')
 			state.Weapons:options(unpack(weapon_sets[state.WeaponSets.value]))
 		elseif weapon_sets['Default'] then
@@ -508,7 +509,7 @@ function handle_weapons(cmdParams)
 			end
 		elseif data.jobs.mage_jobs:contains(player.main_job) and not data.jobs.mage_jobs:contains(player.sub_job) and state.Weapons:contains(default_weapons) and sets.weapons[default_weapons] then
 			state.Weapons:set(default_weapons)
-		elseif not data.jobs.dual_wield_jobs:contains(player.main_job) and (player.sub_job == 'DNC' or player.sub_job == 'NIN') and state.Weapons:contains(default_dual_weapons) and sets.weapons[default_dual_weapons] then
+		elseif not data.jobs.dual_wield_jobs:contains(player.main_job) and can_dual_wield and state.Weapons:contains(default_dual_weapons) and sets.weapons[default_dual_weapons] then
 			state.Weapons:set(default_dual_weapons)
 		elseif data.jobs.mage_jobs:contains(player.main_job) and not data.jobs.mage_jobs:contains(player.sub_job) and default_weapons and state.Weapons:contains(default_weapons) and sets.weapons[default_weapons] then
 			state.Weapons:set(default_weapons)
@@ -536,8 +537,9 @@ function handle_weapons(cmdParams)
 		end
 	end
 
-	equip_weaponset()
-	if state.DisplayMode.value then update_job_states()	end
+	if cached_weapon_state ~= state.Weapons.value then
+		state_change('Weapons', state.Weapons.value, cached_weapon_state)
+	end
 end
 
 function equip_weaponset()
@@ -932,8 +934,8 @@ function handle_facemob(cmdParams)
 		target = player
 	end
 
-	local self_vector = windower.ffxi.get_mob_by_id(player.id)
-	local angle = (math.atan2((target.y - self_vector.y), (target.x - self_vector.x))*180/math.pi)*-1
+	local self = windower.ffxi.get_mob_by_id(player.id)
+	local angle = (math.atan2((target.y - self.y), (target.x - self.x))*180/math.pi)*-1
 	windower.ffxi.turn((angle):radian())
 end
 
@@ -1574,11 +1576,16 @@ end
 
 -- A function for testing lua code.  Called via "gs c test".
 function handle_test(cmdParams)
+	windower.add_to_chat('Main: '..player.equipment.main)
 	if user_test then
 		user_test(cmdParams)
 	elseif job_test then
 		job_test(cmdParams)
 	end
+end
+
+function handle_equiptest()
+	table.vprint(player.equipment)
 end
 
 -------------------------------------------------------------------------------------------------------------------

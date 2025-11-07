@@ -67,14 +67,14 @@ function cancel_conflicting_buffs(spell, spellMap, eventArgs)
 			send_command('cancel sneak')
 		elseif spell.english == ('Stoneskin') or spell.english == ('Diamondhide') or spell.english == ('Magic Barrier') then
 			send_command('cancel stoneskin')
-		elseif spell.english == 'Utsusemi: Ni' and player.main_job == 'NIN' and lastshadow == 'Utsusemi: San' then
+		elseif spell.english == 'Utsusemi: Ni' and player.main_job == 'NIN' then
 			if buffactive['Copy Image (4+)'] and conserveshadows then
 				add_to_chat(123,'Abort: You have four or more shadows.')
 				eventArgs.cancel = true
 			else
 				send_command('@wait '..utsusemi_ni_cancel_delay..';cancel copy image*')
 			end
-		elseif spell.english == 'Utsusemi: Ichi' and lastshadow ~= 'Utsusemi: Ichi' then
+		elseif spell.english == 'Utsusemi: Ichi' then
 			if (buffactive['Copy Image (3)'] or buffactive['Copy Image (4+)']) and conserveshadows then
 				add_to_chat(123,'Abort: You have three or more shadows.')
 				eventArgs.cancel = true
@@ -605,6 +605,11 @@ end
 function silent_can_use(action, action_type)
 	local action_type = unify_prefix(action_type)
 
+	if action_type == '/ws' and player.equipment.main ~= cached_weapon then
+		silent_can_use_cache['/ws']= {}
+		cached_weapon = player.equipment.main
+	end
+
 	if silent_can_use_cache[action_type][action] then
 		return silent_can_use_cache[action_type][action]
 	end
@@ -1012,6 +1017,10 @@ function check_disable(spell, spellMap, eventArgs)
 		return true
 	elseif buffactive.stun then
 		add_to_chat(123,'Abort: You are stunned.')
+		eventArgs.cancel = true
+		return true
+	elseif not (player.status == 'Idle' or player.status == 'Engaged') then
+		add_to_chat(123,"Abort: You can't act while your status is: "..player.status..".")
 		eventArgs.cancel = true
 		return true
 	else
@@ -1435,6 +1444,11 @@ function check_jump(user)
 			add_to_chat(123, "Not currently subbing Dragoon!")
 		end
 		return
+	elseif silent_check_amnesia() then
+		if user then
+			add_to_chat(123, "You have amnesia!")
+		end
+		return
 	end
 
 	if user or (state.AutoJumpMode.value and player.status == 'Engaged' and player.tp < 501) then
@@ -1520,13 +1534,17 @@ function check_buffup()
 end
 
 function check_samba()
-	if state.AutoSambaMode.value ~= 'Off' and not (buffactive['Haste Samba'] or buffactive['Drain Samba'] or buffactive['Aspir Samba']) and (player.main_job == 'DNC' or player.sub_job == 'DNC') and player.status == 'Engaged' and player.tp > 400 then
-		windower.chat.input('/ja "'..state.AutoSambaMode.value..'" <me>')
-		add_tick_delay()
-		return true
-	else
-		return false
+	if state.AutoSambaMode.value ~= 'Off' and not (buffactive['Haste Samba'] or buffactive['Drain Samba'] or buffactive['Aspir Samba']) then
+		if (player.main_job == 'DNC' or player.sub_job == 'DNC') and player.status == 'Engaged' and player.tp >= 400 and not silent_check_amnesia() then
+			if windower.ffxi.get_ability_recasts()[216] < latency then
+				windower.chat.input('/ja "'..state.AutoSambaMode.value..'" <me>')
+				add_tick_delay()
+				return true
+			end
+		end
 	end
+
+	return false
 end
 
 function check_sub()
@@ -1811,35 +1829,36 @@ function check_ws()
 	if state.AutoWSMode.value and not state.RngHelper.value and player.status == 'Engaged' and player.target and player.target.type == "MONSTER" and player.tp > 999 and not silent_check_amnesia() and not (player.target.distance > (19.7 + player.target.model_size)) then
 
 	local available_ws = S(windower.ffxi.get_abilities().weapon_skills)
+	local in_melee_range = player.target.distance < (3.2 + player.target.model_size)
 
-		if player.hpp < 41 and state.AutoWSRestore.value and available_ws:contains(47) and player.target.distance < (3.2 + player.target.model_size) then
+		if player.hpp < 41 and state.AutoWSRestore.value and available_ws:contains(47) and in_melee_range then
 			windower.chat.input('/ws "Sanguine Blade" <t>')
 			add_tick_delay()
 			return true
-		elseif player.hpp < 41 and state.AutoWSRestore.value and available_ws:contains(105) and player.target.distance < (3.2 + player.target.model_size) then
+		elseif player.hpp < 41 and state.AutoWSRestore.value and available_ws:contains(105) and in_melee_range then
 			windower.chat.input('/ws "Catastrophe" <t>')
 			add_tick_delay()
 			return true
-		elseif player.mpp < 31 and state.AutoWSRestore.value and available_ws:contains(109) and player.target.distance < (3.2 + player.target.model_size) then
+		elseif player.mpp < 31 and state.AutoWSRestore.value and available_ws:contains(109) and in_melee_range then
 			windower.chat.input('/ws "Entropy" <t>')
 			add_tick_delay()
 			return true
-		elseif player.mpp < 31 and state.AutoWSRestore.value and available_ws:contains(171) and player.target.distance < (3.2 + player.target.model_size) then
+		elseif player.mpp < 31 and state.AutoWSRestore.value and available_ws:contains(171) and in_melee_range then
 			windower.chat.input('/ws "Mystic Boon" <t>')
 			add_tick_delay()
 			return true
-		elseif player.target.distance > (3.2 + player.target.model_size) and not data.weaponskills.ranged:contains(autows) then
+		elseif not (in_melee_range or data.weaponskills.ranged:contains(autows)) then
 			return false
 		elseif data.equipment.relic_weapons:contains(player.equipment.main) and state.MaintainAftermath.value and (not buffactive['Aftermath']) then
 			windower.chat.input('/ws "'..data.weaponskills.relic[player.equipment.main]..'" <t>')
 			add_tick_delay()
 			return true
-		elseif (buffactive['Aftermath: Lv.3'] or not state.MaintainAftermath.value or not data.equipment.mythic_weapons:contains(player.equipment.main)) and player.tp >= autowstp then
+		elseif (buffactive['Aftermath: Lv.3'] or not state.MaintainAftermath.value or not data.equipment.aftermath_weapons:contains(player.equipment.main)) and player.tp >= autowstp then
 			windower.chat.input('/ws "'..autows..'" <t>')
 			add_tick_delay()
 			return true
 		elseif player.tp == 3000 then
-			windower.chat.input('/ws "'..data.weaponskills.mythic[player.equipment.main]..'" <t>')
+			windower.chat.input('/ws "'..data.weaponskills.aftermath[player.equipment.main]..'" <t>')
 			add_tick_delay()
 			return true
 		else
@@ -2199,8 +2218,9 @@ end
 function is_nuke(spell, spellMap)
 	if (
 		(spell.skill == 'Elemental Magic' and spellMap ~= 'ElementalEnfeeble' and spell.english ~= 'Impact') or
-	    (player.main_job == 'BLU' and spell.skill == 'Blue Magic' and spellMap and spellMap:contains('Magical')) or
+		(player.main_job == 'BLU' and spell.skill == 'Blue Magic' and spellMap and spellMap:contains('Magical')) or
 		(player.main_job == 'NIN' and spell.skill == 'Ninjutsu' and spellMap and spellMap:contains('ElementalNinjutsu')) or
+		(spellMap and spellMap:contains('Nuke')) or
 		spell.english == 'Comet' or spell.english == 'Meteor' or spell.english == 'Death' or spell.english:startswith('Banish') or
 		spell.english:startswith('Drain') or spell.english:startswith('Aspir') or spell.english:startswith('Holy') or spell.english == 'Kaustra'
 		) then
@@ -2264,6 +2284,28 @@ function internal_enable_set(priority)
 	disabled_sets[priority] = nil
 
 	build_internal_disable()
+end
+
+function is_facing_player(mob)
+	if not mob or not mob.facing then return false end
+
+	local player = windower.ffxi.get_mob_by_target('me')
+	if not player or not player.facing then return false end
+
+
+	local desired_facing = (player.facing + math.pi) % (2 * math.pi)
+
+	local angle_diff = desired_facing - mob.facing
+
+	if angle_diff > math.pi then
+		angle_diff = angle_diff - 2 * math.pi
+	elseif angle_diff < -math.pi then
+		angle_diff = angle_diff + 2 * math.pi
+	end
+
+	local max_diff = math.pi / 4  -- 45 degrees forgiving window ?? Still testing this but this should be close enough. It may figure like a conal attack area which would add distance and model size elements to the problem but should be fine like this.
+
+	return math.abs(angle_diff) <= max_diff
 end
 
 function seconds_to_clock(seconds, units)
@@ -2686,6 +2728,38 @@ function arts_active()
 	end
 end
 
+function uses_ammo(spell)
+	if (spell.action_type == 'Ranged Attack' or spell.name == 'Eagle Eye Shot' or spell.name == 'Shadowbind' or spell.name == 'Bounty Shot' or (spell.type == 'WeaponSkill' and (spell.skill == 'Marksmanship' or spell.skill == 'Archery'))) and not state.Buff['Unlimited Shot'] then
+		return true
+	end
+	return false
+end
+
+function check_rare_ammo(spell, spellMap, eventArgs)
+	if uses_ammo(spell) then
+		if gearswap.equip_list.ammo and item_equippable(gearswap.equip_list.ammo) then
+			if is_rare(gearswap.equip_list.ammo) then
+				panic_swap_ammo()
+			end
+		elseif is_rare(player.equipment.ammo) then
+			panic_swap_ammo()
+		end
+	end
+end
+
+function panic_swap_ammo()
+	enable('ammo')
+	add_to_chat(123,"Warning: Rare ammo is set to fire, Defaulting!")
+
+	if sets.weapons[state.Weapons.value].ammo and item_equippable(sets.weapons[state.Weapons.value].ammo) then
+		equip({ammo=sets.weapons[state.Weapons.value].ammo})
+	elseif sets.precast.RA and sets.precast.RA.ammo and item_equippable(sets.precast.RA.ammo) then
+		equip({ammo=sets.precast.RA.ammo})
+	else
+		equip({ammo=empty})
+	end
+end
+
 -- Movement Handling
 lastlocation = {X=0,Y=0}
 moving = false
@@ -2902,7 +2976,7 @@ function set_dual_wield()
 	local traits = T(windower.ffxi.get_abilities().job_traits)
 	can_dual_wield = traits:any(function(v) return gearswap.res.job_traits[v].english == 'Dual Wield' end)
 
-	send_command('gs c weapons initialize')
+	handle_weapons({[1]='initialize'})
 end
 
 function get_closest_mob_id_by_name(name)
