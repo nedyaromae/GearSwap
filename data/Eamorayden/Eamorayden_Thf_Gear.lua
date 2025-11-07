@@ -284,9 +284,9 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Lissome Necklace",
     waist="Sailfi Belt +1",
-    left_ear="Eabani Earring",
+    left_ear="Sherida Earring",
     right_ear="Suppanomimi",
-    left_ring="Moonbeam Ring",
+    left_ring="Gere Ring",
     right_ring="Epona's Ring",
     back="Null Shawl" }
 	

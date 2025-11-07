@@ -500,7 +500,7 @@ sets.IdleWakeUp = {main="Prime Maul"}
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {main="Maxentius",sub="Diamond Aspis",ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Chirich Ring",
+		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Petrov Ring",
         back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.

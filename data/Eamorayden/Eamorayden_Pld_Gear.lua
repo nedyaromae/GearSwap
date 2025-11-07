@@ -83,12 +83,12 @@ function init_gear_sets()
     -- add mnd for Chivalry
     sets.precast.JA['Chivalry'] = {ammo={name="Staunch Tathlum",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=7},ear2={name="Etiolation Earring",priority=50},
-        body={name="Nyame Mail",priority=136},hands={name="Cab. Gauntlets +1",priority=74},ring1={name="Murky Ring",priority=5},ring2=gear.right_stinky,{priority=8},
+        body={name="Nyame Mail",priority=136},hands={name="Cab. Gauntlets +2",priority=74},ring1={name="Murky Ring",priority=5},ring2=gear.right_stinky,{priority=8},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
 		
 
-	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +1"})		
+	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +2"})		
 
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
 
@@ -109,12 +109,12 @@ function init_gear_sets()
     sets.precast.WS = {ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.left_moonbeam,{priority=100},
-        back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Sulevia's Leggings +2",priority=20}}
+        back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     sets.precast.WS.DD={ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=1},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Sroda Ring",priority=7},
-        back=gear.wsd_jse_back,{priority=5},waist={name="Sailfi Belt +1",priority=8},legs={name="Nyame Flanchard",priority=114},feet={name="Sulev. Leggings +2",priority=20}}
+        back=gear.wsd_jse_back,{priority=5},waist={name="Sailfi Belt +1",priority=8},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Requiescat']={ammo={name="Coiste Bodhar",priority=3},

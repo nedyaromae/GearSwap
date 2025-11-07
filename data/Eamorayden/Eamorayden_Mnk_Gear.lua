@@ -2,7 +2,7 @@ function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','Acc','FullAcc')
     state.WeaponskillMode:options('Match','PDL','Acc')
-    state.HybridMode:options('Normal', 'PDT')
+    state.HybridMode:options('Normal', 'SB','Meva','Ngai')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -54,12 +54,12 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Cornelia's Ring",
+		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 
 	sets.precast.WS.PDL = {ammo="Coiste Bodhar",
 		head="Mpaca's Cap",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Cornelia's Ring",
+		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}	
 	
 		
@@ -70,8 +70,8 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Oshasha's Treatise",})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring",ring2="Sroda Ring",hands="Mummu Wrists +2"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Knobkierrie",legs="Nyame Flanchard",feet="Nyame Sollerets"})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
@@ -125,7 +125,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
-		back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
@@ -144,14 +144,14 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
+	sets.engaged = {ammo="Coiste Bodhar", --1262 imp down 1254 imp up
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
+		body="Malignance Tabard",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Mpaca's Boots"}
 
 		sets.engaged.Acc = {ammo="Coiste Bodhar", --1325 imp down 1318 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Chirich Ring +1",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring+1",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
 		sets.engaged.FullAcc ={ammo="Coiste Bodhar", --1376 imp down 1367 imp up
@@ -159,7 +159,19 @@ sets.precast.FC = {ammo="Sapience Orb",
 		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Chirich Ring",ring2="Chirich Ring +1",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
+sets.engaged.SB = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA
+		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
+sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA
+		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+		back="Null Shawl",waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}	
 
+	sets.engaged.Ngai= {ammo="Coiste Bodhar", 
+		head="Bhikku Crown +2",neck="Warder's Charm +1",ear1="Schere Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Mpaca's Gloves",ring1="Shadow Ring",ring2="Gere Ring",
+		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Nyame Sollerets"}	
 	-- Hundred Fists/Impetus melee set mods
 	
 	sets.engaged.HF = set_combine(sets.engaged, {})
