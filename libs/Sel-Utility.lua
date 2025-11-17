@@ -1348,7 +1348,7 @@ function check_abilities(spell, spellMap, eventArgs)
 				return true
 			end
 		elseif spell.type == 'Step' then
-			if player.status == 'Idle' and windower.ffxi.get_ability_recasts()[220] and spell.target and spell.target.valid_target and spell.target.spawn_type == 16 and spell.target.distance < (3.2 + player.target.model_size) and player.tp > 99 then
+			if player.status == 'Idle' and windower.ffxi.get_ability_recasts()[220] < latency and spell.target and spell.target.valid_target and spell.target.spawn_type == 16 and spell.target.distance < (3.2 + player.target.model_size) and player.tp > 99 then
 				packets.inject(packets.new('outgoing', 0x1a, {
 					['Target'] = spell.target.id,
 					['Target Index'] = spell.target.index,
@@ -2274,13 +2274,16 @@ end
 
 function build_internal_disable()
 	internal_disable = {}
-
 	for i, priority in ipairs(disable_priority) do
 		internal_disable = set_combine(internal_disable, disabled_sets[priority])
 	end
 end
 
 function internal_enable_set(priority)
+	if priority == "Weapons" then
+		check_internal_weapons = true
+	end
+	
 	disabled_sets[priority] = nil
 
 	build_internal_disable()
@@ -2976,7 +2979,7 @@ function set_dual_wield()
 	local traits = T(windower.ffxi.get_abilities().job_traits)
 	can_dual_wield = traits:any(function(v) return gearswap.res.job_traits[v].english == 'Dual Wield' end)
 
-	handle_weapons({[1]='initialize'})
+	send_command('gs c weapons initialize')
 end
 
 function get_closest_mob_id_by_name(name)
