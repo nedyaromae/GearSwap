@@ -2,11 +2,11 @@ function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','Acc','FullAcc')
     state.WeaponskillMode:options('Match','PDL','Acc')
-    state.HybridMode:options('Normal', 'SB','Meva','Ngai')
+    state.HybridMode:options('Normal','Meva','Ngai')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Karambit','Staff')
+	state.Weapons:options('Godhands','Staff')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None'}
 
@@ -64,8 +64,8 @@ sets.precast.FC = {ammo="Sapience Orb",
 	
 		
 
-	sets.precast.WS.Acc=	set_combine(sets.precast.WS, {hands="Mummu Wrists +2",Neck="Mnk. Nodowa +1",Ammo="Oshasha's Treatise",back=gear.dex_jse_back}) 
-	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {hands="Gazu Bracelets +1",Neck="Mnk. Nodowa +1",Ammo="Oshasha's Treatise",back=gear.dex_jse_back})
+	sets.precast.WS.Acc=	set_combine(sets.precast.WS, {hands="Mummu Wrists +2",Neck="Mnk. Nodowa +1",back=gear.dex_jse_back}) 
+	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {hands="Gazu Bracelets +1",Neck="Mnk. Nodowa +1",back=gear.dex_jse_back})
 	-- Specific weaponskill sets.
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
@@ -144,26 +144,26 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Coiste Bodhar", --1262 imp down 1254 imp up
+	sets.engaged = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Mpaca's Boots"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
 		sets.engaged.Acc = {ammo="Coiste Bodhar", --1325 imp down 1318 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring+1",ring2="Gere Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
 		sets.engaged.FullAcc ={ammo="Coiste Bodhar", --1376 imp down 1367 imp up
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
-		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Chirich Ring",ring2="Chirich Ring +1",
+		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Murky Ring",ring2="Chirich Ring +1",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
-sets.engaged.SB = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA
-		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
-sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA
+--sets.engaged.SB = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA just made this reuglar enagaged fuck it dead dds do no damage and meva is ridiculous
+--		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
+--		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+--		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
+sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back="Null Shawl",waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}	
@@ -193,9 +193,9 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar
 --	sets.Skillchain = {legs="Ryuo Hakama"}
 	
 	-- Weapons sets
-	sets.weapons.Karambit = {main="Karambit"}
+	sets.weapons.Godhands = {main="Godhands"}
 --	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Malignance Pole",sub=""}
+	sets.weapons.Staff = {main="Kaja Staff",sub=""}
 --	sets.weapons.ProcStaff = {main="Erudite's Staff"}
 --	sets.weapons.ProcClub = {main="Mafic Cudgel"}
 --	sets.weapons.ProcSword = {main="Kyukoto",sub=empty}

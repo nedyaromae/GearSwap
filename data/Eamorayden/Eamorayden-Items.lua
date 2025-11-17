@@ -1,6 +1,6 @@
 --Gearsets your character will use among multiple jobs.
 -- sets.Capacity = {back="Mecisto. Mantle"} --frequently in safe 2 because it's not that great
-sets.buff.Doom = {waist="Gishdubar Sash",ring1="Saida Ring"}
+sets.buff.Doom = {waist="Gishdubar Sash",ring1="Saida Ring",neck="Nicander's Necklace"}
 sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",ammo="Per. Lucky Egg"}
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}

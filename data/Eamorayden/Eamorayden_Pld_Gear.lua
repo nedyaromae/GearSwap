@@ -169,8 +169,8 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Flume Belt",priority=5},legs={name="Sakpata's Cuisses",priority=114},feet={name="Odyssean Greaves",priority=20}}
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum",priority=7},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Loricate Torque +1",priority=1},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
-        body={name="Souveran Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1=gear.left_moonbeam,{priority=100},ring2=gear.right_moonbeam,{priority=101},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
+        body={name="Souveran Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1="Murky Ring",ring2=gear.right_moonbeam,{priority=101},
         back=gear.CP_jse_back,{priority=60},waist={name="Audumbla Sash",priority=5},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
    sets.HPCure={ammo={name="Staunch Tathlum",priority=1},
