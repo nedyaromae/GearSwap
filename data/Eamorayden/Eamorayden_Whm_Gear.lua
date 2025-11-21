@@ -34,7 +34,7 @@ function init_gear_sets()
 
     -- 	 sets for spells
     sets.precast.FC = { main="Grioavolr", -- 11 with aug
-    sub="Clerisy Strap", -- 2
+    sub="Clerisy Strap +1", -- 3
     ammo="Impatiens", --2 qc
     head="Ebers Cap +2", --10 
     body="Inyanga Jubbah +2", --14
@@ -95,7 +95,7 @@ function init_gear_sets()
 	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
 	
 	
-    sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap",ammo="Impatiens",
+    sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
@@ -238,16 +238,16 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     hands="Fanatic Gloves",
     legs="Th. Pantaloons +2",
     feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-    neck="Malison Medallion",
-    waist="Witful Belt",
+    neck="Debilis Medallion",
+    waist="Bishop's Sash",
     left_ear="Meili Earring",
     right_ear="Ebers Earring",
     left_ring="Menelaus's Ring",
-    right_ring="Ephedra Ring",
+    right_ring="Haoma's Ring",
     back="Alaunus's Cape",}
 
 
-    sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap",ammo="Staunch Tathlum",
+    sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Staunch Tathlum",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
@@ -316,7 +316,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Freke Ring",ring2="Metamorph Ring +1",
 		back="Alaunus's Cape",waist="Korin Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
 
-    sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
+    sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
 		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Eihwaz Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
@@ -334,7 +334,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	
 	
 
-	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap",ammo="Sapience Orb",
+	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
@@ -398,7 +398,7 @@ sets.Refresh_Received = {waist="Gishdubar Sash"}
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 sets.idle={
     main="Daybreak",
-    sub="Diamond Aspis",
+    sub="Archduke's Shield",
     ammo="Homiliary",
     head=gear.Chironic_refreshhat,
     body="Ebers Bliaut +2",

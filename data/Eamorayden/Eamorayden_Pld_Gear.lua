@@ -169,9 +169,9 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Flume Belt",priority=5},legs={name="Sakpata's Cuisses",priority=114},feet={name="Odyssean Greaves",priority=20}}
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum",priority=7},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonbeam necklace",priority=9},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
         body={name="Souveran Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1="Murky Ring",ring2=gear.right_moonbeam,{priority=101},
-        back=gear.CP_jse_back,{priority=60},waist={name="Audumbla Sash",priority=5},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
+        back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=200},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
    sets.HPCure={ammo={name="Staunch Tathlum",priority=1},
         head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=3},
@@ -197,7 +197,7 @@ function init_gear_sets()
       sets.midcast['Enhancing Magic'].SIRD={ammo={name="Staunch Tathlum",priority=1},
         head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Knightly Earring",priority=5},ear2={name="Alabaster Earring",priority=100},
         body={name="Chev. Cuirass +2",priority=141},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=9},ring2={name="Defending Ring",priority=6},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Flume Belt",priority=2},legs={name="Founder's Hose",priority=54},feet={name="Sakpata's Leggings",priority=68}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Audumbla Sash",priority=2},legs={name="Founder's Hose",priority=54},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.midcast['Blue Magic']['Cocoon']=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
 
@@ -249,7 +249,7 @@ function init_gear_sets()
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
 
-     sets.resting = {main={name="Malignance Sword",priority=9},ammo={name="Homiliary",priority=3},
+     sets.resting = {main={name="Malignance Sword",priority=9},sub={name="Archduke's Shield",priority=9},ammo={name="Homiliary",priority=3},
         head={name="Null Masque",priority=100},neck={name="Unmoving Collar",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Rev. Surcoat +3",priority=254},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Chirich Ring +1",priority=5},ring2={name="Chirich Ring",priority=6},
         back=gear.idle_jse_back,{priority=60},waist={name="Fucho-no-obi",priority=7},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}

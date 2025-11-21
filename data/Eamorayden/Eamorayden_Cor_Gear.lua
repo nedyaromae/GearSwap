@@ -90,9 +90,9 @@ function init_gear_sets()
 
 
     sets.precast.RA = {ammo=gear.RAbullet,  
-        head="Ikenga's Hat",neck="Comm. Charm +1",ear1="",ear2="",
+        head="Chass. Tricorne +1",neck="Comm. Charm +1",ear1="",ear2="",
         body="Oshosi Vest",hands="Lanun Gants +1",ring1="",ring2="",
-        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Ikenga's Trousers",feet="Meg. Jam. +2"}
+        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +3",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {head="Chass. Tricorne +1"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {head="Chass. Tricorne +1"})
@@ -102,7 +102,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Rep. Plat. Metal",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
+        body="Laksa. Frac +4",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 				
 		
@@ -124,13 +124,13 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Chasseur's gants +2 ",ring1="Epona's Ring",ring2="Cornelia's Ring",
+        body="Laksa. Frac +4",hands="Chasseur's gants +2 ",ring1="Epona's Ring",ring2="Cornelia's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Null Loop",ear1="Suppanomimi",ear2="Infused Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
+        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa. Bottes +4"}
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -187,8 +187,8 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Null Loop",ear1="Suppanomimi",ear2="Infused Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
+        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
