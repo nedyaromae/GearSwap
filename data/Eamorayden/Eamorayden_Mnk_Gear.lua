@@ -129,7 +129,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
-		head="Nyame Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		

@@ -126,8 +126,8 @@ function init_gear_sets()
 
     sets.precast.WS['Atonement'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
 
-    sets.precast.WS['Sanguine Blade']= {ammo={name="Oshasha's treatise",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=3},
+    sets.precast.WS['Sanguine Blade']= {ammo={name="Pemphredo Tathlum",priority=3},
+        head={name="Pixie Hairpin +1",priority=1},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=3},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.right_moonbeam,{priority=100},
         back=gear.wsd_jse_back,{priority=5},waist={name="Eschan Stone",priority=20},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 		

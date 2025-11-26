@@ -155,7 +155,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
-    waist="Korin Obi",
+    waist="Hachirin-No-Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
     left_ring="Murky Ring",
@@ -171,7 +171,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
-    waist="Korin Obi",
+    waist="Hachirin-No-Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
     left_ring="Murky Ring",
@@ -206,7 +206,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
     legs="Ebers Pant. +2",
     feet="Kaykaus Boots",
     neck="Cleric's Torque",
-    waist="Korin Obi",
+    waist="Hachirin-No-Obi",
     left_ear="Glorious Earring",
     right_ear="Nourish. Earring +1",
     left_ring="Murky Ring",
@@ -314,7 +314,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Holy = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Bunzi's Hat",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Malignance Earring",
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Freke Ring",ring2="Metamorph Ring +1",
-		back="Alaunus's Cape",waist="Korin Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
+		back="Alaunus's Cape",waist="Hachirin-No-Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
 
     sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
@@ -342,7 +342,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",
-    sub="Ammurapi Shield",
+    sub="Diamond Aspis",
     ammo="Pemphredo Tathlum",
     head="Null Masque",
     body="Theo. Bliaut +4",
@@ -367,10 +367,10 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
-	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
-    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
-	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape" })
+	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield" })
+    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield"})
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield" })
+	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
 		head="Null Masque",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Malignance Earring",
@@ -380,7 +380,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast['Dia II'] = {Main="Daybreak",sub="Diamond Aspis",ammo="Staunch Tathlum",
-		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Alaunus's Cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 	sets.midcast.Bio = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)

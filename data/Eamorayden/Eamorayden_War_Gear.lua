@@ -72,7 +72,7 @@ function init_gear_sets()
 	sets.precast.WS.PDL={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
-		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sulev. Leggings +2"}
+		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Nyame Sollerets"}
 		
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
 
@@ -132,7 +132,10 @@ function init_gear_sets()
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
-	
+	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
+		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
+		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Boii Earring",}
