@@ -17,14 +17,9 @@ user_functions.lua
 validate.lua
 version_history.txt
 beta_examples_and_information/*
-data/User/*
 data/instructions.txt
 libs/Mote-*
 libs/rev1/*
-*_Gear.lua
-*_Crafting.lua
-*-Items.lua
-*-Globals.lua
 data/export/*
 data/common/*
 data/User/*
@@ -33,3 +28,12 @@ libs/closetCleaner.lua
 Rename.bat
 Modes.lua
 organizer-lib.lua
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+data/Gearswap
+data/Gearswap
+.vs/GearSwap/v17/DocumentLayout.json
+.vs/GearSwap/v17/.wsuo
+.vs/GearSwap/FileContentIndex/7a126177-82d7-443d-a967-333e5deb927e.vsidx
+data/Gearswap
