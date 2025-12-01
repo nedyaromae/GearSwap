@@ -236,7 +236,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     body="Ebers Bliaut +2",
     hands="Fanatic Gloves",
-    legs="Th. Pantaloons +2",
+    legs="Th. Pant. +3",
     feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     neck="Debilis Medallion",
     waist="Bishop's Sash",
@@ -283,7 +283,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Staunch Tathlum",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
+		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 	
     sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring1="Sheltered Ring"})
     sets.midcast.Protect=set_combine(sets.midcast.Protectra,{})
@@ -301,7 +301,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 --	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 --		head=empty,neck="Null Loop",ear1="Regal Earring",ear2="Ebers Earring",
 --		body="Twilight Cloak",hands="Inyan. Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
---		back="Toro Cape",waist="Eschan Stone",legs="Th. Pantaloons +2",feet="Theo. Duckbills +4"}
+--		back="Toro Cape",waist="Eschan Stone",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 		
 	sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Bunzi's Hat",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Malignance Earring",

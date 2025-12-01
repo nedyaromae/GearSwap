@@ -103,7 +103,7 @@ function init_gear_sets()
     sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Raging Rush'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
-    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila +1",back=gear.critrate_jse_back})
+    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back})
     sets.precast.WS["Ukko's Fury"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {})
@@ -118,14 +118,14 @@ function init_gear_sets()
 	sets.precast.WS["Flat Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
 
 
-	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back})
+	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back,ear2="Boii Earring +1"})
 
-	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget"})
+	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget"})
 
-	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
+	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring +1",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
-		head="Boii Masque +2",neck="Null Loop",ear1="Alabaster Earring",ear2="Boii Earring",
+		head="Boii Masque +2",neck="Null Loop",ear1="Alabaster Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -138,8 +138,8 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Cessance Earring",ear2="Boii Earring",}
-	sets.AccMaxTP = {ear1="Cessance Earring",ear2="Boii Earring"}
+	sets.MaxTP = {ear1="Cessance Earring",ear2="Boii Earring +1",}
+	sets.AccMaxTP = {ear1="Cessance Earring",ear2="Boii Earring +1"}
 	
 	--Specialty WS set overwrites.
 	sets.AccWSMightyCharge = {ammo="Yetshila +1"}
@@ -181,27 +181,27 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1287 naegling 1288 loxotic 1338 lycurgos 1281 shining one
-		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
+	sets.engaged = {ammo="Coiste Bodhar", --1292 naegling 1293 loxotic 1343 lycurgos 1286 shining one
+		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1382 lycurgos 1331 naegling 1332 loxotic 1335 shining one
-		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring",
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1387 lycurgos 1336 naegling 1337 loxotic 1340 shining one
+		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 
 	sets.engaged.Aspis= {ammo="Coiste Bodhar", 
-		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring",
+		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 		
 
 		
 	sets.engaged.Meva= {ammo="Coiste Bodhar", 
-		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring",
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back="Null Shawl",waist="Ioskeha Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 
