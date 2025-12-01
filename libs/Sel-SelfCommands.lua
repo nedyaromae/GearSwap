@@ -665,6 +665,7 @@ function handle_elemental(cmdParams)
 	if handle_job_elemental and handle_job_elemental(command, target) then
 		return
 	end
+
 	if command == 'spikes' then
 		windower.chat.input('/ma "'..data.elements.spikes_of[state.ElementalMode.value]..' Spikes" <me>')
 	elseif command == 'enspell' then
@@ -844,8 +845,6 @@ end
 
 function handle_abyred()
 	local procs = {}
-
-	elemental_ws_proc_element = 'darkness'
 
 	for proc in pairs(abyssea_elemental_ws_proc_weapons_map[elemental_ws_proc_element]) do
 		table.insert(procs, proc)
@@ -1579,7 +1578,6 @@ end
 
 -- A function for testing lua code.  Called via "gs c test".
 function handle_test(cmdParams)
-	windower.add_to_chat('Main: '..player.equipment.main)
 	if user_test then
 		user_test(cmdParams)
 	elseif job_test then

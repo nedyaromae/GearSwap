@@ -8,11 +8,6 @@ function user_job_setup()
 	state.Weapons:options('Default','DualWeapons','DualSavageWeapons','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','Armageddon')
 	
 	--Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
-	
-	WeaponType =  {['Fail-Not'] = "Bow",
-				   ['Fomalhaut'] = "Gun",
-				   ['Ataktos'] = "Gun",
-				   }
 
 	DefaultAmmo = {
 		['Bow']  = {['Default'] = "Eminent Arrow",
@@ -52,8 +47,6 @@ function user_job_setup()
 	send_command('bind !backspace input /ja "Bounty Shot" <t>')
 	send_command('bind @f9 gs c toggle RngHelper')
 	send_command('bind @` gs c cycle SkillchainMode')
-	send_command('bind !r gs c weapons MagicWeapons;gs c update')
-	send_command('bind ^q gs c weapons SingleWeapon;gs c update')
 	
 	select_default_macro_book()
 

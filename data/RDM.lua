@@ -73,6 +73,13 @@ function job_setup()
 	autofood = 'Grape Daifuku'
 	enspell = ''
 	
+	for _,buff in ipairs(player.buff_details) do
+		if data.spells.enspells:contains(buff.name) then
+			enspell = buff.name
+			break
+		end
+	end
+
 	update_melee_groups()
 	init_job_states({"Capacity","AutoFoodMode","AutoTrustMode","AutoWSMode","AutoNukeMode","AutoShadowMode","AutoStunMode","AutoDefenseMode"},{"AutoBuffMode","AutoSambaMode","AutoRuneMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","RecoverMode","ElementalMode","CastingMode","TreasureMode"})
 end
@@ -189,11 +196,11 @@ function job_post_midcast(spell, spellMap, eventArgs)
 			currentWeapons = standardize_set(sets.weapons[state.Weapons.value])
 		end
 		if spell.skill == 'Elemental Magic' and spellMap ~= 'ElementalEnfeeble' and spell.english ~= 'Impact' then
-			if currentSet and currentSet.range and currentSet.range == "Ullr" and currentWeapons.range and currentWeapons.range == 'empty' and not currentWeapons.ammo and item_available("Regal Gem") then
+			if currentSet and currentSet.range and currentSet.range == "Ullr" and currentWeapons.range and currentWeapons.range == 'empty' and not currentWeapons.ammo and item_equippable("Regal Gem") then
 				equip({ammo="Regal Gem"})
 			end
 		elseif spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' then
-			if currentSet and currentSet.range == "Ullr" and currentWeapons.range and currentWeapons.range == 'empty' and not currentWeapons.ammo and item_available("Regal Gem") then
+			if currentSet and currentSet.range == "Ullr" and currentWeapons.range and currentWeapons.range == 'empty' and not currentWeapons.ammo and item_equippable("Regal Gem") then
 				equip({ammo="Regal Gem"})
 			end
 			if spell.skill == 'Enfeebling Magic' and state.Buff.Saboteur then
@@ -244,8 +251,14 @@ function job_aftercast(spell, spellMap, eventArgs)
 end
 
 function job_buff_change(buff, gain)
-	if buff == enspell and not gain then
-		enspell = ''
+	if gain then
+		if data.spells.enspells:contains(buff) then
+			enspell = buff
+		end
+	else
+		if buff == enspell then
+			enspell = ''
+		end
 	end
 	update_melee_groups()
 end
@@ -306,14 +319,18 @@ function job_customize_melee_set(meleeSet)
 			meleeSet = set_combine(meleeSet, sets.element.enspell[enspell_element])
 		end
 
-		if item_available("Orpheus's Sash") then
+		if enspell_element == world.day_element and item_equippable("Zodiac Ring") and not state.OffenseMode.value:contains('Acc') then
+			equip({ring2="Zodiac Ring"})
+		end
+
+		if item_equippable("Orpheus's Sash") then
 			meleeSet = set_combine(meleeSet, {waist="Orpheus's Sash"})
 		elseif enspell_element == world.weather_element or enspell_element == world.day_element then
-			if item_available(data.elements.obi_of[enspell_element]) then
+			if item_equippable(data.elements.obi_of[enspell_element]) then
 				meleeSet = set_combine(meleeSet, {waist=data.elements.obi_of[enspell_element]})
-			elseif item_available('Hachirin-no-Obi') then
-				local day_potency = (spell.element == world.day_element and 10) or (spell.element == data.elements.weak_to[world.day_element] and -10) or 0
-				local weather_potency = (spell.element == world.weather_element and data.weather_bonus_potency[world.weather_intensity]) or (data.elements.weak_to[world.weather_element] and (data.weather_bonus_potency[world.weather_intensity] * -1)) or 0
+			elseif item_equippable('Hachirin-no-Obi') then
+				local day_potency = (enspell_element == world.day_element and 10) or (enspell_element == data.elements.weak_to[world.day_element] and -10) or 0
+				local weather_potency = (enspell_element == world.weather_element and data.weather_bonus_potency[world.weather_intensity]) or (data.elements.weak_to[world.weather_element] and (data.weather_bonus_potency[world.weather_intensity] * -1)) or 0
 				if (day_potency + weather_potency) >= 5 then
 					meleeSet = set_combine(meleeSet, {waist="Hachirin-no-Obi"})
 				end
