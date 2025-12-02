@@ -10,7 +10,7 @@ function user_job_setup()
 	state.HybridMode:options('Normal')
     state.WeaponskillMode:options('Normal','DD')
 	
-	gear.fastcast_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
+	gear.fastcast_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%'}}
 	gear.idle_jse_back = {name="Rudianos's Mantle",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Chance of successful block +5',}}
 	gear.CP_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%',}}
     gear.enmity_jse_back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Phys. dmg. taken-10%',}}
@@ -310,7 +310,6 @@ function init_gear_sets()
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} 
     sets.weapons.MaligAegis ={main="Malignance Sword",sub="Aegis"} 
     sets.weapons.NaeglingAspis ={main="Naegling",sub="Diamond Aspis"} --Mostly for 6 step objectives still need prob sam's roll and capped magic haste
-    sets.weapons.NaeglingAegis={main="Naegling",sub="Aegis"} --this was for aegis trials and almost nothing else
 	sets.weapons.MaligPriwen={main="Malignance Sword",sub="Priwen"} --Resist and pretty much nothing else
 	--------------------------------------
 	-- Engaged sets

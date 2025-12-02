@@ -66,9 +66,23 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Brutal Earring",ear2="Moonshade Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Sroda Ring",Ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Sroda Ring",
         back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
+    sets.precast.WS['Black Halo'] = {ammo="Oshasha's treatise",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
+        back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+
+
+    sets.precast.WS['Seraph Strike'] =  {ammo="Oshasha's treatise",
+        head="Nyame Helm",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
+        back="Alaunus's Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+
+    
  
 		
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
@@ -354,7 +368,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     left_ear="Malignance Earring",
     right_ear="Ebers Earring",
     left_ring=gear.left_stinky,
-    right_ring=gear.right_stinky,
+    right_ring="Metamor. Ring +1",
     back="Null Shawl" }
 
     sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{}}
@@ -367,9 +381,9 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
-	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque" })
-    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque"})
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque" })
+	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
+    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
