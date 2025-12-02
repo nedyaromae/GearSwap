@@ -344,7 +344,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",
     sub="Diamond Aspis",
     ammo="Pemphredo Tathlum",
-    head="Null Masque",
+    head="Theophany Cap +3",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
     legs=gear.Chironic_Enfeeblingpants,
@@ -367,9 +367,9 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
-	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield" })
-    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield"})
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield" })
+	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque" })
+    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque"})
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",back="Alaunus's Cape",sub="Ammurapi Shield",head="Null Masque" })
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
