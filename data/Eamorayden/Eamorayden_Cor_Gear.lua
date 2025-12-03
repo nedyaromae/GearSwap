@@ -68,8 +68,8 @@ function init_gear_sets()
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
         head="Laksa. Tricorne +3",neck="Null Loop",ear1="Cessance Earring",ear2="Chas. Earring",
-        body="Laksa. Frac +4",hands="Laksa. Gants +3",ring1=gear.left_stinky,ring2=gear.right_stinky,
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa Bottes +4"}
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2=gear.right_stinky,
+        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksamana bottes +4"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'])
 
@@ -190,7 +190,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Null Loop",ear1="Suppanomimi",ear2="Infused Earring",
-        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Mummu Ring",ring2="Meghanada Ring",
         back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
