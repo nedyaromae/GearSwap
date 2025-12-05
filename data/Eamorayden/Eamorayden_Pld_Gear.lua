@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal')
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
-	state.Weapons:options('SakpataDuban','SakpataAegis')
+	state.Weapons:options('SakpataDuban','SakpataAegis','Cleave')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal')
@@ -107,12 +107,12 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo={name="Oshasha's treatise",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
+        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Moonshade Earring",priority=4},ear2={name="Thrud Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.left_moonbeam,{priority=100},
         back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     sets.precast.WS.DD={ammo={name="Oshasha's treatise",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=1},ear1={name="Thrud Earring",priority=4},ear2={name="Moonshade Earring",priority=1},
+        head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=1},ear1={name="Moonshade Earring",priority=4},ear2={name="Thrud Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Sroda Ring",priority=7},
         back=gear.wsd_jse_back,{priority=5},waist={name="Sailfi Belt +1",priority=8},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
@@ -132,7 +132,7 @@ function init_gear_sets()
         back=gear.wsd_jse_back,{priority=5},waist={name="Eschan Stone",priority=20},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 		
     sets.precast.WS['Aeolian Edge'] = {ammo={name="Oshasha's treatise",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Friomisi Earring",priority=5},ear2={name="Thrud Earring",priority=7},
+        head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Moonshade Earring",priority=5},ear2={name="Friomisi Earring",priority=7},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Metamorph Ring +1",priority=8},
         back=gear.wsd_jse_back,{priority=5},waist={name="Eschan Stone",priority=4},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 	
@@ -194,10 +194,19 @@ function init_gear_sets()
         body={name="Shabti Cuirass",priority=102},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonbeam,{priority=100},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}
 
+
+     sets.midcast['Enhancing Magic']['Blaze Spikes'] = {ammo={name="Pemphredo Tathlum",priority=3},
+        head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Metamor. Ring +1",priority=7},ring2=gear.right_moonbeam,{priority=100},
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}} 
+
       sets.midcast['Enhancing Magic'].SIRD={ammo={name="Staunch Tathlum",priority=1},
         head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Knightly Earring",priority=5},ear2={name="Alabaster Earring",priority=100},
         body={name="Chev. Cuirass +2",priority=141},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=9},ring2={name="Defending Ring",priority=6},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Audumbla Sash",priority=2},legs={name="Founder's Hose",priority=54},feet={name="Sakpata's Leggings",priority=68}}
+
+
+
 
     sets.midcast['Blue Magic']['Cocoon']=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
 

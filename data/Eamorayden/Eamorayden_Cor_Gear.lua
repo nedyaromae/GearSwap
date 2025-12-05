@@ -67,7 +67,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Tellen Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Cessance Earring",ear2="Chas. Earring",
+        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Chas. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2=gear.right_stinky,
         back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksamana bottes +4"}
 
@@ -131,9 +131,9 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Null Loop",ear1="Suppanomimi",ear2="Infused Earring",
+        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
         body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa. Bottes +4"}
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -189,9 +189,9 @@ function init_gear_sets()
         back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Null Loop",ear1="Suppanomimi",ear2="Infused Earring",
+        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Mummu Ring",ring2="Meghanada Ring",
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksa. Bottes +4"}
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
