@@ -226,11 +226,11 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.ShootingDW = {main=gear.lanunpathA,sub="Gleti's Knife",range="Doomsday"}
 	sets.weapons.SavageDW = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
-	sets.weapons.EvisDW = {main="Kaja Knife",sub="Gleti's Knife",range="Anarchy +2"}
+	sets.weapons.EvisDW = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.Savage = {main="Naegling",sub="",range="Anarchy +2"}
-	sets.weapons.DualAeolian = {main="Kaja Knife",sub="Naegling",range="Anarchy +2"}
+	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
 	sets.weapons.MageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Holliday"}
-    sets.weapons.Leaden={main="Naegling",sub="Kaja Knife",range="Doomsday"}
+    sets.weapons.Leaden={main="Naegling",sub="Tauret",range="Doomsday"}
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous

@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal')
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','Cleave')
+	state.Weapons:options('SakpataDuban','SakpataAegis','Cleave','FishFly')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal')
@@ -320,6 +320,7 @@ function init_gear_sets()
     sets.weapons.MaligAegis ={main="Malignance Sword",sub="Aegis"} 
     sets.weapons.NaeglingAspis ={main="Naegling",sub="Diamond Aspis"} --Mostly for 6 step objectives still need prob sam's roll and capped magic haste
 	sets.weapons.MaligPriwen={main="Malignance Sword",sub="Priwen"} --Resist and pretty much nothing else
+    sets.weapons.FishFly={main="Malevolence",sub="Aegis"} --Literally only for cleaving vermillion fishfly
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------

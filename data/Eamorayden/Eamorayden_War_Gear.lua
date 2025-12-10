@@ -23,7 +23,10 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	
-    sets.Enmity = {ammo="Sapience Orb",head="Pummeler's Mask +2",body="Souv. Cuirass +1",legs="Souv. Diechlings +1",ring1="Eihwaz Ring",ring2="Apeile Ring +1",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam Necklace"}
+    sets.Enmity = {ammo="Sapience Orb",
+		head="Pummeler's Mask +2",neck="Moonbeam Necklace",ear1="Cryptic Earring",ear2="Friomisi Earring",
+		body="Souv. Cuirass +1",hands="Pumm. Mufflers +2",ring1="Apeile Ring +1",ring2="Eihwaz Ring",
+		back=gear.vit_wsd_jse_back,waist="Flume Belt",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
@@ -249,7 +252,7 @@ function select_default_macro_book()
 	end
 
 function user_job_lockstyle()
-	windower.chat.input('/lockstyleset 003')
+	windower.chat.input('/lockstyleset 011')
 	end
 
 function job_post_precast(spell, spellMap, eventArgs)

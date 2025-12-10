@@ -38,7 +38,7 @@ function init_gear_sets()
     ammo="Impatiens", --2 qc
     head="Ebers Cap +2", --10 
     body="Inyanga Jubbah +2", --14
-    hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}, --7
+    hands="Fanatic Gloves", --7
     legs="Aya. Cosciales +2", --6
     feet="Regal Pumps +1", --5-7 Depending on unity
     neck="Cleric's Torque", --6 
@@ -111,7 +111,7 @@ function init_gear_sets()
 	
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
 		
 		sets.midcast['Arise']=set_combine(sets.midcast.FastRecast,{})
@@ -342,15 +342,14 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Banish=set_combine(sets.midcast.Holy,{})
 	sets.midcast.BanishII=set_combine(sets.midcast.Banish,{})
 	sets.midcast.BanishIII=set_combine(sets.midcast.Banish,{})
-	sets.midcast.Banishga=set_combine(sets.midcast.Holy, {hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}})
-	sets.midcast.BanishgaII=set_combine(sets.midcast.Holy, {hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}}})
-	
+	sets.midcast.Banishga=set_combine(sets.midcast.Holy,{hands="Fanatic Gloves"})
+	sets.midcast.BanishgaII=set_combine(sets.midcast.Holy,{hands="Fanatic Gloves"})
 	
 	
 
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands={ name="Fanatic Gloves", augments={'MP+5','"Fast Cast"+7',}},ring1="Murky Ring",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
 		
 	
