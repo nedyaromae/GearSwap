@@ -850,6 +850,8 @@ for _, rline in pairs(gearswap.res.spells) do
 	end
 end
 
+buff_table_by_name = gearswap.res.buffs:rekey('en')
+
 data.status_map = T{
 	{buff='doom',spell='Cursna'},
 	{buff='petrification',spell='Stona'},
