@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','Acc','FullAcc')
-    state.WeaponskillMode:options('Match','PDL','Acc')
+    state.WeaponskillMode:options('Match','PDL','Acc','Ngai')
     state.HybridMode:options('Normal','Meva','Ngai')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
@@ -62,6 +62,10 @@ sets.precast.FC = {ammo="Sapience Orb",
 		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}	
 	
+	sets.precast.WS.Ngai={ammo="Coiste Bodhar",
+		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Sherida Earring",
+		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Epona's Ring",ring2="Gere Ring",
+		back=gear.str_jse_back,waist="Moonbow belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
 
 	sets.precast.WS.Acc=	set_combine(sets.precast.WS, {hands="Mummu Wrists +2",Neck="Mnk. Nodowa +1",back=gear.dex_jse_back}) 
@@ -97,6 +101,12 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS["Tornado Kick"].FullAcc = set_combine(sets.precast.WS["Tornado Kick"], sets.precast.WS.FullAcc,{ear2="Moonshade Earring"})
 
 
+	sets.precast.WS['Raging Fists'].Ngai    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+	sets.precast.WS['Howling Fist'].Ngai   = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+	sets.precast.WS['Dragon Kick'].Ngai  = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+	sets.precast.WS['Tornado Kick'].Ngai   = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+
+
 
 --	sets.precast.WS['Cataclysm'] = {ammo="Ghastly Tathlum +1",
 --		neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Crematio Earring",
@@ -122,7 +132,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	
 
 	-- Idle sets
-	sets.idle = {ammo="Staunch Tathlum",
+	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}

@@ -6,7 +6,6 @@ function user_job_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
-	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
 	state.Weapons:options('SavageDW','ShootingDW','DualAeolian','EvisDW')
 	state.CompensatorMode:options('Always','300','1000','Never')
 
@@ -45,7 +44,7 @@ function init_gear_sets()
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
     sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
@@ -148,18 +147,18 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Nyame mail",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Cornelia's Ring",
+        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Cornelia's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Wildfire']  = {ammo=gear.MAbullet,
         head="Nyame Helm",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 		
