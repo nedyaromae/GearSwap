@@ -6,7 +6,13 @@ function user_job_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
-	state.Weapons:options('SavageDW','ShootingDW','DualAeolian','EvisDW')
+	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
+        state.WeaponSets:options('Default','Dual')
+        weapon_sets = {
+		['Default'] = {'Savage','Evis','Shooting'},
+		['Dual'] = {'DualSavage','DualEvis','DualAeolian','DualLeaden'}}
+	    default_weapons = 'Savage'
+	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
 
     gear.RAbullet = "Adlivun Bullet"
@@ -19,7 +25,6 @@ function user_job_setup()
 	gear.tp_ranger_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
 	gear.tp_jse_back = { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.dw_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
@@ -223,13 +228,15 @@ function init_gear_sets()
 	sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",}
 
 	-- Weapons sets
-	sets.weapons.ShootingDW = {main=gear.lanunpathA,sub="Gleti's Knife",range="Doomsday"}
-	sets.weapons.SavageDW = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
-	sets.weapons.EvisDW = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
-	sets.weapons.Savage = {main="Naegling",sub="",range="Anarchy +2"}
+	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Gleti's Knife",range="Doomsday"}
+	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
+	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
-	sets.weapons.MageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Holliday"}
-    sets.weapons.Leaden={main="Naegling",sub="Tauret",range="Doomsday"}
+	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Holliday"}
+    sets.weapons.DualLeaden={main="Naegling",sub="Tauret",range="Doomsday"}
+    sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
+    sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Holliday"}
+    sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
