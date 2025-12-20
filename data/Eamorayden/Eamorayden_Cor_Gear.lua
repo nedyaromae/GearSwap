@@ -10,13 +10,13 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting'},
-		['Dual'] = {'DualSavage','DualEvis','DualAeolian','DualLeaden'}}
+		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualWF'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
 
-    gear.RAbullet = "Adlivun Bullet"
-    gear.WSbullet = "Adlivun Bullet"
+    gear.RAbullet = "Chrono Bullet"
+    gear.WSbullet = "Chrono Bullet"
     gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
@@ -71,8 +71,8 @@ function init_gear_sets()
         back="Null Shawl",waist="Tellen Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Chas. Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2=gear.right_stinky,
+        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksamana bottes +4"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'])
@@ -136,7 +136,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
-        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Meghanada Ring",
+        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Cacoethic Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
@@ -167,7 +167,7 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 		
-    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{ear2="Moonshade Earring"})
+    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{ammo=gear.WSbullet})
 		
 		--Because omen skillchains.
 
@@ -188,13 +188,13 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Petrov Ring",
         back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Mummu Ring",ring2="Meghanada Ring",
+        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Mummu Ring",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
@@ -212,7 +212,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Infused Earring",
+        head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Infused Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
@@ -228,14 +228,14 @@ function init_gear_sets()
 	sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",}
 
 	-- Weapons sets
-	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Gleti's Knife",range="Doomsday"}
+	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
-	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Holliday"}
-    sets.weapons.DualLeaden={main="Naegling",sub="Tauret",range="Doomsday"}
+	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Fomalhaut"}
+    sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
-    sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Holliday"}
+    sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
     -- Engaged sets
 

@@ -357,7 +357,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",
     sub="Diamond Aspis",
     ammo="Pemphredo Tathlum",
-    head="Theophany Cap +3",
+    head="Theophany Cap +4",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
     legs=gear.Chironic_Enfeeblingpants,
@@ -368,7 +368,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     right_ear="Ebers Earring",
     left_ring=gear.left_stinky,
     right_ring="Metamor. Ring +1",
-    back="Null Shawl" }
+    back="Null Shawl"}
 
     sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{}}
 
