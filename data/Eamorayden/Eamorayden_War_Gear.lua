@@ -93,6 +93,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,ammo="Crepuscular Pebble"})
      
     sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})

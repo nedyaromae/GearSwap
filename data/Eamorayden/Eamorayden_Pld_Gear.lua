@@ -81,7 +81,7 @@ function init_gear_sets()
 
 	
     -- add mnd for Chivalry
-    sets.precast.JA['Chivalry'] = {ammo={name="Staunch Tathlum +1",priority=3},
+    sets.precast.JA['Chivalry'] = {ammo={name="Crepuscular Pebble",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=7},ear2={name="Etiolation Earring",priority=50},
         body={name="Nyame Mail",priority=136},hands={name="Cab. Gauntlets +2",priority=74},ring1={name="Murky Ring",priority=5},ring2=gear.right_stinky,{priority=8},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
@@ -218,7 +218,7 @@ function init_gear_sets()
     
     sets.midcast.Shell.SIRD=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
 
-	sets.midcast['Enlight'] = {ammo={name="Staunch Tathlum +1",priority=3},
+	sets.midcast['Enlight'] = {ammo={name="Crepuscular Pebble",priority=3},
         head={name="Jumalik Helm",priority=45},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=4},
         body={name="Rev. Surcoat +3",priority=254},hands={name="Eschite Gauntlets",priority=29},ring1=gear.left_stinky,{priority=6},ring2=gear.right_stinky,{priority=5},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}	
@@ -232,7 +232,7 @@ function init_gear_sets()
 
     sets.midcast['Enlight II'].SIRD=set_combine(sets.midcast['Enlight'].SIRD,{})
 	
-	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Staunch Tathlum +1",priority=3},
+	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
         head={name="Odyssean Helm",priority=112},neck={name="Melic Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Alabaster Earring",priority=100},
         body={name="Yorium Cuirass",priority=113},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Murky Ring",priority=7},ring2=gear.right_stinky,{priority=8},
         back={name="Weard Mantle",{priority=39}},waist={name="Flume Belt",priority=5},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=227}}

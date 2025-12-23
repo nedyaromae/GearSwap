@@ -131,7 +131,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksa. Frac +4",hands="Chasseur's gants +2 ",ring1="Epona's Ring",ring2="Cornelia's Ring",
+        body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epona's Ring",ring2="Cornelia's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,

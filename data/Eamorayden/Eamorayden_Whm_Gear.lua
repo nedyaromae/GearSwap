@@ -162,7 +162,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 
 	sets.midcast.LightWeatherCure = {main="Chatoyant Staff",
     sub="Mensch Strap +1",
-    ammo="Staunch Tathlum +1",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
@@ -178,7 +178,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 
 	sets.midcast.LightWeatherCureSolace = {main="Chatoyant Staff",
     sub="Mensch Strap +1",
-    ammo="Staunch Tathlum +1",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
     hands="Theophany Mitts +4",
@@ -213,7 +213,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 		
 	sets.midcast.LightWeatherCuraga = {main="Chatoyant Staff",
     sub="Mensch Strap +1",
-    ammo="Staunch Tathlum +1",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
@@ -261,23 +261,23 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     back="Alaunus's Cape",}
 
 
-    sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Staunch Tathlum +1",
+    sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
 
-	sets.midcast.StatusRemoval = {Main="Daybreak",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
+	sets.midcast.StatusRemoval = {Main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Lebeche Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Nyame Flanchard",feet="Ebers Duckbills +2"}
 		
 
-	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Telchine Cap",neck="Melic torque",ear1="Mimir Earring",ear2="Andoaa Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1=gear.left_stinky,ring2=gear.right_stinky,
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
-    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Telchine Cap",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
@@ -294,7 +294,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 
-	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
@@ -303,7 +303,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Protect=set_combine(sets.midcast.Protectra,{})
     sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring1="Sheltered Ring"})
     sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
-	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Andoaa Earring",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
@@ -392,7 +392,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
-	sets.midcast['Dia II'] = {Main="Daybreak",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
+	sets.midcast['Dia II'] = {Main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
 		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Alaunus's Cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
