@@ -53,9 +53,9 @@ function init_gear_sets()
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
     sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
-        head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chass. Earring",
-        body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
-        back=gear.dw_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
+        body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
+        back=gear.dw_jse_back,waist="Flume Belt",legs="Malignance ",feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
@@ -64,6 +64,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +2"})
+    sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
@@ -98,7 +99,7 @@ function init_gear_sets()
 
     sets.precast.RA = {ammo=gear.RAbullet,  
         head="Chass. Tricorne +1",neck="Comm. Charm +1",ear1="",ear2="",
-        body="Oshosi Vest",hands="Lanun Gants +1",ring1="",ring2="",
+        body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +3",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4"})
@@ -189,12 +190,12 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Mummu Ring",ring2="Cacoethic Ring +1",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
