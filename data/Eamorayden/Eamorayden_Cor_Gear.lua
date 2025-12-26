@@ -20,6 +20,7 @@ function user_job_setup()
     gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
+    ammostock=200
     --Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
 
 	gear.tp_ranger_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
@@ -55,7 +56,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
         head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
-        back=gear.dw_jse_back,waist="Flume Belt",legs="Malignance ",feet="Nyame Sollerets"}
+        back=gear.dw_jse_back,waist="Flume Belt",legs="Malignance Tights",feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
@@ -137,8 +138,14 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
-        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Cacoethic Ring",
+        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Cacoethic Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
+
+
+    sets.precast.WS['Numbing Shot']={ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epona's Ring",ring2="Cornelia's Ring",
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
