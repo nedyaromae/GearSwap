@@ -96,7 +96,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Sapience Orb",
 		head=gear.herculean_fc_head,neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-		body="Dread Jupon",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
+		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		legs="Enif Cosciales"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})

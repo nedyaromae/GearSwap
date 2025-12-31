@@ -44,8 +44,10 @@ sets.precast.JA['Chakra'] = {head="Nyame Helm",neck="Unmoving Collar +1",ear1="E
 	-- Fast cast sets for spells
 	
 sets.precast.FC = {ammo="Sapience Orb",
-	neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-	hands="Leyline Gloves",legs="Rawhide Trousers",ring1="Naji's Loop",ring2="Lebeche Ring"}
+		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Lebeche Ring",
+		back="",waist="",legs="",feet=""}
+	
 
 --	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})
 
@@ -134,7 +136,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
+		body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets

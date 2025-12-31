@@ -9,7 +9,7 @@ function user_job_setup()
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
-		['Default'] = {'Savage','Evis','Shooting'},
+		['Default'] = {'Savage','Evis','Shooting','WF'},
 		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualWF'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
@@ -94,8 +94,8 @@ function init_gear_sets()
     
     sets.precast.FC = {
         head="Carmine Mask",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-        body="",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Naji's Loop",
-        back="",waist="",legs="Rawhide Trousers",feet=""}
+        body="Taeon Tabard",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Naji's Loop",
+        back="Solemnity Cape",waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
 
     sets.precast.RA = {ammo=gear.RAbullet,  
@@ -175,7 +175,9 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 		
-    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{ammo=gear.WSbullet})
+    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{body="Nyame Mail",ammo=gear.WSbullet})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{feet="Nyame Sollerets"})
+
 		
 		--Because omen skillchains.
 
@@ -187,7 +189,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Carmine Mask",neck="Baetyl Pendant",ear1="Alabaster Earring.",ear2="Loquac. Earring",
         body="Dread Jupon",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
+        back="",waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
         
     -- Specific spells
 
@@ -197,8 +199,8 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
-        back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        body="Ikenga's Vest",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
@@ -236,15 +238,16 @@ function init_gear_sets()
 	sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",}
 
 	-- Weapons sets
-	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
+	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Kustawi +1",range="Fomalhaut"}
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
-	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub=gear.lanunpathA,range="Fomalhaut"}
+	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
+    sets.weapons.WF={main="Tauret",sub="Nuksu Shield",range="Doomsday"}
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous

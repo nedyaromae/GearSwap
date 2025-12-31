@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
 	state.OffenseMode:options('Normal','FullAcc')
-	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne','Aspis')
+	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne','Claymore')
 	state.WeaponskillMode:options('Normal','PDL')
 	state.HybridMode:options('Normal','Meva')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
@@ -130,7 +130,7 @@ function init_gear_sets()
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
 		head="Boii Masque +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamor. Ring +1",ring2="Crepuscular Ring"
+		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamor. Ring +1",ring2="Crepuscular Ring",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -146,6 +146,12 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+
+	sets.precast.WS["Resolution"]={ammo="Knobkierrie",
+		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
 
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -246,6 +252,7 @@ function init_gear_sets()
 	sets.weapons.Gaxe = {main="Lycurgos", sub="Utu Grip"}
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 	sets.weapons.Staff={main="Kaja Staff",sub="Utu Grip"}
+	sets.weapons.Claymore={main="Agwu's Claymore",sub="Utu Grip"}
 
 end
 	
