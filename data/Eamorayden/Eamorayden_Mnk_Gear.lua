@@ -76,8 +76,8 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",ammo="Knobkierrie",legs="Nyame Flanchard",feet="Nyame Sollerets"})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear2="Odr earring"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets"})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
@@ -156,25 +156,21 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
+	sets.engaged = {ammo="Coiste Bodhar", --1300 imp down 1293 imp up -- all engaged accs are /drg - like 10 or osme shit for other jobs 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
-		sets.engaged.Acc = {ammo="Coiste Bodhar", --1325 imp down 1318 imp up 
+		sets.engaged.Acc = {ammo="Coiste Bodhar", --1343 imp down 1336 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
-		sets.engaged.FullAcc ={ammo="Coiste Bodhar", --1376 imp down 1367 imp up
+		sets.engaged.FullAcc ={ammo="Coiste Bodhar", --1390 imp down 1383 imp up
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
 		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Murky Ring",ring2="Chirich Ring +1",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
---sets.engaged.SB = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up --similar to regular engaged but feeds less tp bc less MA just made this reuglar enagaged fuck it dead dds do no damage and meva is ridiculous
---		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
---		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
---		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
@@ -207,7 +203,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 	-- Weapons sets
 	sets.weapons.Godhands = {main="Godhands"}
 --	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Kaja Staff",sub=""}
+	sets.weapons.Staff = {main="Xoanon",sub=""}
 --	sets.weapons.ProcStaff = {main="Erudite's Staff"}
 --	sets.weapons.ProcClub = {main="Mafic Cudgel"}
 --	sets.weapons.ProcSword = {main="Kyukoto",sub=empty}

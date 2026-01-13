@@ -95,7 +95,10 @@ function init_gear_sets()
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,ammo="Crepuscular Pebble"})
      
-    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
+   sets.precast.WS["Resolution"]={ammo="Knobkierrie",
+		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
     sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
@@ -104,11 +107,11 @@ function init_gear_sets()
     sets.precast.WS['Rampage'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Rampage'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
-    sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Raging Rush'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
-	
-    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back})
+    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",body="Sakpata's Plate",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back})
     sets.precast.WS["Ukko's Fury"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+
+	sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS["Ukko's Fury"], {})
+    sets.precast.WS['Raging Rush'].FullAcc = set_combine( sets.precast.WS["Ukko's Fury"].FullAcc, {})
 	
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["King's Justice"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -148,10 +151,7 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
-	sets.precast.WS["Resolution"]={ammo="Knobkierrie",
-		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
-		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
+	
 
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -198,13 +198,13 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1297 naegling 1298 loxotic 1348 lycurgos 1301 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1300 naegling 1302 loxotic 1348 lycurgos 1301 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1392 lycurgos 1341 naegling 1342 loxotic 1345 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1392 lycurgos 1344 naegling 1345 loxotic 1345 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
@@ -251,7 +251,7 @@ function init_gear_sets()
 	sets.weapons.ShiningOne= {main="Shining One", sub="Utu Grip"}
 	sets.weapons.Gaxe = {main="Lycurgos", sub="Utu Grip"}
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
-	sets.weapons.Staff={main="Kaja Staff",sub="Utu Grip"}
+	sets.weapons.Staff={main="Xoanon",sub="Utu Grip"}
 	sets.weapons.Claymore={main="Agwu's Claymore",sub="Utu Grip"}
 
 end

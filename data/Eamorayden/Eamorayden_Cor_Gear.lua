@@ -50,7 +50,7 @@ function init_gear_sets()
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac +4"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
     sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
@@ -73,7 +73,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Tellen Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksamana bottes +4"}
 
@@ -137,7 +137,7 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
         body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Cacoethic Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 
@@ -160,23 +160,23 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Cornelia's Ring",
+        body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Cornelia's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Wildfire']  = {ammo=gear.MAbullet,
         head="Nyame Helm",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Arvina Ringlet +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 		
-    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{body="Nyame Mail",ammo=gear.WSbullet})
-    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{feet="Nyame Sollerets"})
+    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",ammo=gear.WSbullet})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets"})
 
 		
 		--Because omen skillchains.
@@ -203,7 +203,7 @@ function init_gear_sets()
         back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-        head="Laksa. Tricorne +3",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
 		
