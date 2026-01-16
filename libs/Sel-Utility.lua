@@ -1365,7 +1365,8 @@ function check_abilities(spell, spellMap, eventArgs)
 				return true
 			end
 		elseif spell.type == 'Step' or spell.type == 'Effusion' then
-			if player.status == 'Idle' and windower.ffxi.get_ability_recasts()[220] < latency and spell.target and spell.target.valid_target and spell.target.spawn_type == 16 and spell.target.distance < (3.2 + spell.target.model_size) and player.tp > 99 then
+			if player.status == 'Idle' and windower.ffxi.get_ability_recasts()[spell.recast_id] < latency and spell.target and spell.target.valid_target and spell.target.spawn_type == 16 and spell.target.distance < (3.2 + spell.target.model_size) then
+				if spell.type == 'Step' and player.tp <= 99 then return false end
 				packets.inject(packets.new('outgoing', 0x1a, {
 					['Target'] = spell.target.id,
 					['Target Index'] = spell.target.index,
@@ -1373,7 +1374,7 @@ function check_abilities(spell, spellMap, eventArgs)
 				}))
 
 				if state.IdleStep.value then
-					send_command:schedule(1,'input /attack off')
+					windower.chat.input:schedule(1,'/attack off')
 				end
 				return true
 			end
@@ -2510,7 +2511,7 @@ function check_rune()
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 
 		if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
-			if abil_recasts[92] > 0 then return false end
+			if abil_recasts[10] > latency then return false end
 			windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
 			add_tick_delay()
 			return true
