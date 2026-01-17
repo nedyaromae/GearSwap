@@ -460,7 +460,7 @@ disable_priority = T{
 }:reverse() --We reverse the list here so that the highest priority is at the top.
 
 data.equipment.cprings = L{"Endorsement Ring","Trizek Ring","Vocation Ring","Capacity Ring","Facility Ring"}
-data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress Band","Resolution Ring"}
+data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress Band","Resolution Ring","Novennial Ring", "Decennial Ring", "DuoDecennial Ring","UnDecennial Ring"}
 
 -------------------------------------------------------------------------------------------------------------------
 -- Tool Maps/Lists
