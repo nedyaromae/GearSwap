@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal') 
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP','Cleave') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','Cleave','NaeglingBlurred')
+	state.Weapons:options('SakpataDuban','SakpataAegis','Cleave')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal')
@@ -36,7 +36,7 @@ function init_gear_sets()
     sets.Enmity.Meva = {ammo={name="Sapience Orb",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Chev. Cuirass +2",priority=141},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Apeile Ring +1",priority=2},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Chev. Cuisses +2",priority=117},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.idle_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Chev. Cuisses +2",priority=117},feet={name="Chev. Sabatons +2",priority=42}}
 
     sets.Enmity.DT=set_combine(sets.Enmity.Meva,{})
 		
