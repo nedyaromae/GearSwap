@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting','WF'},
-		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualWF'}}
+		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualWF','DualMeleeLS'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -73,9 +73,9 @@ function init_gear_sets()
         back="Null Shawl",waist="Tellen Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
-        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2="Cacoethic Ring +1",
-        back="Null Shawl",waist="Null Belt",legs="Malignance Tights",feet="Laksamana bottes +4"}
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Metamor. Ring +1",
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'])
 
@@ -94,14 +94,14 @@ function init_gear_sets()
     
     sets.precast.FC = {
         head="Carmine Mask",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-        body="Taeon Tabard",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Naji's Loop",
+        body="Taeon Tabard",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Solemnity Cape",waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
 
     sets.precast.RA = {ammo=gear.RAbullet,  
         head="Chass. Tricorne +1",neck="Comm. Charm +1",ear1="",ear2="",
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
-        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +3",feet="Meg. Jam. +2"}
+        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4"})
@@ -139,7 +139,7 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
         body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Cacoethic Ring",
-        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 
 
     sets.precast.WS['Numbing Shot']={ammo=gear.WSbullet,
@@ -205,7 +205,7 @@ function init_gear_sets()
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
-        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +3",feet="Laksa. Bottes +4"}
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
@@ -244,6 +244,7 @@ function init_gear_sets()
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
 	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
+    sets.weapons.DualMeleeLS={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}

@@ -45,7 +45,7 @@ sets.precast.JA['Chakra'] = {head="Nyame Helm",neck="Unmoving Collar +1",ear1="E
 	
 sets.precast.FC = {ammo="Sapience Orb",
 		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Lebeche Ring",
+		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs="",feet=""}
 	
 

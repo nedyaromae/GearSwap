@@ -39,17 +39,17 @@ function init_gear_sets()
     head="Ebers Cap +2", --10 
     body="Inyanga Jubbah +2", --14
     hands="Fanatic Gloves", --7
-    legs="Aya. Cosciales +2", --6
+    legs="Prestige Brais", --7
     feet="Regal Pumps +1", --5-7 Depending on unity
     neck="Cleric's Torque", --6 
     waist="Witful Belt", --3 and 3 QC 
-    left_ear="Loquac. Earring", --2
+    left_ear="Etiolation Earring", --1 and some hp to keep that up 
     right_ear="Malignance Earring", --4 
     left_ring="Kishar Ring", -- 4
     right_ring="Lebeche Ring", --2 QC
     back="Alaunus's Cape" } --10 
 	
- sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pant. +2"})
+ sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
  sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
 
 --	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
@@ -109,10 +109,10 @@ function init_gear_sets()
 	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
 	
 	
-    sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
+    sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
+		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Alabaster Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
+		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Regal Pumps +1"}
 		
 		sets.midcast['Arise']=set_combine(sets.midcast.FastRecast,{})
 		sets.midcast['Raise III']=set_combine(sets.midcast.FastRecast,{})
@@ -126,7 +126,7 @@ function init_gear_sets()
 	
 	sets.midcast.Cure = {main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Pemphredo Tathlum",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
@@ -146,7 +146,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.CureSolace = {
 	main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Pemphredo Tathlum",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Ebers Bliaut +2",
     hands="Theophany Mitts +4",
@@ -195,7 +195,7 @@ sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})
 
 	sets.midcast.Curaga = {main="Queller Rod",
     sub="Genmei Shield",
-    ammo="Pemphredo Tathlum",
+    ammo="Crepuscular Pebble",
     head="Ebers cap +2",
     body="Theo. Bliaut +4",
     hands="Theophany Mitts +4",
@@ -264,12 +264,12 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
+		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
 
 	sets.midcast.StatusRemoval = {Main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Lebeche Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Nyame Flanchard",feet="Ebers Duckbills +2"}
+		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
 		
 
 	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
@@ -289,13 +289,13 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {feet="Ebers Duckbills +2"})
 
 	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Eabani Earring",
+		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Ran Earring",
 		body="Ros. Jaseran +1",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 
 	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
+		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 	
@@ -333,7 +333,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
     sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
 		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Eihwaz Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Ebers Duckbills +2"}
+		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
     
     sets.midcast.Flash.DT=set_combine(sets.midcast.Flash,{})
 		
@@ -350,7 +350,7 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Loquac. Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Regal Pumps +1"}
+		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Regal Pumps +1"}
 		
 	
 
@@ -433,7 +433,7 @@ sets.idle={
    head="Null Masque",
    body="Ebers Bliaut +2",
    hands="Nyame Gauntlets",
-   legs="Nyame Flanchard",
+   legs="Prestige Brais",
    feet="Nyame Sollerets",
    neck="Loricate Torque +1",
    waist="Carrier's Sash",
@@ -467,10 +467,10 @@ sets.idle.Physical=set_combine(sets.idle.PDT,{})
 sets.IdleWakeUp = {main="Prime Maul"}
     -- Defense sets
 
-	sets.defense.PDT = {main="Daybreak",sub="Diamond Aspis",ammo="Eluder's Sachet",
-		head="Null Masque",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
+	sets.defense.PDT = {main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Nyame Sollerets"}
 
   
 		

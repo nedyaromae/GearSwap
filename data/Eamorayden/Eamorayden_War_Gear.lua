@@ -55,7 +55,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {ammo="Sapience Orb",
 		head="Sakpata's Helm",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-		body="",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Lebeche Ring",
+		body="",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs="",feet="Odyssean Greaves"}
 	
 

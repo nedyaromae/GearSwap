@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Aeolian','Savage','Evisceration')
+	state.Weapons:options('Aeolian','Savage','Evisceration','Asuran')
 
 	state.AmbushMode = M(false, 'Ambush Mode')
 
@@ -47,6 +47,7 @@ function init_gear_sets()
 	sets.weapons.Aeolian = {main="Tauret",sub="Malevolence"}
 	sets.weapons.Savage = {main="Naegling",sub="Gleti's Knife"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Gleti's Knife"}
+    sets.weapons.Asuran={main="Karambit"}
 	
     -- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="C. Palug Stone",
@@ -109,7 +110,7 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Oshasha's treatise",
+    sets.precast.WS = {ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Epona's Ring",
         back="Toutatis's Cape",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
@@ -125,6 +126,12 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 	
 	sets.precast.WS['Gust Slash']=sets.precast.WS['Aeolian Edge']
+
+
+     sets.precast.WS['Asuran Fists']={ammo="Coiste Bodhar",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Sroda Ring",
+        back="Toutatis's Cape",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Cessance Earring"}
