@@ -118,11 +118,11 @@ function init_gear_sets()
 	
 
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
-		head="Null Masque",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Null Masque",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back="Solemnity Cape",waist="Null Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
+		back="Null Shawl",waist="Reiki Yotai",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
-	sets.precast.WS["Flat Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
+	sets.precast.WS["Fast Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
 
 
 	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back,ear2="Boii Earring +1"})
@@ -253,6 +253,7 @@ function init_gear_sets()
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 	sets.weapons.Staff={main="Xoanon",sub="Utu Grip"}
 	sets.weapons.Claymore={main="Agwu's Claymore",sub="Utu Grip"}
+	sets.weapons.Vagary={main="Reikiko",sub="Diamond Aspis"}
 
 end
 	
