@@ -1104,6 +1104,18 @@ function general_post_midcast(spell, spellMap, eventArgs)
 						elseif sets.MagicBurst then
 							equip(sets.MagicBurst)
 						end
+						
+						if can_dual_wield then
+							if spellMap == 'Helix' and state.CastingMode.value:contains('Resistant') and sets.ResistantHelixBurst and sets.ResistantHelixBurst.DW then
+								equip(sets.ResistantHelixBurst.DW)
+							elseif state.CastingMode.value:contains('Resistant') and sets.ResistantMagicBurst and sets.ResistantMagicBurst.DW then
+								equip(sets.ResistantMagicBurst.DW)
+							elseif spellMap == 'Helix' and sets.HelixBurst and sets.HelixBurst.DW then
+								equip(sets.HelixBurst.DW)
+							elseif sets.MagicBurst and sets.MagicBurst.DW then
+								equip(sets.MagicBurst.DW)
+							end
+						end
 					end
 
 					set_elemental_obi_cape_ring(spell, spellMap)
