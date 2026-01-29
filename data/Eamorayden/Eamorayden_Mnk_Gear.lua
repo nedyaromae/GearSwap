@@ -45,7 +45,7 @@ sets.precast.JA['Chakra'] = {head="Nyame Helm",neck="Unmoving Collar +1",ear1="E
 	
 sets.precast.FC = {ammo="Sapience Orb",
 		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
+		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs="",feet=""}
 	
 
@@ -77,7 +77,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets"})
-	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {})
+	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
@@ -198,6 +198,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 --	sets.NightIdle = {}
 --   sets.Knockback = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 --	sets.Skillchain = {legs="Ryuo Hakama"}
 	
 	-- Weapons sets

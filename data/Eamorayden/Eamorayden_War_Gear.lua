@@ -74,7 +74,7 @@ function init_gear_sets()
 
 	sets.precast.WS.PDL={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Sakpata's Plate",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Nyame Sollerets"}
 		
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
@@ -93,7 +93,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
-	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,ammo="Crepuscular Pebble"})
+	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,body="Sakpata's Plate",hands="Sakpata's Gauntlets"})
      
    sets.precast.WS["Resolution"]={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
@@ -198,8 +198,8 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1300 naegling 1302 loxotic 1348 lycurgos 1301 shining one
-		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
+	sets.engaged = {ammo="Coiste Bodhar", --1284 naegling 1286 loxotic 1332 lycurgos 1285 shining one
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		

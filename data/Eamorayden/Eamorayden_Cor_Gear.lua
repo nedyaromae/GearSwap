@@ -2,7 +2,7 @@
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
-    state.WeaponskillMode:options('Match','Normal', 'Acc','Proc')
+    state.WeaponskillMode:options('Match','Normal', 'Acc','PDL')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
@@ -25,10 +25,10 @@ function user_job_setup()
 
 	gear.tp_ranger_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
-	gear.tp_jse_back = { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.dw_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
+    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+4','Weapon skill damage +10%',}}
     gear.lanunpathC={name="Lanun Knife", augments={'Path: C',}}
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
 
@@ -94,7 +94,7 @@ function init_gear_sets()
     
     sets.precast.FC = {
         head="Carmine Mask",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-        body="Taeon Tabard",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
+        body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Solemnity Cape",waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
 
@@ -131,10 +131,15 @@ function init_gear_sets()
         body="Nyame Mail",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
+    sets.precast.WS['Savage Blade'].PDL = {ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epona's Ring",ring2="Cornelia's Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+        body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Arvina Ringlet +1",ring2="Cornelia's Ring",
+        back=gear.agi_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
@@ -142,10 +147,6 @@ function init_gear_sets()
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 
 
-    sets.precast.WS['Numbing Shot']={ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epona's Ring",ring2="Cornelia's Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -175,8 +176,8 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
 		
-    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",ammo=gear.WSbullet})
-    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Null Loop"})
+    sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
 
 		
 		--Because omen skillchains.
@@ -198,7 +199,7 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
+        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Enervating Earring",ear2="Crep. Earring",
         body="Ikenga's Vest",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
@@ -236,6 +237,7 @@ function init_gear_sets()
 
 
 	sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",}
+    sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 
 	-- Weapons sets
 	sets.weapons.DualShooting = {main=gear.lanunpathA,sub="Kustawi +1",range="Fomalhaut"}

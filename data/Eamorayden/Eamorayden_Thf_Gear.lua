@@ -28,6 +28,7 @@ function init_gear_sets()
     --------------------------------------
 
 	sets.TreasureHunter = {waist="Chaac Belt",feet="Skulk. Poulaines +1",ammo="Per. Lucky Egg"}
+    sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
   --  sets.Kiting = {ring2="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -96,8 +97,8 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Sapience Orb",
-		head=gear.herculean_fc_head,neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
-		body="Taeon Tabard",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
+		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		legs="Enif Cosciales"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})

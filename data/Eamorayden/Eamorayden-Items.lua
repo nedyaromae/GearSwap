@@ -17,3 +17,5 @@ gear.Chironic_refreshhat={name="Chironic Hat", augments={'STR+10','CHR+8','"Refr
 gear.valorousTH={name="Valorous Mask", augments={'Mag. Acc.+30','"Mag.Atk.Bns."+24','"Treasure Hunter"+2','Accuracy+2 Attack+2','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
 gear.left_moonbeam ={ name="Moonbeam Ring" , bag="Wardrobe 2"}
 gear.right_moonbeam ={ name="Moonbeam Ring", bag="Wardrobe 3"}
+gear.TaeonPhalanxBody={name="Taeon Tabard", augments={'Phalanx +3',}}
+gear.TaeonFCBody={ name="Taeon Tabard", augments={'"Fast Cast"+5',}}

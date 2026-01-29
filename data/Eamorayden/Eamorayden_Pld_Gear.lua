@@ -324,7 +324,7 @@ function init_gear_sets()
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
 
-    sets.idle.ConvertMP= {ammo={name="Eluder's Sachet",priority=3},
+    sets.idle.ConvertMP= {ammo={name="Homiliary",priority=3},
     head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Flume Belt",priority=2},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
@@ -339,10 +339,13 @@ function init_gear_sets()
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shadow Ring",priority=30},
     back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
-    sets.idle.Evasion={ammo={name="Amar Cluster",priority=3}, --This is for limbus nms 
+   sets.idle.Evasion={ammo={name="Amar Cluster",priority=3}, --This is for limbus nms 
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shadow Ring",priority=30},
-    back="Null Shawl",waist={name="Null Belt",priority=25},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+    back={name="Null Shawl",priority=5},waist={name="Null Belt",priority=2},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+
+
+
 
 
 
