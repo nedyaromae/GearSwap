@@ -743,7 +743,7 @@ abyssea_elemental_ws_proc_weapons_map = {
 	['wind'] =		{['ProcDagger']="Cyclone",['ProcGreatKatana']="Tachi: Jinpu"},
 	['ice'] =		{['ProcGreatSword']="Freezebite"},
 	['lightning'] =	{['ProcPolearm']="Raiden Thrust"},
-	['light'] =		{['ProcClub']="Seraph Strike",['ProcGreatKatana']="Tachi: Koki",['ProcSword']="Seraph Blade"},
+	['light'] =		{['ProcClub']="Seraph Strike",['ProcGreatKatana']="Tachi: Koki",['ProcSword']="Seraph Blade",['ProcStaff']="Sunburst"},
 	['darkness'] =	{['ProcScythe']="Shadow of Death",['ProcKatana']="Blade: Ei",['ProcDagger']="Energy Drain"},
 }
 -------------------------------------------------------------------------------------------------------------------
