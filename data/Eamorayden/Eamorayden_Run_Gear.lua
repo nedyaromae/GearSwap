@@ -123,12 +123,12 @@ function init_gear_sets()
 
     sets.midcast['Enhancing Magic'] = {ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Loquac. Earring",priority=4},ear2={name="Chev. Earring +1",priority=6},
-        body={name="Shabti Cuirass",priority=102},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonbeam,{priority=100},
+        body={name="Shabti Cuirass",priority=102},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring",priority=110},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 
     sets.midcast['Enhancing Magic'].DT= {ammo={name="Crepuscular Pebble",priority=3},
         head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Loquac. Earring",priority=4},ear2={name="Chev. Earring +1",priority=6},
-        body={name="Nyame Mail",priority=171},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonbeam,{priority=100},
+        body={name="Nyame Mail",priority=171},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring",priority=110},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 
 
@@ -196,6 +196,11 @@ function init_gear_sets()
     back={name="Null Shawl",priority=5},waist={name="Null Belt",priority=2},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
 
+	sets.idle.ResistCharm={ammo={name="Staunch Tathlum +1",priority=3},
+    head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Night Earring",priority=1},ear2={name="Erilaz Earring +1",priority=6},
+    body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Purity Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
+    back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+
 
 
 	--------------------------------------
@@ -220,7 +225,7 @@ function init_gear_sets()
     
 	 sets.engaged = {ammo={name="Coiste Bodhar",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cessance Earring",priority=5},ear2={name="Brutal Earring",priority=6},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2=gear.right_moonbeam,{priority=100},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2={name="Moonlight Ring",priority=110},
         back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame sollerets",priority=68}}
 
 		sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},

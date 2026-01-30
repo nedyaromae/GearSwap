@@ -70,7 +70,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Chirich Ring +1",
-        back="Null Shawl",waist="Tellen Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
+        back="Null Shawl",waist="Yemaya Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
@@ -103,8 +103,8 @@ function init_gear_sets()
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
 		
-	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4"})
-	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4"})
+	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
+	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
 
        
     -- Weaponskill sets
@@ -199,9 +199,9 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Enervating Earring",ear2="Crep. Earring",
+        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Enervating Earring",ear2="Crep. Earring",
         body="Ikenga's Vest",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
-        back=gear.tp_ranger_jse_back,waist="Tellen Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",

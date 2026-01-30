@@ -95,7 +95,11 @@ function init_gear_sets()
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,body="Sakpata's Plate",hands="Sakpata's Gauntlets"})
      
-   sets.precast.WS["Resolution"]={ammo="Knobkierrie",
+   sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
+		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"} 
+	 sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
@@ -198,15 +202,15 @@ function init_gear_sets()
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1284 naegling 1286 loxotic 1332 lycurgos 1285 shining one
+	sets.engaged = {ammo="Coiste Bodhar", --1285 naegling 1287 loxotic 1333 lycurgos 1286 shining one
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1392 lycurgos 1344 naegling 1345 loxotic 1345 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1393 lycurgos 1345 naegling 1346 loxotic 1346 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 
