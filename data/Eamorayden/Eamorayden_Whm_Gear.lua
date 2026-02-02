@@ -331,9 +331,9 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 		back="Alaunus's Cape",waist="Hachirin-No-Obi",legs="Bunzi's pants",feet="Bunzi's Sabots"}
 
     sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
-		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
-		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Eihwaz Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
+		head="Null Masque",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
+		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
+		back="Alaunus's Cape",waist="Embla Sash",legs="Prestige Brais",feet="Ebers Duckbills +2"}
     
     sets.midcast.Flash.DT=set_combine(sets.midcast.Flash,{})
 		

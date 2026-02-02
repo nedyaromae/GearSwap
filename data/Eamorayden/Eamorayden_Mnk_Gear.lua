@@ -29,7 +29,7 @@ function init_gear_sets()
 	sets.precast.JA['Boost'].OutOfCombat = {ring1="Sljor Ring",neck="Justiciar's Torque"}
 	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +4"}
 	sets.precast.JA['Focus'] = {head="Anchor. Crown +1"}
-	sets.precast.JA['Provoke']= {ring2="Eihwaz Ring",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam necklace"}
+	sets.precast.JA['Provoke']= {ring2="Supershear Ring",ring1="Eihwaz Ring",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonbeam necklace",ammo="Sapience Orb"}
 --	sets.precast.JA['Counterstance'] = {} --feet="Hesychast's Gaiters +1"
 	sets.precast.JA['Footwork'] = {feet="Bhikku Gaiters +2"}
 --	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
@@ -37,7 +37,7 @@ function init_gear_sets()
 
 sets.precast.JA['Chi Blast'] = {head="Hes. Crown"}
 	
-sets.precast.JA['Chakra'] = {head="Nyame Helm",neck="Unmoving Collar +1",ear1="Etiolation Earring",ear2="Tuisto Earring",hands="Hes. Gloves",body="Anch. Cyclas +2",ring1="Eihwaz Ring",ring2="Supershear Ring",waist="Plat. Mog. Belt",Legs="Nyame Flanchard",Feet="Nyame Sollerets"}
+sets.precast.JA['Chakra'] = {head="Null Masque",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",hands="Hes. Gloves",body="Anch. Cyclas +2",ring1="Eihwaz Ring",ring2="Supershear Ring",waist="Plat. Mog. Belt",Legs="Nyame Flanchard",Feet="Nyame Sollerets"}
 
 
 
