@@ -76,7 +76,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt"})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {body="Bhikku Cyclas +2",ear2="Moonshade Earring"})
@@ -191,9 +191,8 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 	sets.buff.Impetus = {body="Bhikku Cyclas +2"}
     sets.buff.impetusWS= {body="Bhikku Cyclas +2"}
 	sets.buff.Footwork = {feet="Anch. Gaiters +4"}
+	sets.buff.FootworkWS = {neck="Monk's nodowa +1",feet="Anch. Gaiters +4"}
 	sets.buff.Boost = {waist="Ask Sash"}
-	
-	sets.FootworkWS = {neck="Mnk. Nodowa +1",feet="Anch. Gaiters +4"}
 --	sets.DayIdle = {}
 --	sets.NightIdle = {}
 --   sets.Knockback = {}

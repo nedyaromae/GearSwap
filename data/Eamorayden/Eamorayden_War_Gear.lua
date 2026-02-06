@@ -98,11 +98,11 @@ function init_gear_sets()
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
-		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"} 
+		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"} 
 	 sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
-		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
+		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
     sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
@@ -131,7 +131,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back,ear2="Boii Earring +1"})
 
-	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget"})
+	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget",waist="Fotia Belt"})
 
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring +1",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
@@ -216,15 +216,15 @@ function init_gear_sets()
 
 	sets.engaged.Aspis= {ammo="Coiste Bodhar", 
 		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 		
 
 		
 	sets.engaged.Meva= {ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
-		back="Null Shawl",waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		back="Null Shawl",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	
     

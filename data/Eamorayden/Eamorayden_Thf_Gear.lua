@@ -117,7 +117,7 @@ function init_gear_sets()
         back="Toutatis's Cape",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",head="Mummu Bonnet +2",ear1="Moonshade Earring",ear2="Odr Earring",neck="Fotia Gorget",body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Mummu ring",waist="Sailfi Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",head="Mummu Bonnet +2",ear1="Sherida Earring",ear2="Odr Earring",neck="Fotia Gorget",body="Mummu Jacket +2",hands="Gleti's Gauntlets",waist="Fotia Belt",ring1="Gere ring",legs="Gleti's Breeches",feet="Gleti's Boots",back="Null Shawl"})
     sets.precast.WS['Aeolian Edge'] = {ammo="Pemphredo Tathlum",
         head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
