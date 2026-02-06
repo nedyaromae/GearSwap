@@ -998,25 +998,16 @@ function item_owned(item)
 end
 
 function check_disable(spell, spellMap, eventArgs)
+	for i in pairs(disable_list) do
+		if buffactive[disable_list[i]] then
+			add_to_chat(123,'Abort: You are '..buff_table_by_name[disable_list[i]].enl..'.')
+			eventArgs.cancel = true
+			return true
+		end
+	end
 
 	if player.hp == 0 then
 		add_to_chat(123,'Abort: You are dead.')
-		eventArgs.cancel = true
-		return true
-	elseif buffactive.terror then
-		add_to_chat(123,'Abort: You are terrorized.')
-		eventArgs.cancel = true
-		return true
-	elseif buffactive.petrification then
-		add_to_chat(123,'Abort: You are petrified.')
-		eventArgs.cancel = true
-		return true
-	elseif buffactive.sleep or buffactive.Lullaby then
-		add_to_chat(123,'Abort: You are asleep.')
-		eventArgs.cancel = true
-		return true
-	elseif buffactive.stun then
-		add_to_chat(123,'Abort: You are stunned.')
 		eventArgs.cancel = true
 		return true
 	elseif not (player.status == 'Idle' or player.status == 'Engaged') then
@@ -1026,17 +1017,15 @@ function check_disable(spell, spellMap, eventArgs)
 	else
 		return false
 	end
-
 end
 
 function silent_check_disable()
-
-	if buffactive.terror or buffactive.petrification or buffactive.sleep or buffactive.Lullaby or buffactive.stun then
-		return true
-	else
-		return false
+	for i in pairs(disable_list) do
+		if buffactive[disable_list[i]] then
+			return true
+		end
 	end
-
+	return false
 end
 
 -- Checks doom, returns true if we're going to cancel and use an or cursna.
