@@ -191,7 +191,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 	sets.buff.Impetus = {body="Bhikku Cyclas +2"}
     sets.buff.impetusWS= {body="Bhikku Cyclas +2"}
 	sets.buff.Footwork = {feet="Anch. Gaiters +4"}
-	sets.buff.FootworkWS = {neck="Monk's nodowa +1",feet="Anch. Gaiters +4"}
+	sets.buff.FootworkWS = {feet="Anch. Gaiters +4"}
 	sets.buff.Boost = {waist="Ask Sash"}
 --	sets.DayIdle = {}
 --	sets.NightIdle = {}
