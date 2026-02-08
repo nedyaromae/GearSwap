@@ -105,47 +105,8 @@ function init_job_states(job_bools,job_modes)
 	stateBox:stroke_width(strokewidth)
 	stateBox:stroke_transparency(stroketransparancy)
 
-	update_job_states()
-
-end
-
-----------------------------------------------------------------------------------------------------
--- Update display
--- Call from state_change(), job_state_change(), etc.
-----------------------------------------------------------------------------------------------------
-function update_job_states()
-
-	if not state.DisplayMode.value then
-		if stateBox then stateBox:hide() end
-		return
-	end
-
-	-- Define colors for text in the display
-	local clr = {
-		h='\\cs(255,192,0)', -- Yellow for active booleans and non-default modals
-		w='\\cs(255,255,255)', -- White for labels and default modals
-		n='\\cs(192,192,192)', -- White for labels and default modals
-		s='\\cs(96,96,96)', -- Gray for inactive booleans
-		Fire='\\cs(255,80,80)', -- Red For Fire Element
-		Ice='\\cs(140,160,255)', -- Light Blue For Ice Element
-		LightBlue='\\cs(160,180,255)', -- Light Blue For Ice Element
-		Wind='\\cs(110,255,110)', -- Light Green For Wind Element
-		Earth='\\cs(220,214,110)', -- Brown/Yellow For Earth Element
-		Lightning='\\cs(190,90,190)', -- Purple For Lightning Element
-		Water='\\cs(110,110,255)', -- Blue For Water Element
-		Light='\\cs(255,255,155)', -- Light Yellow For Light Element
-		Dark='\\cs(90,90,90)', -- Dark Grey For Dark Element
-	}
-	if state.DisplayColors then
-		clr = state.DisplayColors
-	end
-
-	local info = {}
-	local orig = {}
-	local spc = '    '
-
 	-- Define labels for each state
-	local labels = {
+	display_labels = {
 		AutoBuffMode = "Auto Buff",
 		AutoCallPet = "Auto Call Pet",
 		AutoDefenseMode = "Auto Defense",
@@ -214,6 +175,44 @@ function update_job_states()
 		TreasureMode = "Treasure",
 		WeaponskillMode = "Weaponskill",
 	}
+	
+	update_job_states()
+end
+
+----------------------------------------------------------------------------------------------------
+-- Update display
+-- Call from state_change(), job_state_change(), etc.
+----------------------------------------------------------------------------------------------------
+function update_job_states()
+
+	if not state.DisplayMode.value then
+		if stateBox then stateBox:hide() end
+		return
+	end
+
+	-- Define colors for text in the display
+	local clr = {
+		h='\\cs(255,192,0)', -- Yellow for active booleans and non-default modals
+		w='\\cs(255,255,255)', -- White for labels and default modals
+		n='\\cs(192,192,192)', -- White for labels and default modals
+		s='\\cs(96,96,96)', -- Gray for inactive booleans
+		Fire='\\cs(255,80,80)', -- Red For Fire Element
+		Ice='\\cs(140,160,255)', -- Light Blue For Ice Element
+		LightBlue='\\cs(160,180,255)', -- Light Blue For Ice Element
+		Wind='\\cs(110,255,110)', -- Light Green For Wind Element
+		Earth='\\cs(220,214,110)', -- Brown/Yellow For Earth Element
+		Lightning='\\cs(190,90,190)', -- Purple For Lightning Element
+		Water='\\cs(110,110,255)', -- Blue For Water Element
+		Light='\\cs(255,255,155)', -- Light Yellow For Light Element
+		Dark='\\cs(90,90,90)', -- Dark Grey For Dark Element
+	}
+	if state.DisplayColors then
+		clr = state.DisplayColors
+	end
+
+	local info = {}
+	local orig = {}
+	local spc = '    '
 
 	stateBox:clear()
 	stateBox:append('   ')
@@ -267,7 +266,7 @@ function update_job_states()
 					stateBox:append(spc)
 				end
 			else
-				stateBox:append(clr.h..labels[n]..clr.n)
+				stateBox:append(clr.h..display_labels[n]..clr.n)
 				stateBox:append(spc)
 			end
 		else
@@ -309,7 +308,7 @@ function update_job_states()
 				stateBox:append(spc)
 			end
 		elseif n == 'RangedMode' then
-			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 				if statusammo then
 					stateBox:append('Ammo: '..statusammo..'    ')
 				end
@@ -322,7 +321,7 @@ function update_job_states()
 				stateBox:append(string.format("%s%s ", clr.w, state.WeaponSets.value))
 			end
 			
-			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 		elseif n == 'OffenseMode' then
 			if state.DefenseMode.value ~= 'None' then
 				stateBox:append(string.format("%sDefense Active: ", clr.w))
@@ -335,7 +334,7 @@ function update_job_states()
 				end
 				stateBox:append(spc)
 			else
-				stateBox:append(string.format("%s%s: ${%s}", clr.w, labels[n], n))
+				stateBox:append(string.format("%s%s: ${%s}", clr.w, display_labels[n], n))
 				if state.HybridMode then
 					if state.HybridMode.value == 'Normal' then
 						stateBox:append(string.format("%s / %s%s%s", clr.n, clr.w, state.HybridMode.current, clr.n))
@@ -358,25 +357,25 @@ function update_job_states()
 			end
 		elseif n == 'IdleMode' then
 			if state.IdleMode.value ~= 'Normal' and state.DefenseMode.value == 'None' then
-				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 			end
 			if state.Kiting.value then
 				stateBox:append(string.format("%sKiting: %sOn    ", clr.w, clr.h))
 			end
 		elseif n == 'Passive' then
 			if state.Passive.value ~= 'None' and state.DefenseMode.value == 'None' then
-				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 			end
 		elseif n == 'ExtraDefenseMode' then
 			if state.ExtraDefenseMode.value ~= 'None' then
-				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+				stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 			end
 		elseif n == 'TreasureMode' then
 			if (state.TreasureMode.value ~= 'None' or player.main_job == 'THF') and state.DefenseMode.value == 'None' then
 				stateBox:append(string.format("%sTreasure: %s%s    ", clr.w, clr.h, state.TreasureMode.value))
 			end
 		elseif n == 'CastingMode' then
-			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 			if state.MagicBurstMode.value ~= 'Off' then
 				stateBox:append(string.format("%sMagic Burst: %s%s    ", clr.w, clr.h, state.MagicBurstMode.value))
 			end
@@ -433,7 +432,7 @@ function update_job_states()
 				stateBox:append(string.format("%sStance: %s%s    ", clr.w, clr.h, state.Stance.value))
 			end
 		else
-			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, labels[n], n))
+			stateBox:append(string.format("%s%s: ${%s}    ", clr.w, display_labels[n], n))
 		end
 	end
 	-- Update and display current info
