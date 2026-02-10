@@ -80,16 +80,6 @@ function job_filtered_action(spell, eventArgs)
 
 end
 
-function job_pretarget(spell, spellMap, eventArgs)
-	if spell.action_type == 'Ranged Attack' and (player.equipment.ammo == 'Togakushi Shuriken' or player.equipment.ammo == 'Happo Shuriken') then
-		cancel_spell()
-		add_to_chat(123,'Abort: Don\'t throw your good ammo!')
-	elseif spell.english == 'Sange' and (player.equipment.ammo == 'Togakushi Shuriken' or player.equipment.ammo == 'Happo Shuriken') then
-		cancel_spell()
-		add_to_chat(123,'Abort: Don\'t throw your good ammo!')
-	end
-end
-
 function job_precast(spell, spellMap, eventArgs)
 	if spell.english == 'Mijin Gakure' and windower.ffxi.get_ability_recasts()[0] < latency and not state.UnlockWeapons.value and not state.Weapons.value == 'None' then
 		local mijinmain = standardize_set(sets.precast.JA['Mijin Gakure'].main)
