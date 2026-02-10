@@ -123,7 +123,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Evisceration'] = {ammo=gear.WSbullet,
         head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
-        body="Meg. Curie +2",hands="Mummu Wrists +2",ring1="Epona's Ring",ring2="Mummu Ring",
+        body="Meg. Cuirie +2",hands="Mummu Wrists +2",ring1="Epona's Ring",ring2="Mummu Ring",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
@@ -142,8 +142,8 @@ function init_gear_sets()
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
-        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Infused Earring",
-        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Cacoethic Ring",
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 
 
@@ -188,9 +188,9 @@ function init_gear_sets()
         
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Carmine Mask",neck="Baetyl Pendant",ear1="Alabaster Earring.",ear2="Loquac. Earring",
-        body="Dread Jupon",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="",waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves +1"}
+        head="Carmine Mask",neck="Baetyl Pendant",ear1="Alabaster Earring",ear2="Loquac. Earring",
+        body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Murky Ring",
+        back=gear.str_wsd_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves"}
         
     -- Specific spells
 
@@ -250,7 +250,7 @@ function init_gear_sets()
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
-    sets.weapons.WF={main="Tauret",sub="Nuksu Shield",range="Doomsday"}
+    sets.weapons.WF={main="Tauret",sub="Nusku Shield",range="Doomsday"}
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous

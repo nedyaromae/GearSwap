@@ -168,7 +168,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
     
-    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +3",priority=254},feet={name="Chev. Sabatons +2",priority=42},ear1={name="Friomisi Earring",priority=2}})
+    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},feet={name="Chev. Sabatons +2",priority=42},ear1={name="Friomisi Earring",priority=2}})
    
 
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
@@ -304,7 +304,7 @@ function init_gear_sets()
 	--------------------------------------
 
      sets.resting = {main={name="Malignance Sword",priority=9},sub={name="Archduke's Shield",priority=9},ammo={name="Homiliary",priority=3},
-        head={name="Null Masque",priority=100},neck={name="Unmoving Collar",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
+        head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Chirich Ring +1",priority=5},ring2={name="Chirich Ring",priority=6},
         back=gear.idle_jse_back,{priority=60},waist={name="Fucho-no-obi",priority=7},legs={name="Chev. Cuisses +2",priority=117},feet={name="Sakpata's Leggings",priority=68}}
 

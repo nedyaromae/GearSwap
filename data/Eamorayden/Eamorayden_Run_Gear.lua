@@ -65,7 +65,7 @@ function init_gear_sets()
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
         head={name="Carmine Mask",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body=gear.TaeonFCBody,{priority=59},hands={name="Leyline Gloves",priority=25},ring1=gear.left_moonbeam,{priority=100},ring2={name="Kishar Ring",priority=7},
-        back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Agwu Slops",priority=50},feet={name="Nyame Sollerets",priority=68}}
+        back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Agwu's Slops",priority=50},feet={name="Nyame Sollerets",priority=68}}
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
 	
     -- Weaponskill sets

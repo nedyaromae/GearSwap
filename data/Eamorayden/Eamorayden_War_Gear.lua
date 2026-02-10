@@ -97,11 +97,11 @@ function init_gear_sets()
      
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"} 
 	 sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlet",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"} 
     sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
@@ -136,7 +136,7 @@ function init_gear_sets()
 	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring +1",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
-		head="Boii Masque +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
+		head="Boii Mask +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamor. Ring +1",ring2="Crepuscular Ring",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
