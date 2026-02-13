@@ -344,6 +344,11 @@ function init_gear_sets()
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shadow Ring",priority=30},
     back={name="Null Shawl",priority=5},waist={name="Null Belt",priority=2},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
+    sets.idle.Reraise={ammo={name="Staunch Tathlum +1",priority=3},
+    head={name="Crepuscular Helm",priority=114},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Chev. Earring +1",priority=6},
+    body={name="Twilight Mail",priority=1},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Shneddick Ring",priority=4},
+    back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
+
 
 
 

@@ -143,7 +143,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
+        body="Laksa. Frac +4",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Cacoethic Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 
 

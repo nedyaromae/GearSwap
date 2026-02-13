@@ -180,6 +180,13 @@ function init_gear_sets()
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+
+
+
+	sets.idle.Weak={ammo="Staunch Tathlum +1",
+		head="Crepuscular Helm",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Alabaster Earring",
+		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Murky Ring",
+		back=gear.vit_wsd_jse_back,waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	
 	-- Defense sets
@@ -243,7 +250,7 @@ function init_gear_sets()
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Retaliation = {}
-	sets.buff.Sleep= {neck="Vim Torque"}
+	sets.buff.Sleep= {neck="Vim Torque +1"}
 	sets.buff.Restraint = {}
 	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",hands="Souv. Handsch. +1",legs="Sakpata's leggings",feet="Souveran Schuhs +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {head=gear.valorousTH})
