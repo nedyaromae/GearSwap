@@ -400,6 +400,7 @@ function init_gear_sets()
 	-- Custom buff sets
 	--------------------------------------
    -- sets.buff.Cover = {body="Cab. Surcoat +1"}
+      sets.buff.Sleep= {neck="Vim Torque +1"}
 end
 
 -- Select default macro book on initial load or subjob change.
