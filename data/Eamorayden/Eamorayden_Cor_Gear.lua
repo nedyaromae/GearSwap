@@ -236,7 +236,7 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
-	sets.TreasureHunter = {head="Wh. Rarab Cap +1",waist="Chaac Belt",}
+	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",}
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 
 	-- Weapons sets
