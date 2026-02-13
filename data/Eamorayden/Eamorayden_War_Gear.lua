@@ -185,20 +185,20 @@ function init_gear_sets()
 
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
 		head="Crepuscular Helm",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Alabaster Earring",
-		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Murky Ring",
+		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back=gear.vit_wsd_jse_back,waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	
 	-- Defense sets
 	sets.defense.PDT = {ammo="Eluder's Sachet",
 		head="Sakpata's Helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 
 	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Meili Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Defending Ring",ring2="Murky Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
 	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})
@@ -206,7 +206,6 @@ function init_gear_sets()
 
 --	sets.Kiting = {ring1="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
---	sets.buff.Sleep = {head="Frenzy Sallet"}
      
             -- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar", --1285 naegling 1287 loxotic 1333 lycurgos 1286 shining one
