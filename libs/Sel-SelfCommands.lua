@@ -508,6 +508,9 @@ function handle_weapons(cmdParams)
 		if not data.jobs.dual_wield_jobs:contains(player.main_job) and can_dual_wield and weapon_sets['Dual'] then
 			state.WeaponSets:set('Dual')
 			state.Weapons:options(unpack(weapon_sets[state.WeaponSets.value]))
+			if sets.weapons[default_dual_weapons] then
+				state.Weapons:set(default_dual_weapons)
+			end
 		elseif weapon_sets['Default'] then
 			state.WeaponSets:set('Default')
 			state.Weapons:options(unpack(weapon_sets[state.WeaponSets.value]))

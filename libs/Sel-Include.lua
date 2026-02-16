@@ -226,6 +226,7 @@ function init_include()
 	end
 	
 	-- Define and default variables for global functions that can be overwritten.
+	display = {}
 	autonuke = 'Fire'
 	autows = ''
 	autows_list = {}

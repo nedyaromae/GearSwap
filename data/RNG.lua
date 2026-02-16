@@ -169,6 +169,16 @@ function job_post_precast(spell, spellMap, eventArgs)
 				end
 			end
 		end
+		
+		if S{25,26}:contains(spell.skill) and not data.weaponskills.elemental:contains(spell.name) then
+			if state.TrueShotMode.value and sets.TrueShot and check_sweetspot(spell) then
+				equip(sets.TrueShot)
+			end
+			if state.Buff['Velocity Shot'] and sets.buff['Velocity Shot'] then
+				equip(sets.buff['Velocity Shot'])
+			end
+		end
+		
 	elseif spell.action_type == 'Ranged Attack' then
 		if buffactive.Flurry then
 			if lastflurry == 1 then
@@ -183,6 +193,9 @@ function job_post_precast(spell, spellMap, eventArgs)
 				elseif sets.precast.RA.Flurry2 then
 					equip(sets.precast.RA.Flurry2)
 				end
+			end
+			if state.Buff['Velocity Shot'] and sets.buff['Velocity Shot'] then
+				equip(sets.buff['Velocity Shot'])
 			end
 		end
 
@@ -255,6 +268,9 @@ function job_post_midcast(spell, spellMap, eventArgs)
 		if state.TrueShotMode.value and sets.TrueShot and check_sweetspot(spell) then
 			equip(sets.TrueShot)
 		end
+		if state.Buff['Velocity Shot'] and sets.buff['Velocity Shot'] then
+			equip(sets.buff['Velocity Shot'])
+		end
 		if state.Buff.Barrage and sets.buff.Barrage then
 			equip(sets.buff.Barrage)
 		end
@@ -287,7 +303,7 @@ end
 function job_update(cmdParams, eventArgs)
 	if cmdParams[1] == 'user' and not data.areas.cities:contains(world.area) then
 		if not buffactive['Velocity Shot'] then
-			send_command('@input /ja "Velocity Shot" <me>')
+			windower.chat.input('/ja "Velocity Shot" <me>')
 		end
 	end
 	check_ranged_weapon_type()
