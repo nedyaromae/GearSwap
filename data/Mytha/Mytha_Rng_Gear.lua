@@ -165,6 +165,7 @@ function init_gear_sets()
 		
 	--These sets will overlay based on accuracy level, regardless of other options.
 	sets.buff.Camouflage = {body="Orion Jerkin +1"}
+	sets.buff['Velocity Shot'] = {}
 	sets.buff.Camouflage.Acc = {}
 	sets.buff['Double Shot'] = {back=gear.tp_ranger_jse_back}
 	sets.buff['Double Shot'].Acc = {}
