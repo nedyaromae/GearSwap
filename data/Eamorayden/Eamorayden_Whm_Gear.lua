@@ -52,7 +52,7 @@ function init_gear_sets()
  sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
  sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
 
---	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
+	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Thuellaic Ecu +1"})
 
@@ -312,10 +312,10 @@ sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})
 
     sets.midcast['Enhancing Magic']['Aurorastorm']=set_combine(sets.midcast['Enhancing Magic'].NoSkill)
 
---	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
---		head=empty,neck="Null Loop",ear1="Regal Earring",ear2="Ebers Earring",
---		body="Twilight Cloak",hands="Inyan. Dastanas +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
---		back="Toro Cape",waist="Eschan Stone",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
+	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
+		head=empty,neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
+		body="Twilight Cloak",hands="Theo. Mitts +4",ring1=gear.left_stinky,ring2="Metamorph Ring +1"
+		back="Null Shawl",waist="Null Belt",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 		
 	sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Bunzi's Hat",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Malignance Earring",

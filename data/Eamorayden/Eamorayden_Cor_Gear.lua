@@ -28,7 +28,7 @@ function user_job_setup()
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.dw_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
-    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+4','Weapon skill damage +10%',}}
+    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+6','Weapon skill damage +10%',}}
     gear.lanunpathC={name="Lanun Knife", augments={'Path: C',}}
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
 
@@ -56,7 +56,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
         head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
-        back=gear.dw_jse_back,waist="Flume Belt",legs="Malignance Tights",feet="Nyame Sollerets"}
+        back=gear.dw_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
@@ -177,10 +177,9 @@ function init_gear_sets()
 		
 		
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt"})
+    sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],ring2="Sroda Ring")
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
 
-		
-		--Because omen skillchains.
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
