@@ -103,10 +103,10 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS["Tornado Kick"].FullAcc = set_combine(sets.precast.WS["Tornado Kick"], sets.precast.WS.FullAcc,{ear2="Moonshade Earring"})
 
 
-	sets.precast.WS['Raging Fists'].Ngai    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Howling Fist'].Ngai   = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Dragon Kick'].Ngai  = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Tornado Kick'].Ngai   = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
+	sets.precast.WS['Raging Fists'].Ngai    = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
+	sets.precast.WS['Howling Fist'].Ngai   = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
+	sets.precast.WS['Dragon Kick'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
+	sets.precast.WS['Tornado Kick'].Ngai   = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
 
 
 
@@ -191,7 +191,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 	sets.buff.Impetus = {body="Bhikku Cyclas +2"}
     sets.buff.impetusWS= {body="Bhikku Cyclas +2"}
 	sets.buff.Footwork = {feet="Anch. Gaiters +4"}
-	sets.buff.FootworkWS = {feet="Anch. Gaiters +4"}
+	sets.buff.FootworkWS = {feet="Anch. Gaiters +4",neck="Mnk. Nodowa +1"}
 	sets.buff.Boost = {waist="Ask Sash"}
 --	sets.DayIdle = {}
 --	sets.NightIdle = {}

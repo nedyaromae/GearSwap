@@ -177,7 +177,7 @@ function init_gear_sets()
 		
 		
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt"})
-    sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],ring2="Sroda Ring")
+    sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{ring2="Sroda Ring"})
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
 
 
