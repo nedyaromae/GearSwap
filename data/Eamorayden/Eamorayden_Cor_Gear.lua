@@ -261,7 +261,7 @@ function init_gear_sets()
     sets.engaged = {
 	    head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Chirich Ring +1",
-		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.DT={
 	    head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
