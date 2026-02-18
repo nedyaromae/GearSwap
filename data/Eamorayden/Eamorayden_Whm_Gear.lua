@@ -131,14 +131,9 @@ function init_gear_sets()
 		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
 		back="Alaunus's Cape",waist="Bishop's Sash",legs="Th. Pant. +3",feet="Vanya Clogs"}
 
-    sets.midcast.Erase = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Crepuscular Pebble",
-		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Loquac. Earring",
-		body="Inyanga Jubbah +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
-
-	sets.midcast.StatusRemoval = {Main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
-		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Malignance Earring",ear2="Loquac. Earring",
-		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Lebeche Ring",
+    sets.midcast.StatusRemoval = {Main="Queller Rod",sub="Diamond Aspis",ammo="Sapience Orb",
+		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Alabaster Earring",
+		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
 		
 	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
@@ -211,18 +206,14 @@ function init_gear_sets()
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Loquac. Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Regal Pumps +1"}
-		
-	
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
 		head="Theophany Cap +4",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
-		body="Theo. Bliaut +4",hands="Theophany Mitts +4",ring1=gear.left_stinky,ring2="Metamor. Ring +1",
+		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1=gear.left_stinky,ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs=gear.Chironic_Enfeeblingpants,feet="Theo. Duckbills +4"}
 
-    sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{}}
-
+    sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{legs="Th. Pant. +3"}}
     sets.midcast['Dark Magic'] =  set_combine(sets.midcast['Enfeebling Magic'], {})
-
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
@@ -233,17 +224,16 @@ function init_gear_sets()
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
-		head="Null Masque",neck="Unmoving Collar +1",ear1="Malignance Earring",ear2="Alabaster Earring",
+		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Alabaster Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Nyame Sollerets"}
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
-	sets.midcast['Dia II'] = {Main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
-		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Malignance Earring",ear2="Loquac. Earring",
+	sets.midcast['Dia II'] = {Main="Queller Rod",sub="Diamond Aspis",ammo="Crepuscular Pebble",
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Loquac. Earring",
 		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Alaunus's Cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
-    -- Sets to return to when not performing an action.
+		back="Alaunus's Cape",waist="Obstinate Sash",legs="Prestige Brais",feet="Ebers Duckbills +2"}
 
     sets.Refresh_Received = {waist="Gishdubar Sash"}
 
