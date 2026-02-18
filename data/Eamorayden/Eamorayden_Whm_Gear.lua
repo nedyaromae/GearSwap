@@ -108,11 +108,11 @@ function init_gear_sets()
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
 	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +2"})
-	sets.midcast.LightWeatherCure =set_combine(sets.midcast.Cure,{Main="Chatoyant Staff",sub="Mensch Strap +1"})
-	sets.midcast.LightWeatherCureSolace =set_combine(sets.midcast.LightWeatherCure,{body="Ebers Bliaut +2"})
-	sets.midcast.Curaga =set_combine(sets.midcast.Cure,{})
+	sets.midcast.LightWeatherCure=set_combine(sets.midcast.Cure,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
+	sets.midcast.LightWeatherCureSolace=set_combine(sets.midcast.LightWeatherCure,{body="Ebers Bliaut +2"})
+	sets.midcast.Curaga=set_combine(sets.midcast.Cure,{})
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
-	sets.midcast.LightWeatherCuraga =set_combine(sets.midcast.Curaga,{Body="Ebers Bliaut +2"})
+	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
 
     sets.midcast.Cure.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
