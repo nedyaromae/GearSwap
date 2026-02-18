@@ -245,56 +245,39 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
     -- Sets to return to when not performing an action.
 
-sets.Refresh_Received = {waist="Gishdubar Sash"}
+    sets.Refresh_Received = {waist="Gishdubar Sash"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-sets.idle={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
+    sets.idle={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Alaunus's Cape",waist="Carrier's Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 
-sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
+    sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Nyame Sollerets"}
 
-sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
+    sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands="Bunzi's Gloves",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 
-
-	
-
-
-sets.idle.Magic=set_combine(sets.idle.MDT,{})
-sets.idle.Physical=set_combine(sets.idle.PDT,{})
-
-sets.IdleWakeUp = {main="Prime Maul"}
+    sets.idle.Magic=set_combine(sets.idle.MDT,{})
+    sets.idle.Physical=set_combine(sets.idle.PDT,{})
+    sets.IdleWakeUp = {main="Prime Maul"}
     -- Defense sets
 
 	sets.defense.PDT = {main="Daybreak",sub="Diamond Aspis",ammo="Crepuscular Pebble",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Nyame Sollerets"}
-
-  
-		
-		
-		
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Alaunus's Cape",waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 		-- Engaged sets
-
-    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
-    -- sets if more refined versions aren't defined.
-    -- If you create a set with both offense and defense modes, the offense mode should be first.
-    -- EG: sets.engaged.Dagger.Accuracy.Evasion
-
-    -- Basic set for if no TP weapon is defined.
     sets.engaged = {ammo="Amar Cluster",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Petrov Ring",
