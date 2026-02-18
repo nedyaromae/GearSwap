@@ -222,7 +222,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Null Masque",neck="Elite Royal Collar",ear1="Eabani Earring",ear2="Infused Earring",
+        head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
@@ -230,7 +230,7 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-        head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Tuisto Earring",
+        head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
