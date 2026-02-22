@@ -2,6 +2,7 @@
 function user_job_setup()
     state.IdleMode:options('PDT','MDT','Normal','Magic','Physical')
 	state.PhysicalDefenseMode:options('PDT')
+	state.OffenseMode:options('Normal','FullAcc')
     state.CastingMode:options('Normal','SIRD')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -269,9 +270,16 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 		-- Engaged sets
     sets.engaged = {ammo="Amar Cluster",
-        head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",Ring2="Petrov Ring",
+        head="Ayanmo Zucchetto +2",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Ayanmo Corazza +2",hands="Bunzi's Gloves",ring1="Petrov Ring",Ring2="Chirich Ring +1",
         back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+	sets.engaged.FullAcc={ammo="Amar Cluster",
+        head="Ayanmo Zucchetto +2",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Ayanmo Corazza +2",hands="Gazu Bracelets +1",ring1="Murky Ring",Ring2="Chirich Ring +1",
+        back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
+
+
 
     
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.

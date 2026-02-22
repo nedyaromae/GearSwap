@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
 	state.OffenseMode:options('Normal','FullAcc')
-	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne','Claymore')
+	state.Weapons:options('Naegling','Loxotic','Gaxe','ShiningOne')
 	state.WeaponskillMode:options('Normal','PDL')
 	state.HybridMode:options('Normal','Meva')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
