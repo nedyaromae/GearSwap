@@ -127,6 +127,16 @@ function init_gear_sets()
 
     sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})	
 
+	sets.midcast.MeleeCure={ammo="Staunch Tathlum +1",
+		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Mendi. Earring",ear2="Nourish. Earring +1",
+		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
+		back="Solemnity Cape",waist="Austerity Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
+
+	sets.midcast.MeleeCureSolace=set_combine(sets.midcast.MeleeCure,{body="Ebers Bliaut +2"})
+	sets.midcast.MeleeLightWeatherCure=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
+	sets.midcast.MeleeLightWeatherCuraga=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi",body="Ebers Bliaut +2"})
+
 	sets.midcast.Cursna = {Main="Gada",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
 		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring",
 		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
