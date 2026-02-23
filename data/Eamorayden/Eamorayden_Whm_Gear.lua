@@ -6,7 +6,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','SIRD')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','MeleeWeapons')
+	state.Weapons:options('None','Maxentius','Daybreak')
 	state.AutoCelerity 			= M(false, 'Auto Celerity Mode')
     state.AutoCaress = M(false, 'Auto Caress Mode')
 	state.WakeUpWeapons = M(true, 'Swap Weapons To Wake Up')
@@ -24,7 +24,8 @@ function init_gear_sets()
     --------------------------------------
 
 	-- Weapons sets
-	sets.weapons.MeleeWeapons = {main="Maxentius",sub="Diamond Aspis"}
+	sets.weapons.Maxentius = {main="Maxentius",sub="Diamond Aspis"}
+	sets.weapons.Daybreak ={main="Daybreak",sub="Diamond Aspis"}
 	
     sets.buff.Sublimation={waist="Embla Sash"}
     sets.buff.DTSublimation={waist="Embla Sash"}
