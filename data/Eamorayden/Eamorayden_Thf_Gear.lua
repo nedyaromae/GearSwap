@@ -174,10 +174,10 @@ function init_gear_sets()
 
     -- Defense sets
 
-    sets.defense.PDT = {ammo="Eluder's Sachet",
-        head="Nyame helm",neck="Loricate Torque +1",ear1="Tuisto Earring",ear2="Mimir Earring",
-        body="Nyame mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
-        back="Shadow Mantle",waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+    sets.defense.PDT = {ammo="Crepuscular Pebble",
+        head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
+        back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
     --------------------------------------

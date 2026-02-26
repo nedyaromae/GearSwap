@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting','WF'},
-		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualWF','DualMeleeLS'}}
+		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot','DualRP'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -29,8 +29,9 @@ function user_job_setup()
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
     gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+6','Weapon skill damage +10%',}}
-    gear.lanunpathC={name="Lanun Knife", augments={'Path: C',}}
+    gear.lanunpathC={name="Lanun Knife", augments={'Path: C',}}  
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
+    gear.RostampathC={name="Rostam", augments={'Path: C',}}
 
     -- Additional local binds
 
@@ -65,12 +66,12 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +2"})
-    sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves"})
+    sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves",back="Null Shawl"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Chirich Ring +1",
-        back="Null Shawl",waist="Yemaya Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
+        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Crep. Earring",ear2="Enervating Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
@@ -178,7 +179,7 @@ function init_gear_sets()
 		
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt"})
     sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{ring2="Sroda Ring"})
-    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1",ring2="Sroda Ring"})
 
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -196,6 +197,10 @@ function init_gear_sets()
 	
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
+    sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
+        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
+        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Kishar Ring",ring2="Metamor. Ring +1",
+        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Enervating Earring",ear2="Crep. Earring",
@@ -232,7 +237,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
 	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",}
@@ -244,12 +249,15 @@ function init_gear_sets()
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
 	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub="Kustawi +1",range="Fomalhaut"}
+    sets.weapons.DualRP={main="Naegling",sub=gear.RostampathC,range="Anarchy +2"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.DualMeleeLS={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
+    sets.weapons.DualHotShot={main="Tauret",sub="Naegling",range="Fomalhaut"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.WF={main="Tauret",sub="Nusku Shield",range="Doomsday"}
+    
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
