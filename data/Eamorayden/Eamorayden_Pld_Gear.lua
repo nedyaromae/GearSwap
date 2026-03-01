@@ -104,7 +104,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
-        head={name="Carmine Mask",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
+        head={name="Carmine Mask +1",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=2},ring2={name="Kishar Ring",priority=7},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})

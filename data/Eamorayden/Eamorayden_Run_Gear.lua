@@ -63,7 +63,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
-        head={name="Carmine Mask",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
+        head={name="Carmine Mask +1",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body=gear.TaeonFCBody,{priority=59},hands={name="Leyline Gloves",priority=25},ring1=gear.left_moonbeam,{priority=100},ring2={name="Kishar Ring",priority=7},
         back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Agwu's Slops",priority=50},feet={name="Nyame Sollerets",priority=68}}
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
@@ -154,10 +154,6 @@ function init_gear_sets()
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 	
-	sets.midcast.Phalanx.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Loricate Torque +1",priority=1},ear1={name="Knightly Earring",priority=2},ear2={name="Alabaster Earring",priority=100},
-        body={name="Yorium Cuirass",priority=113},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring",priority=5},
-        back={name="Weard Mantle",{priority=39}},waist={name="Audumbla Sash",priority=8},legs={name="Founder's Hose",priority=54},feet={name="Souveran Schuhs +1",priority=227}}	
 
 	--------------------------------------
 	-- Idle/resting/defense/etc sets

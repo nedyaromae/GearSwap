@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting','WF'},
-		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot','DualRP'}}
+		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot','DualRP','DualFomalRP'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -94,7 +94,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-        head="Carmine Mask",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+        head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Solemnity Cape",waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
@@ -188,7 +188,7 @@ function init_gear_sets()
         
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Carmine Mask",neck="Baetyl Pendant",ear1="Alabaster Earring",ear2="Loquac. Earring",
+        head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Alabaster Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Murky Ring",
         back=gear.str_wsd_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves"}
         
@@ -198,7 +198,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
-        head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
+        head="Carmine Mask +1",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Kishar Ring",ring2="Metamor. Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
@@ -250,6 +250,7 @@ function init_gear_sets()
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
 	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualRP={main="Naegling",sub=gear.RostampathC,range="Anarchy +2"}
+    sets.weapons.DualFomalRP={main=gear.lanunpathC,sub=gear.RostampathC,range="Fomalhaut"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.DualMeleeLS={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
     sets.weapons.DualHotShot={main="Tauret",sub="Naegling",range="Fomalhaut"}
