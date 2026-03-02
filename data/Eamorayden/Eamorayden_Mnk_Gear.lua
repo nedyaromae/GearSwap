@@ -110,6 +110,16 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 
 
+	sets.precast.WS['Raging Fists'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Howling Fist'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Asuran Fists'].PDL    = set_combine(sets.precast.WS.PDL, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt",ammo="Crepuscular Pebble"})
+	sets.precast.WS["Victory Smite"].PDL   = set_combine(sets.precast.WS.PDL, {ear1="Odr Earring"})
+	sets.precast.WS['Shijin Spiral'].PDL   = set_combine(sets.precast.WS.PDL, {back=gear.dex_jse_back,ear1="Mache Earring +1"})
+	sets.precast.WS['Dragon Kick'].PDL    = set_combine(sets.precast.WS.PDL, {body="Bhikku Cyclas +2",ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Tornado Kick'].PDL    = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+
+
+
 --	sets.precast.WS['Cataclysm'] = {ammo="Ghastly Tathlum +1",
 --		neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Crematio Earring",
 --		hands="Malignance Gloves",ring1="Shiva Ring +1",
@@ -157,7 +167,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	-- Normal melee sets
 	sets.engaged = {ammo="Coiste Bodhar", --1300 imp down 1293 imp up -- all engaged accs are /drg - like 10 or osme shit for other jobs 
-		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
+		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Mache Earring +1",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
@@ -188,7 +198,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 --	sets.buff.Sleep = {head="Frenzy Sallet"}
-	sets.buff.Impetus = {body="Bhikku Cyclas +2"}
+	sets.buff.Impetus = {body="Bhikku Cyclas +2",ear1="Schere Earring"}
     sets.buff.impetusWS= {body="Bhikku Cyclas +2"}
 	sets.buff.Footwork = {feet="Anch. Gaiters +4"}
 	sets.buff.FootworkWS = {feet="Anch. Gaiters +4",neck="Mnk. Nodowa +1"}
