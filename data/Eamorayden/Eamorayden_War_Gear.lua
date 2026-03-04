@@ -111,7 +111,7 @@ function init_gear_sets()
     sets.precast.WS['Rampage'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Rampage'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	
-    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",body="Sakpata's Plate",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back})
+    sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {head="Boii Mask +2",body="Sakpata's Plate",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,ring1="Sroda Ring"})
     sets.precast.WS["Ukko's Fury"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 	sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS["Ukko's Fury"], {})
@@ -147,7 +147,7 @@ function init_gear_sets()
 	sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
 		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 
