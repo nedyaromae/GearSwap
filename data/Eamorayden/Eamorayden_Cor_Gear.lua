@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting','WF'},
-		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot','DualRP','DualFomalRP'}}
+		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -29,7 +29,6 @@ function user_job_setup()
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
     gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+6','Weapon skill damage +10%',}}
-    gear.lanunpathC={name="Lanun Knife", augments={'Path: C',}}  
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostampathC={name="Rostam", augments={'Path: C',}}
 
@@ -54,7 +53,7 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +4"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
 
-    sets.precast.CorsairRoll = {main=gear.lanunpathC,range="Compensator",
+    sets.precast.CorsairRoll = {main=gear.RostampathC,range="Compensator",
         head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
         back= gear.tp_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
@@ -248,9 +247,7 @@ function init_gear_sets()
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
-	sets.weapons.DualMageSortie={main=gear.lanunpathC,sub="Kustawi +1",range="Fomalhaut"}
-    sets.weapons.DualRP={main="Naegling",sub=gear.RostampathC,range="Anarchy +2"}
-    sets.weapons.DualFomalRP={main=gear.lanunpathC,sub=gear.RostampathC,range="Fomalhaut"}
+	sets.weapons.DualMageSortie={main=gear.RostampathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.DualMeleeLS={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
     sets.weapons.DualHotShot={main="Tauret",sub="Naegling",range="Fomalhaut"}
