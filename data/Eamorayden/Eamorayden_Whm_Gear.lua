@@ -57,7 +57,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Brutal Earring",ear2="Moonshade Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Sroda Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
         back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.precast.WS['Black Halo'] = {ammo="Oshasha's treatise",

@@ -69,7 +69,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.PDL={ammo="Knobkierrie",
@@ -81,7 +81,7 @@ function init_gear_sets()
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
-    sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{})
+    sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring"})
     sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 
