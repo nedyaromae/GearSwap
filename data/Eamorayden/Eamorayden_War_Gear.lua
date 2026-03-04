@@ -139,7 +139,7 @@ function init_gear_sets()
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
 		head="Boii Mask +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamor. Ring +1",ring2="Crepuscular Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})

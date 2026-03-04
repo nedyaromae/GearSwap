@@ -221,7 +221,7 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
 		head="Theophany Cap +4",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
-		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1=gear.left_stinky,ring2="Metamor. Ring +1",
+		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs=gear.Chironic_Enfeeblingpants,feet="Theo. Duckbills +4"}
 
     sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{legs="Th. Pant. +3"}}
@@ -230,9 +230,9 @@ function init_gear_sets()
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 
-	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
-    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque"})
+	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
+    sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",

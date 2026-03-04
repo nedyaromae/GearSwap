@@ -83,8 +83,8 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
-		body="Bhikku Cyclas +2",hands="Mummu Wrists +2",ring1=gear.left_stinky,ring2=gear.right_stinky,
-		back=gear.dex_jse_back,waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
+		body="Bhikku Cyclas +2",hands="Mummu Wrists +2",ring1=gear.left_stinky,ring2="Murky Ring",
+		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 	
 	sets.precast.WS["Raging Fists"].Acc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
 	sets.precast.WS["Howling Fist"].Acc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WS.Acc,{ear2="Moonshade Earring"})
@@ -146,7 +146,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets
@@ -178,7 +178,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 		sets.engaged.FullAcc ={ammo="Coiste Bodhar", --1390 imp down 1383 imp up
 		head="Malignance Chapeau",neck="Mnk. Nodowa +1",ear1="Odr Earring",ear2="Bhikku Earring +1",
-		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Murky Ring",ring2="Chirich Ring +1",
+		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Chirich Ring +1",ring2="Murky Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
 sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up 
