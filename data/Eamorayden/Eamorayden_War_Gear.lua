@@ -24,7 +24,7 @@ function init_gear_sets()
 	-- Precast Sets
 	
     sets.Enmity = {ammo="Sapience Orb",
-		head="Pummeler's Mask +2",neck="Moonbeam Necklace",ear1="Cryptic Earring",ear2="Friomisi Earring",
+		head="Pummeler's Mask +2",neck="Moonlight Necklace",ear1="Cryptic Earring",ear2="Friomisi Earring",
 		body="Souv. Cuirass +1",hands="Pumm. Mufflers +2",ring1="Apeile Ring +1",ring2="Eihwaz Ring",
 		back=gear.vit_wsd_jse_back,waist="Flume Belt",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
 	sets.Knockback = {}
@@ -82,6 +82,7 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
     sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring"})
+	sets.precast.WS['Savage Blade'].PDL=set_combine(sets.precast.WS.PDL,{})
     sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 
 

@@ -28,7 +28,7 @@ function init_gear_sets()
 	--------------------------------------
 	
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
-        head={name="Loess Barbuta +1",priority=105},neck={name="Moonbeam Necklace",priority=1},ear1={name="Tuisto earring",priority=150},ear2={name="Cryptic Earring",priority=40},
+        head={name="Loess Barbuta +1",priority=105},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Eihwaz Ring",priority=70},ring2={name="Apeile Ring +1",priority=2},
         back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Eschite Greaves",priority=98}}
 		
@@ -42,7 +42,7 @@ function init_gear_sets()
 		
 
     sets.Enmity.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Moonbeam Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Chev. Cuirass +2",priority=141},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Murky Ring",Priority=15},ring2={name="Defending Ring",priority=5},
         back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=4},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +2",priority=42}}
 
@@ -193,7 +193,7 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Flume Belt",priority=5},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum +1",priority=7},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Moonbeam necklace",priority=9},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=9},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
         body={name="Souveran Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1="Murky Ring",ring2={name="Moonlight Ring",priority=110},
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=200},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
@@ -265,7 +265,7 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}	
 
     sets.midcast['Enlight'].SIRD={ammo={name="Staunch Tathlum +1",priority=1},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Moonbeam Necklace",priority=3},ear1={name="Tuisto Earring",priority=150},ear2={name="Knightly Earring",priority=7},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=3},ear1={name="Tuisto Earring",priority=150},ear2={name="Knightly Earring",priority=7},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Eschite Gauntlets",priority=29},ring1={name="Murky Ring",priority=9},ring2={name="Moonlight Ring",priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=9},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
 

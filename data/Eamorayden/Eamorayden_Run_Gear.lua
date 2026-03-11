@@ -2,7 +2,7 @@ function user_job_setup()
 
     -- Options: Override default values	
 
-    state.CastingMode:options('SIRD','Normal') 
+    state.CastingMode:options('Normal','SIRD') 
 	state.IdleMode:options('Idle','Magic') 
 	state.Weapons:options('Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
@@ -22,9 +22,12 @@ function init_gear_sets()
 	--------------------------------------
 	
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
-        head={name="Halitus Helm",priority=88},neck={name="Unmoving Collar +1",priority=200},ear1={name="Friomisi earring",priority=1},ear2={name="Cryptic Earring",priority=40},
+        head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Nyame Mail",priority=131},hands={name="Nyame Gauntlets",priority=91},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
         back={name="Solemnity Cape",priority=6},waist={name="Kasiri Belt",priority=30},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+    
+        
+
 	
 
   

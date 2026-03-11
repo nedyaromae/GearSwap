@@ -28,7 +28,7 @@ function user_job_setup()
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+6','Weapon skill damage +10%',}}
+    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostampathC={name="Rostam", augments={'Path: C',}}
 
@@ -124,7 +124,7 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'] = {ammo=gear.WSbullet,
         head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
         body="Meg. Cuirie +2",hands="Mummu Wrists +2",ring1="Epona's Ring",ring2="Mummu Ring",
-        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+        back=gear.tp_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
@@ -141,6 +141,11 @@ function init_gear_sets()
         body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
+    sets.precast.WS['Last Stand'].PDL = {ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Ikenga's Vest",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
+        back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Ikenga's Trousers",feet="Lanun Bottes +4"}
+
     sets.precast.WS['Last Stand'].Acc ={ammo=gear.RAbullet,
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Murky Ring",
@@ -149,6 +154,7 @@ function init_gear_sets()
 
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
+    sets.precast.WS['Detonator'].PDL =sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Slug Shot'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Slug Shot'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -164,7 +170,6 @@ function init_gear_sets()
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Epaminondas's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
-
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
@@ -175,10 +180,9 @@ function init_gear_sets()
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Epaminondas's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
-		
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt"})
-    sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{ring2="Sroda Ring"})
-    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1",ring2="Sroda Ring"})
+    sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
 
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
