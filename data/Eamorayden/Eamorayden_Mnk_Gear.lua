@@ -167,7 +167,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	-- Normal melee sets
 	sets.engaged = {ammo="Coiste Bodhar", --1300 imp down 1293 imp up -- all engaged accs are /drg - like 10 or osme shit for other jobs 
-		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Mache Earring +1",ear2="Sherida Earring",
+		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
