@@ -33,9 +33,9 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Eschite Greaves",priority=98}}
 
     sets.Enmity.Meva = {ammo={name="Sapience Orb",priority=3},
-        head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster earring",priority=100},ear2={name="Cryptic Earring",priority=40},
+        head={name="Sakpata's Helm",priority=91},neck={name="Moonlight Necklace",priority=1},ear1={name="Cryptic earring",priority=40},ear2={name="Friomisi Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Apeile Ring +1",priority=2},
-        back=gear.idle_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
     sets.Enmity.DT=set_combine(sets.Enmity.Meva,{})
 		
