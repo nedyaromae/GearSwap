@@ -97,7 +97,7 @@ function init_gear_sets()
         head={name="Carmine Mask +1",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=2},ring2={name="Kishar Ring",priority=7},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
-        
+
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {ear2="Nourish. Earring +1",priority=4})
     sets.precast.FC.Cure.DT=set_combine(sets.precast.FC.Cure,{})
@@ -335,8 +335,6 @@ function init_gear_sets()
         head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cessance Earring",priority=5},ear2={name="Brutal Earring",priority=6},
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2={name="Moonlight Ring",priority=110},
         back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
-
-    sets.engaged.Cleave=set_combine(sets.idle.Cleave,{})
 
 
 
