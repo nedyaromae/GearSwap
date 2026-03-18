@@ -51,7 +51,7 @@ function init_gear_sets()
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +4"}
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.precast.CorsairRoll = {main=gear.RostampathC,range="Compensator",
         head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
@@ -68,7 +68,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves",back="Null Shawl"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Malignance Chapeau",neck="Lissome Necklace",ear1="Crep. Earring",ear2="Enervating Earring",
+        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Chass. Bottes +1"}
 		
@@ -101,7 +101,7 @@ function init_gear_sets()
     sets.precast.RA = {ammo=gear.RAbullet,  
         head="Chass. Tricorne +1",neck="Comm. Charm +1",ear1="",ear2="",
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
-        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
+        back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
@@ -206,7 +206,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Enervating Earring",ear2="Crep. Earring",
+        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Ikenga's Vest",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
@@ -215,7 +215,7 @@ function init_gear_sets()
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
+	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1",hands="Lanun Gants +4"}
     
     -- Sets to return to when not performing an action.
 	
@@ -226,7 +226,7 @@ function init_gear_sets()
     
     -- Resting sets
     sets.resting = {}
---	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
+	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
