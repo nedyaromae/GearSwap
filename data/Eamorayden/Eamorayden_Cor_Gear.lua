@@ -104,8 +104,7 @@ function init_gear_sets()
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
-	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt"})
-
+	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {body="Laksa. Frac +4",waist="Yemaya Belt",feet="Pursuer's Gaiters"})
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
@@ -218,10 +217,8 @@ function init_gear_sets()
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1",hands="Lanun Gants +4"}
     
     -- Sets to return to when not performing an action.
-	
 	sets.DayIdle = {}
 	sets.NightIdle = {}
-	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
     
     -- Resting sets
@@ -233,15 +230,12 @@ function init_gear_sets()
         head="Null Masque",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
-		
-
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
-
 
 	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",}
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
@@ -254,7 +248,7 @@ function init_gear_sets()
 	sets.weapons.DualMageSortie={main=gear.RostampathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.DualMeleeLS={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
-    sets.weapons.DualHotShot={main="Tauret",sub="Naegling",range="Fomalhaut"}
+    sets.weapons.DualHotShot={main=gear.lanunpathA,sub="Tauret",range="Fomalhaut"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
@@ -278,12 +272,10 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
 		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
-    
     sets.engaged.Acc = {
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Epona's Ring",ring2="Murky Ring",
 		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Eabani Earring",
@@ -294,7 +286,6 @@ function init_gear_sets()
 		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Eabani Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"} 
-    
     
     sets.engaged.DW.Acc = {
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Eabani Earring",
