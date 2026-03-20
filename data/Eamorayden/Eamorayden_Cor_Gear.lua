@@ -156,12 +156,16 @@ function init_gear_sets()
     sets.precast.WS['Detonator'].PDL =sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Slug Shot'] = sets.precast.WS['Last Stand']
+    sets.precast.WS['Slug Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Slug Shot'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Numbing Shot'] = sets.precast.WS['Last Stand']
+    sets.precast.WS['Numbing Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Numbing Shot'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Sniper Shot'] = sets.precast.WS['Last Stand']
+    sets.precast.WS['Sniper Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Sniper Shot'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Split Shot'] = sets.precast.WS['Last Stand']
+    sets.precast.WS['Split Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
