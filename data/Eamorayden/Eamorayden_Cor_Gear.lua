@@ -28,7 +28,8 @@ function user_job_setup()
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
+    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}}
+    gear.macc_fc_jse_back= {name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+5','"Fast Cast"+10','Damage taken-5%',}}
     gear.lanunpathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostampathC={name="Rostam", augments={'Path: C',}}
 
@@ -83,7 +84,7 @@ function init_gear_sets()
    -- sets.precast.Waltz = {
     --    head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Etiolation Earring",
      --   body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Valseur's Ring",ring2="Murky Ring",
-      --  back="Moonlight Cape",waist="Flume Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+      --  back="Moonlight Cape",waist="Flume Belt +1",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 		
 --	sets.Self_Waltz = {head="Mummu Bonnet +2"}
         
@@ -95,7 +96,7 @@ function init_gear_sets()
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
-        back="Solemnity Cape",waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
+        back=gear.macc_fc_jse_back,waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
 
 
     sets.precast.RA = {ammo=gear.RAbullet,  
@@ -196,7 +197,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Alabaster Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Murky Ring",
-        back=gear.str_wsd_jse_back,waist="Flume Belt",legs="Nyame Flanchard",feet="Carmine Greaves"}
+        back=gear.macc_fc_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Carmine Greaves"}
         
     -- Specific spells
 
@@ -206,7 +207,7 @@ function init_gear_sets()
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
         head="Carmine Mask +1",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Kishar Ring",ring2="Metamor. Ring +1",
-        back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
+        back=gear.macc_fc_jse_back,waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",

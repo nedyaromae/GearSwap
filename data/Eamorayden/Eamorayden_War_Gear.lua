@@ -206,25 +206,31 @@ function init_gear_sets()
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
-		
 	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1393 lycurgos 1345 naegling 1346 loxotic 1346 shining one
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
-
-	sets.engaged.Aspis= {ammo="Coiste Bodhar", 
+	sets.engaged.Aspis={ammo="Coiste Bodhar", 
 		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 		
-
-		
-	sets.engaged.Meva= {ammo="Coiste Bodhar", 
+	sets.engaged.Meva={ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
+	sets.engaged.Gaxe={ammo="Coiste Bodhar", 
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
+
+	sets.engaged.Gaxe.FullAcc={ammo="Coiste Bodhar", 
+		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
+	
 	
     
 
