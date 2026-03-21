@@ -321,7 +321,7 @@ function init_gear_sets()
     sets.weapons.SakpataAegis ={main="Sakpata's Sword",sub="Aegis"} --normal aeigs shit
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
-    sets.weapons.NaeglingAspis ={main="Naegling",sub="Diamond Aspis"} --Mostly for 6 step objectives still need prob sam's roll and capped magic haste
+    sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
