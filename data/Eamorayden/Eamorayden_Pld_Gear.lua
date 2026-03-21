@@ -238,16 +238,16 @@ function init_gear_sets()
     sets.midcast['Enlight II'].SIRD=set_combine(sets.midcast['Enlight'].SIRD,{})
 	
 	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
-        head={name="Odyssean Helm",priority=112},neck={name="Melic Torque",priority=1},ear1={name="Tuisto Earring",priority=12},ear2={name="Mimir Earring",priority=3},
+        head={name="Odyssean Helm",priority=112},neck={name="Melic Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Chev. Earring +1",priority=3},
         body={name="Valorous Mail",priority=61},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=6},
-        back={name="Weard Mantle",{priority=39}},waist={name="Flume Belt +1",priority=5},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=227}}
+        back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=122}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 	
 	sets.midcast.Phalanx.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Loricate Torque +1",priority=1},ear1={name="Knightly Earring",priority=2},ear2={name="Alabaster Earring",priority=100},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Chev. Earring +1",priority=10},
         body={name="Yorium Cuirass",priority=113},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=5},
-        back={name="Weard Mantle",{priority=39}},waist={name="Audumbla Sash",priority=8},legs={name="Founder's Hose",priority=54},feet={name="Souveran Schuhs +1",priority=227}}	
+        back={name="Weard Mantle",{priority=39}},waist={name="Audumbla Sash",priority=8},legs={name="Founder's Hose",priority=54},feet={name="Souveran Schuhs +1",priority=122}}	
 		
 	sets.midcast.HolyII = {ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=2},
