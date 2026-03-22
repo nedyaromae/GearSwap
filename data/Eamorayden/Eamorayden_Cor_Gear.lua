@@ -150,8 +150,6 @@ function init_gear_sets()
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Beyla Earring",ear2="Crep. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
-
-
 		
     sets.precast.WS['Detonator'] =sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].PDL =sets.precast.WS['Last Stand'].PDL
@@ -188,7 +186,6 @@ function init_gear_sets()
     sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{})
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
 
-
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
 	sets.AccMaxTP = {}
@@ -201,7 +198,6 @@ function init_gear_sets()
         
     -- Specific spells
 
-	
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
@@ -302,8 +298,8 @@ end
 function select_default_macro_book()
     if player.sub_job == 'NIN' then
         set_macro_page(1, 6)
-    elseif player.sub_job == 'DNC' then
-		set_macro_page(3, 6)
+    elseif player.sub_job == 'DRK' then
+		set_macro_page(4, 6)
     else
         set_macro_page(1, 6)
     end
