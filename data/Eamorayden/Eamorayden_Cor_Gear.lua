@@ -100,7 +100,7 @@ function init_gear_sets()
 
 
     sets.precast.RA = {ammo=gear.RAbullet,  
-        head="Chass. Tricorne +1",neck="Comm. Charm +1",ear1="",ear2="",
+        head="Chass. Tricorne +1",neck="Comm. Charm +2",ear1="",ear2="",
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
