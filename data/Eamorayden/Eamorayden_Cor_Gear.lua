@@ -98,7 +98,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Laksa. Frac +4",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+        body="Nyame Mail",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 				
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
