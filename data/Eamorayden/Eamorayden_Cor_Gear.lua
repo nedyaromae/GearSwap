@@ -60,7 +60,6 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
-    
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
@@ -80,24 +79,12 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'])
 
-    -- Waltz set (chr and vit)
-   -- sets.precast.Waltz = {
-    --    head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Etiolation Earring",
-     --   body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Valseur's Ring",ring2="Murky Ring",
-      --  back="Moonlight Cape",waist="Flume Belt +1",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
-		
---	sets.Self_Waltz = {head="Mummu Bonnet +2"}
-        
-    -- Don't need any special gear for Healing Waltz.
-   -- sets.precast.Waltz['Healing Waltz'] = {}
-
     -- Fast cast sets for spells
     
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.macc_fc_jse_back,waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves"}
-
 
     sets.precast.RA = {ammo=gear.RAbullet,  
         head="Chass. Tricorne +1",neck="Comm. Charm +2",ear1="",ear2="",
@@ -114,9 +101,6 @@ function init_gear_sets()
         body="Laksa. Frac +4",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 				
-		
-
-		
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS,{})
