@@ -26,7 +26,6 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Maxentius = {main="Maxentius",sub="Diamond Aspis"}
 	sets.weapons.Daybreak ={main="Daybreak",sub="Diamond Aspis"}
-	
     sets.buff.Sublimation={waist="Embla Sash"}
     sets.buff.DTSublimation={waist="Embla Sash"}
 	sets.buff.Sleep={main="Prime Maul"}
@@ -42,15 +41,12 @@ function init_gear_sets()
 	
     sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
-
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
-
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Thuellaic Ecu +1"})
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Benediction = {body="Piety Bliaut +3"}
 	sets.precast.JA.Devotion = {head="Piety Cap"}
-
 
     -- Weaponskill sets
 
@@ -86,7 +82,6 @@ function init_gear_sets()
 	sets.midcast.Teleport = set_combine(sets.ConserveMP,{})
 	sets.midcast.Warp=set_combine(sets.ConserveMP,{})
 	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
-	
 	
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Alabaster Earring",
