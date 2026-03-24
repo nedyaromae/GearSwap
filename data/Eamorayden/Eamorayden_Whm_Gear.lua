@@ -116,12 +116,12 @@ function init_gear_sets()
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
 	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
 
-    sets.midcast.Cure.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+    sets.midcast.Cure.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
 
-    sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+    sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Ebers Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
@@ -162,7 +162,7 @@ function init_gear_sets()
     sets.midcast.Haste= set_combine(sets.midcast['Enhancing Magic'].NoSkill,{})
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {feet="Ebers Duckbills +2"})
 	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Ran Earring",
+		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Alabaster Earring",
 		body="Ros. Jaseran +1",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
@@ -177,12 +177,11 @@ function init_gear_sets()
     sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
     
 	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Andoaa Earring",
+		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Alabaster Earring",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
 		
 	sets.midcast.BarStatus = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {neck="Sroda Necklace"})
-
     sets.midcast['Enhancing Magic']['Aurorastorm']=set_combine(sets.midcast['Enhancing Magic'].NoSkill)
 
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
@@ -229,14 +228,13 @@ function init_gear_sets()
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
-
 	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
     sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
     sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
-		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Tuisto Earring",ear2="Alabaster Earring",
+		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Nyame Sollerets"}
 
