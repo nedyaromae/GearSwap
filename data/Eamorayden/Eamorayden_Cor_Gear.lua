@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Evis','Shooting','WF'},
-		['Dual'] = {'DualSavage','DualAeolian','DualShooting','DualEvis','DualHotShot'}}
+		['Dual'] = {'DualSavage','DualHotShot','DualShooting','DualAeolian','DualEvis'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
