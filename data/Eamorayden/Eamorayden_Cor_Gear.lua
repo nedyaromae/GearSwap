@@ -190,7 +190,7 @@ function init_gear_sets()
         back=gear.macc_fc_jse_back,waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",
+        head="Ikenga's Hat",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Ikenga's Vest",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
