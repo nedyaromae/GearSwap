@@ -182,7 +182,7 @@ function init_gear_sets()
         
     -- Specific spells
 
-    sets.midcast.Utsusemi = sets.midcast.FastRecast
+    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast,{})
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
         head="Carmine Mask +1",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
