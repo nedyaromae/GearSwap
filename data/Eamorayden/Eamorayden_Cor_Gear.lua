@@ -199,7 +199,7 @@ function init_gear_sets()
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1",hands="Lanun Gants +4"}
+	sets.buff['Triple Shot'] = {head="Oshosi Mask",body="Chasseur's Frac +1",hands="Lanun Gants +4",legs="Oshosi Trousers",feet="Oshosi Leggings"}
     
     -- Sets to return to when not performing an action.
 	sets.DayIdle = {}
