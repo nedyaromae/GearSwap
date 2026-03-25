@@ -9,7 +9,7 @@ function user_job_setup()
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
-		['Default'] = {'Savage','Evis','Shooting','WF'},
+		['Default'] = {'Savage','Shooting','Evis'},
 		['Dual'] = {'DualSavage','DualHotShot','DualShooting','DualAeolian','DualEvis'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
