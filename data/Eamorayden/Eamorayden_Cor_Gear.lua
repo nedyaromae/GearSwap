@@ -21,7 +21,7 @@ function user_job_setup()
     gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
     ammostock=200
-    --Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
+    Ikenga_vest_bonus = 130  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
 
 	gear.tp_ranger_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10',}}
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
@@ -171,7 +171,7 @@ function init_gear_sets()
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +2"})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {}
+	sets.MaxTP = {body="Laksa. Frac +4"}
 	sets.AccMaxTP = {}
         
     -- Midcast Sets
