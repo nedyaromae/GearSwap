@@ -116,7 +116,7 @@ function init_gear_sets()
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Savage Blade'].PDL = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Ikenga's Vest",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
@@ -152,7 +152,7 @@ function init_gear_sets()
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
-        head="Pixie Hairpin +1",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Pixie Hairpin +1",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Epaminondas's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
@@ -162,13 +162,13 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Wildfire']  = {ammo=gear.MAbullet,
-        head="Nyame Helm",neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Epaminondas's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'],{neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt"})
     sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{})
-    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +1"})
+    sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{body="Nyame Mail",feet="Nyame Sollerets",neck="Comm. Charm +2"})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
