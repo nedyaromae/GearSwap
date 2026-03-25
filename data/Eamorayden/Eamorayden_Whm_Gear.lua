@@ -181,7 +181,7 @@ function init_gear_sets()
 
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
 		head=empty,neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring +1",
-		body="Twilight Cloak",hands="Theo. Mitts +4",ring1=gear.left_stinky,ring2="Metamorph Ring +1",
+		body="Twilight Cloak",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamorph Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 		
 	sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
