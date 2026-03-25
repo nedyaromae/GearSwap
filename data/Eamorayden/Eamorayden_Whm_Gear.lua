@@ -134,7 +134,7 @@ function init_gear_sets()
 	sets.midcast.MeleeLightWeatherCureSolace=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi",body="Ebers Bliaut +2"})
 
 	sets.midcast.Cursna = {Main="Gada",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
-		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring",
+		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
 		back="Alaunus's Cape",waist="Bishop's Sash",legs="Th. Pant. +3",feet="Vanya Clogs"}
 
@@ -149,7 +149,7 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
     sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Telchine Cap",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
+		head="Telchine Cap",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers earring +1",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
 
@@ -162,7 +162,7 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
 	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
+		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 	
@@ -180,7 +180,7 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic']['Aurorastorm']=set_combine(sets.midcast['Enhancing Magic'].NoSkill)
 
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head=empty,neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
+		head=empty,neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring +1",
 		body="Twilight Cloak",hands="Theo. Mitts +4",ring1=gear.left_stinky,ring2="Metamorph Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
 		
@@ -214,7 +214,7 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Regal Pumps +1"}
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head="Theophany Cap +4",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring",
+		head="Theophany Cap +4",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs=gear.Chironic_Enfeeblingpants,feet="Theo. Duckbills +4"}
 
