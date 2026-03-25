@@ -276,6 +276,11 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Epona's Ring",ring2="Murky Ring",
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
+    sets.engaged.DualSavage=set_combine(sets.engaged.DW,{})
+    sets.engaged.DualSavage.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
+    sets.engaged.DualHotShot=set_combine(sets.engaged.DW,{})
+    sets.engaged.DualHotShot.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
+
 end
 
 -- Select default macro book on initial load or subjob change.
