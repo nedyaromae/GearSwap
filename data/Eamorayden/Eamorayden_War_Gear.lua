@@ -60,11 +60,7 @@ function init_gear_sets()
 	
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})
-                   
-	sets.midcast.Cure = {}
-	
-						                   
+	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})	                   
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
@@ -78,7 +74,6 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Nyame Sollerets"}
 		
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
-
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
     sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring",hands="Sakpata's Gauntlets"})
@@ -107,9 +102,6 @@ function init_gear_sets()
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.critrate_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS["Ukko's Fury"].PDL=set_combine(sets.precast.WS["Ukko's Fury"], {body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses"})
-	
-
-	
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Rampage'] = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS["Ukko's Fury"], {})
@@ -174,30 +166,23 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
-
-
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
 		head="Crepuscular Helm",neck="Elite Royal Collar",ear1="Infused Earring",ear2="Alabaster Earring",
 		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back=gear.vit_wsd_jse_back,waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
-	
 	-- Defense sets
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
-
 	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Meili Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
 	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})
-	
-
---	sets.Kiting = {ring1="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
      
             -- Engaged sets
@@ -230,13 +215,6 @@ function init_gear_sets()
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
-	
-	
-    
-
-
-	
-
 	
             -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
             -- sets if more refined versions aren't defined.
