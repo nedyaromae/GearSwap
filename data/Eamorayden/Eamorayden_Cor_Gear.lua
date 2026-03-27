@@ -202,12 +202,9 @@ function init_gear_sets()
 	sets.buff['Triple Shot'] = {head="Oshosi Mask",body="Chasseur's Frac +1",hands="Lanun Gants +4",legs="Oshosi Trousers",feet="Oshosi Leggings"}
     
     -- Sets to return to when not performing an action.
-	sets.DayIdle = {}
-	sets.NightIdle = {}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
     
     -- Resting sets
-    sets.resting = {}
 	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
 
     -- Idle sets
@@ -239,13 +236,7 @@ function init_gear_sets()
     sets.weapons.WF={main="Tauret",sub="Nusku Shield",range="Doomsday"}
     
     -- Engaged sets
-
-    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
-    -- sets if more refined versions aren't defined.
-    -- If you create a set with both offense and defense modes, the offense mode should be first.
-    -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
-    -- Normal melee group
     sets.engaged = {
 	    head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
