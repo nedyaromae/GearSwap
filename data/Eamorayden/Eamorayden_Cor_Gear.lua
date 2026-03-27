@@ -278,7 +278,9 @@ function init_gear_sets()
 
     sets.engaged.DualSavage=set_combine(sets.engaged.DW,{})
     sets.engaged.DualSavage.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
+    sets.engaged.DualSavage.DT=set_combine(sets.engaged.DW.DT,{})
     sets.engaged.DualHotShot=set_combine(sets.engaged.DW,{})
+    sets.engaged.DualHotShot.DT=set_combine(sets.engaged.DW.DT,{})
     sets.engaged.DualHotShot.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
 
 end
