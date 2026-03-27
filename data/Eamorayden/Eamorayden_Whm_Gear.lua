@@ -79,10 +79,6 @@ function init_gear_sets()
 		head="Vanya Hood",waist="Austerity Belt",   
 		back="Solemnity Cape",feet="Kaykaus Boots"}
 		
-	sets.midcast.Teleport = set_combine(sets.ConserveMP,{})
-	sets.midcast.Warp=set_combine(sets.ConserveMP,{})
-	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
-	
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Alabaster Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
@@ -93,11 +89,12 @@ function init_gear_sets()
 	sets.midcast['Raise II']=set_combine(sets.midcast.FastRecast,{})
 	sets.midcast['Raise']=set_combine(sets.midcast.FastRecast,{})
 	sets.midcast['Reraise IV']=set_combine(sets.ConserveMP,{})
+	sets.midcast.Teleport = set_combine(sets.ConserveMP,{})
+	sets.midcast.Warp=set_combine(sets.ConserveMP,{})
+	sets.midcast.Escape=set_combine(sets.ConserveMP,{})
 		
     -- Cure sets
 
-	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
-	
 	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
@@ -110,6 +107,7 @@ function init_gear_sets()
 	sets.midcast.Curaga=set_combine(sets.midcast.Cure,{})
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
 	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
+	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
 
     sets.midcast.Cure.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
@@ -283,12 +281,8 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2",hands="Gazu Bracelets +1",ring1="Murky Ring",Ring2="Chirich Ring +1",
         back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 
-
-
-    
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Divine Caress'] = {hands="Ebers Mitts +2"}
-
 
 end
 
