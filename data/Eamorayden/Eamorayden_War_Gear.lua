@@ -60,7 +60,13 @@ function init_gear_sets()
 	
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})	                   
+	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",
+		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Meili Earring",ear2="Eabani Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
+		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
+	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})	
+	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})    
+	
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
@@ -205,23 +211,7 @@ function init_gear_sets()
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
-
-	sets.engaged.Gaxe={ammo="Coiste Bodhar", 
-		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
-		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
-
-	sets.engaged.Gaxe.FullAcc={ammo="Coiste Bodhar", 
-		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
-	
-            -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
-            -- sets if more refined versions aren't defined.
-            -- If you create a set with both offense and defense modes, the offense mode should be first.
-            -- EG: sets.engaged.Dagger.Accuracy.Evasion
-
-	
+			
 	--Extra Special Sets
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
