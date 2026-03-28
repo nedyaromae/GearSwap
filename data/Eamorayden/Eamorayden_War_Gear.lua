@@ -186,12 +186,12 @@ function init_gear_sets()
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
      
             -- Engaged sets
-	sets.engaged = {ammo="Coiste Bodhar", --1285 naegling 1287 loxotic 1333 lycurgos 1286 shining one
+	sets.engaged = {ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
-	sets.engaged.FullAcc={ammo="Coiste Bodhar", --1393 lycurgos 1345 naegling 1346 loxotic 1346 shining one
+	sets.engaged.FullAcc={ammo="Coiste Bodhar", 
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
@@ -236,7 +236,7 @@ function init_gear_sets()
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
 	sets.weapons.Loxotic= {main="Loxotic mace +1", sub="Blurred shield +1"}
 	sets.weapons.ShiningOne= {main="Shining One", sub="Utu Grip"}
-	sets.weapons.Gaxe = {main="Lycurgos", sub="Utu Grip"}
+	sets.weapons.Gaxe = {main="Chango", sub="Utu Grip"}
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 	sets.weapons.Staff={main="Xoanon",sub="Utu Grip"}
 	sets.weapons.Claymore={main="Agwu's Claymore",sub="Utu Grip"}
