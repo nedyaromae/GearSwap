@@ -228,12 +228,10 @@ function init_gear_sets()
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
 	sets.weapons.DualMageSortie={main=gear.RostampathC,sub="Kustawi +1",range="Fomalhaut"}
-    sets.weapons.DualWF={main="Naegling",sub="Tauret",range="Doomsday"}
     sets.weapons.DualHotShot={main=gear.lanunpathA,sub="Gleti's Knife",range="Fomalhaut"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
-    sets.weapons.WF={main="Tauret",sub="Nusku Shield",range="Doomsday"}
     
     -- Engaged sets
     
