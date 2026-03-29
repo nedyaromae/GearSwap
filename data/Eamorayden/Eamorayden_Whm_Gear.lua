@@ -134,7 +134,7 @@ function init_gear_sets()
 	sets.midcast.Cursna = {Main="Gada",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
 		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
-		back="Alaunus's Cape",waist="Bishop's Sash",legs="Th. Pant. +3",feet="Vanya Clogs"}
+		back="Alaunus's Cape",waist="Bishop's Sash",legs="Theo. Pant. +4",feet="Vanya Clogs"}
 
     sets.midcast.StatusRemoval = {Main="Queller Rod",sub="Diamond Aspis",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Alabaster Earring",
@@ -169,7 +169,7 @@ function init_gear_sets()
 	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Embla Sash",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
+		back="Alaunus's Cape",waist="Embla Sash",legs="Theo. Pant. +4",feet="Theo. Duckbills +4"}
 	
 	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Alabaster Earring",
@@ -179,7 +179,7 @@ function init_gear_sets()
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
 		head=empty,neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring +1",
 		body="Twilight Cloak",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamorph Ring +1",
-		back="Null Shawl",waist="Null Belt",legs="Th. Pant. +3",feet="Theo. Duckbills +4"}
+		back="Null Shawl",waist="Null Belt",legs="Theo. Pant. +4",feet="Theo. Duckbills +4"}
 		
 	sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Bunzi's Hat",neck="Sibyl Scarf",ear1="Malignance Earring",ear2="Friomisi Earring",
@@ -215,7 +215,7 @@ function init_gear_sets()
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs=gear.Chironic_Enfeeblingpants,feet="Theo. Duckbills +4"}
 
-    sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{legs="Th. Pant. +3"}}
+    sets.midcast.Repose = set_combine{sets.midcast['Enfeebling Magic'],{legs="Theo. Pant. +4"}}
     sets.midcast['Dark Magic'] =  set_combine(sets.midcast['Enfeebling Magic'], {})
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {waist="Fucho-no-obi"})
     sets.midcast.Aspir = set_combine(sets.midcast.Drain,{})

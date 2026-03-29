@@ -195,7 +195,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulker's Earring",
+    right_ear="Skulker's Earring +1",
     left_ring="Gere Ring",
     right_ring="Epona's Ring",
     back="Null Shawl" }
