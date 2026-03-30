@@ -135,7 +135,7 @@ function init_gear_sets()
 		
     sets.precast.WS['Aeolian Edge'] = {ammo={name="Oshasha's treatise",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Sibyl Scarf",priority=1},ear1={name="Moonshade Earring",priority=5},ear2={name="Friomisi Earring",priority=7},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Metamorph Ring +1",priority=8},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Epaminondas's Ring",priority=8},
         back=gear.wsd_jse_back,{priority=5},waist={name="Eschan Stone",priority=4},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 	
 		
