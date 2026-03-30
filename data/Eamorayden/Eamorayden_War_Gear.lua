@@ -86,10 +86,13 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'].PDL=set_combine(sets.precast.WS.PDL,{})
 
 	sets.precast.WS['Judgment']=set_combine(sets.precast.WS,{})
+	sets.precast.WS['Judgment'].PDL=set_combine(sets.precast.WS.PDL,{})
 	sets.precast.WS['Black Halo']=set_combine(sets.precast.WS,{})
+	sets.precast.WS['Black Halo'].PDL=set_combine(sets.precast.WS.PDL,{})
 	
 	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",hands="Nyame Gauntlets",feet="Nyame Sollerets",waist="Eschan Stone"})
 	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{ear1="Schere Earring"})
+	sets.precast.WS['Fell Cleave'].PDL=set_combine(sets.precast.WS['Savage Blade'].PDL,{ear1="Schere Earring"})
 	
     sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,body="Sakpata's Plate",hands="Sakpata's Gauntlets",ammo="Crepuscular Pebble"})
@@ -109,10 +112,13 @@ function init_gear_sets()
 		back=gear.critrate_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS["Ukko's Fury"].PDL=set_combine(sets.precast.WS["Ukko's Fury"], {body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses"})
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
+	sets.precast.WS['Ruinator'].PDL = set_combine(sets.precast.WS.PDL, {})
     sets.precast.WS['Rampage'] = set_combine(sets.precast.WS, {})
+	sets.precast.WS['Rampage'].PDL = set_combine(sets.precast.WS.PDL, {})
 	sets.precast.WS['Raging Rush'] = set_combine(sets.precast.WS["Ukko's Fury"], {})
 	sets.precast.WS['Raging Rush'].PDL = set_combine(sets.precast.WS["Ukko's Fury"].PDL, {})
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {})
+	sets.precast.WS["King's Justice"].PDL = set_combine(sets.precast.WS.PDL, {})
 	
 
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
