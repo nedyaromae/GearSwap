@@ -88,6 +88,8 @@ function init_gear_sets()
     sets.precast.JA['Shield Bash'].DT=set_combine(sets.precast.JA['Shield Bash'],{})
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Intervene'] = set_combine(sets.Enmity, {})
+    sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})
+	sets.precast.JA['Intervene'].DT = set_combine(sets.Enmity.DT, {})
 
     -- Fast cast sets for spells
     
