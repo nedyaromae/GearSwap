@@ -68,7 +68,7 @@ function init_gear_sets()
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
         head={name="Carmine Mask +1",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body=gear.TaeonFCBody,{priority=59},hands={name="Leyline Gloves",priority=25},ring1=gear.left_moonbeam,{priority=100},ring2={name="Kishar Ring",priority=7},
-        back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Agwu's Slops",priority=50},feet={name="Nyame Sollerets",priority=68}}
+        back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Agwu's Slops",priority=50},feet={name="Carmine Greaves +1",priority=95}}
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
 	
     -- Weaponskill sets
@@ -199,7 +199,7 @@ function init_gear_sets()
 		sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Crep. Earring",priority=6},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Chirich Ring +1",priority=16},ring2={name="Petrov Ring",priority=17},
-        back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves",priority=15}}
+        back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves +1",priority=15}}
 
 
 
