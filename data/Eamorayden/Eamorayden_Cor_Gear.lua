@@ -50,14 +50,15 @@ function init_gear_sets()
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
+
     sets.precast.JA['Wild Card'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+
     sets.precast.JA['Random Deal'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring",
         body="Lanun Frac +4",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
-
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.precast.CorsairRoll = {main=gear.RostampathC,range="Compensator",
         head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
