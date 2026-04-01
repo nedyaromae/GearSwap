@@ -75,12 +75,12 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo={name="Knobkierrie",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Moonshade Earring",priority=4},ear2={name="Sherida Earring",priority=1},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.left_moonbeam,{priority=100},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Moonlight Ring",priority=110},
         back={name="Null Shawl",priority=8},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
 	 sets.precast.WS.DD = {ammo={name="Knobkierrie",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=7},ear1={name="Moonshade Earring",priority=4},ear2={name="Sherida Earring",priority=1},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2=gear.left_moonbeam,{priority=100},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Epaminondas's Ring",priority=11},
         back={name="Null Shawl",priority=8},waist={name="Sailfi Belt +1",priority=3},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
 
@@ -122,8 +122,8 @@ function init_gear_sets()
 
 	
 	sets.midcast.Phalanx = {ammo={name="Crepuscular Pebble",priority=3},
-        head={name="Fu. Bandeau +2",priority=46},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
-        body=gear.TaeonPhalanxBody,{priority=59},hands={name="Taeon Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring"},{priority=8},
+        head={name="Fu. Bandeau +2",priority=46},neck={name="Loricate Torque +1",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+        body=gear.TaeonPhalanxBody,{priority=59},hands={name="Taeon Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
         back={name="Solemnity Cape",priority=5},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Taeon Boots",priority=13}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})

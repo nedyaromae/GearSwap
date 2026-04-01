@@ -18,4 +18,4 @@ gear.valorousTH={name="Valorous Mask", augments={'Mag. Acc.+30','"Mag.Atk.Bns."+
 gear.left_moonbeam ={ name="Moonbeam Ring" , bag="Wardrobe 2"}
 gear.TaeonPhalanxBody={name="Taeon Tabard", augments={'DEF+19','Spell interruption rate down -10%','Phalanx +3',}}
 gear.TaeonFCBody={ name="Taeon Tabard", augments={'"Fast Cast"+5',}}
-gear.FCHercPants={ name="Herculean Trousers", augments={'"Fast Cast"+6',}},
+gear.FCHercPants={ name="Herculean Trousers", augments={'"Fast Cast"+6',}}
