@@ -46,7 +46,7 @@ sets.precast.JA['Chakra'] = {head="Null Masque",neck="Unmoving Collar +1",ear1="
 sets.precast.FC = {ammo="Sapience Orb",
 		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
 		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
-		back="",waist="",legs="",feet=""}
+		back="",waist="",legs=gear.FCHercPants,feet=""}
 	
 
 --	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})

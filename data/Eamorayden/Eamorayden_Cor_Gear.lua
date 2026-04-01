@@ -90,7 +90,7 @@ function init_gear_sets()
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
-        back=gear.macc_fc_jse_back,waist="Null Belt",legs="Rawhide Trousers",feet="Carmine Greaves +1"}
+        back=gear.macc_fc_jse_back,waist="Null Belt",legs=gear.FCHercPants,feet="Carmine Greaves +1"}
 
     sets.precast.RA = {ammo=gear.RAbullet,  
         head="Chass. Tricorne +1",neck="Comm. Charm +2",ear1="",ear2="",
