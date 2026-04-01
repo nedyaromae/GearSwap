@@ -13,8 +13,6 @@ function user_job_setup()
 
 	state.AmbushMode = M(false, 'Ambush Mode')
 
-	gear.da_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.wsd_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 
     -- Additional local binds
 
@@ -31,18 +29,13 @@ function init_gear_sets()
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
   --  sets.Kiting = {ring2="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {head="Frenzy Sallet"}
+	sets.buff.Sleep = {}
 	
     sets.buff['Sneak Attack'] = {}
-    sets.buff['Trick Attack'] = {"Pill. Armlets +3"}
+    sets.buff['Trick Attack'] = {}
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
-	sets.Suppa = {ear1="Suppanomimi", ear2="Sherida Earring"}
-	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
-	sets.Parry = {hands="Turms Mittens +1",ring1="Defending Ring"}
-	sets.Ambush = {} --body="Plunderer's Vest +1"
 	
 	-- Weapons sets
 	sets.weapons.Aeolian = {main="Tauret",sub="Malevolence"}
@@ -51,17 +44,6 @@ function init_gear_sets()
     sets.weapons.Asuran={main="Karambit"}
 	
     -- Actions we want to use to tag TH.
-    sets.precast.Step = {ammo="C. Palug Stone",
-        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Odr Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
-		
-    sets.precast.JA['Violent Flourish'] = {ammo="C. Palug Stone",
-        head="Malignance Chapeau",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Odr Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
-		
-	sets.precast.JA['Animated Flourish'] = sets.TreasureHunter
 	sets.precast.JA.Provoke = sets.TreasureHunter
 
     --------------------------------------
