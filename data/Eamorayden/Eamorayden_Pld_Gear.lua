@@ -162,7 +162,7 @@ function init_gear_sets()
     
     sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},feet={name="Chev. Sabatons +2",priority=42},ear1={name="Friomisi Earring",priority=2}})
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
-    sets.midcast.Flash.DT=set_combine(sets.Enmity.DT)
+    sets.midcast.Flash.DT=set_combine(sets.Enmity.DT,{})
     sets.midcast['Divine Magic'] = set_combine(sets.Enmity.SIRD,{})
     sets.midcast['Divine Magic'].DT=set_combine(sets.Enmity.DT,{})
 	sets.midcast['Blue Magic'] = set_combine(sets.Enmity.SIRD,{})
@@ -237,8 +237,12 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=9},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
 
     sets.midcast['Enlight II']=set_combine(sets.midcast['Enlight'],{})
-    sets.midcast['Enlight II'].DT=set_combine(sets.midcast['Enlight II'],{})
     sets.midcast['Enlight II'].SIRD=set_combine(sets.midcast['Enlight'].SIRD,{})
+
+    sets.midcast['Enlight II'].DT={ammo={name="Crepuscular Pebble",priority=3},
+        head={name="Sakpata's Helm",priority=91},neck={name="Loricate Torque +1",priority=1},ear1={name="Eabani Earring",priority=45},ear2={name="Chev. Earring +1",priority=4},
+        body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata Gauntlets",priority=91},ring1=gear.left_stinky,{priority=6},ring2=gear.right_stinky,{priority=5},
+        back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}	
 	
 	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
         head={name="Odyssean Helm",priority=112},neck={name="Melic Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Chev. Earring +1",priority=3},
