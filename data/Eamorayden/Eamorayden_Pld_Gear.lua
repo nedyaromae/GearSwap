@@ -2,13 +2,13 @@ function user_job_setup()
 
     -- Options: Override default values	
 
-    state.CastingMode:options('SIRD','Normal') 
+    state.CastingMode:options('SIRD','Normal','DT') 
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
 	state.Weapons:options('SakpataDuban','SakpataAegis')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
-	state.HybridMode:options('Normal')
-    state.WeaponskillMode:options('Normal','DD')
+	state.HybridMode:options('Normal','Tank')
+    state.WeaponskillMode:options('Normal','DT','DD')
 	
 	gear.fastcast_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Phys. dmg. taken-10%'}}
 	gear.idle_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Damage taken-5%',}}
@@ -109,7 +109,8 @@ function init_gear_sets()
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Epaminondas's Ring",priority=7},
         back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
-    sets.precast.WS.DT=set_combine(sets.precast.WS,{ear2="Chev. Earring +1"})
+    sets.precast.WS.Tank=set_combine(sets.precast.WS,{ear2="Chev. Earring +1"})
+    sets.precast.WS.DT=set_combine(sets.precast.WS.Tank,{})
 
     sets.precast.WS.DD={ammo={name="Coiste Bodhar",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=1},ear1={name="Moonshade Earring",priority=4},ear2={name="Thrud Earring",priority=1},
@@ -317,7 +318,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {head=gear.valorousTH})
     sets.defense.PDT=set_combine(sets.idle,{})
     sets.defense.MDT=set_combine(sets.idle.Magic,{})
-    sets.defense.Resist=set_combine(sets.idle.Int,{})
+    sets.defense.MEVA=set_combine(sets.idle.Int,{})
     
 	-- Weapons sets
     sets.weapons.SakpataDuban = {main="Sakpata's Sword",sub="Duban"} --normal tank shit
@@ -335,10 +336,12 @@ function init_gear_sets()
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=99},ring2={name="Moonlight Ring",priority=110},
         back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
-      sets.engaged.DT = {ammo={name="Coiste Bodhar",priority=3},
+      sets.engaged.Tank = {ammo={name="Coiste Bodhar",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Warder's Charm +1",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Crep. Earring",priority=6},
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Shadow Ring",priority=8},ring2={name="Moonlight Ring",priority=110},
         back={name="Null Shawl",priority=7},waist={name="Plat. Mog. Belt",priority=300},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+
+    sets.engaged.DT=set_combine(sets.engaged.Tank,{})
 	--------------------------------------
 	-- Custom buff sets
 	--------------------------------------
