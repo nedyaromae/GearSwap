@@ -26,7 +26,7 @@ function init_gear_sets()
     sets.Enmity = {ammo="Sapience Orb",
 		head="Pummeler's Mask +2",neck="Moonlight Necklace",ear1="Cryptic Earring",ear2="Friomisi Earring",
 		body="Souv. Cuirass +1",hands="Pumm. Mufflers +2",ring1="Apeile Ring +1",ring2="Eihwaz Ring",
-		back=gear.vit_wsd_jse_back,waist="Flume Belt",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
+		back=gear.vit_wsd_jse_back,waist="Flume Belt +1",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
@@ -122,7 +122,7 @@ function init_gear_sets()
 	
 
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
-		head="Null Masque",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Crep. Earring",
+		head="Null Masque",neck="Vim Torque +1",ear1="Cessance Earring",ear2="Crep. Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
 		back="Null Shawl",waist="Reiki Yotai",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
@@ -210,7 +210,7 @@ function init_gear_sets()
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 	sets.engaged.Aspis={ammo="Coiste Bodhar", 
-		head="Boii Mask +2",neck="Lissome Necklace",ear1="Schere Earring",ear2="Boii Earring +1",
+		head="Boii Mask +2",neck="Vim Torque +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 		
