@@ -48,20 +48,20 @@ function init_gear_sets()
    
 		
     -- Precast sets to enhance JAs
-    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1",priority=24})
-    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1",priority=48})
-    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +4",priority=73})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +4",priority=126}) 
-    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1",priority=70})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +2",priority=42})
+    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs={name="Cab. Breeches +1"},priority=24})
+    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet={name="Rev. Leggings +1"},priority=48})
+    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet={name="Cab. Leggings +4"},priority=73})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head={name="Cab. Coronet +4"},priority=126}) 
+    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body={name="Cab. Surcoat +1"},priority=70})
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet={name="Chev. Sabatons +2"},priority=42})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --head="Rev. Coronet +1",body="Cab. Surcoat +1"
     --Meva shit for ody bosses 
-    sets.precast.JA['Invincible'].DT = set_combine(sets.Enmity.DT,{legs="Cab. Breeches +1",priority=24})
-    sets.precast.JA['Holy Circle'].DT = set_combine(sets.Enmity.DT,{feet="Rev. Leggings +1",priority=48})
-    sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet="Cab. Leggings +4",priority=73})
-    sets.precast.JA['Rampart'].DT = set_combine(sets.Enmity.DT,{head="Cab. Coronet +4",priority=126}) 
-    sets.precast.JA['Fealty'].DT = set_combine(sets.Enmity.DT,{body="Cab. Surcoat +1",priority=70})
-    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet="Chev. Sabatons +2",priority=42})
+    sets.precast.JA['Invincible'].DT = set_combine(sets.Enmity.DT,{legs={name="Cab. Breeches +1"},priority=24})
+    sets.precast.JA['Holy Circle'].DT = set_combine(sets.Enmity.DT,{feet={name="Rev. Leggings +1"},priority=48})
+    sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet={name="Cab. Leggings +4"},priority=73})
+    sets.precast.JA['Rampart'].DT = set_combine(sets.Enmity.DT,{head={name="Cab. Coronet +4"},priority=126}) 
+    sets.precast.JA['Fealty'].DT = set_combine(sets.Enmity.DT,{body={name="Cab. Surcoat +1"},priority=70})
+    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet={name="Chev. Sabatons +2"},priority=42})
     sets.precast.JA['Cover'].DT = set_combine(sets.Enmity.DT, {}) --head="Rev. Coronet +1",body="Cab. Surcoat +1"
 
     --WAR stuff 
