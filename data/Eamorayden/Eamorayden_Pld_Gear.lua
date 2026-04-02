@@ -99,7 +99,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
-	sets.precast.FC.Cure = set_combine(sets.precast.FC, {ear2="Nourish. Earring +1",priority=4})
+	sets.precast.FC.Cure = set_combine(sets.precast.FC, {ear2={name="Nourish. Earring +1",priority=4}})
     sets.precast.FC.Cure.DT=set_combine(sets.precast.FC.Cure,{})
   
     -- Weaponskill sets
@@ -142,7 +142,7 @@ function init_gear_sets()
 		
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring",}
+	sets.MaxTP = {}
 
 
 	--------------------------------------
@@ -220,10 +220,10 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Flume Belt +1",priority=3},legs={name="Founder's Hose",priority=54},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.midcast['Blue Magic']['Cocoon']=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
-	sets.midcast.Protect=set_combine(sets.midcast['Enhancing Magic'], {sub="Duban",ring1="Sheltered Ring",priority=5})
+	sets.midcast.Protect=set_combine(sets.midcast['Enhancing Magic'], {sub={name="Duban",priority=9},ring1={name="Sheltered Ring",priority=5}})
     sets.midcast.Protect.DT=set_combine(sets.midcast.Protect,{})
     sets.midcast.Protect.SIRD=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
-    sets.midcast.Shell=set_combine(sets.midcast['Enhancing Magic'], {ring1="Sheltered Ring",priority=5})
+    sets.midcast.Shell=set_combine(sets.midcast['Enhancing Magic'], {ring1={name="Sheltered Ring",priority=5}})
     sets.midcast.Shell.SIRD=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
 
 	sets.midcast['Enlight'] = {ammo={name="Crepuscular Pebble",priority=3},
