@@ -61,7 +61,7 @@ function init_gear_sets()
     sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet={name="Cab. Leggings +4",priority=73}})
     sets.precast.JA['Rampart'].DT = set_combine(sets.Enmity.DT,{head={name="Cab. Coronet +4",priority=126},ear2={name="Chev. Earring +1",priority=10}}) 
     sets.precast.JA['Fealty'].DT = set_combine(sets.Enmity.DT,{body={name="Cab. Surcoat +2",priority=118}})
-    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet={name="Chev. Sabatons +2",priority=42}})
+    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{})
     sets.precast.JA['Cover'].DT = set_combine(sets.Enmity.DT, {}) --body="Cab. Surcoat +2"
 
     --WAR stuff 
