@@ -222,7 +222,7 @@ function init_gear_sets()
     sets.midcast.Tractor=set_combine(sets.midcast.FastRecast,{})
 	sets.midcast.Slow = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
     sets.midcast.Paralyze=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
-    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky})
+    sets.midcast.Addle=set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak",sub="Ammurapi Shield",head="Null Masque",ring1=gear.left_stinky,legs="Theo. Pant. +4"})
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
