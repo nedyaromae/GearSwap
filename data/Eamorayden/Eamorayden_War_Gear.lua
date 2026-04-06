@@ -131,7 +131,12 @@ function init_gear_sets()
 	sets.precast.WS["Impulse Drive"].PDL=set_combine(sets.precast.WS["Impulse Drive"],{legs="Sakpata's Cuisses",body="Sakpata's PLate",ring1="Sroda Ring"})
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget",waist="Fotia Belt"})
 	sets.precast.WS["Stardiver"].PDL=set_combine(sets.precast.WS["Stardiver"],{hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses",ring1="Sroda Ring"})
-	sets.precast.WS["Requiescat"] =set_combine(sets.precast.WS, {legs="Sakpata's Cuisses",feet="Sakpata's Leggings",ear1="Schere Earring",ear2="Boii Earring +1",neck="Fotia Gorget",ammo="Coiste Bodhar",back=gear.da_jse_back,ring1="Petrov Ring"})
+	
+	sets.precast.WS["Requiescat"] ={ammo="Coiste Bodhar",
+		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Boii Earring +1",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Pumm. Calligae +4"}
+
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
 		head="Boii Mask +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
