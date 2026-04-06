@@ -61,7 +61,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
 
     sets.precast.CorsairRoll = {main=gear.RostampathC,range="Compensator",
-        head="Lanun Tricorne +1",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
+        head="Lanun Tricorne +3",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -127,12 +127,12 @@ function init_gear_sets()
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Lanun Tricorne +3",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].PDL = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Ikenga's Hat",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Ikenga's Vest",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Ikenga's Trousers",feet="Lanun Bottes +4"}
 
