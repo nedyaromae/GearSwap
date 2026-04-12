@@ -124,8 +124,8 @@ function init_gear_sets()
     back=gear.wsd_jse_back,{priority=7},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.precast.WS['Requiescat'].DT=set_combine(sets.precast.WS['Requiescat'],{})
-	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS['Requiescat'],{})
-    sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS['Requiescat'].DT,{})
+	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS['Requiescat'],{ring1={name="Epaminondas's Ring",priority=5}})
+    sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS['Chant du Cygne'],{})
     sets.precast.WS['Atonement'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
     sets.precast.WS['Atonement'].DT=set_combine(sets.Enmity.DT,{})
 
