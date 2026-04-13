@@ -85,7 +85,7 @@ function init_gear_sets()
 
     sets.precast.JA['Chivalry'].DT=set_combine( sets.precast.JA['Chivalry'],{})
 	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands={name="Cab. Gauntlets +3",priority=84}})	
-    sets.precast.JA['Shield Bash'].DT=set_combine(sets.precast.JA['Shield Bash'],{})
+    sets.precast.JA['Shield Bash'].DT=set_combine(sets.Enmity.DT, {hands={name="Cab. Gauntlets +3",priority=84}})	
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Intervene'] = set_combine(sets.Enmity, {})
     sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})

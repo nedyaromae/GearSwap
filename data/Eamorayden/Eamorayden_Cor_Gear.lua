@@ -10,7 +10,7 @@ function user_job_setup()
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Shooting','Evis'},
-		['Dual'] = {'DualSavage','DualHotShot','DualShooting','DualAeolian','DualEvis','PPTest'}}
+		['Dual'] = {'DualSavage','DualHotShot','DualShooting','DualAeolian','DualEvis','PP'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -238,7 +238,7 @@ function init_gear_sets()
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.lanunpathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
-    sets.weapons.PPTest={main=gear.lanunpathA,sub="Gleti's Knife",range="Anarchy +2"}
+    sets.weapons.PP={main=gear.lanunpathA,sub="Gleti's Knife",range="Anarchy +2"}
     
     -- Engaged sets
     
@@ -278,6 +278,11 @@ function init_gear_sets()
     sets.engaged.DualHotShot=set_combine(sets.engaged.DW,{})
     sets.engaged.DualHotShot.DT=set_combine(sets.engaged.DW.DT,{})
     sets.engaged.DualHotShot.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
+    sets.engaged.PP=set_combine(sets.engaged.DW,{})
+    sets.engaged.PP.DT=set_combine(sets.engaged.DW.DT,{})
+    sets.engaged.PP.Acc=set_combine(sets.engaged.DW.Acc,{hands="Malignance Gloves"})
+    
+
 
 end
 

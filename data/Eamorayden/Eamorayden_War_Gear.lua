@@ -131,7 +131,7 @@ function init_gear_sets()
 	sets.precast.WS["Impulse Drive"].PDL=set_combine(sets.precast.WS["Impulse Drive"],{legs="Sakpata's Cuisses",body="Sakpata's PLate",ring1="Sroda Ring"})
 	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",hands="Flam. Manopolas +2",ear1="Schere Earring",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget",waist="Fotia Belt"})
 	sets.precast.WS["Stardiver"].PDL=set_combine(sets.precast.WS["Stardiver"],{hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses",ring1="Sroda Ring"})
-	
+
 	sets.precast.WS["Requiescat"] ={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
@@ -214,7 +214,7 @@ function init_gear_sets()
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
-	sets.engaged.Aspis={ammo="Coiste Bodhar", 
+	sets.engaged.Vagary={ammo="Coiste Bodhar", 
 		head="Boii Mask +2",neck="Vim Torque +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
