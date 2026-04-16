@@ -302,7 +302,7 @@ function init_gear_sets()
 
     sets.idle.Evasion={ammo={name="Amar Cluster",priority=3}, --This is for limbus nms 
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
-    body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Shadow Ring",priority=3},ring2={name="Murky Ring",priority=30},
+    body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Murky Ring",priority=30},
     back={name="Null Shawl",priority=5},waist={name="Null Belt",priority=2},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
 	--------------------------------------
