@@ -240,7 +240,6 @@ function init_gear_sets()
 
     sets.Refresh_Received = {waist="Gishdubar Sash"}
 
-    -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Shneddick Ring",
