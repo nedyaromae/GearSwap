@@ -89,7 +89,7 @@ function init_gear_sets()
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
-    sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring",hands="Sakpata's Gauntlets"})
+    sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring"})
 	sets.precast.WS['Savage Blade'].PDL=set_combine(sets.precast.WS.PDL,{})
 
 	sets.precast.WS['Judgment']=set_combine(sets.precast.WS,{})
@@ -98,10 +98,10 @@ function init_gear_sets()
 	sets.precast.WS['Black Halo'].PDL=set_combine(sets.precast.WS.PDL,{})
 	
 	sets.precast.WS['Red Lotus Blade']=set_combine(sets.precast.WS['Savage Blade'], {head="Nyame Helm",Body="Nyame Mail",hands="Nyame Gauntlets",feet="Nyame Sollerets",waist="Eschan Stone"})
-	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{ear1="Schere Earring"})
+	sets.precast.WS['Fell Cleave']=set_combine(sets.precast.WS['Savage Blade'],{ear1="Schere Earring",ring1="Sroda Ring"})
 	sets.precast.WS['Fell Cleave'].PDL=set_combine(sets.precast.WS['Savage Blade'].PDL,{ear1="Schere Earring"})
 	
-    sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back})
+    sets.precast.WS['Upheaval'] = set_combine(sets.precast.WS, {back=gear.vit_wsd_jse_back,ring1="Niqmaddu Ring"})
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,body="Sakpata's Plate",hands="Sakpata's Gauntlets",ammo="Crepuscular Pebble"})
      
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
@@ -213,12 +213,12 @@ function init_gear_sets()
             -- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 		
 	sets.engaged.FullAcc={ammo="Coiste Bodhar", 
-		head="Boii Mask +2",neck="War. Beads +1",ear1="Cessance Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 	sets.engaged.Vagary={ammo="Coiste Bodhar", 
@@ -228,7 +228,7 @@ function init_gear_sets()
 		
 	sets.engaged.Meva={ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 			
 	--Extra Special Sets

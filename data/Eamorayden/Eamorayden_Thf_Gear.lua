@@ -51,15 +51,15 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Collaborator'] = {"Skulker's Bonnet"}
-    sets.precast.JA['Accomplice'] = {"Skulker's Bonnet"}
+    sets.precast.JA['Collaborator'] = {}
+    sets.precast.JA['Accomplice'] = {}
     sets.precast.JA['Flee'] = {} --feet="Pillager's Poulaines +1"
-    sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
-    sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
+    sets.precast.JA['Hide'] = {}
+    sets.precast.JA['Conspirator'] = {} 
     sets.precast.JA['Steal'] = {} --feet="Pillager's Poulaines +1"
 	sets.precast.JA['Mug'] = {}
-    sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines +1"}
-    sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
+    sets.precast.JA['Despoil'] = {}
+    sets.precast.JA['Perfect Dodge'] = {}
     sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
 
     sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
@@ -102,7 +102,7 @@ function init_gear_sets()
      sets.precast.WS['Asuran Fists']={ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Sroda Ring",
-        back="Toutatis's Cape",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Toutatis's Cape",waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Cessance Earring"}
