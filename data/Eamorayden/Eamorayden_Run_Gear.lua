@@ -197,9 +197,9 @@ function init_gear_sets()
         back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame sollerets",priority=68}}
 
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
-        head={name="Aya. Zucchetto +2",priority=45},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Crep. Earring",priority=6},
-        body={name="Ayanmo Corazza +2",priority=57},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2={name="Petrov Ring",priority=17},
-        back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves +1",priority=15}}
+        head={name="Aya. Zucchetto +2",priority=45},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Brutal Earring",priority=6},
+        body={name="Ayanmo Corazza +2",priority=57},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2={name="Epona's Ring",priority=17},
+        back={name="Null Shawl",priority=7},waist={name="Ioskeha Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves +1",priority=15}}
 
 
 
