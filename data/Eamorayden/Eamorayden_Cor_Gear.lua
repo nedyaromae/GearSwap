@@ -72,7 +72,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +2"})
-    sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves",back="Null Shawl"})
+    sets.precast.CorsairRoll["Bolter's Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Malignance Gloves",back="Null Shawl",head="Null Masque"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Dedition Earring",ear2="Crep. Earring",
@@ -237,12 +237,12 @@ function init_gear_sets()
 	sets.weapons.DualMageSortie={main=gear.RostamPathC,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.DualHotShot={main=gear.RostamPathB,sub="Gleti's Knife",range="Fomalhaut"}
     sets.weapons.PP={main=gear.RostamPathB,sub="Gleti's Knife",range="Anarchy +2"}
+    sets.weapons.W3HotShot={main=gear.RostamPathB,sub="Kustawi +1",range="Fomalhaut"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.LanunPathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.MeleeLS={main=gear.RostamPathB,sub="Nusku Shield",range="Fomalhaut"}
-
-    sets.weapons.W3HotShot={main=gear.RostamPathB,sub="Kustawi +1",range="Fomalhaut"}
+   
     
     
     -- Engaged sets
