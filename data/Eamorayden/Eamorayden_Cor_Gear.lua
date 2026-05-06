@@ -9,8 +9,8 @@ function user_job_setup()
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
-		['Default'] = {'Savage','Shooting','Evis'},
-		['Dual'] = {'DualSavage','DualHotShot','DualShooting','DualAeolian','DualEvis','DualRP','PP','W3HotShot'}}
+		['Default'] = {'Savage','Shooting','Evis','MeleeLS'},
+		['Dual'] = {'DualSavage','DualHotShot','DualAeolian','W3HotShot','PP','DualEvis','DualShooting'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -233,14 +233,15 @@ function init_gear_sets()
 	sets.weapons.DualShooting = {main=gear.LanunPathA,sub="Kustawi +1",range="Fomalhaut"}
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
 	sets.weapons.DualEvis = {main="Tauret",sub="Gleti's Knife",range="Anarchy +2"}
-	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Anarchy +2"}
+	sets.weapons.DualAeolian = {main=gear.RostamPathB,sub="Tauret",range="Anarchy +2"}
 	sets.weapons.DualMageSortie={main=gear.RostamPathC,sub="Kustawi +1",range="Fomalhaut"}
-    sets.weapons.DualHotShot={main=gear.LanunPathA,sub="Gleti's Knife",range="Fomalhaut"}
-    sets.weapons.PP={main=gear.LanunPathA,sub="Gleti's Knife",range="Anarchy +2"}
+    sets.weapons.DualHotShot={main=gear.RostamPathB,sub="Gleti's Knife",range="Fomalhaut"}
+    sets.weapons.PP={main=gear.RostamPathB,sub="Gleti's Knife",range="Anarchy +2"}
     sets.weapons.Savage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2"}
     sets.weapons.Shooting ={main=gear.LanunPathA,sub="Nusku Shield",range="Fomalhaut"}
     sets.weapons.Evis={main="Tauret",sub="Nusku Shield",range="Anarchy +2"}
-    sets.weapons.DualRP={main="Naegling",sub=gear.RostamPathB,range="Anarchy +2"}
+    sets.weapons.MeleeLS={main=gear.RostamPathB,sub="Nusku Shield",range="Fomalhaut"}
+
     sets.weapons.W3HotShot={main=gear.RostamPathB,sub="Kustawi +1",range="Fomalhaut"}
     
     
