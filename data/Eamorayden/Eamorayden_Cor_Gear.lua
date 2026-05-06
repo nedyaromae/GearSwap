@@ -164,7 +164,7 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 		
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
-        head="Nyame Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
