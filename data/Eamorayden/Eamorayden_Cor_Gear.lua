@@ -3,14 +3,13 @@ function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
     state.WeaponskillMode:options('Match','Normal', 'Acc','PDL')
-    state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
 		['Default'] = {'Savage','Shooting','Evis','MeleeLS'},
-		['Dual'] = {'DualSavage','DualHotShot','DualAeolian','W3HotShot','PP','DualEvis','DualShooting'}}
+		['Dual'] = {'DualSavage','DualHotShot','DualAeolian','W3HotShot','PP','DualShooting'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
 	state.CompensatorMode:options('Always','300','1000','Never')
@@ -226,7 +225,7 @@ function init_gear_sets()
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",}
+	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",hands="Volte Bracers"}
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 
 	-- Weapons sets

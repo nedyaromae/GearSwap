@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal','DT') 
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
-	state.Weapons:options('SakpataDuban','SakpataAegis')
+	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal','Tank')
@@ -169,10 +169,10 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['Blank Gaze'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
 	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
 
-    sets.midcast.Cure= {ammo={name="Crepuscular Pebble",priority=1},
-        head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=250},ear1={name="Nourish. Earring +1",priority=4},ear2={name="Chev. Earring +1",priority=3},
-        body={name="Souv. Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=100},ring2={name="Moonlight Ring",priority=110},
-        back=gear.CP_jse_back,{priority=60},waist={name="Flume Belt +1",priority=5},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
+    sets.midcast.Cure= {ammo={name="Pemphredo Tathlum",priority=1},
+        head={name="Sakpata's Helm",priority=91},neck={name="Null Loop",priority=50},ear1={name="Nourish. Earring +1",priority=4},ear2={name="Chev. Earring +1",priority=3},
+        body={name="Souv. Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonbeam,{priority=100},ring2={name="Murky Ring",priority=10},
+        back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum +1",priority=7},
         head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=9},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
