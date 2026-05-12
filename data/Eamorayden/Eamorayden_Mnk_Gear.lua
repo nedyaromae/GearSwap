@@ -26,7 +26,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs on use
 	sets.precast.JA['Hundred Fists'] = {legs="Hes. Hose"}
 	sets.precast.JA['Boost'] = {}
-	sets.precast.JA['Boost'].OutOfCombat = {ring1="Sljor Ring",neck="Justiciar's Torque"}
+	sets.precast.JA['Boost'].OutOfCombat = {ring1="Sljor Ring",neck="Hoxne Torque"}
 	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +4"}
 	sets.precast.JA['Focus'] = {head="Anchor. Crown +1"}
 	sets.precast.JA['Provoke']= {ring2="Supershear Ring",ring1="Eihwaz Ring",ear1="Cryptic Earring",ear2="Friomisi Earring",neck="Moonlight necklace",ammo="Sapience Orb",waist="Kasiri Belt",head="Halitus Helm"}

@@ -245,7 +245,7 @@ function init_gear_sets()
         back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}	
 	
 	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
-        head={name="Odyssean Helm",priority=112},neck={name="Melic Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Chev. Earring +1",priority=3},
+        head={name="Odyssean Helm",priority=112},neck={name="Hoxne Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Andoaa Earring",priority=3},
         body={name="Valorous Mail",priority=61},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=6},
         back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=122}}
 

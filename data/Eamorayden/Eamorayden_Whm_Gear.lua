@@ -142,8 +142,8 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Ebers Duckbills +2"}
 		
 	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Telchine Cap",neck="Melic torque",ear1="Mimir Earring",ear2="Andoaa Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1=gear.left_stinky,ring2=gear.right_stinky,
+		head="Telchine Cap",neck="Hoxne Torque",ear1="Mimir Earring",ear2="Andoaa Earring",
+		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
     sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
