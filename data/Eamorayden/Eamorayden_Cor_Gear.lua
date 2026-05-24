@@ -4,11 +4,11 @@ function user_job_setup()
     state.RangedMode:options('Acc','Normal')
     state.WeaponskillMode:options('Match','Normal', 'Acc','PDL')
     state.IdleMode:options('Normal')
-	state.HybridMode:options('Normal','DT')
+	state.HybridMode:options('Normal','DT','Kalunga')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
-		['Default'] = {'Savage','Shooting','Evis','MeleeLS'},
+		['Default'] = {'Savage','Shooting','MeleeLS','Evis',},
 		['Dual'] = {'DualSavage','DualHotShot','DualAeolian','W3HotShot','PP','DualShooting'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
@@ -49,7 +49,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.precast.JA['Wild Card'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring",
@@ -61,7 +61,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
 
     sets.precast.CorsairRoll = {main=gear.RostamPathC,range="Compensator",
-        head="Lanun Tricorne +3",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
+        head="Lanun Tricorne +4",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +2",ring1="Defending Ring",ring2="Murky Ring",
         back=gear.tp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -127,7 +127,7 @@ function init_gear_sets()
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +3",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksa. Frac +4",hands="Chasseur's Gants +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
@@ -260,6 +260,11 @@ function init_gear_sets()
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+
+    sets.engaged.Kalunga={
+	    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
+		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Eabani Earring",

@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal','DT') 
-	state.IdleMode:options('Idle','Magic','Segs','ConvertMP') 
+	state.IdleMode:options('Idle','Magic','Segs','ConvertMP','Adds') 
 	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
@@ -150,12 +150,12 @@ function init_gear_sets()
 	--------------------------------------
 		
     sets.midcast.FastRecast={ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Loquac. Earring",priority=4},ear2={name="Etiolation Earring",priority=50},
+        head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=4},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=7},ring2={name="Murky Ring",priority=2},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
     
     sets.midcast.FastRecast.DT={ammo={name="Sapience Orb",priority=3},
-        head={name="Sakpata's Helm",priority=91},neck={name="Baetyl Pendant",priority=1},ear1={name="Loquac. Earring",priority=5},ear2={name="Etiolation Earring",priority=50},
+        head={name="Sakpata's Helm",priority=91},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=5},ear2={name="Loquac. Earring",priority=50},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=7},ring2={name="Murky Ring",priority=2},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
@@ -190,12 +190,12 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Sroda Belt",priority=4},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 		
     sets.midcast.Reprisal = {ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Loquac. Earring",priority=5},ear2={name="Alabaster Earring",priority=100},
+        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Loquac. Earring",priority=5},
         body={name="Shabti Cuirass +1",priority=115},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
     sets.midcast.Reprisal.DT= {ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Loquac. Earring",priority=5},ear2={name="Alabaster Earring",priority=100},
+        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Loquac. Earring",priority=5},
         body={name="Sakpata's Plate",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
@@ -304,6 +304,11 @@ function init_gear_sets()
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Murky Ring",priority=30},
     back={name="Null Shawl",priority=5},waist={name="Null Belt",priority=2},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+
+    sets.idle.Adds= {ammo={name="Homiliary",priority=3},
+    head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
+    back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
 
 	--------------------------------------
     -- Defense sets
