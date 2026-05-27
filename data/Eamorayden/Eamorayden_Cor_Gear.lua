@@ -264,7 +264,7 @@ function init_gear_sets()
     sets.engaged.Kalunga={
 	    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+		back="Null Shawl",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Eabani Earring",
