@@ -20,7 +20,7 @@ function user_job_setup()
     gear.QDbullet = "Hauksbok Bullet"
     options.ammo_warning_limit = 15
     ammostock=200
-    Ikenga_vest_bonus = 130  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
+    Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
 
 	gear.tp_ranger_jse_back = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Phys. dmg. taken-10%',}}
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
@@ -150,7 +150,7 @@ function init_gear_sets()
     sets.precast.WS['Numbing Shot'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Numbing Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Numbing Shot'].Acc = sets.precast.WS['Last Stand'].Acc
-    sets.precast.WS['Sniper Shot'] = sets.precast.WS['Last Stand']
+    sets.precast.WS['Sniper Shot'] = sets.precast.WS['Evisceration']
     sets.precast.WS['Sniper Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Sniper Shot'].Acc = sets.precast.WS['Last Stand'].Acc
     sets.precast.WS['Split Shot'] = sets.precast.WS['Last Stand']
