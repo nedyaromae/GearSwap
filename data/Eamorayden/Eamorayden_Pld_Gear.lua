@@ -80,12 +80,12 @@ function init_gear_sets()
     -- add mnd for Chivalry
     sets.precast.JA['Chivalry'] = {ammo={name="Crepuscular Pebble",priority=3},
         head={name="Null Masque",priority=100},neck={name="Null Loop",priority=50},ear1={name="Nourish. Earring +1",priority=7},ear2={name="Alabaster Earring",priority=100},
-        body={name="Nyame Mail",priority=136},hands={name="Cab. Gauntlets +4",priority=84},ring1=gear.left_stinky,{priority=5},ring2=gear.right_stinky,{priority=8},
+        body={name="Nyame Mail",priority=136},hands={name="Cab. Gauntlets +4",priority=134},ring1=gear.left_stinky,{priority=5},ring2=gear.right_stinky,{priority=8},
         back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     sets.precast.JA['Chivalry'].DT=set_combine( sets.precast.JA['Chivalry'],{})
-	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands={name="Cab. Gauntlets +4",priority=84}})	
-    sets.precast.JA['Shield Bash'].DT=set_combine(sets.Enmity.DT, {hands={name="Cab. Gauntlets +4",priority=84}})	
+	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands={name="Cab. Gauntlets +4",priority=134}})	
+    sets.precast.JA['Shield Bash'].DT=set_combine(sets.Enmity.DT, {hands={name="Cab. Gauntlets +4",priority=134}})	
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Intervene'] = set_combine(sets.Enmity, {})
     sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})
