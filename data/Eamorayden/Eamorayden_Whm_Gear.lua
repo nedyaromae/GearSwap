@@ -233,10 +233,10 @@ function init_gear_sets()
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 
-	sets.midcast['Dia II'] = {Main="Queller Rod",sub="Diamond Aspis",ammo="Crepuscular Pebble",
-		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Loquac. Earring",
-		body="Nyame Mail",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Alaunus's Cape",waist="Obstinate Sash",legs="Prestige Brais",feet="Ebers Duckbills +2"}
+	sets.midcast['Dia II'] = {Main="Queller Rod",sub="Archduke's Shield",ammo="Crepuscular Pebble",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
+		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
+		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 
     sets.Refresh_Received = {waist="Gishdubar Sash"}
 
