@@ -57,17 +57,17 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS = {ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 
 	sets.precast.WS.PDL = {ammo="Coiste Bodhar",
 		head="Mpaca's Cap",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}	
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}	
 	
 	sets.precast.WS.Ngai={ammo="Coiste Bodhar",
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
 	-- Specific weaponskill sets.
 
@@ -79,11 +79,11 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Dragon Kick'] =  {ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
 		body="Mpaca's Doublet",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 	sets.precast.WS['Tornado Kick']={ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
 		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow belt",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Malignance Gloves",ring1=gear.left_stinky,ring2="Murky Ring",
@@ -118,7 +118,7 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 --	sets.midcast.FastRecast = {ammo="Staunch Tathlum +1",
 --		head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 --		body="Dread Jupon",hands="Leyline Gloves",ring1="Murky Ring",ring2="Prolix Ring",
---		back="Moonlight Cape",waist="Moonbow belt",legs="Nyame Flanchard",feet="Hippo. Socks +1"}
+--		back="Moonlight Cape",waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Hippo. Socks +1"}
 		
 --	-Specific spells
 --	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})	
@@ -154,22 +154,22 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 	sets.engaged = {ammo="Coiste Bodhar", --1300 imp down 1293 imp up -- all engaged accs are /drg - like 10 or osme shit for other jobs 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
 		sets.engaged.Acc = {ammo="Coiste Bodhar", --1343 imp down 1336 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Bhikku Earring +1",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
 sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back="Null Shawl",waist="Moonbow belt",legs="Bhikku Hose +2",feet="Malignance Boots"}	
+		back="Null Shawl",waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}	
 
 	sets.engaged.Ngai= {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Warder's Charm +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Mpaca's Gloves",ring1="Shadow Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow belt",legs="Bhikku Hose +2",feet="Nyame Sollerets"}	
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Nyame Sollerets"}	
 	-- Hundred Fists/Impetus melee set mods
 	
 	sets.engaged.HF = set_combine(sets.engaged, {})
