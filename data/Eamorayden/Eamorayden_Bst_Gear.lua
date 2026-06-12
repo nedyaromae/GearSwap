@@ -10,26 +10,24 @@ function user_job_setup()
 	state.ResistDefenseMode:options()
 	state.Weapons:options('None','PetPDTAxe','DualWeapons')
 
-	-- Set up Jug Pet cycling and keybind Ctrl+F7
+	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
 	state.JugMode = M{['description']='Jug Mode','FatsoFargann','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
-	send_command('bind ^f7 gs c cycle JugMode')
+	
 
-	-- Set up Monster Correlation Modes and keybind Alt+F7
+	-- Set up Monster Correlation Modes 
 	state.CorrelationMode = M{['description']='Correlation Mode', 'Neutral', 'Favorable'}
-	send_command('bind !f7 gs c cycle CorrelationMode')
+	
 
-	-- Set up Pet Modes for Hybrid sets and keybind 'Windows Key'+F7
+	-- Set up Pet Modes for Hybrid sets 
 	state.PetMode = M{['description']='Pet Mode','Tank','DD'}
-	send_command('bind @f7 gs c cycle PetMode')
 
-	-- Set up Reward Modes and keybind Ctrl+Backspace
+
+	-- Set up Reward Modes 
 	state.RewardMode = M{['description']='Reward Mode', 'Theta', 'Zeta', 'Eta'}
-	send_command('bind ^backspace gs c cycle RewardMode')
+	
 
-	send_command('bind @f8 gs c toggle AutoReadyMode')
-	send_command('bind !` gs c ready default')
-
+	
 	--Example of how to change default ready moves.
 	--ready_moves.default.WarlikePatrick = 'Tail Blow'
 
