@@ -78,16 +78,13 @@ function init_gear_sets()
 
 	sets.precast.WS['Onslaught'] = set_combine(sets.precast.WS, {})
 
-	sets.precast.WS['Primal Rend'] = {ammo="Ghastly Tathlum +1",
-		head="Jumalik Helm",neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
-		body="Jumalik Mail",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		back="Toro Cape",waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tot. Gaiters +1"}
+	sets.precast.WS['Primal Rend'] = set_combine(sets.precast.WS, {})
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {})
 
 		-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}
-	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
+	sets.MaxTP = {}}
+	sets.AccMaxTP = {}
 
 				-- PET SIC & READY MOVES
 --	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,ammo="Voluspa Tathlum",
@@ -114,7 +111,7 @@ function init_gear_sets()
 	sets.resting = {}
 
 	sets.idle = {ammo="Staunch Tathlum +1",
-		 head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
@@ -136,8 +133,8 @@ function init_gear_sets()
 --		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
 	-- DEFENSE SETS
-	sets.defense.PDT = {ammo="Staunch Tathlum +1",
-		 head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+	sets.defense.PDT = {ammo="Crepuscular Pebble",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -156,8 +153,8 @@ function init_gear_sets()
 --	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
 --	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Crepuscular Helm",body="Twilight Mail"})
 
-	sets.defense.MDT = {ammo="Staunch Tathlum +1",
-		 head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+	sets.defense.MDT = {ammo="Crepuscular Pebble",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
@@ -187,7 +184,7 @@ function init_gear_sets()
 
 	sets.buff['Killer Instinct'] = {}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {head="Frenzy Sallet"}
+	sets.buff.Sleep = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Knockback = {}
 
