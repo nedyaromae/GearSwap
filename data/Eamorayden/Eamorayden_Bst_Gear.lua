@@ -1,6 +1,6 @@
 function user_job_setup()
 	state.OffenseMode:options('Normal')
-	state.HybridMode:options('Normal')
+	state.HybridMode:options('KalungaBS','Normal')
 	state.WeaponskillMode:options('Match','Normal')
 	state.CastingMode:options('Normal')
 	state.IdleMode:options('Normal')
@@ -171,6 +171,11 @@ function init_gear_sets()
 		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+
+	sets.engaged.KalungaBS={ammo="Coiste Bodhar"
+		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Sherida Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
+        back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	
 	-- MELEE (DUAL-WIELD) SETS FOR DNC AND NIN SUBJOB
