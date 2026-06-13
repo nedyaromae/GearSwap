@@ -3,7 +3,7 @@ function user_job_setup()
 	state.HybridMode:options('KalungaBS','Normal')
 	state.WeaponskillMode:options('Match','Normal')
 	state.CastingMode:options('Normal')
-	state.IdleMode:options('Normal')
+	state.IdleMode:options('Normal','Reraise')
 	state.RestingMode:options('Normal')
 	state.PhysicalDefenseMode:options()
 	state.MagicalDefenseMode:options()
@@ -116,6 +116,7 @@ function init_gear_sets()
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.Reraise = set_combine(sets.idle, {head="Crepuscular Helm",body="Twilight Mail"})
+	sets.idle.Weak= set_combine(sets.idle, {head="Crepuscular Helm",body="Twilight Mail"})
 
 --	sets.idle.Pet = {ammo="Voluspa Tathlum",
 --		head="Anwig Salade",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
