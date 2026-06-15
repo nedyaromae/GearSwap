@@ -162,7 +162,7 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic']['Aurorastorm']=set_combine(sets.midcast['Enhancing Magic'].NoSkill)
 
 	sets.midcast.Aquaveil= {main="Vadose Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Chironic Hat",neck="Loricate Torque +1",ear1="Mimir Earring",ear2="Alabaster Earring",
+		head="Chironic Hat",neck="Hoxne Torque",ear1="Mimir Earring",ear2="Alabaster Earring",
 		body="Ros. Jaseran +1",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
