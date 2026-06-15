@@ -2,7 +2,7 @@
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
-    state.WeaponskillMode:options('Match','Normal', 'Acc','PDL')
+    state.WeaponskillMode:options('Match','Normal', 'Acc','PDL','SB')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
@@ -118,13 +118,18 @@ function init_gear_sets()
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
-        body="Nyame Mail",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Savage Blade'].PDL = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+
+    sets.precast.WS['Savage Blade'].SB = {ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Beyla Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich Ring +1",ring2="Cornelia's Ring",
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
