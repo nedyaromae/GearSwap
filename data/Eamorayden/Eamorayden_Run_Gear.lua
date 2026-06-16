@@ -9,8 +9,9 @@ function user_job_setup()
 	state.HybridMode:options('Normal','Meva','Parry')
     state.WeaponskillMode:options('Normal','DD')
 
-    gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+7','Parrying rate+5%',}}
+    gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+1','Enmity+10','Parrying rate+5%',}}
     gear.enmity_jse_back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Phys. dmg. taken-10%',}}
+    gear.fc_jse_back={ name="Ogma's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
 	
     select_blu_spells()
 	-- Additional local binds
@@ -74,7 +75,7 @@ function init_gear_sets()
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
         head={name="Rune. Bandeau +3",priority=109},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body=gear.TaeonFCBody,{priority=102},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=7},ring2={name="Kishar Ring",priority=7},
-        back={name="Solemnity Cape",priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Carmine Greaves +1",priority=95}}
+        back=gear.fc_jse_back,{priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Carmine Greaves +1",priority=95}}
 
          sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs={name="Futhark Trousers +3",priority=107}})
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
