@@ -45,10 +45,10 @@ function init_gear_sets()
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {}
 	sets.precast.JA.Tame = {}
-	sets.precast.JA.Spur = {}
+	sets.precast.JA.Spur = {back="Artio's Mantle"}
 	sets.precast.JA['Feral Howl'] = {}
 
-	sets.precast.JA.Reward = {ring1=gear.left_stinky,ring2=gear.right_stinky,}
+	sets.precast.JA.Reward = {back="Artio's Mantle",ring1=gear.left_stinky,ring2=gear.right_stinky}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})

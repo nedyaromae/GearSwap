@@ -6,7 +6,7 @@ function user_job_setup()
 	state.IdleMode:options('Idle','Magic') 
 	state.Weapons:options('Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
-	state.HybridMode:options('Normal','Meva','Parry')
+	state.HybridMode:options('Parry','Meva','Normal')
     state.WeaponskillMode:options('Normal','DD')
 
     gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+1','Enmity+10','Parrying rate+5%',}}
@@ -29,11 +29,14 @@ function init_gear_sets()
 	--------------------------------------
 	
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
-        head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
+        head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Cryptic Earring",priority=40},
         body={name="Emet Harness +1",priority=61},hands={name="Nyame Gauntlets",priority=91},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Kasiri Belt",priority=30},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Erilaz Greaves +1",priority=18}}
     
-        
+    sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, -- this fucking sucks just don't have everything to make it suck less so this is at least some dt sird cap and a fart of enmity
+        head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+       body={name="Emet Harness +1",priority=61},hands={name="Rawhide Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
+       back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 
 	
 
@@ -141,26 +144,41 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity,{})
 	sets.midcast['Blue Magic']['Healing Breeze']={}
-    sets.midcast.Temper={ammo={name="Crepuscular Pebble",priority=3},
-        head={name="Null Masque",priority=100},neck={name="Hoxne Torque",priority=2},ear1={name="Mimir Earring",priority=100},ear2={name="Andoaa Earring",priority=150},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_stinky,{priority=3},ring2=gear.right_stinky,{priority=4},
-        back={name="Solemnity Cape",priority=5},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
 
+    sets.midcast['Enhancing Magic']={ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Erilaz Galea +1",priority=91},neck={name="Futhark Torque +1",priority=40},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Sheltered Ring"},{priority=7},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
+
+    sets.midcast.Temper={ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Erilaz Galea +1",priority=91},neck={name="Hoxne Torque",priority=2},ear1={name="Mimir Earring",priority=10},ear2={name="Andoaa Earring",priority=5},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_stinky,{priority=3},ring2={name="Moonlight Ring"},{priority=110},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
+
+    sets.midcast.Refresh={ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Erilaz Galea +1",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Gishdubar Sash",priority=5},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
+        
+    sets.midcast.Regen={ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Rune. Bandeau +3",priority=109},neck={name="Futhark Torque +1",priority=40},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Sroda Belt",priority=5},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
 
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
        body={name="Nyame Mail",priority=136},hands={name="Rawhide Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
-	sets.midcast.Phalanx = {ammo={name="Crepuscular Pebble",priority=3},
-        head={name="Fu. Bandeau +2",priority=46},neck={name="Loricate Torque +1",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Fu. Bandeau +2",priority=46},neck={name="Unmoving Collar +1",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body=gear.TaeonPhalanxBody,{priority=59},hands={name="Taeon Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
-        back={name="Solemnity Cape",priority=5},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Taeon Boots",priority=13}}
+         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Taeon Boots",priority=13}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 
     sets.midcast.Stoneskin={ammo={name="Staunch Tathlum +1",priority=3},
-    head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Earthcry Earring",priority=6},
+    head={name="Erilaz Galea +1",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Earthcry Earring",priority=6},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
    back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
 
@@ -174,17 +192,17 @@ function init_gear_sets()
     sets.idle = {ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Fortified Ring",priority=4},
-    back={name="Null Shawl",priority=5},{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
+    back=gear.enmity_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 
     sets.idle.Magic={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Null Masque",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=6},ring2={name="Shadow Ring",priority=7},
-    back={name="Null Shawl",priority=5},{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
+    back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 
     sets.idle.Segs= {ammo={name="Eluder's Sachet",priority=3},
     head={name="Null Masque",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=4},ring2={name="Fortified Ring",priority=1},
-    back={name="Null Shawl",priority=5},{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
+    back=gear.enmity_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 
     sets.idle.Int= {ammo={name="Sapience Orb",priority=3}, --This is for horseshit like kalunga because apparently Dint plays a role in resisting fetters
     head={name="Null Masque",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
@@ -236,7 +254,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=50},ear1={name="Alabaster Earring",priority=100},ear2={name="Eabani Earring",priority=45},
         body={name="Nyame Mail",priority=136},hands={name="Turms Mittens +1",priority=74},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
-       back=gear.parry_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame sollerets",priority=68}}
+       back=gear.parry_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Nyame sollerets",priority=68}}
 
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
         head={name="Aya. Zucchetto +2",priority=45},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
@@ -279,5 +297,5 @@ function select_blu_spells()
     end
 end
 function user_job_lockstyle()
-	windower.chat.input('/lockstyleset 011')
+	windower.chat.input('/lockstyleset 012')
 end
