@@ -83,7 +83,7 @@ function init_gear_sets()
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {})
 
 		-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {}}
+	sets.MaxTP = {}
 	sets.AccMaxTP = {}
 
 				-- PET SIC & READY MOVES

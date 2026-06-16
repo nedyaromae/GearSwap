@@ -131,7 +131,7 @@ function init_gear_sets()
 	sets.midcast.MeleeLightWeatherCuraga=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
 	sets.midcast.MeleeLightWeatherCureSolace=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi",body="Ebers Bliaut +2"})
 
-	sets.midcast.Cursna = {Main="Gada",sub="Thuellaic Ecu +1",ammo="Sapience Orb",
+	sets.midcast.Cursna = {Main="Gada",sub="Genmei Shield",ammo="Sapience Orb",
 		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
 		back="Alaunus's Cape",waist="Bishop's Sash",legs="Theo. Pant. +4",feet="Vanya Clogs"}
