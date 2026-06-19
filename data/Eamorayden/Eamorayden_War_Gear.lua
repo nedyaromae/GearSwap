@@ -243,7 +243,7 @@ function init_gear_sets()
 	sets.buff.Sleep= {neck="Vim Torque +1"}
 	sets.buff.Restraint = {}
 	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",hands="Souv. Handsch. +1",legs="Sakpata's leggings",feet="Souveran Schuhs +1"}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {head=gear.valorousTH})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Refresh_Received ={waist="Gishdubar Sash"}
 	
 	-- Weapons sets

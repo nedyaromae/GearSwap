@@ -314,7 +314,7 @@ function init_gear_sets()
     -- Defense sets
     --------------------------------------
     -- Extra defense sets.  Apply these on top of melee or defense sets.
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {head=gear.valorousTH})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
     sets.defense.PDT=set_combine(sets.idle,{})
     sets.defense.MDT=set_combine(sets.idle.Magic,{})
     sets.defense.MEVA=set_combine(sets.idle.Int,{})
