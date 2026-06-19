@@ -112,9 +112,9 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS,{})
 
 	sets.precast.WS['Evisceration'] = {ammo=gear.WSbullet,
-        head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
-        body="Meg. Cuirie +2",hands="Mummu Wrists +2",ring1="Epona's Ring",ring2="Mummu Ring",
-        back=gear.tp_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
+        body="Nyame mail",hands="Chassuer's Gants +2",ring1="Epona's Ring",ring2="Cornelia's Ring",
+        back=gear.tp_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
