@@ -768,39 +768,24 @@ function handle_elemental(cmdParams)
 	elseif command == 'bardsong' then
 		windower.chat.input('/ma "'..data.elements.threnody_of[state.ElementalMode.value]..' Threnody" '..target)
 	elseif command == 'carol' then
-		local carol_element = data.elements.weak_to[state.ElementalMode.value]
-		if silent_can_cast(carol_element..' Carol II') then
-			windower.chat.input('/ma "'..carol_element..' Carol II " '..target)
-		else
-			windower.chat.input('/ma "'..carol_element..' Carol" '..target)
-		end
+		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol" '..target)
+	elseif command == 'carol2'
+		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol II " '..target)
 	elseif command == 'threnody' then
+		if state.ElementalMode.value == 'Lightning' then
+			if silent_can_cast('Ltng. Threnody II') then
+				windower.chat.input('/ma "Ltng. Threnody II" '..target)
+			else
+				windower.chat.input('/ma "Ltng. Threnody" '..target)
+			end
+			return
+		end
+
 		if silent_can_cast(state.ElementalMode.value..' Threnody II') then
 			windower.chat.input('/ma "'..state.ElementalMode.value..' Threnody II " '..target)
 		else
 			windower.chat.input('/ma "'..state.ElementalMode.value..' Threnody" '..target)
 		end
-	elseif command == 'customrunes' then
-		custom_runes = {}
-		if #cmdParams ~= 3 then
-			add_to_chat(123,'Customrunes requires three arguments.')
-			return
-		end
-		for i in pairs(cmdParams) do
-			local rune_to_set = cmdParams[i]:ucfirst()
-			
-			if data.abilities.runes:contains(rune_to_set) then
-				table.insert(custom_runes, rune_to_set)
-			elseif data.elements.rune_of[rune_to_set] then
-				table.insert(custom_runes, data.elements.rune_of[rune_to_set])
-			else
-				add_to_chat(123,'['..cmdParams[i]..'] is not a valid rune, setting custom runes failed.')
-				return
-			end
-		end
-		add_to_chat(122,'Custom Runes currently set to: ('..table.concat(custom_runes, ', ')..')')
-	else
-		add_to_chat(123,'Unrecognized elemental command.')
 	end
 end
 
