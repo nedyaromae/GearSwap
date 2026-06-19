@@ -184,3 +184,6 @@ end
         set_macro_page(1, 2)
     end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 011')
+	end

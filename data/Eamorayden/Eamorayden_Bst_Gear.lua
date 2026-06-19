@@ -299,3 +299,7 @@ end
 state.Weapons:options('None','PetPDTAxe','DualWeapons')
 
 autows_list = {['PetPDTAxe']='Ruinator',['DualWeapons']='Ruinator'}
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 011')
+	end
