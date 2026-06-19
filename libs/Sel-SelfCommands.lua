@@ -769,7 +769,7 @@ function handle_elemental(cmdParams)
 		windower.chat.input('/ma "'..data.elements.threnody_of[state.ElementalMode.value]..' Threnody" '..target)
 	elseif command == 'carol' then
 		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol" '..target)
-	elseif command == 'carol2'
+	elseif command == 'carol2' then
 		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol II " '..target)
 	elseif command == 'threnody' then
 		if state.ElementalMode.value == 'Lightning' then
