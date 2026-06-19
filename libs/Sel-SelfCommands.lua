@@ -767,9 +767,25 @@ function handle_elemental(cmdParams)
 
 	elseif command == 'bardsong' then
 		windower.chat.input('/ma "'..data.elements.threnody_of[state.ElementalMode.value]..' Threnody" '..target)
+	elseif command == 'carol' then
+		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol" '..target)
+	elseif command == 'carol2' then
+		windower.chat.input('/ma "'..data.elements.weak_to[state.ElementalMode.value]..' Carol II " '..target)
+	elseif command == 'threnody' then
+		if state.ElementalMode.value == 'Lightning' then
+			if silent_can_cast('Ltng. Threnody II') then
+				windower.chat.input('/ma "Ltng. Threnody II" '..target)
+			else
+				windower.chat.input('/ma "Ltng. Threnody" '..target)
+			end
+			return
+		end
 
-	else
-		add_to_chat(123,'Unrecognized elemental command.')
+		if silent_can_cast(state.ElementalMode.value..' Threnody II') then
+			windower.chat.input('/ma "'..state.ElementalMode.value..' Threnody II " '..target)
+		else
+			windower.chat.input('/ma "'..state.ElementalMode.value..' Threnody" '..target)
+		end
 	end
 end
 
