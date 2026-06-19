@@ -384,11 +384,10 @@ end
 
 function handle_job_elemental(command, target)
 	if command == 'enspell' then
-		if  (player.sub_job == 'NIN' or player.sub_job == 'DNC') then 
-			windower.chat.input('/ma "En'..data.elements.enspell_of[state.ElementalMode.value]..'" <me>')
-		else
-			windower.chat.input('/ma "En'..data.elements.enspell_of[state.ElementalMode.value]..' II" <me>')
-		end
+		windower.chat.input('/ma "En'..data.elements.enspell_of[state.ElementalMode.value]..'" <me>')
+		return true
+	elseif command == 'enspell2' then
+		windower.chat.input('/ma "En'..data.elements.enspell_of[state.ElementalMode.value]..' II" <me>')
 		return true
 	elseif command == 'weather' then
 		if player.sub_job ~= 'SCH' then
