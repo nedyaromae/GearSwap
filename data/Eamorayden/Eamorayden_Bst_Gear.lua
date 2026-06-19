@@ -48,7 +48,10 @@ function init_gear_sets()
 	sets.precast.JA.Spur = {back="Artio's Mantle"}
 	sets.precast.JA['Feral Howl'] = {}
 
-	sets.precast.JA.Reward = {back="Artio's Mantle",ring1=gear.left_stinky,ring2=gear.right_stinky}
+	sets.precast.JA.Reward = {ammo="Staunch Tathlum +1",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Nukumi Earring +1",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1=gear.left_stinky,ring2=gear.right_stinky,
+		back="Artio's Mantle",waist="Incarnation Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})
@@ -68,7 +71,7 @@ function init_gear_sets()
 		-- WEAPONSKILLS
 		-- Default weaponskill sets.
 	sets.precast.WS ={ammo="Coiste Bodhar",
-		head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Thrud Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back="Null Shawl",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
