@@ -2513,7 +2513,7 @@ function check_rune()
 
 		elseif state.AutoRuneMode.value ~= 'Full' then
 			return false
-		elseif player.main_job == 'RUN' and abil_recasts[242] < latency and (player.hpp < 50 or (state.RuneElement.Value == 'Tenebrae' and player.mpp < 75)) then
+		elseif player.main_job == 'RUN' and abil_recasts[242] < latency and (player.hpp < 50 or (buffactive['Tenebrae'] and player.mpp < 75)) then
 			windower.chat.input('/ja "Vivacious Pulse" <me>')
 			add_tick_delay()
 			return true

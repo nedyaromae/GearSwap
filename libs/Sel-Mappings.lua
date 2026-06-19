@@ -109,8 +109,8 @@ data.elements.strong_to = {['Light']='Dark', ['Dark']='Light', ['Fire']='Water',
 data.elements.storm_of = {['Light']="Aurorastorm", ['Dark']="Voidstorm", ['Fire']="Firestorm", ['Earth']="Sandstorm",
 		['Water']="Rainstorm", ['Wind']="Windstorm", ['Ice']="Hailstorm", ['Lightning']="Thunderstorm",}
 
-data.elements.rune_of = {['Light']='Lux', ['Dark']='Tenebrae', ['Fire']='Ignis', ['Ice']='Gelus', ['Wind']='Flabra',
-	 ['Earth']='Tellus', ['Lightning']='Sulpor', ['Water']='Unda'}
+data.elements.rune_of = {['Light']='Lux',['Dark']='Tenebrae',['Fire']='Ignis',['Ice']='Gelus',['Wind']='Flabra',
+	 ['Earth']='Tellus',['Lightning']='Sulpor',['Water']='Unda'}
 
 data.weather_bonus_potency = {[0]=0,[1]=10,[2]=25}
 
