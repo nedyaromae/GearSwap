@@ -127,7 +127,7 @@ function init_gear_sets()
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Savage Blade'].SB = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Beyla Earring",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Digni. Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Chirich Ring +1",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

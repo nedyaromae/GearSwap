@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal','DT') 
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP','Adds') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen')
+	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen','Kiting')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal','Tank')
@@ -220,7 +220,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Flume Belt +1",priority=3},legs={name="Founder's Hose",priority=54},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.midcast['Blue Magic']['Cocoon']=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
-	sets.midcast.Protect=set_combine(sets.midcast['Enhancing Magic'], {sub={name="Duban",priority=9},ring1={name="Sheltered Ring",priority=5}})
+	sets.midcast.Protect=set_combine(sets.midcast['Enhancing Magic'], {sub={name="Srivatsa",priority=150},ring1={name="Sheltered Ring",priority=5}})
     sets.midcast.Protect.DT=set_combine(sets.midcast['Enhancing Magic'].DT,{ring1={name="Sheltered Ring",priority=6}})
     sets.midcast.Protect.SIRD=set_combine(sets.midcast['Enhancing Magic'].SIRD,{})
     sets.midcast.Shell=set_combine(sets.midcast['Enhancing Magic'], {ring1={name="Sheltered Ring",priority=5}})
@@ -326,6 +326,7 @@ function init_gear_sets()
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
     sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
+    sets.weapons.Kiting={main="Brilliance",sub="Srivatsa"}
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
