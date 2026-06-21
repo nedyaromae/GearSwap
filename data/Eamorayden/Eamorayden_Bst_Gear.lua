@@ -8,11 +8,11 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options()
 	state.MagicalDefenseMode:options()
 	state.ResistDefenseMode:options()
-	state.Weapons:options('None','PetPDTAxe','DualWeapons')
+	state.Weapons:options('None','Agwu','Ikengas')
 
 	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode','FatsoFargann','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode','GenerousArthur','FatsoFargann','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
 	
 
 	-- Set up Monster Correlation Modes 
@@ -100,15 +100,16 @@ function init_gear_sets()
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Tali'ah Ring",ring2="Murky Ring",
 		back="Artio's Mantle",waist="Incarnation Sash",legs="Nyame Flanchard",feet="Gleti's Boots"}
 				
-	sets.midcast.Pet.MagicReady = sets.midcast.Pet.DebuffReady
+	sets.midcast.Pet.MagicReady = set_combine(sets.midcast.Pet.DebuffReady, {})
 		
-	sets.midcast.Pet.PhysicalDebuffReady = sets.midcast.Pet.DebuffReady
+	sets.midcast.Pet.PhysicalDebuffReady = set_combine(sets.midcast.Pet.DebuffReady, {})
 
 	sets.midcast.Pet.ReadyRecast = {legs="Gleti's Breeches"}
 	sets.midcast.Pet.ReadyRecastDW = {legs="Gleti's Breeches"}
 	sets.midcast.Pet.Neutral = {}
 	sets.midcast.Pet.Favorable = {}
-	sets.midcast.Pet.TPBonus = {}
+	sets.midcast.Pet.TPBonus = set_combine(sets.midcast.Pet.DebuffReady, {})
+
 
 	-- RESTING
 	sets.resting = {}
@@ -197,6 +198,7 @@ function init_gear_sets()
 --	sets.weapons.PetPDTAxe = {main ="Izizoeksi"}
 --	sets.weapons.DualWeapons = {main ="Izizoeksi",sub="Hunahpu"}
 	sets.weapons.Agwu={Main="Agwu's Axe",sub="Diamond Aspis"}
+	sets.weapons.Ikengas={main="Ikenga's Axe",sub="Diamond Aspis"}
 
 
 -------------------------------------------------------------------------------------------------------------------
@@ -299,9 +301,9 @@ function select_default_macro_book()
 	end
 end
 
-state.Weapons:options('None','PetPDTAxe','DualWeapons')
+state.Weapons:options('None','Agwu','Ikenga')
 
-autows_list = {['PetPDTAxe']='Ruinator',['DualWeapons']='Ruinator'}
+autows_list = {['DualWeapons']='Ruinator'}
 
 function user_job_lockstyle()
 	windower.chat.input('/lockstyleset 011')
