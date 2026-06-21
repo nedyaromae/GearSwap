@@ -9,8 +9,8 @@ function user_job_setup()
 	state.HybridMode:options('Parry','Meva','Normal')
     state.WeaponskillMode:options('Normal','DD')
 
-    gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+1','Enmity+10','Parrying rate+5%',}}
-    gear.enmity_jse_back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Phys. dmg. taken-10%',}}
+    gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}}
+    gear.enmity_jse_back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}}
     gear.fc_jse_back={ name="Ogma's Cape", augments={'Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
 	
     select_blu_spells()
