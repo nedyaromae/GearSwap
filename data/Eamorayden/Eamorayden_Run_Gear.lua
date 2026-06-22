@@ -239,8 +239,8 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
         back=gear.parry_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings",priority=61}}
 
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
-        head={name="Aya. Zucchetto +2",priority=45},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
-        body={name="Ayanmo Corazza +2",priority=57},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2={name="Epona's Ring",priority=17},
+        head={name="Nyame Helm",priority=91},neck={name="Anu Torque",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
+        body={name="Ashera Harness",priority=182},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2={name="Epona's Ring",priority=17},
         back={name="Null Shawl",priority=7},waist={name="Ioskeha Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves +1",priority=15}}
 
 

@@ -199,6 +199,7 @@ function init_gear_sets()
 --	sets.weapons.DualWeapons = {main ="Izizoeksi",sub="Hunahpu"}
 	sets.weapons.Agwu={Main="Agwu's Axe",sub="Diamond Aspis"}
 	sets.weapons.Ikengas={main="Ikenga's Axe",sub="Diamond Aspis"}
+	sets.weapons.Naegling={main="Naegling",sub="Diamond Aspis"}
 
 
 -------------------------------------------------------------------------------------------------------------------
