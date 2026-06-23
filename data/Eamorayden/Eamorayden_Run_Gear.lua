@@ -35,7 +35,7 @@ function init_gear_sets()
     
     sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, -- this fucking sucks just don't have everything to make it suck less so this is at least some dt sird cap and a fart of enmity
         head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
-       body={name="Nyame mail",priority=136},hands={name="Rawhide Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
+       body={name="Nyame mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 
 	
@@ -164,7 +164,7 @@ function init_gear_sets()
 
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
-       body={name="Nyame Mail",priority=136},hands={name="Rawhide Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
+       body={name="Nyame Mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
