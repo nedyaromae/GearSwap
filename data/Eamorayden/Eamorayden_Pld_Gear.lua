@@ -190,7 +190,7 @@ function init_gear_sets()
         back=gear.CP_jse_back,{priority=60},waist={name="Sroda Belt",priority=4},legs={name="Prestige Brais",priority=159},feet={name="Nyame Sollerets",priority=68}}
 		
     sets.midcast.Reprisal = {ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Loquac. Earring",priority=5},
+        head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Loquac. Earring",priority=5},
         body={name="Shabti Cuirass +1",priority=115},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
