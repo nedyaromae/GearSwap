@@ -247,7 +247,7 @@ function init_gear_sets()
 		back="Alaunus's Cape",waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
 
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
-		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Mimir Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
 
