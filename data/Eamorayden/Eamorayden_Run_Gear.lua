@@ -136,9 +136,11 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity,{})
 	sets.midcast['Blue Magic']['Healing Breeze']={ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Mendi. Earring",priority=5},ear2={name="Tuisto Earring",priority=150},
+        head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Mendi. Earring",priority=5},
         body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Sroda Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=90},feet={name="Nyame Sollerets",priority=68}}
+
+    sets.midcast['Blue Magic']['Wild Carrot']=set_combine(sets.midcast['Blue Magic']['Healing Breeze'],{})
 
     sets.midcast['Enhancing Magic']={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Erilaz Galea +1",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
