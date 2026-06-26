@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal','DT') 
 	state.IdleMode:options('Idle','Magic','Segs','ConvertMP','Adds') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen','Kiting')
+	state.Weapons:options('SakpataDuban','SakpataAegis','SakpataPriwen','SakpataSriv','BrilSriv')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal','Tank')
@@ -326,7 +326,8 @@ function init_gear_sets()
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
     sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
-    sets.weapons.Kiting={main="Brilliance",sub="Srivatsa"}
+    sets.weapons.BrilSriv={main="Brilliance",sub="Srivatsa"}
+    sets.weapons.SakpataSriv={main="Sakpata's Sword",sub="Srivatsa"}
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
