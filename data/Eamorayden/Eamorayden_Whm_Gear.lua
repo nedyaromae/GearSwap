@@ -98,7 +98,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Lebeche Ring",
-		back="Alaunus's Cape",waist="Austerity Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
+		back="Alaunus's Cape",waist="Austerity Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
 	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +2"})
