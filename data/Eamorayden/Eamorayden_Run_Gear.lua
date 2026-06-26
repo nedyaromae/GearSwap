@@ -180,7 +180,7 @@ function init_gear_sets()
     sets.midcast.Stoneskin={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Erilaz Galea +1",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Earthcry Earring",priority=6},
     body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
-   back=gear.enmity_jse_back,{priority=60},waist={name="Siegel Sash",priority=8},legs={name="Futhark Trousers +3",priority=107},feet={name="Sworn Sabatons",priority=116}}
+   back=gear.enmity_jse_back,{priority=60},waist={name="Siegel Sash",priority=8},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
 
 	
