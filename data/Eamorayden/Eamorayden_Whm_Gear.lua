@@ -228,7 +228,7 @@ function init_gear_sets()
 	sets.HPCure={main="Daybreak",sub="Diamond Aspis",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Nyame Sollerets"}
+		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
@@ -248,7 +248,7 @@ function init_gear_sets()
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
-		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Nyame Sollerets"}
+		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
@@ -263,7 +263,7 @@ function init_gear_sets()
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Nyame Sollerets"}
+		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
