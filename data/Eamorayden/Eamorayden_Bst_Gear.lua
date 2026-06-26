@@ -96,7 +96,7 @@ function init_gear_sets()
 --		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_physical_pet_legs,feet="Totemic Gaiters +1"}
 
 	sets.midcast.Pet.DebuffReady = {main="Agwu's Axe",sub="Diamond Aspis",ammo="Hesperiidae",
-		head="Nyame Helm",neck="Bst. Collar +1",ear1="Alabaster Earring",ear2="Nukumi Earring +1",
+		head="Nyame Helm",neck="Adad Amulet",ear1="Alabaster Earring",ear2="Nukumi Earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Tali'ah Ring",ring2="Murky Ring",
 		back="Artio's Mantle",waist="Incarnation Sash",legs="Nyame Flanchard",feet="Gleti's Boots"}
 				
