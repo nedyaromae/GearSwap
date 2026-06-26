@@ -235,7 +235,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.engaged.Meva={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
         body={name="Runeist Coat +4",priority=228},hands={name="Turms Mittens +1",priority=74},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
-        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Nyame sollerets",priority=68}}
+        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Sworn Sabatons",priority=116}}
 
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
