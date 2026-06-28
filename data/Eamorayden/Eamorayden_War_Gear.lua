@@ -52,7 +52,7 @@ function init_gear_sets()
 
 	sets.precast.JA['Jump']={ammo="Coiste Bodhar",
 		head="Boii mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		body="Boii Lorica +2",hands="Crusher Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump']=set_combine(sets.precast.JA['Jump'],{})
 	
