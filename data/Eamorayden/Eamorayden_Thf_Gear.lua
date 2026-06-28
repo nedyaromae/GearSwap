@@ -160,7 +160,7 @@ function init_gear_sets()
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
-    neck="Anu Torque",
+    neck="Ainia Collar",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
     right_ear="Skulker's Earring +1",
