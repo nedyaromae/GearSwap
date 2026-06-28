@@ -170,7 +170,7 @@ function init_gear_sets()
 
 	-- MELEE (SINGLE-WIELD) SETS
 	sets.engaged = {ammo="Coiste Bodhar",
-		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -182,7 +182,7 @@ function init_gear_sets()
 	
 	-- MELEE (DUAL-WIELD) SETS FOR DNC AND NIN SUBJOB
 	sets.engaged.DW = {ammo="Coiste Bodhar",
-		head="Malignance Chapeau",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Eabani Earring",
+		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Eabani Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
 		back="Null Shawl",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
