@@ -134,7 +134,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {ammo="Amar Cluster",
+    sets.idle = {ammo="Staunch Tathlum +1",
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Murky Ring",ring2="Shneddick Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}

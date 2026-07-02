@@ -271,12 +271,12 @@ function init_gear_sets()
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Alaunus's Cape",waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 		-- Engaged sets
-    sets.engaged = {ammo="Amar Cluster",
+    sets.engaged = {ammo="Vanir Battery",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Bunzi's Gloves",ring1="Petrov Ring",Ring2="Chirich Ring +1",
         back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.engaged.FullAcc={ammo="Amar Cluster",
+	sets.engaged.FullAcc={ammo="Vanir Battery",
         head="Nyame Helm",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Murky Ring",Ring2="Chirich Ring +1",
         back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
