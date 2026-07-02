@@ -267,7 +267,7 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
-		head=gear.Chironic_refreshhat,neck="Elite Royal Collar",ear1="Infused Earring",ear2="Eabani Earring",
+		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Alaunus's Cape",waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 		-- Engaged sets
