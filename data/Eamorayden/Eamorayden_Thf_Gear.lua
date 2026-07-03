@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Aeolian','Savage','Evisceration','Asuran')
+	state.Weapons:options('Aeolian','Savage','Evisceration')
 
 	state.AmbushMode = M(false, 'Ambush Mode')
 
@@ -41,8 +41,6 @@ function init_gear_sets()
 	sets.weapons.Aeolian = {main="Tauret",sub="Malevolence"}
 	sets.weapons.Savage = {main="Naegling",sub="Gleti's Knife"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Gleti's Knife"}
-    sets.weapons.Asuran={main="Karambit"}
-	
     -- Actions we want to use to tag TH.
 	sets.precast.JA.Provoke = sets.TreasureHunter
 
