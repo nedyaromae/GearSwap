@@ -232,7 +232,7 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast['Enlight'].SIRD={ammo={name="Staunch Tathlum +1",priority=1},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=3},ear1={name="Tuisto Earring",priority=150},ear2={name="Knightly Earring",priority=7},
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=3},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=7},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Eschite Gauntlets",priority=29},ring1={name="Moonbeam Ring",priority=99},ring2={name="Murky Ring",priority=11},
         back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=9},legs={name="Prestige Brais",priority=159},feet={name="Odyssean Greaves",priority=20}}
 

@@ -76,7 +76,7 @@ function init_gear_sets()
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.
 	
 	sets.ConserveMP = {main="Grioavolr",sub="Mensch Strap +1",ammo="Pemphredo Tathlum",
-		head="Vanya Hood",waist="Austerity Belt",   
+		head="Vanya Hood", 
 		back="Solemnity Cape",feet="Kaykaus Boots"}
 		
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
@@ -98,7 +98,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Crepuscular Pebble",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
-		back="Alaunus's Cape",waist="Austerity Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
+		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
 	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +2"})
@@ -124,7 +124,7 @@ function init_gear_sets()
 	sets.midcast.MeleeCure={ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Mendi. Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
-		back="Solemnity Cape",waist="Austerity Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
+		back="Solemnity Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
 
 	sets.midcast.MeleeCureSolace=set_combine(sets.midcast.MeleeCure,{body="Ebers Bliaut +2"})
 	sets.midcast.MeleeLightWeatherCure=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
