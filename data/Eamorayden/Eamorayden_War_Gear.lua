@@ -254,7 +254,7 @@ function init_gear_sets()
 	sets.weapons.Aspis={main="Naegling", sub="Diamond Aspis"}
 	sets.weapons.Staff={main="Xoanon",sub="Utu Grip"}
 	sets.weapons.Claymore={main="Agwu's Claymore",sub="Utu Grip"}
-	sets.weapons.Vagary={main="Reikiko",sub="Diamond Aspis"}
+	--sets.weapons.Vagary={main="Reikiko",sub="Diamond Aspis"} Muled this as i never use it
 	sets.weapons.Ikenga={main="Ikenga's Axe",sub="Blurred shield +1"}
 
 end
