@@ -187,25 +187,25 @@ function init_gear_sets()
            
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
-		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Shneddick Ring",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
-		head="Crepuscular Helm",neck="Warder's Charm +1",ear1="Night Earring",ear2="Alabaster Earring",
+		head="Crepuscular Helm",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
 		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.vit_wsd_jse_back,waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+		back=gear.vit_wsd_jse_back,waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	-- Defense sets
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
-		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",
-		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Meili Earring",ear2="Eabani Earring",
+		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Ran Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
-		back="Shadow Mantle",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
+		back="Null Shawl",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
 	sets.midcast.Escape=set_combine(sets.midcast.Warp,{})
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
