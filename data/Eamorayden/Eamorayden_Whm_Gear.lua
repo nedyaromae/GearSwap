@@ -252,9 +252,9 @@ function init_gear_sets()
 		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
-		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Alabaster Earring",ear2="Night Earring",
 		body="Ebers Bliaut +2",hands="Bunzi's Gloves",ring1="Murky Ring",ring2="Shadow Ring",
-		back="Null Shawl",waist="Null Belt",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
+		back="Null Shawl",waist="Null Belt",legs="Bunzi's Pants",feet="Ebers Duckbills +2"}
 
     sets.idle.Magic=set_combine(sets.idle.MDT,{})
     sets.idle.Physical=set_combine(sets.idle.PDT,{})
@@ -262,12 +262,12 @@ function init_gear_sets()
     -- Defense sets
 
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
-		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
-		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Alaunus's Cape",waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 		-- Engaged sets
