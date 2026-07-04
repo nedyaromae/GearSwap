@@ -271,7 +271,7 @@ function init_gear_sets()
 
     sets.resting = {main={name="Sakpata's Sword",priority=100},sub={name="Archduke's Shield",priority=9},ammo={name="Homiliary",priority=3},
         head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
-        body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Chirich Ring +1",priority=5},ring2={name="Chirich Ring",priority=6},
+        body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Sheltered Ring",priority=5},ring2={name="Chirich Ring +1",priority=6},
         back=gear.idle_jse_back,{priority=60},waist={name="Fucho-no-obi",priority=7},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     -- Idle sets

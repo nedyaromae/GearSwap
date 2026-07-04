@@ -130,7 +130,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
 		head="Null Masque",neck="Vim Torque +1",ear1="Cessance Earring",ear2="Crep. Earring",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Reiki Yotai",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 	sets.precast.WS["Fast Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
