@@ -182,7 +182,7 @@ function init_gear_sets()
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{feet="Nyame Sollerets",neck="Comm. Charm +2"})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {body="Laksa. Frac +4"}
+	sets.MaxTP = {}
 	sets.AccMaxTP = {}
         
     -- Midcast Sets
