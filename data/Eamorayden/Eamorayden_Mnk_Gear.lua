@@ -86,7 +86,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
-		body="Bhikku Cyclas +2",hands="Malignance Gloves",ring1=gear.left_stinky,ring2="Murky Ring",
+		body="Bhikku Cyclas +2",hands="Malignance Gloves",ring1="Metamorph Ring +1",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 
 	sets.precast.WS['Raging Fists'].Ngai    = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
