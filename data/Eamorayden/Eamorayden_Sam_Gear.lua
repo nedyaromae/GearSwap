@@ -42,12 +42,12 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Knobkierrie",
         head="Mpaca's Cap",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Kasuga Earring +2",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
-        back=gear.str_wsd_jse_back,waist="",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
         sets.precast.WS.PDL = {ammo="Knobkierrie",
         head="Mpaca's Cap",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Kasuga Earring +2",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
-        back=gear.str_wsd_jse_back,waist="",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
     
 	
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -132,8 +132,8 @@ function init_gear_sets()
     -- Normal melee group
     -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
     sets.engaged = {ammo="Aurgelmir Orb +1",
-        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Kasuga Domaru +1",hands=gear.valorous_acc_hands,ring1="Niqmaddu Ring",ring2="Petrov Ring",
+        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +1",hands=gear.valorous_acc_hands,ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Flam. Gambieras +2"}
    
     sets.engaged.PDT = {ammo="Staunch Tathlum +1",
