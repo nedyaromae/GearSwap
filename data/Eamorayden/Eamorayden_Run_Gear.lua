@@ -31,7 +31,7 @@ function init_gear_sets()
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
         head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Cryptic Earring",priority=40},
         body={name="Emet Harness +1",priority=61},hands={name="Nyame Gauntlets",priority=91},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Erilaz Greaves +1",priority=18}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Erilaz Greaves +2",priority=38}}
     
     sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, -- this fucking sucks just don't have everything to make it suck less so this is at least some dt sird cap and a fart of enmity
         head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
@@ -235,7 +235,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.engaged.Meva={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
         body={name="Runeist Coat +4",priority=228},hands={name="Turms Mittens +1",priority=74},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
-        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Sworn Sabatons",priority=116}}
+        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Erilaz Greaves +2",priority=38}}
 
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},

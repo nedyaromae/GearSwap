@@ -130,16 +130,15 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
-    sets.engaged = {ammo="Aurgelmir Orb +1",
-        head="Flam. Zucchetto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
-        body="Kasuga Domaru +1",hands=gear.valorous_acc_hands,ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Flam. Gambieras +2"}
+    sets.engaged = {ammo="Coiste Bodhar",
+        head="Mpaca's Cap",neck="Ainia Collar",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
    
-    sets.engaged.PDT = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Nyame Mail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
-        back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Nyame Sollerets"}
+  --  sets.engaged.PDT = {ammo="Staunch Tathlum +1",
+    --    head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+     --   body="Nyame Mail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
+      --  back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Nyame Sollerets"}
      
 
 	-- Weapons sets
