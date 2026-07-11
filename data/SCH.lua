@@ -510,6 +510,25 @@ function handle_job_elemental(command, target)
 				windower.chat.input:schedule(17.8,'/ja "Immanence" <me>')
 				windower.chat.input:schedule(19.1,'/ma "Thunder" '..player.target.id)
 			end
+		elseif last_character == '5' then
+			if get_current_stratagem_count() < 5 then
+				add_to_chat(123,'Abort: You have less than five stratagems available.')
+			else
+				state.CastingMode:set('Proc')
+				if state.DisplayMode.value then update_job_states()	end
+				
+				windower.chat.input('/p Starting 5-Step {Skillchain} -'..player.target.name..'-')
+				if not state.Buff['Immanence'] then windower.chat.input('/ja "Immanence" <me>') end
+				windower.chat.input:schedule(1.3,'/ma "Stone" '..player.target.id)
+				windower.chat.input:schedule(5.6,'/ja "Immanence" <me>')
+				windower.chat.input:schedule(6.9,'/ma "Aero" '..player.target.id)
+				windower.chat.input:schedule(11.2,'/ja "Immanence" <me>')
+				windower.chat.input:schedule(12.5,'/ma "Geohelix" '..player.target.id)
+				windower.chat.input:schedule(17.8,'/ja "Immanence" <me>')
+				windower.chat.input:schedule(19.1,'/ma "Anemohelix" '..player.target.id)
+				windower.chat.input:schedule(23.4,'/ja "Immanence" <me>')
+				windower.chat.input:schedule(24.7,'/ma "Anemohelix" '..player.target.id)
+			end
 		elseif last_character == '6' then
 			if get_current_stratagem_count() < 5 then
 				add_to_chat(123,'Abort: You have less than five stratagems available.')
