@@ -74,7 +74,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Bolter's Roll"] = {main=gear.RostamPathC,
         head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Luzaf's Ring",ring2="Murky Ring",
-        back="Solemnity Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Malignance Boots"}
+        back="Gunslinger's Cape",waist="Flume Belt +1",legs="Chas. Culottes +2",feet="Malignance Boots"}
 
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
@@ -258,17 +258,17 @@ function init_gear_sets()
     sets.engaged = {
 	    head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
-		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +2",feet="Malignance Boots"}
 
     sets.engaged.DT={
 	    head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +2",feet="Malignance Boots"}
 
     sets.engaged.Acc = {
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		back="Null Shawl",waist="Sailfi Belt +1",legs="Chas. Culottes +2",feet="Malignance Boots"}
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Eabani Earring",

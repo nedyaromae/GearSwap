@@ -55,7 +55,7 @@ function init_gear_sets()
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +2",priority=46}})
 	sets.precast.JA['Liement'] = set_combine(sets.Enmity,{})
-	sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands={name="Runeist Mitons +3",priority=85}})
+	sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands={name="Runeist Mitons +4",priority=95}})
 	sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet={name="Futhark Boots +1",priority=13}})
 	sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
@@ -150,7 +150,7 @@ function init_gear_sets()
 
     sets.midcast.Temper={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Carmine Mask +1",priority=38},neck={name="Hoxne Torque",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Mimir Earring",priority=5},
-        body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +3",priority=85},ring1={name="Murky Ring"},{priority=110},ring2={name="Moonlight Ring"},{priority=110},
+        body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring"},{priority=110},ring2={name="Moonlight Ring"},{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast.BarElement=set_combine(sets.midcast.Temper,{head={name="Erilaz Galea +1",priority=91},legs={name="Futhark Trousers +3",priority=107},})
