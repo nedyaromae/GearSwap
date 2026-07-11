@@ -97,7 +97,7 @@ function init_gear_sets()
 
     sets.precast.WS["Armor Break"]={ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Runeist Bandeau +4",priority=119},neck={name="Null Loop",priority=50},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=1},
-        body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=6},ring2={name="Metamor. Ring +1",priority=11},
+        body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=6},ring2={name="Metamor. Ring +1",priority=11},
         back={name="Null Shawl",priority=8},waist={name="Null Belt",priority=3},legs={name="Erilaz Leg Guards +2",priority=90},feet={name="Sworn Sabatons",priority=116}}
 
 
