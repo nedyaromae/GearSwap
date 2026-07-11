@@ -2505,13 +2505,41 @@ function check_rune()
 	if state.AutoRuneMode.value ~= 'false' and state.AutoRuneMode.value ~= 'Off' and (player.main_job == 'RUN' or player.sub_job == 'RUN') then
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 
-		if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
-			if abil_recasts[10] > latency then return false end
-			windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
-			add_tick_delay()
-			return true
+		if #custom_runes > 0 then
+			if not buffactive[custom_runes[1]] then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..custom_runes[1]..'" <me>')
+				add_tick_delay()
+				return true
+			elseif not buffactive[custom_runes[2]] or ((custom_runes[2] == custom_runes[1]) and (buffactive[custom_runes[2]] < 2)) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..custom_runes[2]..'" <me>')
+				add_tick_delay()
+				return true
+			elseif #custom_runes == 3 then
+				if not buffactive[custom_runes[3]] or (buffactive[custom_runes[3]] < (1 + ((custom_runes[3] == custom_runes[1]) and 1 or 0) + ((custom_runes[3] == custom_runes[2]) and 1 or 0))) then
+					if abil_recasts[10] > latency then return false end
+					windower.chat.input('/ja "'..custom_runes[3]..'" <me>')
+					add_tick_delay()
+				end
+				return true
+			end
+			
+		else
+			if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+				add_tick_delay()
+				return true
+			end		if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+				add_tick_delay()
+				return true
+			end
+		end
 
-		elseif state.AutoRuneMode.value ~= 'Full' then
+		if state.AutoRuneMode.value ~= 'Full' then
 			return false
 		elseif player.main_job == 'RUN' and abil_recasts[242] < latency and (player.hpp < 50 or (buffactive['Tenebrae'] and player.mpp < 75)) then
 			windower.chat.input('/ja "Vivacious Pulse" <me>')

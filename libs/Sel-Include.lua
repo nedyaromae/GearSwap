@@ -273,7 +273,7 @@ function init_include()
 	cached_weapon = ''
 	check_internal_weapons = false
 	fixed_pos = ''
-	custom_runes = {"Lux","Lux","Tenebrae"}
+	custom_runes = {}
 
 	-- Buff tracking that buffactive can't detect
 	lastwarcry = ''

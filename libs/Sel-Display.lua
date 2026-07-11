@@ -398,11 +398,23 @@ function update_job_states()
 				stateBox:append(string.format("%sElement: %s%s    ", display.colors.White, display.colors[state.ElementalMode.value], state.ElementalMode.value))
 		elseif n == 'AutoRuneMode' then
 				if (player.main_job == 'RUN' or player.sub_job == 'RUN') and state.AutoRuneMode.value ~= 'false' and state.AutoRuneMode.value ~= 'Off' then
-					stateBox:append(string.format("%sAuto Rune ("..state.AutoRuneMode.value.."): %s%s    ", display.colors.Yellow, display.colors[data.elements.runes_lookup[state.RuneElement.value]], state.RuneElement.value))
+					if #custom_runes == 3 then
+						stateBox:append(string.format("%sCustom Auto Rune ("..state.AutoRuneMode.value.."): (%s%s, %s%s, %s%s%s)    ", display.colors.Yellow, display.colors[data.elements.runes_lookup[custom_runes[1]]], custom_runes[1], display.colors[data.elements.runes_lookup[custom_runes[2]]], custom_runes[2], display.colors[data.elements.runes_lookup[custom_runes[3]]], custom_runes[3],display.colors.Yellow))
+					elseif #custom_runes == 2 then
+						stateBox:append(string.format("%sCustom Auto Rune ("..state.AutoRuneMode.value.."): (%s%s, %s%s%s)    ", display.colors.Yellow, display.colors[data.elements.runes_lookup[custom_runes[1]]], custom_runes[1], display.colors[data.elements.runes_lookup[custom_runes[2]]], custom_runes[2],display.colors.Yellow))
+					else
+						stateBox:append(string.format("%sAuto Rune ("..state.AutoRuneMode.value.."): %s%s    ", display.colors.Yellow, display.colors[data.elements.runes_lookup[state.RuneElement.value]], state.RuneElement.value))
+					end
 				end
 		elseif n == 'RuneElement' then
 				if (state.AutoRuneMode.value == 'false' or state.AutoRuneMode.value == 'Off') and (player.main_job == 'RUN' or player.sub_job == 'RUN') then
 					stateBox:append(string.format("%sRune: %s%s    ", display.colors.White, display.colors[data.elements.runes_lookup[state.RuneElement.value]], state.RuneElement.value))
+					
+					if #custom_runes == 3 then
+						stateBox:append(string.format("%sCustom Autorunes: (%s%s, %s%s, %s%s%s)    ", display.colors.White, display.colors[data.elements.runes_lookup[custom_runes[1]]], custom_runes[1], display.colors[data.elements.runes_lookup[custom_runes[2]]], custom_runes[2], display.colors[data.elements.runes_lookup[custom_runes[3]]], custom_runes[3],display.colors.Yellow))
+					elseif #custom_runes == 2 then
+						stateBox:append(string.format("%sCustom Autorunes: (%s%s, %s%s%s)    ", display.colors.White, display.colors[data.elements.runes_lookup[custom_runes[1]]], custom_runes[1], display.colors[data.elements.runes_lookup[custom_runes[2]]], custom_runes[2],display.colors.Yellow))
+					end
 				end
 		elseif n == 'LearningMode' then
 			if state.LearningMode.value and state.DefenseMode.value == 'None' then
