@@ -527,7 +527,7 @@ function handle_job_elemental(command, target)
 				windower.chat.input:schedule(17.8,'/ja "Immanence" <me>')
 				windower.chat.input:schedule(19.1,'/ma "Anemohelix" '..player.target.id)
 				windower.chat.input:schedule(23.4,'/ja "Immanence" <me>')
-				windower.chat.input:schedule(24.7,'/ma "Anemohelix" '..player.target.id)
+				windower.chat.input:schedule(24.7,'/ma "Noctohelix" '..player.target.id)
 			end
 		elseif last_character == '6' then
 			if get_current_stratagem_count() < 5 then
