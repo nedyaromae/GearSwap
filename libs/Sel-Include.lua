@@ -478,9 +478,7 @@ function init_include()
 			local bt = windower.ffxi.get_mob_by_target('bt') or nil
 			if not bt or bt.hpp == 0 then
 				in_combat = false
-				if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
-					send_command('gs c update')
-				end
+				leaving_combat()
 				if state.AutoDefenseMode.value and state.DefenseMode.value ~= 'None' then
 					state.DefenseMode:reset()
 					if state.DisplayMode.value then update_job_states()	end
@@ -526,6 +524,18 @@ function target_change(new)
 	
 	if user_target_change then
 		if user_job_target_change(target) then return end
+	end
+end
+
+-- Function to modify things after leaving combat
+function leaving_combat()
+	-- Update in case gear needs to change after leaving combat.
+	if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
+		send_command('gs c update')
+	end
+	
+	if job_leaving_combat then
+		job_leaving_combat()
 	end
 end
 

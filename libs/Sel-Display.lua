@@ -46,10 +46,6 @@
 --
 -- Include in get_sets(), user_setup(), etc, or custom include file
 --
--- By default, supports the following modal states:
--- OffenseMode, DefenseMode, HybridMode, IdleMode, WeaponskillMode, CastingMode,
--- MainStep, AltStep, TreasureMode, TotalHaste, DelayReduction
---
 -- Additional modal states can be supported by defining a label mapping in update_job_states()
 -- Boolean states require no modifications
 ----------------------------------------------------------------------------------------------------
@@ -202,13 +198,13 @@ function update_job_states()
 		UnlockGeomancy = "Unlock Geomancy",
 		WakeUpWeapons = "WakeUpWeapons",
 		Weapons = "Weapons",
-		AltStep = "Alt Step",
+		MainStep = "Main Step",
+		CycleStep = "Cycle Step",
 		CastingMode = "Casting",
 		DefenseMode = "Defense",
 		DelayReduction = "Delay",
 		HybridMode = "Hybrid",
 		IdleMode = "Idle",
-		MainStep = "Main Step",
 		OffenseMode = "Offense",
 		TotalHaste = "Haste",
 		TreasureMode = "Treasure",
