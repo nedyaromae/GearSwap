@@ -47,23 +47,12 @@
 	Custom commands:
 
 	gs c step
-		Uses the currently configured step on the target, with either <t> or <stnpc> depending on setting.
-
-	gs c step t
-		Uses the currently configured step on the target, but forces use of <t>.
-
+		Uses the current mainstep on the target, with either <t> or <stnpc> depending on setting.
 
 	Configuration commands:
 
 	gs c cycle mainstep
 		Cycles through the available steps to use as the primary step when using one of the above commands.
-
-	gs c cycle altstep
-		Cycles through the available steps to use for alternating with the configured main step.
-
-	gs c toggle usealtstep
-		Toggles whether or not to use an alternate step.
-
 --]]
 
 
@@ -84,16 +73,17 @@ function job_setup()
 	state.Buff['Saber Dance'] = buffactive['Saber Dance'] or false
 	state.Buff['Fan Dance'] = buffactive['Fan Dance'] or false
 
-	state.MainStep = M{['description']='Main Step', 'Box Step','Quickstep','Feather Step','Stutter Step'}
-	state.AltStep = M{['description']='Alt Step', 'Feather Step','Quickstep','Stutter Step','Box Step'}
-	state.UseAltStep = M(true, 'Use Alt Step')
-	state.CurrentStep = M{['description']='Current Step', 'Main', 'Alt'}
+	state.MainStep = M{['description']='Main Step', 'Box Step','Quickstep','Feather Step','Stutter Step','Cycle Step'}
+	state.CycleStep = M{['description']='Cycle Step', 'Box Step','Feather Step','Quickstep'}
 
 	state.AutoPrestoMode = M(true, 'Auto Presto Mode')
+	state.AutoStepMode = M{['description']='Auto Step Mode', 'Off','Main','Cycle'}
 	state.DanceStance = M{['description']='Dance Stance','None','Saber Dance','Fan Dance'}
 
 	autows = "Rudra's Storm"
 	autofood = 'Soy Ramen'
+	checkcyclestep = os.clock()
+	autostep_engaged_only = true
 
 	function calculate_step_feet_reduction()
 		local tp_reduction = 0
@@ -130,7 +120,7 @@ function job_precast(spell, spellMap, eventArgs)
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 		if under3FMs() and abil_recasts[220] < latency and (abil_recasts[236] < latency or state.Buff['Presto']) and player.status == 'Engaged' then
 			eventArgs.cancel = true
-			windower.send_command('gs c step')
+			do_step()
 			windower.chat.input:schedule(1.1,'/ws "'..spell.english..'" '..spell.target.raw..'')
 			add_tick_delay(1.1)
 			return
@@ -211,8 +201,8 @@ function job_aftercast(spell, spellMap, eventArgs)
 					windower.chat.input:schedule(1.5,'/ja "Reverse Flourish" <me>')
 				end
 			end
-		elseif state.UseAltStep.value and spell.english == state[state.CurrentStep.current..'Step'].current then
-			state.CurrentStep:cycle()
+		elseif (os.clock() - checkcyclestep) < 5 and spell.english == state.CycleStep.value then
+			state.CycleStep:cycle()
 		end
 	end
 end
@@ -265,9 +255,7 @@ function display_current_job_state(eventArgs)
 
 	msg = msg .. ', ['..state.MainStep.current
 
-	if state.UseAltStep.value == true then
-		msg = msg .. '/'..state.AltStep.current
-	end
+	msg = msg .. '/'..state.CycleStep.current
 
 	msg = msg .. ']'
 
@@ -288,20 +276,29 @@ end
 -- Called for custom player commands.
 function job_self_command(commandArgs, eventArgs)
 	if commandArgs[1] == 'step' then
-		local doStep = ''
-		if state.UseAltStep.value == true then
-			doStep = state[state.CurrentStep.current..'Step'].current
-		else
-			doStep = state.MainStep.current
-		end
-
-		send_command('@input /ja "'..doStep..'" <t>')
+		do_step()
+	elseif commandArgs[1] == 'cyclestep' then
+		do_step('cycle')
 	end
+end
+
+function do_step(arg)
+	if arg == 'cycle' or state.MainStep.value == 'Cycle Step' then
+		windower.chat.input('/ja "'..state.CycleStep.value..'" <t>')
+		checkcyclestep = os.clock()
+	else
+		windower.chat.input('/ja "'..state.MainStep.value..'" <t>')
+	end
+end
+
+function job_leaving_combat()
+	state.CycleStep:reset()
 end
 
 function job_tick()
 	if check_dance() then return true end
 	if job_check_buff() then return true end
+	if check_step() then return true end
 	return false
 end
 
@@ -348,6 +345,25 @@ function job_check_buff()
 				return false
 			end
 		end
+	end
+	return false
+end
+
+function check_step()
+	if state.AutoStepMode.value == 'Off' or player.target.type ~= "MONSTER" or moving then
+		return false
+	elseif not in_combat or (not player.status == 'Engaged' and autostep_engaged_only) then
+		return false
+	end
+	
+	local abil_recasts = windower.ffxi.get_ability_recasts()
+	
+	if abil_recasts[220] > latency then
+		return false
+	elseif state.AutoStepMode.value == 'Main' then
+		do_step()
+	elseif state.AutoStepMode.value == 'Cycle' then
+		do_step('cycle')
 	end
 	return false
 end

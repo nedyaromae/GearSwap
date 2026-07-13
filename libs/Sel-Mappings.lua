@@ -164,6 +164,18 @@ data.weaponskills.aftermath = {
 	["Tupsimati"] = "Omniscience",
 	["Idris"] = "Exudation",
 	["Epeolatry"] = "Dimidiation",
+	["Verethragna"] = "Victory Smite",
+	["Twashtar"] = "Rudra's Storm",
+	["Almace"] = "Chant du Cygne",
+	["Caladbolg"] = "Torcleaver",
+	["Farsha"] = "Cloudsplitter",
+	["Ukonvasara"] = "Ukko's Fury",
+	["Redemption"] = "Quietus",
+	["Rhongomiant"] = "Camlann's Torment",
+	["Kannagi"] = "Blade: Hi",
+	["Masamune"] = "Tachi: Fudo",
+	["Gambanteinn"] = "Dagan",
+	["Hvergelmir"] = "Myrkr",
 	["Gandiva"] = "Jishnu's Radiance",
 	["Armageddon"] = "Wildfire",
 	["Varga Purnikawa"] = "Maru Kala",
@@ -367,12 +379,15 @@ data.slots.weapon_slots = {'main','sub','range','ranged','ammo'}
 
 data.equipment = {}
 
+data.equipment.relic_weapons = S{'Spharai','Mandau','Excalibur','Ragnarok','Guttler','Bravura','Apocalypse',
+	'Gungnir','Kikoku','Amanomurakumo','Mjollnir','Claustrum','Yoichinoyumi','Annihilator'}
+
 data.equipment.mythic_weapons = S{'Conqueror','Glanzfaust','Yagrush','Laevateinn','Murgleis','Vajra','Burtgang','Liberator',
 	'Aymur','Carnwenhan','Gastraphetes','Kogarasumaru','Nagi','Ryunohige','Nirvana','Tizona','Death Penalty','Kenkonken',
 	'Terpsichore','Tupsimati','Idris','Epeolatry'}
 
-data.equipment.relic_weapons = S{'Spharai','Mandau','Excalibur','Ragnarok','Guttler','Bravura','Apocalypse',
-	'Gungnir','Kikoku','Amanomurakumo','Mjollnir','Claustrum','Yoichinoyumi','Annihilator'}
+data.equipment.empyrean_weapons = S{'Verethragna','Twashtar','Almace','Caladbolg','Farsha','Ukonvasara',
+	'Redemption','Rhongomiant','Kannagi','Masamune','Gambanteinn','Hvergelmir','Gandiva','Armageddon'}
 
 data.equipment.aeonic_weapons = S{'Dojikiri Yasutsuna','Chango','Trishula','Sequence','Aeneas','Lionheart',
 	'Godhands','Tri-Edge','Anguta','Heishi Shorinken','Tishtrya', 'Fail-Not','Fomalhaut'}
@@ -380,13 +395,10 @@ data.equipment.aeonic_weapons = S{'Dojikiri Yasutsuna','Chango','Trishula','Sequ
 data.equipment.prime_weapons = S{'Varga Purnikawa','Mpu Gandring','Caliburnus','Helheim','Spalirisos','Laphria',
 	'Foenaria','Gae Buide','Dokoku','Kusanagi','Lorg Mor','Opashoro','Pinaka','Earp'}
 
-data.equipment.empyrean_weapons = S{'Verethragna','Twashtar','Almace','Caladbolg','Farsha','Ukonvasara',
-	'Redemption','Rhongomiant','Kannagi','Masamune','Gambanteinn','Hvergelmir','Gandiva','Armageddon'}
-	
 data.equipment.aftermath_weapons = S{'Conqueror','Glanzfaust','Yagrush','Laevateinn','Murgleis','Vajra','Burtgang','Liberator',
 	'Aymur','Carnwenhan','Gastraphetes','Kogarasumaru','Nagi','Ryunohige','Nirvana','Tizona','Death Penalty','Kenkonken',
 	'Terpsichore','Tupsimati','Idris','Epeolatry','Varga Purnikawa','Mpu Gandring','Caliburnus','Helheim','Spalirisos','Laphria',
-	'Foenaria','Gae Buide','Dokoku','Kusanagi','Lorg Mor','Opashoro','Pinaka','Earp'}
+	'Foenaria','Gae Buide','Dokoku','Kusanagi','Lorg Mor','Opashoro','Pinaka','Earp','Verethragna'}
 
 --Only tracking 1-handed weapons for offhanding as they're all that's used in meta.
 data.equipment.magian_tp_bonus_melee_weapons = S{

@@ -786,6 +786,8 @@ function handle_elemental(cmdParams)
 		else
 			windower.chat.input('/ma "'..state.ElementalMode.value..' Threnody" '..target)
 		end
+	else
+		add_to_chat(123,'Unrecognized elemental command.')
 	end
 end
 
@@ -1105,6 +1107,45 @@ end
 
 function handle_runeelement()
 	windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+end
+
+function handle_customrunes(cmdParams)
+	handle_autorunes(cmdParams)
+end
+
+function handle_autorunes(cmdParams)
+	if cmdParams[1] == 'off' or cmdParams[1] == 'clear' then
+		custom_runes = {}
+		add_to_chat(122,'Custom Runes cleared.')
+		if state.DisplayMode.value then update_job_states()	end
+		return
+	elseif not (#cmdParams == 2 or #cmdParams == 3) then
+		if #cmdParams == 0 then
+			add_to_chat(122,'Custom Auto Runes currently set to: ('..table.concat(custom_runes, ', ')..')')
+		else
+			add_to_chat(123,'Autorunes requires two or three arguments.')
+		end
+		return
+	end
+	
+	custom_runes = {}
+	for i in pairs(cmdParams) do
+		local rune_to_set = cmdParams[i]:ucfirst()
+		
+		if data.elements.rune_of[rune_to_set] then
+			rune_to_set = data.elements.rune_of[rune_to_set]
+		end
+		
+		if data.abilities.runes:contains(rune_to_set) then
+			table.insert(custom_runes, rune_to_set)
+		else
+			add_to_chat(123, '['..cmdParams[i]..'] is not a valid rune, setting custom runes failed.')
+			if state.DisplayMode.value then update_job_states()	end
+			return
+		end
+	end
+	add_to_chat(122,'Custom Runes currently set to: ('..table.concat(custom_runes, ', ')..')')
+	if state.DisplayMode.value then update_job_states()	end
 end
 
 function handle_shadows()

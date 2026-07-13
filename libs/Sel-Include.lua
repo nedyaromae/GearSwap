@@ -273,7 +273,7 @@ function init_include()
 	cached_weapon = ''
 	check_internal_weapons = false
 	fixed_pos = ''
-	custom_runes = {"Lux","Lux","Tenebrae"}
+	custom_runes = {}
 
 	-- Buff tracking that buffactive can't detect
 	lastwarcry = ''
@@ -478,9 +478,7 @@ function init_include()
 			local bt = windower.ffxi.get_mob_by_target('bt') or nil
 			if not bt or bt.hpp == 0 then
 				in_combat = false
-				if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
-					send_command('gs c update')
-				end
+				leaving_combat()
 				if state.AutoDefenseMode.value and state.DefenseMode.value ~= 'None' then
 					state.DefenseMode:reset()
 					if state.DisplayMode.value then update_job_states()	end
@@ -526,6 +524,18 @@ function target_change(new)
 	
 	if user_target_change then
 		if user_job_target_change(target) then return end
+	end
+end
+
+-- Function to modify things after leaving combat
+function leaving_combat()
+	-- Update in case gear needs to change after leaving combat.
+	if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
+		send_command('gs c update')
+	end
+	
+	if job_leaving_combat then
+		job_leaving_combat()
 	end
 end
 
@@ -2290,6 +2300,12 @@ function sub_job_change(newSubjob, oldSubjob)
 	send_command('gs c update')
 end
 
+-- Register event to fix Gearswap ignoring the event status for status_change
+windower.register_event('status change', function(newStatus, oldStatus)
+	if oldStatus == 4 --[[event]] then
+		status_change(newStatus, oldStatus)
+	end
+end)
 
 -- Called when the player's status changes.
 function status_change(newStatus, oldStatus)
