@@ -2300,7 +2300,7 @@ function sub_job_change(newSubjob, oldSubjob)
 	send_command('gs c update')
 end
 
--- Register event to fix Gearswap ignoring the event status for status_change
+-- Register event to fix Gearswap ignoring the event status for status_change.
 windower.register_event('status change', function(newStatus, oldStatus)
 	if oldStatus == 4 --[[event]] then
 		status_change(newStatus, oldStatus)
