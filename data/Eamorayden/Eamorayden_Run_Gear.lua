@@ -50,7 +50,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
    
    --RUN stuff 
-   	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body={name="Runeist Coat +4",priority=228},legs={name="Futhark Trousers +3",priority=107}})
+   	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body={name="Runeist Coat +4",priority=228},legs={name="Futhark Trousers +4",priority=117}})
 	sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +2",priority=46}})
@@ -80,7 +80,7 @@ function init_gear_sets()
         body=gear.TaeonFCBody,{priority=102},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=5},ring2={name="Kishar Ring",priority=7},
         back=gear.fc_jse_back,{priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Carmine Greaves +1",priority=95}}
 
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs={name="Futhark Trousers +3",priority=107}})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs={name="Futhark Trousers +4",priority=117}})
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
 	
     -- Weaponskill sets
@@ -146,24 +146,24 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic']={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Erilaz Galea +1",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Sheltered Ring"},{priority=7},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +3",priority=107},feet={name="Nyame Sollerets",priority=68}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +4",priority=117},feet={name="Nyame Sollerets",priority=68}}
 
     sets.midcast.Temper={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Carmine Mask +1",priority=38},neck={name="Hoxne Torque",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Mimir Earring",priority=5},
         body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring"},{priority=110},ring2={name="Moonlight Ring"},{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Sworn Sabatons",priority=116}}
 
-    sets.midcast.BarElement=set_combine(sets.midcast.Temper,{head={name="Erilaz Galea +1",priority=91},legs={name="Futhark Trousers +3",priority=107},})
+    sets.midcast.BarElement=set_combine(sets.midcast.Temper,{head={name="Erilaz Galea +1",priority=91},legs={name="Futhark Trousers +4",priority=117},})
 
     sets.midcast.Refresh={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Erilaz Galea +1",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Gishdubar Sash",priority=5},legs={name="Futhark Trousers +3",priority=107},feet={name="Sworn Sabatons",priority=116}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Gishdubar Sash",priority=5},legs={name="Futhark Trousers +4",priority=117},feet={name="Sworn Sabatons",priority=116}}
         
     sets.midcast.Regen={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Runeist Bandeau +4",priority=119},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +1",priority=6},
         body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Sroda Belt",priority=5},legs={name="Futhark Trousers +3",priority=107},feet={name="Sworn Sabatons",priority=116}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Sroda Belt",priority=5},legs={name="Futhark Trousers +4",priority=117},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Agwu's Cap",priority=38},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
