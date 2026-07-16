@@ -107,7 +107,7 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 				
@@ -121,12 +121,12 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Savage Blade'].PDL = {ammo=gear.WSbullet,
-        head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
@@ -136,12 +136,12 @@ function init_gear_sets()
         back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Ikenga's Vest",hands="Chasseur's Gants +2",ring1="Dingir Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].PDL = {ammo=gear.WSbullet,
-        head="Ikenga's Hat",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        head="Ikenga's Hat",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Ikenga's Vest",hands="Chasseur's Gants +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Ikenga's Trousers",feet="Lanun Bottes +4"}
 

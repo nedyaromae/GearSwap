@@ -98,7 +98,7 @@ function init_gear_sets()
 
 
      sets.precast.WS['Asuran Fists']={ammo="Coiste Bodhar",
-        head="Nyame Helm",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Ishvara Earring",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Sroda Ring",
         back="Toutatis's Cape",waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

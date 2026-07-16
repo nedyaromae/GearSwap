@@ -57,7 +57,7 @@ function init_gear_sets()
         back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.precast.WS['Black Halo'] = {ammo="Oshasha's treatise",
-        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
         back="Alaunus's Cape",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
