@@ -165,6 +165,14 @@ function init_gear_sets()
     sets.precast.WS['Split Shot'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Split Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
+
+    sets.precast.WS['Exenterator']=sets.precast.WS
+    sets.precast.WS['Exenterator'].Acc={ammo=gear.RAbullet,
+        head="Malignance Chapeau",neck="Null Loop",ear1="Mache Earring +1",ear2="Chas. Earring",
+        body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Cornelia's Ring",ring2="Murky Ring",
+        back="Null Shawl",waist="Null Belt",legs="Chasseur's Culottes +2",feet="Malignance Boots"}
+		
+
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
@@ -184,6 +192,8 @@ function init_gear_sets()
     sets.precast.WS['Hot Shot'] =set_combine(sets.precast.WS['Wildfire'],{body="Nyame Mail",neck="Fotia Gorget",back=gear.agi_wsd_jse_back,ammo=gear.WSbullet,waist="Fotia Belt",ring2="Epaminondas's Ring"})
     sets.precast.WS['Hot Shot'].PDL=set_combine(sets.precast.WS['Hot Shot'],{})
     sets.precast.WS['Hot Shot'].Acc=set_combine(sets.precast.WS['Hot Shot'],{feet="Nyame Sollerets",neck="Comm. Charm +2"})
+
+    
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
