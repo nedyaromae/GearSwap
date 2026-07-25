@@ -257,6 +257,7 @@ function init_include()
 	smartws = nil
 	spell_latency = nil
 	time_test = false
+	in_town = false
 	trust_list = {}
 	useItem = false
 	useItemName = ''
@@ -584,6 +585,12 @@ function default_zone_change(new_id,old_id)
 		state.SkipProcWeapons:reset()
 	end
 	
+	if data.areas.cities:contains(world.area) then
+		in_town = true
+	else
+		in_town = false
+	end
+	
 	if state.DisplayMode.value then update_job_states()	end
 end
 
@@ -655,8 +662,10 @@ function global_on_load()
 
 		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
-		else
-			state.SkipProcWeapons:reset()
+		end
+		
+		if data.areas.cities:contains(world.area) then
+			in_town = true
 		end
 	end
 end
@@ -1607,7 +1616,7 @@ function get_idle_set(petStatus)
 		idleSet = user_job_customize_idle_set(idleSet)
 	end
 
-	if data.areas.cities:contains(world.area) then
+	if in_town then
 		if sets.idle.Town then
 			idleSet = set_combine(idleSet, sets.Kiting, sets.idle.Town)
 		elseif sets.Town then
@@ -2299,7 +2308,7 @@ function sub_job_change(newSubjob, oldSubjob)
 	
 	send_command('gs c update')
 end
-
+	
 -- Register event to fix Gearswap ignoring the event status for status_change.
 windower.register_event('status change', function(newStatus, oldStatus)
 	if oldStatus == 4 --[[event]] then

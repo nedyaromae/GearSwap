@@ -498,7 +498,7 @@ end
 -- Custom uber-handling of Elemental Siphon
 function handle_siphoning()
 	local abil_recasts = windower.ffxi.get_ability_recasts()
-	if data.areas.cities:contains(world.area) then
+	if in_town then
 		add_to_chat(122, 'Cannot use Elemental Siphon in a city area.')
 		return
 	elseif abil_recasts[175] > 0 then
@@ -593,7 +593,7 @@ end
 -- commandArgs is the split of the self-command.
 -- gs c [pact] [pacttype]
 function handle_pacts(commandArgs)
-	if data.areas.cities:contains(world.area) then
+	if in_town then
 		add_to_chat(123, 'Abort:You cannot use pacts in town.')
 		return
 	end

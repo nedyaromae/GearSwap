@@ -336,7 +336,7 @@ function check_stance()
 end
 
 function job_check_buff()
-	if state.AutoBuffMode.value ~= 'Off' and not data.areas.cities:contains(world.area) then
+	if state.AutoBuffMode.value ~= 'Off' and not in_town then
 		if in_combat and not buffactive['SJ Restriction'] then
 			local abil_recasts = windower.ffxi.get_ability_recasts()
 

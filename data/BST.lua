@@ -641,7 +641,7 @@ function check_pet()
 				end
 			end
 		end
-	elseif state.AutoCallPet.value and not data.areas.cities:contains(world.area) then
+	elseif state.AutoCallPet.value and not in_town then
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 		if abil_recasts[94] < latency then
 			windower.chat.input('/ja "Bestial Loyalty" <me>')
@@ -703,7 +703,7 @@ function job_zone_change(new_id,old_id)
 end
 
 function handle_ready(commandArgs)
-	if data.areas.cities:contains(world.area) then
+	if in_town then
 		add_to_chat(123, 'Abort:You cannot use ready in town.')
 		return
 	elseif not pet.isvalid then

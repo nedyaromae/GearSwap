@@ -253,16 +253,6 @@ function display_current_job_state(eventArgs)
 		msg = msg .. ', Kiting'
 	end
 
-	msg = msg .. ', ['..state.MainStep.current
-
-	msg = msg .. '/'..state.CycleStep.current
-
-	msg = msg .. ']'
-
-	if state.SelectStepTarget.value == true then
-		steps = steps..' (Targetted)'
-	end
-
 	add_to_chat(122, msg)
 
 	eventArgs.handled = true
