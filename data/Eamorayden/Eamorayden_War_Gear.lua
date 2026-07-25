@@ -30,8 +30,8 @@ function init_gear_sets()
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +4",feet="Agoge Calligae +1",back="Cichol's Mantle"}
-	sets.precast.JA['Berserk'].OutOfCombat={main="Naegling",sub="Diamond Aspis",body="Pumm. Lorica +4",feet="Agoge Calligae +1",back="Cichol's Mantle"}
+	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +4",feet="Agoge Calligae +3",back=gear.da_jse_back}
+	sets.precast.JA['Berserk'].OutOfCombat={main="Naegling",sub="Diamond Aspis",body="Pumm. Lorica +4",feet="Agoge Calligae +3",back=gear.da_jse_back}
 	sets.precast.JA['Warcry'] = {head="Agoge Mask +4"}
 	sets.precast.JA['Warcry'].OutOfCombat = {main="Naegling",sub="Diamond Aspis",head="Agoge Mask +4"}
 	sets.precast.JA['Defender'] = {}
