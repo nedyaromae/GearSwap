@@ -35,7 +35,7 @@ function init_gear_sets()
     
     sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, 
         head={name="Erilaz Galea +2",priority=101},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Magnetic Earring",priority=5},
-       body={name="Nyame mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Moonlight Ring"},{priority=110},
+       body={name="Nyame mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Erilaz Greaves +2",priority=38}}
 
 	
@@ -134,8 +134,8 @@ function init_gear_sets()
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
 	sets.midcast['Blue Magic'] = set_combine(sets.Enmity.SIRD,{})
 	sets.midcast['Blue Magic']['Blank Gaze'] = set_combine(sets.Enmity, {})
-
 	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity,{})
+    
 	sets.midcast['Blue Magic']['Healing Breeze']={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Mendi. Earring",priority=5},
         body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
