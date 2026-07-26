@@ -173,6 +173,8 @@ function init_gear_sets()
 		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		sets.idle.Pet.DW={}
+		idle.Pet.Engaged.DW={}
 
 	sets.engaged.KalungaBS={ammo="Crepuscular Pebble",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
