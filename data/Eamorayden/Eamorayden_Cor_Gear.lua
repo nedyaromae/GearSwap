@@ -2,13 +2,13 @@
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
-    state.WeaponskillMode:options('Match','Normal', 'Acc','PDL','SB')
+    state.WeaponskillMode:options('Normal', 'Acc','PDL','SB')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
-		['Default'] = {'Savage','Shooting','MeleeLS','Evis',},
+		['Default'] = {'Savage','MeleeLS','Shooting',},
 		['Dual'] = {'DualSavage','DualHotShot','DualAeolian','W3HotShot','PP','DualShooting'}}
 	    default_weapons = 'Savage'
 	    default_dual_weapons = 'DualSavage'
@@ -138,7 +138,7 @@ function init_gear_sets()
         sets.precast.WS['Savage Blade'].Acc={ammo=gear.WSbullet,
         head="Nyame Helm",neck="Null Loop",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Chasseur's Gants +3",ring1="Chirich Ring +1",ring2="Cornelia's Ring",
-        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+        back=gear.str_wsd_jse_back,waist="Null Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
@@ -252,7 +252,11 @@ function init_gear_sets()
 
 	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",hands="Volte Bracers"}
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
-
+    sets.STP={head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
+sets.precast.Item['Icarus Wing']=set_combine(sets.buff.STP, {})
+sets.precast.Item['Volte Harness'] = {set_combine(sets.STP, {body="Volte Harness"})}
 	-- Weapons sets
 	sets.weapons.DualShooting = {main=gear.LanunPathA,sub="Kustawi +1",range="Fomalhaut"}
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
