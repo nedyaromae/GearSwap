@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal','DT') 
-	state.IdleMode:options('Idle','Magic','Segs','ConvertMP','Adds','Aminon') 
+	state.IdleMode:options('Idle','Magic','Segs','Aminon') 
 	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','Aminon')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
@@ -125,7 +125,7 @@ function init_gear_sets()
 
     sets.precast.WS['Requiescat'].DT=set_combine(sets.precast.WS['Requiescat'],{})
 	sets.precast.WS['Chant du Cygne'] = {ammo={name="Coiste Bodhar",priority=3},
-    head={name="Sakpata's Helm",priority=91},neck={name="Fotia Gorget",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=4},
+    head={name="Sakpata's Helm",priority=91},neck={name="Null Loop",priority=50},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=4},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=92},ring1={name="Cornelia's Ring",priority=6},ring2={name="Moonlight Ring",priority=110},
     back={name="Null Shawl",priority=7},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
     sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS['Chant du Cygne'],{})
@@ -276,7 +276,7 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
 	--------------------------------------
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
-sets.kiting={ring2={name="Shneddick Ring",priority=1}}
+    sets.Kiting={ring2={name="Shneddick Ring",priority=1}}
     sets.resting = {main={name="Sakpata's Sword",priority=100},sub={name="Archduke's Shield",priority=9},ammo={name="Homiliary",priority=3},
         head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Sheltered Ring",priority=5},ring2={name="Chirich Ring +1",priority=6},
@@ -289,13 +289,13 @@ sets.kiting={ring2={name="Shneddick Ring",priority=1}}
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.Magic={ammo={name="Vanir Battery",priority=3},
-    head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Purity Ring",priority=6},ring2={name="Murky Ring",priority=7},
+    head={name="Sakpata's Helm",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Shadow Ring",priority=6},ring2={name="Murky Ring",priority=7},
     back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.idle.Aminon={ammo={name="Vanir Battery",priority=3},
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=4},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Purity Ring",priority=6},ring2={name="Murky Ring",priority=7},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2={name="Moonlight Ring",priority=110},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.idle.Segs= {ammo={name="Eluder's Sachet",priority=3},
@@ -307,11 +307,6 @@ sets.kiting={ring2={name="Shneddick Ring",priority=1}}
     head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Flume Belt +1",priority=2},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
-
-    sets.idle.Int= {ammo={name="Vanir Battery",priority=3}, --This is for horseshit like kalunga because apparently Dint plays a role in resisting fetters
-    head={name="Nyame Helm",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Eabani Earring",priority=45},
-    body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Shadow Ring",priority=3},ring2={name="Murky Ring",priority=30},
-    back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
     sets.idle.Adds= {ammo={name="Homiliary",priority=3},
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
@@ -325,7 +320,7 @@ sets.kiting={ring2={name="Shneddick Ring",priority=1}}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
     sets.defense.PDT=set_combine(sets.idle,{})
     sets.defense.MDT=set_combine(sets.idle.Magic,{})
-    sets.defense.MEVA=set_combine(sets.idle.Int,{})
+    sets.defense.MEVA=set_combine(sets.idle.Magic,{})
     
 	-- Weapons sets
     sets.weapons.SakpataDuban = {main="Sakpata's Sword",sub="Duban"} --normal tank shit
@@ -334,7 +329,7 @@ sets.kiting={ring2={name="Shneddick Ring",priority=1}}
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
     sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
-    sets.weapons.Sixstep ={main="Reikiko",sub="Aegis"} --Aminon
+    sets.weapons.Aminon ={main="Reikiko",sub="Aegis"} --Aminon
     sets.weapons.BrilSriv={main="Brilliance",sub="Srivatsa"} --Kiting
     sets.weapons.SakpataSriv={main="Sakpata's Sword",sub="Srivatsa"} --idfk don't really use this
 	--------------------------------------
