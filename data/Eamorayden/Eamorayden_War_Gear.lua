@@ -78,12 +78,12 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.PDL={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Nyame Sollerets"}
 		
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
@@ -115,7 +115,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Ukko's Fury"] =  {ammo="Yetshila +1",
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.critrate_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS["Ukko's Fury"].PDL=set_combine(sets.precast.WS["Ukko's Fury"], {body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Sakpata's Cuisses"})
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
@@ -141,13 +141,13 @@ function init_gear_sets()
 
 	sets.precast.WS["Requiescat"] ={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Pumm. Calligae +4"}
 
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
 		head="Boii Mask +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +2",ring1="Murky Ring",ring2="Metamor. Ring +1",
+		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})

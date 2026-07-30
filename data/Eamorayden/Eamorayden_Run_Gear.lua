@@ -81,7 +81,7 @@ function init_gear_sets()
     
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
         head={name="Runeist Bandeau +4",priority=119},neck={name="Baetyl Pendant",priority=1},ear1={name="Loquac. Earring",priority=4},ear2={name="Tuisto Earring",priority=150},
-        body=gear.TaeonFCBody,{priority=102},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=5},ring2={name="Kishar Ring",priority=7},
+        body={name="Erilaz Surcoat +2",priority=133},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=5},ring2={name="Kishar Ring",priority=7},
         back=gear.fc_jse_back,{priority=6},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Carmine Greaves +1",priority=95}}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs={name="Futhark Trousers +4",priority=117}})

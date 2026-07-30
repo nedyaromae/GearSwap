@@ -9,6 +9,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options()
 	state.ResistDefenseMode:options()
 	state.Weapons:options('None','Agwu','Ikengas')
+	state.AutoRewardMode = M(False, 'Auto Reward Mode')
 
 	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
@@ -121,6 +122,8 @@ function init_gear_sets()
 		
 	sets.idle.Reraise = set_combine(sets.idle, {head="Crepuscular Helm",body="Twilight Mail"})
 	sets.idle.Weak= set_combine(sets.idle, {head="Crepuscular Helm",body="Twilight Mail"})
+	--sets.idle.Pet.DW={}
+		--idle.Pet.Engaged.DW={}
 
 --	sets.idle.Pet = {ammo="Voluspa Tathlum",
 --		head="Anwig Salade",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
@@ -173,8 +176,7 @@ function init_gear_sets()
 		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-		sets.idle.Pet.DW={}
-		idle.Pet.Engaged.DW={}
+		
 
 	sets.engaged.KalungaBS={ammo="Crepuscular Pebble",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",

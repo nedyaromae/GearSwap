@@ -217,7 +217,7 @@ function init_gear_sets()
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
         head="Carmine Mask +1",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
-        body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Kishar Ring",ring2="Metamor. Ring +1",
+        body="Laksa. Frac +4",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Metamor. Ring +1",
         back=gear.macc_fc_jse_back,waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
@@ -255,8 +255,8 @@ function init_gear_sets()
     sets.STP={head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
-sets.precast.Item['Icarus Wing']=set_combine(sets.buff.STP, {})
-sets.precast.Item['Volte Harness'] = {set_combine(sets.STP, {body="Volte Harness"})}
+sets.precast.Item['Icarus Wing']=set_combine(sets.STP, {})
+sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 	-- Weapons sets
 	sets.weapons.DualShooting = {main=gear.LanunPathA,sub="Kustawi +1",range="Fomalhaut"}
 	sets.weapons.DualSavage = {main="Naegling",sub="Gleti's Knife",range="Anarchy +2"}
