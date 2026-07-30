@@ -3,8 +3,8 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal','DT') 
-	state.IdleMode:options('Idle','Magic','Segs','Aminon') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','Aminon')
+	state.IdleMode:options('Idle','Magic','Aminon') 
+	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal','Tank')
@@ -182,7 +182,7 @@ function init_gear_sets()
         body={name="Souveran Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Murky Ring",priority=5},
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=200},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
-   sets.HPCure={sub={name="Srivatsa",priority=150},ammo={name="Sapience Orb",priority=1},
+   sets.HPCure={ammo={name="Sapience Orb",priority=1},
         head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
        back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Souv. Diechlings +1",priority=162},feet={name="Odyssean Greaves",priority=20}}

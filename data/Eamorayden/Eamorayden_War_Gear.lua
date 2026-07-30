@@ -83,7 +83,7 @@ function init_gear_sets()
 
 	sets.precast.WS.PDL={ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Sakpata's Plate",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Nyame Sollerets"}
 		
 	sets.precast.WS.FullAcc=set_combine(sets.precast.WS,{})
