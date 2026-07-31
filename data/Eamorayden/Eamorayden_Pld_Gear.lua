@@ -329,7 +329,7 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
     sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
-    sets.weapons.Aminon ={main="Reikiko",sub="Aegis"} --Aminon
+    sets.weapons.Aminon ={main="Reikiko",sub="Aegis"} --Aminon maybe not sure i can hit though
     sets.weapons.BrilSriv={main="Brilliance",sub="Srivatsa"} --Kiting
     sets.weapons.SakpataSriv={main="Sakpata's Sword",sub="Srivatsa"} --idfk don't really use this
 	--------------------------------------

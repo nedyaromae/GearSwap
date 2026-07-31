@@ -29,6 +29,7 @@ function user_job_setup()
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
     gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.macc_fc_jse_back= {name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
+    gear.dw_tp_jse_back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
     gear.LanunPathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostamPathB={name="Rostam", augments={'Path: B',}}
     gear.RostamPathC={name="Rostam", augments={'Path: C',}}
@@ -291,19 +292,20 @@ sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
     sets.engaged.DW = {
-		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Eabani Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Chirich Ring +1",
+		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
     sets.engaged.DW.DT = {
-		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Eabani Earring",
+		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"} 
+		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"} 
     
     sets.engaged.DW.Acc = {
-		head="Malignance Chapeau",neck="Null Loop",ear1="Cessance Earring",ear2="Eabani Earring",
+		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back="Null Shawl",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
+        
     sets.engaged.Savage=set_combine(sets.engaged,{})
     sets.engaged.Savage.Acc=set_combine(sets.engaged.Acc,{back=gear.tp_jse_back})
     sets.engaged.Savage.DT=set_combine(sets.engaged.DT,{})
