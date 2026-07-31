@@ -304,17 +304,7 @@ sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
     sets.engaged.DW.Acc = {
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
-		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
-        
-    sets.engaged.Savage=set_combine(sets.engaged,{})
-    sets.engaged.Savage.Acc=set_combine(sets.engaged.Acc,{back=gear.tp_jse_back})
-    sets.engaged.Savage.DT=set_combine(sets.engaged.DT,{})
-    sets.engaged.DualSavage=set_combine(sets.engaged.DW,{})
-    sets.engaged.DualSavage.Acc=set_combine(sets.engaged.DW.Acc,{back=gear.tp_jse_back})
-    sets.engaged.DualSavage.DT=set_combine(sets.engaged.DW.DT,{})
-    sets.engaged.DualEvis=set_combine(sets.engaged.DW,{})
-    sets.engaged.DualEvis.Acc=set_combine(sets.engaged.DW.Acc,{back=gear.tp_jse_back})
-    sets.engaged.DualEvis.DT=set_combine(sets.engaged.DW.DT,{}) 
+		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"} 
 
 
 
