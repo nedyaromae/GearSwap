@@ -244,7 +244,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body={name="Nyame Mail",priority=136},hands={name="Turms Mittens +1",priority=74},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
-        back=gear.parry_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings",priority=61}}
+        back=gear.parry_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings +1",priority=76}}
 
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Ainia Collar",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
