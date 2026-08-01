@@ -200,14 +200,14 @@ function init_gear_sets()
     back=gear.idle_jse_back,{priority=5},waist={name="Null Belt",priority=2},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=119}}
 
     sets.idle.Magic={ammo={name="Staunch Tathlum +1",priority=3},
-    head={name="Null Masque",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=4},
+    head={name="Null Masque",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Eabani Earring",priority=40},ear2={name="Erilaz Earring +2",priority=4},
     body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=6},ring2={name="Shadow Ring",priority=7},
-    back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
+    back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Erilaz Greaves +2",priority=38}}
 
 	sets.idle.ResistCharm={ammo={name="Staunch Tathlum +1",priority=3},
-    head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=6},
+    head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=6},
     body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
-    back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
+    back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Erilaz Greaves +2",priority=38}}
 
 
 sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
