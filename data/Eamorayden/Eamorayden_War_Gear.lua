@@ -30,8 +30,8 @@ function init_gear_sets()
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +4",feet="Agoge Calligae +3",back=gear.da_jse_back}
-	sets.precast.JA['Berserk'].OutOfCombat={main="Firangi",sub="Diamond Aspis",body="Pumm. Lorica +4",feet="Agoge Calligae +3",back=gear.da_jse_back}
+	sets.precast.JA['Berserk'] = {body="Pumm. Lorica +4",feet="Agoge Calligae +4",back=gear.da_jse_back}
+	sets.precast.JA['Berserk'].OutOfCombat={main="Firangi",sub="Diamond Aspis",body="Pumm. Lorica +4",feet="Agoge Calligae +4",back=gear.da_jse_back}
 	sets.precast.JA['Warcry'] = {head="Agoge Mask +4"}
 	sets.precast.JA['Warcry'].OutOfCombat = {main="Naegling",sub="Diamond Aspis",head="Agoge Mask +4"}
 	sets.precast.JA['Defender'] = {}
@@ -39,7 +39,7 @@ function init_gear_sets()
 	sets.precast.JA['Aggressor'].OutOfCombat = {main="Naegling",sub="Diamond Aspis",head="Pummeler's Mask +2"}
 	sets.precast.JA['Mighty Strikes'] = {hands="Agoge Mufflers"}
 	sets.precast.JA["Warrior's Charge"] = {}
-	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk",feet="Agoge Calligae +3"}
+	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk",feet="Agoge Calligae +4"}
 	sets.precast.JA['Retaliation'] = {}
 	sets.precast.JA['Retaliation'].OutOfCombat={main="Naegling",sub="Diamond Aspis"}
 	sets.precast.JA['Restraint'] = {}
