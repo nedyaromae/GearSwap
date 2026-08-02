@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('Normal','SIRD') 
-	state.IdleMode:options('Idle','Magic') 
+	state.IdleMode:options('Idle','Magic','Def') 
 	state.Weapons:options('Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal')
@@ -208,6 +208,12 @@ function init_gear_sets()
     head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=6},
     body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
     back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Erilaz Greaves +2",priority=38}}
+
+    sets.idle.Def={ammo={name="Staunch Tathlum +1",priority=3},
+    head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+    body={name="Nyame Mail",priority=2136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Fortified Ring",priority=4},
+    back=gear.idle_jse_back,{priority=5},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=119}}
+
 
 
 sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
