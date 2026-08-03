@@ -27,7 +27,7 @@ function user_job_setup()
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
     gear.tp_jse_back=   {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}}
+    gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     gear.macc_fc_jse_back= {name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
     gear.dw_tp_jse_back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
     gear.LanunPathA={name="Lanun Knife", augments={'Path: A',}}
@@ -140,7 +140,6 @@ function init_gear_sets()
         head="Nyame Helm",neck="Null Loop",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Nyame Mail",hands="Chasseur's Gants +3",ring1="Chirich Ring +1",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Null Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
-
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Hoxne Earring",
