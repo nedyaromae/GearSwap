@@ -262,8 +262,6 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
         body={name="Runeist Coat +4",priority=228},hands={name="Turms Mittens +1",priority=74},ring1={name="Murky Ring",priority=3},ring2={name="Moonlight Ring",priority=110},
         back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings +1",priority=76}}
 
-
-
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Ainia Collar",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
         body={name="Ashera Harness",priority=182},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2={name="Moonlight Ring",priority=110},
