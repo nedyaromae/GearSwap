@@ -95,7 +95,7 @@ function init_gear_sets()
 		
     -- Cure sets
 
-	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Crepuscular Pebble",
+	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
@@ -141,23 +141,27 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Witful Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
 		
-	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
-		head="Telchine Cap",neck="Hoxne Torque",ear1="Andoaa Earring",ear2="Mimir Earring",
+	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+		head="Telchine Cap",neck="Hoxne Torque",ear1="Alabaster Earring",ear2="Mimir Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
       
-    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
+    sets.midcast['Enhancing Magic'].NoSkill= {main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Telchine Cap",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers earring +1",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
 
-	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {legs="Shedir Seraweels"})
+	sets.midcast.Stoneskin ={main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Earthcry Earring",
+		body="Telchine Chas.",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
+		back="Alaunus's Cape",waist="Siegel Sash",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
+
     sets.midcast.Haste= set_combine(sets.midcast['Enhancing Magic'].NoSkill,{})
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {feet="Ebers Duckbills +2"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring2="Sheltered Ring"})
-    sets.midcast.Protect=set_combine(sets.midcast.Protectra,{})
+    sets.midcast.Protect=set_combine(sets.midcast['Enhancing Magic'].NoSkill,{})
     sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {ring2="Sheltered Ring"})
-    sets.midcast.Shell=set_combine(sets.midcast.Shellra,{})
+    sets.midcast.Shell=set_combine(sets.midcast['Enhancing Magic'].NoSkill,{})
 	sets.midcast.BarStatus = set_combine(sets.midcast['Enhancing Magic'].NoSkill, {neck="Sroda Necklace"})
 	sets.midcast['Enhancing Magic']['Aurorastorm']=set_combine(sets.midcast['Enhancing Magic'].NoSkill)
 
@@ -166,12 +170,12 @@ function init_gear_sets()
 		body="Ros. Jaseran +1",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Emphatikos Rope",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
-	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
+	sets.midcast.Regen = {main="Bolelabunga",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2",neck="Loricate torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Piety Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Theo. Pant. +4",feet="Theo. Duckbills +4"}
 	
-	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Crepuscular Pebble",
+	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Mimir Earring",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
 		back="Alaunus's Cape",waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
@@ -233,7 +237,7 @@ function init_gear_sets()
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 
-	sets.midcast['Dia II'] = {Main="Queller Rod",sub="Archduke's Shield",ammo="Crepuscular Pebble",
+	sets.midcast['Dia II'] = {Main="Prime Maul",sub="Archduke's Shield",ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}

@@ -285,7 +285,7 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
     -- Idle sets
     sets.idle = {ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=3},ring2={name="Shneddick Ring",priority=4},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=3},ring2={name="Murky Ring",priority=4},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.Magic={ammo={name="Vanir Battery",priority=3},
@@ -300,18 +300,23 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
 
     sets.idle.Segs= {ammo={name="Eluder's Sachet",priority=3},
     head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.ConvertMP= {ammo={name="Homiliary",priority=3},
     head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Shneddick Ring",priority=1},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Flume Belt +1",priority=2},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.Adds= {ammo={name="Homiliary",priority=3},
     head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
+
+    sets.idle.Block={ammo={name="Staunch Tathlum +1",priority=3},
+    head={name="Chev. Armet +2",priority=135},neck={name="Hoxne Torque",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
+    back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
 
 	--------------------------------------
     -- Defense sets
