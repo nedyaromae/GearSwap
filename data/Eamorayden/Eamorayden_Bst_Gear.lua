@@ -8,8 +8,9 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options()
 	state.MagicalDefenseMode:options()
 	state.ResistDefenseMode:options()
-	state.Weapons:options('None','Agwu','Ikengas')
+	state.Weapons:options('Agwu','Ikengas','Naegling')
 	state.AutoRewardMode = M(False, 'Auto Reward Mode')
+	state.UnlockWeapons = M(true, 'Unlock Weapons')
 
 	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
@@ -73,8 +74,12 @@ function init_gear_sets()
 		-- Default weaponskill sets.
 	sets.precast.WS ={ammo="Coiste Bodhar",
 		head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Thrud Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back="Null Shawl",waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+		
+
+
 
 
 	-- Specific weaponskill sets.
@@ -99,7 +104,7 @@ function init_gear_sets()
 	sets.midcast.Pet.DebuffReady = {main="Agwu's Axe",sub="Diamond Aspis",ammo="Volsupa Tathlum",
 		head="Nyame Helm",neck="Adad Amulet",ear1="Alabaster Earring",ear2="Nukumi Earring +1",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Tali'ah Ring",ring2="Murky Ring",
-		back="Artio's Mantle",waist="Incarnation Sash",legs="Nyame Flanchard",feet="Gleti's Boots"}
+		back="Artio's Mantle",waist="Incarnation Sash",legs="Gleti's Breeches",feet="Gleti's Boots"}
 				
 	sets.midcast.Pet.MagicReady = set_combine(sets.midcast.Pet.DebuffReady, {})
 		
