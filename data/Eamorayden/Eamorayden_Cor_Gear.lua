@@ -5,6 +5,7 @@ function user_job_setup()
     state.WeaponskillMode:options('Normal', 'Acc','PDL','SB')
     state.IdleMode:options('Normal')
 	state.HybridMode:options('Normal','DT')
+    state.CastingMode:options('Normal','Aminon')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
         weapon_sets = {
@@ -84,6 +85,12 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Chass. Bottes +2"}
 		
+    sets.precast.CorsairShot.Aminon={ammo=gear.QDbullet,
+        head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
+
+
     sets.precast.CorsairShot['Light Shot']={ammo="Animikii Bullet",
         head="Laksa. Tricorne +4",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Metamor. Ring +1",ring2="Murky Ring",
