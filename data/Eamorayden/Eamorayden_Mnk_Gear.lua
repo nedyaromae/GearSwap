@@ -15,6 +15,7 @@ function user_job_setup()
 gear.dex_jse_back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 gear.str_jse_back={name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}}
 select_default_macro_book()
+user_job_lockstyle()
 end
 function init_gear_sets()
 	--------------------------------------

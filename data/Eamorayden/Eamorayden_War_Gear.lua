@@ -12,7 +12,7 @@ function user_job_setup()
 	gear.vit_wsd_jse_back={name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}}
 
 	--Ikenga_axe_bonus = 300  -- It is 300 at R25. Uncomment if you need to manually adjust because you are using below R25 or above
-	
+	user_job_lockstyle()
 	select_default_macro_book()
 end
 

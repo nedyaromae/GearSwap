@@ -11,7 +11,7 @@ function user_job_setup()
 	state.Weapons:options('Agwu','Ikengas','Naegling')
 	state.AutoRewardMode = M(False, 'Auto Reward Mode')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
-
+user_job_lockstyle()
 	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
 	state.JugMode = M{['description']='Jug Mode','GenerousArthur','FatsoFargann','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}

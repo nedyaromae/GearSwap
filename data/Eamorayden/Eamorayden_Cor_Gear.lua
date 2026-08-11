@@ -35,6 +35,7 @@ function user_job_setup()
     gear.LanunPathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostamPathB={name="Rostam", augments={'Path: B',}}
     gear.RostamPathC={name="Rostam", augments={'Path: C',}}
+    user_job_lockstyle()
 
     -- Additional local binds
 

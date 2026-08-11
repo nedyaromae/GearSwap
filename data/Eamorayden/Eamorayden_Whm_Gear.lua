@@ -11,7 +11,7 @@ function user_job_setup()
     state.AutoCaress = M(false, 'Auto Caress Mode')
 	state.WakeUpWeapons = M(true, 'Swap Weapons To Wake Up')
     state.UnlockWeapons = M(true, 'Unlock Weapons')
-
+user_job_lockstyle()
 		-- Additional local binds
 	
     select_default_macro_book()

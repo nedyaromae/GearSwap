@@ -7,7 +7,8 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
     state.IdleMode:options('Normal')
 	state.Weapons:options('Dojikiri','ShiningOne')
-
+    select_default_macro_book()
+user_job_lockstyle()
 	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
     -- Additional local binds
@@ -24,11 +25,11 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +1",back=gear.ws_jse_back}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +1"}
-	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
-	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
+    sets.precast.JA.Meditate = {back="Takaha mantle"}
+    sets.precast.JA['Warding Circle'] = {}
+    sets.precast.JA['Blade Bash'] = {}
+	sets.precast.JA['Sekkanoki'] = {}
+	sets.precast.JA['Sengikori'] = {}
 	
 
     -- Fast cast sets for spells
@@ -106,6 +107,7 @@ function init_gear_sets()
 	
     sets.Reraise = {head="Crepuscular Helm",body="Twilight Mail"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+    sets.Phalanx_Received={body="Valorous Mail"}
 
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
@@ -131,7 +133,12 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {ammo="Coiste Bodhar",
-        head="Mpaca's Cap",neck="Ainia Collar",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        head="Mpaca's Cap",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+
+        sets.engaged.Acc = {ammo="Coiste Bodhar",
+        head="Mpaca's Cap",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
         body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
         back="Takaha Mantle",waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
    
@@ -143,16 +150,16 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Utu Grip"}
-    sets.weapons.ShiningOne={main+"Shining One",sub="Utu Grip"}
+    sets.weapons.ShiningOne={main="Shining One",sub="Utu Grip"}
 	
 	-- Buff sets
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Vim Torque +1"}
 	sets.buff.Hasso = {}
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
-    sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
-    sets.buff.Sengikori = {feet="Kas. Sune-Ate +1"}
-    sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +1"}
+    sets.buff.Sekkanoki = {}
+    sets.buff.Sengikori = {}
+    sets.buff['Meikyo Shisui'] = {}
 end
 
 -- Select default macro book on initial load or subjob change.
@@ -163,4 +170,8 @@ function select_default_macro_book()
     elseif player.sub_job == 'DRG' then
         set_macro_page(4, 8)
     end
+
 end
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 011')
+	end
