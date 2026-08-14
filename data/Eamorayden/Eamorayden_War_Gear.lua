@@ -343,7 +343,6 @@ function job_post_precast(spell, spellMap, eventArgs)
 		elseif spell.english == 'Blood Rage' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Blood Rage'].OutOfCombat then   equip(sets.precast.JA['Blood Rage'].OutOfCombat)  
 		elseif spell.english == 'Restraint' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Restraint'].OutOfCombat then   equip(sets.precast.JA['Restraint'].OutOfCombat)   
 		elseif spell.english == 'Aggressor' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Aggressor'].OutOfCombat then   equip(sets.precast.JA['Aggressor'].OutOfCombat) 
-		elseif spell.english == 'Retaliation' and not (in_combat or player.status == 'Engaged') and sets.precast.JA['Retaliation'].OutOfCombat then   equip(sets.precast.JA['Retaliation'].OutOfCombat)
 
 
 					
