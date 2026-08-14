@@ -4,7 +4,7 @@ function user_job_setup()
     state.RangedMode:options('Acc','Normal')
     state.WeaponskillMode:options('Normal', 'Acc','PDL','SB')
     state.IdleMode:options('Normal')
-	state.HybridMode:options('Normal','DT')
+	state.HybridMode:options('Normal','DT','Nyame')
     state.CastingMode:options('Normal','Aminon')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
         state.WeaponSets:options('Default','Dual')
@@ -299,6 +299,11 @@ sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
 		back="Null Shawl",waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
+    sets.engaged.Nyame= {
+        head="Nyame Helm",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epona's Ring",ring2="Chirich Ring +1",
+        back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Nyame Sollerets"}
+
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Chirich Ring +1",
@@ -313,6 +318,11 @@ sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 		head="Malignance Chapeau",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Murky Ring",
 		back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"} 
+
+    sets.engaged.DW.Nyame= {
+        head="Nyame Helm",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epona's Ring",ring2="Chirich Ring +1",
+        back=gear.dw_tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Nyame Sollerets"}
 
 
 
