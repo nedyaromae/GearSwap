@@ -140,7 +140,7 @@ function init_gear_sets()
         sets.engaged.Acc = {ammo="Coiste Bodhar",
         head="Mpaca's Cap",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
         body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
    
   --  sets.engaged.PDT = {ammo="Staunch Tathlum +1",
     --    head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
