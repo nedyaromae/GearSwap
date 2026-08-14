@@ -135,7 +135,7 @@ function init_gear_sets()
 
     sets.precast.WS['Sanguine Blade']= {ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Pixie Hairpin +1",priority=1},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=3},
-        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Epaminondas's Ring",priority=11},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Cornelia's Ring",priority=6},ring2={name="Archon Ring",priority=11},
         back=gear.wsd_jse_back,{priority=5},waist={name="Plat. Mog. Belt",priority=250},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 		
     sets.precast.WS['Aeolian Edge'] = {ammo={name="Oshasha's treatise",priority=3},

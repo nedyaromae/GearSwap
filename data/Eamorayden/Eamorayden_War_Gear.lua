@@ -164,6 +164,11 @@ function init_gear_sets()
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
+	sets.precast.WS['Sanguine Blade']={ammo="Knobkierrie",
+		head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
+		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Archon",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
 
 	
 
