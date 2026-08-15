@@ -13,8 +13,8 @@ function user_job_setup()
     state.UnlockWeapons = M(true, 'Unlock Weapons')
 user_job_lockstyle()
 		-- Additional local binds
-	gear.CP_jse_back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%',}},
-	gear.fc_jse_back={name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+	gear.CP_jse_back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%'}}
+	gear.fc_jse_back={name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%'}}
     select_default_macro_book()
 end
 
@@ -96,18 +96,18 @@ function init_gear_sets()
 		
     -- Cure sets
 
-	sets.midcast.Cure = {Main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.midcast.Cure = {Main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
+		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
 	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +2"})
-	sets.midcast.LightWeatherCure=set_combine(sets.midcast.Cure,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
+	sets.midcast.LightWeatherCure=set_combine(sets.midcast.Cure,{waist="Hachirin-No-Obi"})
 	sets.midcast.LightWeatherCureSolace=set_combine(sets.midcast.LightWeatherCure,{body="Ebers Bliaut +2"})
 	sets.midcast.Curaga=set_combine(sets.midcast.Cure,{})
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
-	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{Main="Chatoyant Staff",sub="Mensch Strap +1",waist="Hachirin-No-Obi"})
+	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{waist="Hachirin-No-Obi"})
 	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
 
     sets.midcast.Cure.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
