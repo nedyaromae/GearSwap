@@ -108,8 +108,7 @@ function init_gear_sets()
 	sets.midcast.Curaga=set_combine(sets.midcast.Cure,{})
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
 	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{waist="Hachirin-No-Obi"})
-	sets.midcast['Full Cure'] = set_combine(sets.midcast.FastRecast,{})
-
+	
     sets.midcast.Cure.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
@@ -123,7 +122,7 @@ function init_gear_sets()
     sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})	
 
 	sets.midcast.MeleeCure={ammo="Staunch Tathlum +1",
-		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Mendi. Earring",ear2="Nourish. Earring +1",
+		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Alabaster Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
 
