@@ -102,7 +102,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-        head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+        head="Carmine Mask +1",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.macc_fc_jse_back,waist="Null Belt",legs=gear.FCHercPants,feet="Carmine Greaves +1"}
 
@@ -185,7 +185,7 @@ function init_gear_sets()
     sets.precast.WS['Exenterator'].Acc={ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Null Loop",ear1="Mache Earring +1",ear2="Chas. Earring",
         body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Cornelia's Ring",ring2="Murky Ring",
-        back="Null Shawl",waist="Null Belt",legs="Chasseur's Culottes +2",feet="Malignance Boots"}
+        back="Null Shawl",waist="Null Belt",legs="Chasseur's Culottes +3",feet="Malignance Boots"}
 		
 
 	
@@ -225,7 +225,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast,{})
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
-        head="Carmine Mask +1",neck="Null Loop",ear1="Crep. Earring",ear2="Chas. Earring",
+        head="Carmine Mask +1",neck="Null Loop",ear1="Enchntr. Earring +1",ear2="Chas. Earring",
         body="Laksa. Frac +4",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Metamor. Ring +1",
         back=gear.macc_fc_jse_back,waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear

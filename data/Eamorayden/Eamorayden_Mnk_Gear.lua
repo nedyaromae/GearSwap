@@ -45,7 +45,7 @@ sets.precast.JA['Chakra'] = {head="Null Masque",neck="Unmoving Collar +1",ear1="
 	-- Fast cast sets for spells
 	
 sets.precast.FC = {ammo="Sapience Orb",
-		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+		head="",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs=gear.FCHercPants,feet=""}
 	

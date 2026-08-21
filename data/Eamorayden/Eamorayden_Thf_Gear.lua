@@ -66,7 +66,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Sapience Orb",
-		head="",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+		head="",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		legs=gear.FCHercPants}
 
