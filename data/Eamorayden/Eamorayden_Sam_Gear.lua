@@ -97,7 +97,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
         head="Null Masque",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
         body="Nyame Mail",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
-        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet="Amm Greaves"}
+        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet=""}
 		
     -- Specific spells
  
