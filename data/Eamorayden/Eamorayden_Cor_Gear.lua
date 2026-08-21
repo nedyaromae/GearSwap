@@ -3,7 +3,7 @@ function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
     state.WeaponskillMode:options('Normal', 'Acc','PDL','SB')
-    state.IdleMode:options('Normal')
+    state.IdleMode:options('Normal','Aminon')
 	state.HybridMode:options('Normal','DT','Nyame')
     state.CastingMode:options('Normal','Aminon')
 	state.Weapons:options('DualSavage','DualShooting','DualAeolian','DualEvis')
@@ -252,6 +252,11 @@ function init_gear_sets()
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+        sets.idle.Aminon= {ammo=gear.RAbullet,
+        head="Null Masque",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
@@ -286,7 +291,7 @@ sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
     
     sets.engaged = {
 	    head="Malignance Chapeau",neck="Ainia Collar",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Petrov Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Epona's Ring",ring2="Chirich Ring +1",
 		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
     sets.engaged.DT={
