@@ -35,7 +35,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {head="Null Masque",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Nyame Mail",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
-        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet="Amm Greaves"}
+        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet=""}
 	   
     
     -- Weaponskill sets

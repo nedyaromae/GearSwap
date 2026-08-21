@@ -80,7 +80,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
-        head={name="Runeist Bandeau +4",priority=119},neck={name="Baetyl Pendant",priority=1},ear1={name="Loquac. Earring",priority=4},ear2={name="Tuisto Earring",priority=150},
+        head={name="Runeist Bandeau +4",priority=119},neck={name="Baetyl Pendant",priority=1},ear1={name="Enchntr. Earring +1",priority=4},ear2={name="Tuisto Earring",priority=150},
         body={name="Erilaz Surcoat +2",priority=133},hands={name="Leyline Gloves",priority=25},ring1={name="Prolix Ring",priority=5},ring2={name="Kishar Ring",priority=7},
         back=gear.fc_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Carmine Greaves +1",priority=95}}
 
@@ -102,7 +102,7 @@ function init_gear_sets()
     sets.precast.WS["Armor Break"]={ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Runeist Bandeau +4",priority=119},neck={name="Null Loop",priority=50},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=1},
         body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=6},ring2={name="Metamor. Ring +1",priority=11},
-        back={name="Null Shawl",priority=8},waist={name="Null Belt",priority=3},legs={name="Erilaz Leg Guards +2",priority=90},feet={name="Runeist Bottes +4",priority=84}}
+        back={name="Null Shawl",priority=8},waist={name="Null Belt",priority=3},legs={name="Erilaz Leg Guards +2",priority=90},feet={name="Runeist Boots +4",priority=84}}
 
 
     sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
