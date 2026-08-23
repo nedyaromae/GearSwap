@@ -130,7 +130,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
 		head="Null Masque",neck="Vim Torque +1",ear1="Cessance Earring",ear2="Crep. Earring",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Reiki Yotai",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 	sets.precast.WS["Fast Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
@@ -146,7 +146,7 @@ function init_gear_sets()
 
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
-		head="Boii Mask +2",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
+		head="Sakpata's Helm",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -193,7 +193,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shneddick Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
@@ -228,7 +228,7 @@ function init_gear_sets()
 
 	sets.engaged.Vagary={ammo="Coiste Bodhar", 
 		head="Boii Mask +2",neck="Vim Torque +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Chirich Ring +1",ring2="Moonlight Ring",
+		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Moonlight Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 		
 	sets.engaged.Meva={ammo="Coiste Bodhar", 
@@ -250,6 +250,8 @@ function init_gear_sets()
 	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",hands="Souv. Handsch. +1",legs="Sakpata's leggings",feet="Souveran Schuhs +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Refresh_Received ={waist="Gishdubar Sash"}
+	sets.Kiting = {ring2="Shneddick Ring"}
+
 	
 	-- Weapons sets
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
