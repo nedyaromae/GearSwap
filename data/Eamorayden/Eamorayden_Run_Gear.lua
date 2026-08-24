@@ -66,7 +66,7 @@ function init_gear_sets()
 	sets.precast.JA['Vivacious Pulse']={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Erilaz Galea +2",priority=101},neck={name="Hoxne Torque",priority=5},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_stinky,{priority=6},ring2=gear.right_stinky,{priority=8},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Rune. Trousers +3",priority=80},feet={name="Sworn Sabatons",priority=116}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Rune. Trousers +4",priority=90},feet={name="Sworn Sabatons",priority=116}}
 
 	sets.precast.JA['Vivacious Pulse']['Ignis'] = set_combine(sets.precast.JA['Vivacious Pulse'], {})
 	sets.precast.JA['Vivacious Pulse']['Gelus'] = set_combine(sets.precast.JA['Vivacious Pulse'], {})
@@ -102,7 +102,7 @@ function init_gear_sets()
     sets.precast.WS["Armor Break"]={ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Runeist Bandeau +4",priority=119},neck={name="Null Loop",priority=50},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=1},
         body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=6},ring2={name="Metamor. Ring +1",priority=11},
-        back={name="Null Shawl",priority=8},waist={name="Null Belt",priority=3},legs={name="Erilaz Leg Guards +2",priority=90},feet={name="Runeist Boots +4",priority=84}}
+        back={name="Null Shawl",priority=8},waist={name="Null Belt",priority=3},legs={name="Rune. Trousers +4",priority=90},feet={name="Runeist Boots +4",priority=84}}
 
 
     sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
