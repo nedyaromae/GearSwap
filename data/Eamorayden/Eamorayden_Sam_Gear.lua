@@ -35,7 +35,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {head="Null Masque",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Nyame Mail",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
-        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet=""}
+        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	   
     
     -- Weaponskill sets
@@ -95,9 +95,9 @@ function init_gear_sets()
 	
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Null Masque",neck="Baetyl Pendant",ear1="Etiolation Earring",ear2="Loquac. Earring",
+        head="Null Masque",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
         body="Nyame Mail",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
-        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet=""}
+        back="Solemnity Cape",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     -- Specific spells
  
