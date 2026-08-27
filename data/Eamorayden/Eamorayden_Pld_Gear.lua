@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('SIRD','Normal','DT') 
 	state.IdleMode:options('Idle','Magic','Aminon') 
-	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','SakpataSriv')
+	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','SakpataSriv','Aminon')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
 	state.HybridMode:options('Normal','Tank')
