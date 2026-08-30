@@ -62,7 +62,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS.PDL = {ammo="Coiste Bodhar",
 		head="Mpaca's Cap",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
-		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
+		body="Mpaca's Doublet",hands="Bhikku Gloves +2",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}	
 	
 	sets.precast.WS.Ngai={ammo="Coiste Bodhar",
@@ -70,11 +70,11 @@ sets.precast.FC = {ammo="Sapience Orb",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 		
-	-- Specific weaponskill sets.
+	-- Specific weaponskill sets. 
 
 	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring"})
-	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {head="Nyame Helm",body="Nyame Mail",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt"})
+	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring",hands="Bhikku Gloves +2"})
+	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {head="Nyame Helm",body="Nyame Mail",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt",hands="Bhikku Gloves +2"})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick'] =  {ammo="Coiste Bodhar", 
@@ -83,11 +83,11 @@ sets.precast.FC = {ammo="Sapience Orb",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 	sets.precast.WS['Tornado Kick']={ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
-		body="Mpaca's Doublet",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
+		body="Mpaca's Doublet",hands="Bhikku Gloves +2",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
-		body="Bhikku Cyclas +2",hands="Malignance Gloves",ring1="Metamorph Ring +1",ring2="Murky Ring",
+		body="Bhikku Cyclas +2",hands="Bhikku Gloves +2",ring1="Metamorph Ring +1",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 
 	sets.precast.WS['Raging Fists'].Ngai    = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
@@ -152,17 +152,17 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee sets
-	sets.engaged = {ammo="Coiste Bodhar", --1300 imp down 1293 imp up -- all engaged accs are /drg - like 10 or osme shit for other jobs 
+	sets.engaged = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
 
-		sets.engaged.Acc = {ammo="Coiste Bodhar", --1343 imp down 1336 imp up 
+		sets.engaged.Acc = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Bhikku Earring +1",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
-sets.engaged.Meva = {ammo="Coiste Bodhar", --1284 imp down 1277 imp up 
+sets.engaged.Meva = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back="Null Shawl",waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}	
