@@ -105,8 +105,8 @@ function init_gear_sets()
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,hands="Sakpata's Gauntlets",ammo="Crepuscular Pebble"})
      
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
-		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Schere Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
 	sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
@@ -116,7 +116,8 @@ function init_gear_sets()
 	sets.precast.WS["Ukko's Fury"] =  {ammo="Yetshila +1",
 		head="Boii Mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
-		back=gear.critrate_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.critrate_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Boii Calligae +2"}
+
 	sets.precast.WS["Ukko's Fury"].PDL=set_combine(sets.precast.WS["Ukko's Fury"], {body="Sakpata's Plate",hands="Sakpata's Gauntlets",legs="Boii Cuisses +3"})
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Ruinator'].PDL = set_combine(sets.precast.WS.PDL, {})
@@ -127,33 +128,33 @@ function init_gear_sets()
     sets.precast.WS["King's Justice"] = set_combine(sets.precast.WS, {legs="Boii Cuisses +3"})
 	sets.precast.WS["King's Justice"].PDL = set_combine(sets.precast.WS.PDL, {})
 	
-
 	sets.precast.WS["Burning Blade"]={ammo="Coiste Bodhar",
 		head="Null Masque",neck="Vim Torque +1",ear1="Cessance Earring",ear2="Crep. Earring",
 		body="Boii Lorica +2",hands="Sakpata's Gauntlets",ring1="Petrov Ring",ring2="Moonlight Ring",
 		back="Null Shawl",waist="Reiki Yotai",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
 	sets.precast.WS["Fast Blade"]=set_combine(sets.precast.WS["Burning Blade"],{})
-	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back,ear2="Boii Earring +1",ring1="Niqmaddu Ring",legs="Boii Cuisses +3"})
+	sets.precast.WS["Impulse Drive"] =set_combine(sets.precast.WS, {ammo="Yetshila +1",back=gear.critrate_jse_back,ear2="Boii Earring +1",ring1="Niqmaddu Ring",legs="Boii Cuisses +3",feet="Boii Calligae +2"})
 	sets.precast.WS["Impulse Drive"].PDL=set_combine(sets.precast.WS["Impulse Drive"],{body="Sakpata's Plate",ring1="Sroda Ring"})
-	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget",waist="Fotia Belt",legs="Boii Cuisses +3"})
-	sets.precast.WS["Stardiver"].PDL=set_combine(sets.precast.WS["Stardiver"],{body="Sakpata's Plate",hands="	's Gauntlets",ring1="Sroda Ring"})
+	sets.precast.WS["Stardiver"] = set_combine(sets.precast.WS, {head="Boii Mask +2",ear2="Boii Earring +1",ammo="Yetshila +1",back=gear.critrate_jse_back,neck="Fotia Gorget",waist="Fotia Belt",legs="Boii Cuisses +3",feet="Boii Calligae +2"})
+	sets.precast.WS["Stardiver"].PDL=set_combine(sets.precast.WS["Stardiver"],{body="Sakpata's Plate",ring1="Sroda Ring"})
 
 	sets.precast.WS["Requiescat"] ={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
-		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Pumm. Calligae +4"}
-
+		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Sakpata's Leggings"}
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
 		head="Sakpata's Helm",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
+
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Leg Sweep"]=set_combine(sets.precast.WS["Armor Break"],{})
+
 	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
 		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
@@ -169,27 +170,17 @@ function init_gear_sets()
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-
-	
-
-	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Boii Earring +1",}
 	sets.AccMaxTP = {ear1="Cessance Earring",ear2="Boii Earring +1"}
 	
 	--Specialty WS set overwrites.
-	sets.AccWSMightyCharge = {ammo="Yetshila +1"}
-	sets.AccWSCharge = {ammo="Yetshila +1"}
-	sets.AccWSMightyCharge = {ammo="Yetshila +1"}
-	sets.WSMightyCharge = {ammo="Yetshila +1"}
-	sets.WSCharge = {ammo="Yetshila +1"}
-	sets.WSMighty = {ammo="Yetshila +1"}
-
-     -- Sets to return to when not performing an action.
-           
-     -- Resting sets
-     sets.resting = {}
-           
+	sets.AccWSMightyCharge = {ammo="Yetshila +1",feet="Boii Calligae +2"}
+	sets.AccWSCharge = {ammo="Yetshila +1",feet="Boii Calligae +2"}
+	sets.AccWSMightyCharge = {ammo="Yetshila +1",feet="Boii Calligae +2"}
+	sets.WSMightyCharge = {ammo="Yetshila +1",feet="Boii Calligae +2"}
+	sets.WSCharge = {ammo="Yetshila +1",feet="Boii Calligae +2"}
+	sets.WSMighty = {ammo="Yetshila +1",feet="Boii Calligae +2"}
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",

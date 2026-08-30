@@ -56,11 +56,11 @@ function init_gear_sets()
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
-    sets.precast.JA['Wild Card'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring",
+    sets.precast.JA['Wild Card'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
-    sets.precast.JA['Random Deal'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring",
+    sets.precast.JA['Random Deal'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring +1",
         body="Lanun Frac +4",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Malignance Boots"}
 
@@ -225,7 +225,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast,{})
 
     sets.midcast['Absorb-TP']= {ammo="Animikii Bullet",
-        head="Carmine Mask +1",neck="Null Loop",ear1="Enchntr. Earring +1",ear2="Chas. Earring",
+        head="Carmine Mask +1",neck="Null Loop",ear1="Enchntr. Earring +1",ear2="Chas. Earring +1",
         body="Laksa. Frac +4",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Metamor. Ring +1",
         back=gear.macc_fc_jse_back,waist="Null Belt",legs="Laksa. Trews +4",feet="Laksamana bottes +4"}
     -- Ranged gear

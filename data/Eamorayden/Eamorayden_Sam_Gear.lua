@@ -1,7 +1,7 @@
 -- Setup vars that are user-dependent.
 function user_job_setup()
-    state.OffenseMode:options('Normal','Acc')
-    state.HybridMode:options('Normal','PDT')
+    state.OffenseMode:options('Normal','Acc','Paper')
+    state.HybridMode:options('Normal','PDT','Meva')
     state.WeaponskillMode:options('Normal','PDL')
     state.RangedMode:options('Normal', 'Acc')
     state.PhysicalDefenseMode:options('PDT')
@@ -9,7 +9,7 @@ function user_job_setup()
 	state.Weapons:options('Dojikiri','ShiningOne')
     select_default_macro_book()
 user_job_lockstyle()
-	gear.ws_jse_back = {name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
+	gear.str_wsd_jse_back = {name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
     -- Additional local binds
  
@@ -25,7 +25,7 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {back=gear.stp_jse_back,}
+    sets.precast.JA.Meditate = {back=gear.stp_jse_back,head="Wakido Kabuto +3"}
     sets.precast.JA['Warding Circle'] = {}
     sets.precast.JA['Blade Bash'] = {}
 	sets.precast.JA['Sekkanoki'] = {}
@@ -70,9 +70,9 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {})
     
     sets.precast.WS['Tachi: Ageha'] = {ammo="Pemphredo Tathlum",
-		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1=gear.left_stinky,ring2="Murky Ring",
-		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Kasuga Earring +2",
+		body="Kasuga Domaru +2",hands="Nyame Gauntlets",ring1=gear.left_stinky,ring2="Murky Ring",
+		back="Null Shawl",waist="Null Belt",legs="Kasuga Haidate +2",feet="Nyame Sollerets"}
 		
     sets.precast.WS['Tachi: Hobaku'] = set_combine(sets.precast.WS['Tachi: Ageha'], {})
 	sets.precast.WS['Leg Sweep']=set_combine(sets.precast.WS['Tachi: Ageha'], {})
@@ -133,21 +133,29 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {ammo="Coiste Bodhar",
-        head="Mpaca's Cap",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
-        body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+        head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
 
         sets.engaged.Acc = {ammo="Coiste Bodhar",
-        head="Mpaca's Cap",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
-        body="Mpaca's Doublet",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Mpaca's Hose",feet="Mpaca's Boots"}
+        head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
    
-  --  sets.engaged.PDT = {ammo="Staunch Tathlum +1",
-    --    head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-     --   body="Nyame Mail",hands="Wakido Kote +3",ring1="Defending Ring",ring2="Patricius Ring",
-      --  back="Moonlight Cape",waist="Ioskeha Belt",legs="Wakido Haidate +3",feet="Nyame Sollerets"}
-     
+    sets.engaged.PDT = {ammo="Coiste Bodhar",
+        head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +2",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Mpaca's Boots"}
 
+    sets.engaged.Meva={ammo="Coiste Bodhar",
+        head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +2",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Nyame Sollerets"}
+
+    sets.engaged.Paper={ammo="Coiste Bodhar",
+        head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
 	-- Weapons sets
 	sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Utu Grip"}
     sets.weapons.ShiningOne={main="Shining One",sub="Utu Grip"}

@@ -100,7 +100,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Chev. Sabatons +2",priority=42}}
 
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
-	sets.precast.FC.Cure = set_combine(sets.precast.FC, {ear2={name="Nourish. Earring +1",priority=4}})
+	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
     sets.precast.FC.Cure.DT=set_combine(sets.precast.FC.Cure,{})
   
     -- Weaponskill sets
