@@ -208,7 +208,7 @@ function init_gear_sets()
         body={name="Shabti Cuirass +1",priority=115},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Supershear Ring",priority=30},ring2={name="Murky Ring",priority=7},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
-sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",priority=3},
+    sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Earthcry Earring",priority=6},
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Siegel Sash",priority=4},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
@@ -295,7 +295,7 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
     back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.idle.Aminon={ammo={name="Vanir Battery",priority=3},
-    head={name="Null Masque",priority=100},neck={name="Coatl Gorget +1",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=4},
+    head={name="Null Masque",priority=100},neck={name="Coatl Gorget +1",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2={name="Moonlight Ring",priority=110},
     back=gear.idle_jse_back,{priority=60},waist={name="Null Belt",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
@@ -335,7 +335,7 @@ sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",pr
 	sets.weapons.NaeglingBlurred = {main="Naegling",sub="Blurred Shield +1"} --unga bunga
     sets.weapons.SakpataPriwen = {main="Sakpata's Sword",sub="Priwen"} --gaol adds maybe
     sets.weapons.Sixstep ={main="Reikiko",sub="Diamond Aspis"} --6 step bullshit 
-    sets.weapons.Aminon ={main="Reikiko",sub="Aegis"} --Aminon maybe not sure i can hit though
+    sets.weapons.Aminon ={main="Reikiko",sub="Aegis"} --Aminon because i haven't made an excal
     sets.weapons.BrilSriv={main="Brilliance",sub="Srivatsa"} --Kiting
     sets.weapons.SakpataSriv={main="Sakpata's Sword",sub="Srivatsa"} 
 	--------------------------------------

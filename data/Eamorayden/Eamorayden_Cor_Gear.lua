@@ -66,8 +66,8 @@ function init_gear_sets()
 
     sets.precast.CorsairRoll = {main=gear.RostamPathC,range="Compensator",
         head="Lanun Tricorne +4",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring +1",
-        body="Malignance Tabard",hands="Chasseur's Gants +3",ring1="Defending Ring",ring2="Murky Ring",
-        back=gear.tp_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        body="Nyame Mail",hands="Chasseur's Gants +3",ring1="Defending Ring",ring2="Murky Ring",
+        back=gear.tp_jse_back,waist="Flume Belt +1",legs="Desultor Tassets",feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +3"})
@@ -78,17 +78,17 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Bolter's Roll"] = {main=gear.RostamPathC,
         head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring +1",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Luzaf's Ring",ring2="Murky Ring",
-        back="Gunslinger's Cape",waist="Flume Belt +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
+        back="Gunslinger's Cape",waist="Flume Belt +1",legs="Desultor Tassets",feet="Malignance Boots"}
 
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        body="Mirke Wardecors",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Chass. Bottes +2"}
 		
     sets.precast.CorsairShot.Aminon={ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
+        body="Mirke Wardecors",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
 
