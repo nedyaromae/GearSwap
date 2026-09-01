@@ -180,7 +180,7 @@ function init_gear_sets()
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum +1",priority=7},
         head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=9},ear1={name="Nourish. Earring +1",priority=2},ear2={name="Chev. Earring +1",priority=3},
-        body={name="Souveran Cuirass +1",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Murky Ring",priority=5},
+        body={name="Sakpata's Plate",priority=136},hands={name="Macabre Gauntlets +1",priority=89},ring1={name="Moonbeam Ring",priority=100},ring2={name="Murky Ring",priority=5},
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=200},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
    sets.HPCure={ammo={name="Sapience Orb",priority=1},
