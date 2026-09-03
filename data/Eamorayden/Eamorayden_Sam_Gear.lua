@@ -135,27 +135,27 @@ function init_gear_sets()
     sets.engaged = {ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
         body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
+        back=gear.stp_jse_back,waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
 
         sets.engaged.Acc = {ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
         body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
+        back=gear.stp_jse_back,waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Wakido Sune. +4"}
    
     sets.engaged.PDT = {ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
         body="Kasuga Domaru +2",hands="Mpaca's Gloves",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Mpaca's Boots"}
+        back=gear.stp_jse_back,waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Wakido Sune. +4"}
 
     sets.engaged.Meva={ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
         body="Kasuga Domaru +2",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back=gear.stp_jse_back,waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Nyame Sollerets"}
+        back=gear.stp_jse_back,waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Nyame Sollerets"}
 
     sets.engaged.Paper={ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Dedition Earring",ear2="Kasuga Earring +2",
         body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
-        back="Takaha Mantle",waist="Sailfi Belt +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
+        back="Takaha Mantle",waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Tatena. Sune. +1"}
 	-- Weapons sets
 	sets.weapons.Dojikiri = {main="Dojikiri Yasutsuna",sub="Utu Grip"}
     sets.weapons.ShiningOne={main="Shining One",sub="Utu Grip"}
