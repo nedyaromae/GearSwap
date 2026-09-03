@@ -108,9 +108,9 @@ function init_gear_sets()
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
-	sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
-		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+	sets.precast.WS["Resolution"].PDL={ammo="Crepuscular Pebble",
+		head="Sakpata's Helm",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Sroda Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
 
 	sets.precast.WS["Ukko's Fury"] =  {ammo="Yetshila +1",
