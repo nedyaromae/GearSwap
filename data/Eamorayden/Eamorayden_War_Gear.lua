@@ -105,11 +105,11 @@ function init_gear_sets()
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,hands="Sakpata's Gauntlets",ammo="Crepuscular Pebble",ring1="Niqmaddu Ring"})
      
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
-		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Schere Earring",
+		head="Agoge Mask +4",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
 	sets.precast.WS["Resolution"].PDL={ammo="Coiste Bodhar",
-		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Schere Earring",
+		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
 
