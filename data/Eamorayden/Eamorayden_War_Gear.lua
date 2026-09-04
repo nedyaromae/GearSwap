@@ -89,7 +89,7 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
     sets.precast.WS['Savage Blade'] =set_combine(sets.precast.WS,{ring1="Sroda Ring"})
-	sets.precast.WS['Savage Blade'].PDL=set_combine(sets.precast.WS.PDL,{})]
+	sets.precast.WS['Savage Blade'].PDL=set_combine(sets.precast.WS.PDL,{})
 	sets.precast.WS['Judgment']=set_combine(sets.precast.WS,{})
 	sets.precast.WS['Judgment'].PDL=set_combine(sets.precast.WS.PDL,{})
 	sets.precast.WS['Black Halo']=set_combine(sets.precast.WS,{})
