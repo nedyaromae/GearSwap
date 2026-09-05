@@ -4,7 +4,7 @@ function user_job_setup()
 
     state.CastingMode:options('Normal','SIRD') 
 	state.IdleMode:options('Idle','Magic','Def') 
-	state.Weapons:options('Aettir','Agwu','Lycurgos')
+	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal')
     state.WeaponskillMode:options('Normal','DD')
@@ -238,6 +238,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.weapons.Aettir={main="Aettir",sub="Refined Grip +1"}
 	sets.weapons.Agwu={main="Agwu's Claymore",sub="Utu Grip"}
 	sets.weapons.Lycurgos={main="Lycurgos",sub="Utu Grip"}
+    sets.weapons.Epeo={main="Epeolatry",sub="Refined Grip +1"}
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
