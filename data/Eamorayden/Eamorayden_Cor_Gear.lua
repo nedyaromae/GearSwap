@@ -266,9 +266,11 @@ function init_gear_sets()
 
 	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",hands="Volte Bracers"}
     sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+
     sets.STP={head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
+        back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
+
 sets.precast.Item['Icarus Wing']=set_combine(sets.STP, {})
 sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 	-- Weapons sets
