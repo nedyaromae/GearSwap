@@ -256,7 +256,7 @@ function init_gear_sets()
         sets.idle.Aminon= {ammo=gear.RAbullet,
         head="Null Masque",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Chas. Culottes +3",feet="Malignance Boots"}
+        back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
