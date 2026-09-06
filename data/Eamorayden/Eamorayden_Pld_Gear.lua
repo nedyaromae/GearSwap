@@ -319,6 +319,8 @@ function init_gear_sets()
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring",priority=110},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Prestige Brais",priority=159},feet={name="Sakpata's Leggings",priority=68}}
 
+    sets.Harness==set_combine(sets.idle.Aminon,{body={name="Volte Harness",priority=136}})
+
 	--------------------------------------
     -- Defense sets
     --------------------------------------
