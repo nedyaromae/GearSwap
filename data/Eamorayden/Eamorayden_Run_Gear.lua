@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('Normal','SIRD') 
-	state.IdleMode:options('Idle','Magic','Def') 
+	state.IdleMode:options('Def','Idle','Magic') 
 	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal')
@@ -16,7 +16,6 @@ function user_job_setup()
     select_blu_spells()
 	-- Additional local binds
 	
-
     select_default_macro_book()
 
    
