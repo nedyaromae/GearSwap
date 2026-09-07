@@ -29,7 +29,7 @@ function init_gear_sets()
 	
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
         head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Cryptic Earring",priority=40},
-        body={name="Emet Harness +1",priority=61},hands={name="Nyame Gauntlets",priority=91},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
+        body={name="Emet Harness +1",priority=61},hands={name="Kurys Gloves",priority=25},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Erilaz Greaves +2",priority=38}}
     
     sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, 
