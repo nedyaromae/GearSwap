@@ -37,15 +37,6 @@ function init_gear_sets()
        body={name="Nyame mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Moonbeam Ring",priority=100},ring2={name="Moonlight Ring"},{priority=110},
        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Erilaz Greaves +2",priority=38}}
 
-	
-
-  
-
-    
-		
-	
-   
-		
     -- Precast sets to enhance JAs
    
    --RUN stuff 
@@ -53,10 +44,10 @@ function init_gear_sets()
 	sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +2",priority=46}})
-	sets.precast.JA['Liement'] = set_combine(sets.Enmity,{})
+	sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body={name="Futhark Coat +2",priority=109}})
 	sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands={name="Runeist Mitons +4",priority=95}})
 	sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet={name="Futhark Boots +2",priority=23}})
-	sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{})
+	sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body={name="Futhark Coat +2",priority=109}})
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['One for All'] = set_combine(sets.Enmity,{})
