@@ -257,6 +257,7 @@ function init_include()
 	smartws = nil
 	spell_latency = nil
 	time_test = false
+	in_town = false
 	trust_list = {}
 	useItem = false
 	useItemName = ''
@@ -273,7 +274,7 @@ function init_include()
 	cached_weapon = ''
 	check_internal_weapons = false
 	fixed_pos = ''
-	custom_runes = {"Lux","Lux","Tenebrae"}
+	custom_runes = {}
 
 	-- Buff tracking that buffactive can't detect
 	lastwarcry = ''
@@ -478,9 +479,7 @@ function init_include()
 			local bt = windower.ffxi.get_mob_by_target('bt') or nil
 			if not bt or bt.hpp == 0 then
 				in_combat = false
-				if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
-					send_command('gs c update')
-				end
+				leaving_combat()
 				if state.AutoDefenseMode.value and state.DefenseMode.value ~= 'None' then
 					state.DefenseMode:reset()
 					if state.DisplayMode.value then update_job_states()	end
@@ -529,6 +528,18 @@ function target_change(new)
 	end
 end
 
+-- Function to modify things after leaving combat
+function leaving_combat()
+	-- Update in case gear needs to change after leaving combat.
+	if player.status == 'Idle' and not midaction() and not (pet_midaction() or ((petWillAct + 2) > os.clock())) then
+		send_command('gs c update')
+	end
+	
+	if job_leaving_combat then
+		job_leaving_combat()
+	end
+end
+
 -- Function to reset things after zoning.
 function zone_change(new_id,old_id)
 	if user_zone_change then
@@ -572,6 +583,12 @@ function default_zone_change(new_id,old_id)
 		state.SkipProcWeapons:set('False')
 	else
 		state.SkipProcWeapons:reset()
+	end
+	
+	if data.areas.cities:contains(world.area) then
+		in_town = true
+	else
+		in_town = false
 	end
 	
 	if state.DisplayMode.value then update_job_states()	end
@@ -645,8 +662,10 @@ function global_on_load()
 
 		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
-		else
-			state.SkipProcWeapons:reset()
+		end
+		
+		if data.areas.cities:contains(world.area) then
+			in_town = true
 		end
 	end
 end
@@ -1597,7 +1616,7 @@ function get_idle_set(petStatus)
 		idleSet = user_job_customize_idle_set(idleSet)
 	end
 
-	if data.areas.cities:contains(world.area) then
+	if in_town then
 		if sets.idle.Town then
 			idleSet = set_combine(idleSet, sets.Kiting, sets.idle.Town)
 		elseif sets.Town then
@@ -2289,7 +2308,13 @@ function sub_job_change(newSubjob, oldSubjob)
 	
 	send_command('gs c update')
 end
-
+	
+-- Register event to fix Gearswap ignoring the event status for status_change.
+windower.register_event('status change', function(newStatus, oldStatus)
+	if oldStatus == 4 --[[event]] then
+		status_change(newStatus, oldStatus)
+	end
+end)
 
 -- Called when the player's status changes.
 function status_change(newStatus, oldStatus)

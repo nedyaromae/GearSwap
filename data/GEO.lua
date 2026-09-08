@@ -485,7 +485,7 @@ function job_tick()
 end
 
 function check_geo()
-	if state.AutoBuffMode.value ~= 'Off' and not data.areas.cities:contains(world.area) then
+	if state.AutoBuffMode.value ~= 'Off' and not in_town then
 		if not pet.isvalid then
 			used_ecliptic = false
 		end

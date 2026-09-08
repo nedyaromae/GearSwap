@@ -1500,7 +1500,7 @@ function check_nuke()
 end
 
 function check_buff()
-	if state.AutoBuffMode.value ~= 'Off' and not data.areas.cities:contains(world.area) then
+	if state.AutoBuffMode.value ~= 'Off' and not in_town then
 		local spell_recasts = windower.ffxi.get_spell_recasts()
 		for i in pairs(buff_spell_lists[state.AutoBuffMode.Value]) do
 			if not buffactive[buff_spell_lists[state.AutoBuffMode.Value][i].Buff] and (buff_spell_lists[state.AutoBuffMode.Value][i].When == 'Always' or (buff_spell_lists[state.AutoBuffMode.Value][i].When == 'Combat' and in_combat) or (buff_spell_lists[state.AutoBuffMode.Value][i].When == 'Engaged' and player.status == 'Engaged') or (buff_spell_lists[state.AutoBuffMode.Value][i].When == 'Idle' and player.status == 'Idle') or (buff_spell_lists[state.AutoBuffMode.Value][i].When == 'OutOfCombat' and not in_combat)) and spell_recasts[buff_spell_lists[state.AutoBuffMode.Value][i].SpellID] < spell_latency and silent_can_cast(buff_spell_lists[state.AutoBuffMode.Value][i].Name) then
@@ -1561,7 +1561,7 @@ function check_samba()
 end
 
 function check_sub()
-	if state.AutoSubMode.value and not data.areas.cities:contains(world.area) then
+	if state.AutoSubMode.value and not in_town then
 		if player.mpp < 70 and player.tp > 999 then
 			local available_ws = S(windower.ffxi.get_abilities().weapon_skills)
 
@@ -1663,7 +1663,7 @@ function check_cleanup()
 end
 
 function check_trust()
-	if not moving and state.AutoTrustMode.value and not data.areas.cities:contains(world.area) and (buffactive['Reive Mark'] or buffactive['Elvorseal'] or not in_combat) then
+	if not moving and state.AutoTrustMode.value and not in_town and (buffactive['Reive Mark'] or buffactive['Elvorseal'] or not in_combat) then
 		local party = windower.ffxi.get_party()
 		if party.p5 ~= nil then return end
 		local spell_recasts = windower.ffxi.get_spell_recasts()
@@ -1756,7 +1756,7 @@ function check_lockstyle()
 end
 
 function check_food()
-	if state.AutoFoodMode.value and not buffactive['Food'] and not data.areas.cities:contains(world.area) then
+	if state.AutoFoodMode.value and not buffactive['Food'] and not in_town then
 
 		if player.inventory[''..autofood..''] then
 			windower.chat.input('/item "'..autofood..'" <me>')
@@ -2094,7 +2094,7 @@ end
 function check_cpring_buff()-- returs true if you do not have the buff from xp cp ring
 	cp_delay = cp_delay + 1
 
-	if state.Capacity.value and cp_delay > 20 and not moving and not data.areas.cities:contains(world.area) then
+	if state.Capacity.value and cp_delay > 20 and not moving and not in_town then
 
 		if player.satchel['Mecisto. Mantle'] then send_command('get "Mecisto. Mantle" satchel;wait 2;gs c update') end
 		if player.satchel['Endorsement Ring'] then send_command('get "Endorsement Ring" satchel') end
@@ -2160,7 +2160,7 @@ function has_shadows()
 end
 
 function check_shadows()
-	if not state.AutoShadowMode.value or moving or data.areas.cities:contains(world.area) then return false end
+	if not state.AutoShadowMode.value or moving or in_town then return false end
 	local spell_recasts = windower.ffxi.get_spell_recasts()
 	local currentshadows = has_shadows()
 	if player.main_job == 'NIN' then
@@ -2505,13 +2505,41 @@ function check_rune()
 	if state.AutoRuneMode.value ~= 'false' and state.AutoRuneMode.value ~= 'Off' and (player.main_job == 'RUN' or player.sub_job == 'RUN') then
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 
-		if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
-			if abil_recasts[10] > latency then return false end
-			windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
-			add_tick_delay()
-			return true
+		if #custom_runes > 0 then
+			if not buffactive[custom_runes[1]] then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..custom_runes[1]..'" <me>')
+				add_tick_delay()
+				return true
+			elseif not buffactive[custom_runes[2]] or ((custom_runes[2] == custom_runes[1]) and (buffactive[custom_runes[2]] < 2)) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..custom_runes[2]..'" <me>')
+				add_tick_delay()
+				return true
+			elseif #custom_runes == 3 then
+				if not buffactive[custom_runes[3]] or (buffactive[custom_runes[3]] < (1 + ((custom_runes[3] == custom_runes[1]) and 1 or 0) + ((custom_runes[3] == custom_runes[2]) and 1 or 0))) then
+					if abil_recasts[10] > latency then return false end
+					windower.chat.input('/ja "'..custom_runes[3]..'" <me>')
+					add_tick_delay()
+				end
+				return true
+			end
+			
+		else
+			if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+				add_tick_delay()
+				return true
+			end		if not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 or (player.main_job == 'RUN' and buffactive[state.RuneElement.value] < 3) then
+				if abil_recasts[10] > latency then return false end
+				windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+				add_tick_delay()
+				return true
+			end
+		end
 
-		elseif state.AutoRuneMode.value ~= 'Full' then
+		if state.AutoRuneMode.value ~= 'Full' then
 			return false
 		elseif player.main_job == 'RUN' and abil_recasts[242] < latency and (player.hpp < 50 or (buffactive['Tenebrae'] and player.mpp < 75)) then
 			windower.chat.input('/ja "Vivacious Pulse" <me>')
@@ -2808,6 +2836,7 @@ movedelay = os.clock() + .1
 windower.raw_register_event('prerender', function()
 	if not (os.clock() > movedelay) then return end
 	movedelay = os.clock() + .1
+	if player.status == 'Event' then return end
 	local player = windower.ffxi.get_mob_by_target('me') or lastlocation
 	local currentlocation = {X=player.x, Z=player.z}
 	moving = currentlocation.X ~= lastlocation.X or currentlocation.Z ~= lastlocation.Z
