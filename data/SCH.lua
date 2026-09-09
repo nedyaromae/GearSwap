@@ -363,7 +363,7 @@ function apply_grimoire_bonuses(spell, action, spellMap)
 		equip(sets.buff['Focalization'])
 	end
 
-	if state.Buff.Penury then
+	if state.Buff.Penury (spellMap == 'Cure' or spellMap == 'Curaga' or spellMap == 'Raise') then
 		equip(sets.buff['Penury'])
 	elseif state.Buff.Parsimony then
 		equip(sets.buff['Parsimony'])
