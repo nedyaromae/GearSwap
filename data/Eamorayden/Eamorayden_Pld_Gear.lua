@@ -185,8 +185,8 @@ function init_gear_sets()
 
    sets.HPCure={ammo={name="Sapience Orb",priority=1},
         head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
-        body={name="Rev. Surcoat +4",priority=264},hands={name="Souv. Handsch. +1",priority=239},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-       back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Souv. Diechlings +1",priority=162},feet={name="Odyssean Greaves",priority=20}}
+        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
+       back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Souv. Diechlings +1",priority=162},feet={name="Souveran Schuhs +1",priority=227}}
 
     sets.midcast.Cure.DT=  {ammo={name="Pemphredo Tathlum",priority=1},
         head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cryptic Earring",priority=40},ear2={name="Chev. Earring +1",priority=3},
@@ -194,7 +194,7 @@ function init_gear_sets()
         back=gear.idle_jse_back,{priority=60},waist={name="Sroda Belt",priority=4},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=119}}
 		
     sets.midcast.Reprisal = {ammo={name="Sapience Orb",priority=3},
-        head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=50},ear2={name="Alabaster Earring",priority=100},
+        head={name="Carmine Mask +1",priority=38},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Shabti Cuirass +1",priority=115},hands={name="Leyline Gloves",priority=25},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=116}}
 
@@ -256,14 +256,14 @@ function init_gear_sets()
 	sets.midcast.Phalanx = {main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
         head={name="Odyssean Helm",priority=112},neck={name="Hoxne Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Andoaa Earring",priority=4},
         body={name="Valorous Mail",priority=61},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=6},
-        back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=122}}
+        back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=227}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 	
 	sets.midcast.Phalanx.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Yorium Cuirass",priority=113},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=5},
-        back={name="Weard Mantle",{priority=39}},waist={name="Audumbla Sash",priority=8},legs={name="Founder's Hose",priority=54},feet={name="Souveran Schuhs +1",priority=122}}	
+        back={name="Weard Mantle",{priority=39}},waist={name="Audumbla Sash",priority=8},legs={name="Founder's Hose",priority=54},feet={name="Souveran Schuhs +1",priority=227}}	
 		
 	sets.midcast.HolyII = {ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Friomisi Earring",priority=2},
