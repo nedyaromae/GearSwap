@@ -14,7 +14,8 @@ gear.Chironic_refreshgloves={name="Chironic Gloves", augments={'Pet: AGI+6','Acc
 gear.Chironic_Sirdgloves={name="Chironic Gloves", augments={'"Mag.Atk.Bns."+16','Spell interruption rate down -11%','Mag. Acc.+4',}}
 gear.Chironic_Enfeeblingpants={name="Chironic Hose", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Cure" potency +4%','MND+10','Mag. Acc.+13','"Mag.Atk.Bns."+14',}}
 gear.Chironic_refreshhat={name="Chironic Hat", augments={'STR+10','CHR+8','"Refresh"+2','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}
-gear.left_moonbeam ={ name="Moonbeam Ring" , bag="Wardrobe 2"}
+gear.left_moonlight ={ name="Moonlight Ring",bag="Wardrobe 3"}
+gear.right_moonlight={name="Moonlight Ring",bag="Wardrobe 6"}
 gear.TaeonPhalanxBody={name="Taeon Tabard", augments={'DEF+19','Spell interruption rate down -10%','Phalanx +3',}}
 gear.TaeonFCBody={ name="Taeon Tabard", augments={'"Fast Cast"+5','HP+50',}}
 gear.FCHercPants={ name="Herculean Trousers", augments={'"Fast Cast"+6',}}

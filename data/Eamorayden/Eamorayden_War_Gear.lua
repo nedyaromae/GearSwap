@@ -52,7 +52,7 @@ function init_gear_sets()
 
 	sets.precast.JA['Jump']={ammo="Coiste Bodhar",
 		head="Boii mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +3",hands="Crusher Gauntlets",ring1="Moonbeam Ring",ring2="Moonlight Ring",
+		body="Boii Lorica +3",hands="Crusher Gauntlets",ring1=gear.left_moonlight,ring2=gear.right_moonlight
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump']=set_combine(sets.precast.JA['Jump'],{})
 	
@@ -206,12 +206,12 @@ function init_gear_sets()
             -- Engaged sets
 	sets.engaged = {ammo="Coiste Bodhar",
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +3",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Moonlight Ring",
+		body="Boii Lorica +3",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2=gear.right_moonlight,
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Sakpata's Cuisses",feet="Pumm. Calligae +4"}
 
 	sets.engaged.Sakpata={ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Moonlight Ring",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2=gear.right_moonlight,
 		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 			
 	--Extra Special Sets
