@@ -139,7 +139,7 @@ function init_gear_sets()
 
         sets.engaged.Acc = {ammo="Coiste Bodhar",
         head="Kasuga Kabuto +2",neck="Moonbeam Nodowa",ear1="Schere Earring",ear2="Kasuga Earring +2",
-        body="Kasuga Domaru +2",hands="Tatena. Gote +1",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
+        body="Kasuga Domaru +2",hands="Wakido Kote +4",ring1="Niqmaddu Ring",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Wakido Sune. +4"}
    
     sets.engaged.PDT = {ammo="Coiste Bodhar",
