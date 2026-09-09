@@ -51,7 +51,7 @@ function init_gear_sets()
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['One for All'] ={ammo={name="Sapience Orb",priority=3},
-        head={name="Runeist Bandeau +4",priority=119},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+        head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=119}}
     
