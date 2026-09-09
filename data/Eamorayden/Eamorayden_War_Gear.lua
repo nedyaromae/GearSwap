@@ -52,7 +52,7 @@ function init_gear_sets()
 
 	sets.precast.JA['Jump']={ammo="Coiste Bodhar",
 		head="Boii mask +2",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Boii Lorica +3",hands="Crusher Gauntlets",ring1=gear.left_moonlight,ring2=gear.right_moonlight
+		body="Boii Lorica +3",hands="Crusher Gauntlets",ring1=gear.left_moonlight,ring2=gear.right_moonlight,
 		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Pumm. Cuisses +4",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump']=set_combine(sets.precast.JA['Jump'],{})
 	
@@ -101,7 +101,7 @@ function init_gear_sets()
 	sets.precast.WS['Upheaval'].PDL=set_combine(sets.precast.WS.PDL, {back=gear.vit_wsd_jse_back,hands="Sakpata's Gauntlets",ammo="Crepuscular Pebble",ring1="Niqmaddu Ring"})
      
    sets.precast.WS["Resolution"]={ammo="Coiste Bodhar",
-		head="Agoge Mask +4",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring Earring",
+		head="Agoge Mask +4",neck="War. Beads +1",ear1="Schere Earring",ear2="Moonshade Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Boii Cuisses +3",feet="Sakpata's Leggings"} 
 
