@@ -40,7 +40,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
    
    --RUN stuff 
-   	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body={name="Runeist Coat +4",priority=228},legs={name="Futhark Trousers +4",priority=117,waist={name="Kasiri Belt",priority=30}}})
+   	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body={name="Runeist Coat +4",priority=228},legs={name="Futhark Trousers +4",priority=117}})
 	sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +2",priority=46}})
@@ -50,7 +50,11 @@ function init_gear_sets()
 	sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body={name="Futhark Coat +2",priority=109}})
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
-	sets.precast.JA['One for All'] = set_combine(sets.Enmity,{})
+	sets.precast.JA['One for All'] ={ammo={name="Sapience Orb",priority=3},
+        head={name="Runeist Bandeau +4",priority=119},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+        body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Prestige Brais",priority=159},feet={name="Sworn Sabatons",priority=119}}
+    
 	
 	-- Pulse sets, different stats for different rune modes, stat aligned.
 	sets.precast.JA['Vivacious Pulse']={ammo={name="Staunch Tathlum +1",priority=3},
