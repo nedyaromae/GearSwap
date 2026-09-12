@@ -224,7 +224,11 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Refresh_Received ={waist="Gishdubar Sash"}
 	sets.Kiting = {ring2="Shneddick Ring"}
-
+	sets.STP={ammo="Coiste Bodhar", 
+		head="Null Masque",neck="Vim Torque +1",ear1="Schere Earring",ear2="Dedition Earring",
+		body="Boii Lorica +3",hands="Sakpata's Gauntlets",ring1=gear.left_moonlight,ring2="Chirich Ring +1",
+		back="Null Shawl",waist="Sweordfaetels +1",legs="Sakpata's Cuisses",feet="Tatenashi Sune-ate +1"}
+	sets.Harness=set_combine(sets.STP, {body="Volte Harnesss"})
 	
 	-- Weapons sets
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
