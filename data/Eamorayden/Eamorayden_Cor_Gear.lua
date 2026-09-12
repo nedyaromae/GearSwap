@@ -53,7 +53,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +4"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.precast.JA['Wild Card'] = {head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Chas. Earring +1",

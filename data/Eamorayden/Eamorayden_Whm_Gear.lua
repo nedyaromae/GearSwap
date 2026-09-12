@@ -38,7 +38,7 @@ function init_gear_sets()
     sets.precast.FC = {main="Grioavolr",sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back=gear.fc_jse_back,waist="Witful Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Witful Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 	
     sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
@@ -83,7 +83,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Loquac. Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.fc_jse_back,waist="Witful Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Witful Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 		
 	sets.midcast['Arise']=set_combine(sets.midcast.FastRecast,{})
 	sets.midcast['Raise III']=set_combine(sets.midcast.FastRecast,{})
@@ -139,7 +139,7 @@ function init_gear_sets()
     sets.midcast.StatusRemoval = {Main="Queller Rod",sub="Diamond Aspis",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.fc_jse_back,waist="Witful Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Witful Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 		
 	sets.midcast['Enhancing Magic'] = {main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Telchine Cap",neck="Hoxne Torque",ear1="Alabaster Earring",ear2="Mimir Earring",
@@ -206,13 +206,13 @@ function init_gear_sets()
     sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Null Masque",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
 		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
-		back=gear.fc_jse_back,waist="Embla Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Embla Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
     sets.midcast.Flash.DT=set_combine(sets.midcast.Flash,{})
 		
 	sets.midcast.Stun = {main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Bunzi's Hat",neck="Cleric's Torque",ear1="Malignance Earring",ear2="Loquac. Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.fc_jse_back,waist="Witful Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Witful Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
 		head="Theophany Cap +4",neck="Null Loop",ear1="Malignance Earring",ear2="Ebers Earring +1",
@@ -248,12 +248,12 @@ function init_gear_sets()
     sets.idle={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.fc_jse_back,waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Mimir Earring",
 		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
-		back="Null Shawl",waist="Carrier's Sash",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back="Null Shawl",waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Alabaster Earring",ear2="Night Earring",
@@ -268,7 +268,7 @@ function init_gear_sets()
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Null Belt",legs="Prestige Brais",feet="Sworn Sabatons"}
+		back="Shadow Mantle",waist="Null Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
