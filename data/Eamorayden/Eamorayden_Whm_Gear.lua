@@ -152,7 +152,7 @@ function init_gear_sets()
 		back=gear.fc_jse_back,waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +4"}
 
 	sets.midcast.Stoneskin ={main="Gada",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
-		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Earthcry Earring",
+		head="Null Masque",neck="Stone Gorget",ear1="Alabaster Earring",ear2="Earthcry Earring",
 		body="Telchine Chas.",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.fc_jse_back,waist="Siegel Sash",legs="Shedir Seraweels",feet="Theo. Duckbills +4"}
 
