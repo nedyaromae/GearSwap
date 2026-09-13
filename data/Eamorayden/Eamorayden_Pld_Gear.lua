@@ -164,7 +164,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     
-    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},feet={name="Chev. Sabatons +3",priority=42},ear1={name="Friomisi Earring",priority=2}})
+    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},ear1={name="Friomisi Earring",priority=2}})
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
     sets.midcast.Flash.DT=set_combine(sets.Enmity.DT,{})
     sets.midcast['Divine Magic'] = set_combine(sets.Enmity.SIRD,{})
@@ -174,8 +174,8 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
 
     sets.midcast.Cure= {ammo={name="Pemphredo Tathlum",priority=1},
-        head={name="Sakpata's Helm",priority=91},neck={name="Null Loop",priority=50},ear1={name="Nourish. Earring +1",priority=4},ear2={name="Chev. Earring +1",priority=3},
-        body={name="Sakpata's Plate",priority=136},hands={name="Macabre Gauntlets +1",priority=89},ring1=gear.left_moonlight,{priority=110},ring2={name="Murky Ring",priority=10},
+        head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=4},ear2={name="Chev. Earring +1",priority=3},
+        body={name="Sakpata's Plate",priority=136},hands={name="Macabre Gauntlets +1",priority=89},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=10},
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Odyssean Greaves",priority=20}}
 		
     sets.midcast.Cure.SIRD = {ammo={name="Staunch Tathlum +1",priority=7},
