@@ -26,7 +26,7 @@ function init_gear_sets()
     sets.Enmity = {ammo="Sapience Orb",
 		head="Pummeler's Mask +2",neck="Moonlight Necklace",ear1="Cryptic Earring",ear2="Friomisi Earring",
 		body="Souv. Cuirass +1",hands="Pumm. Mufflers +2",ring1="Apeile Ring +1",ring2="Eihwaz Ring",
-		back=gear.vit_wsd_jse_back,waist="Flume Belt +1",legs="Souv. Diechlings +1",feet="Eschite Greaves"}
+		back=gear.vit_wsd_jse_back,waist="Flume Belt +1",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 	sets.Knockback = {}
 	
 	-- Precast sets to enhance JAs
@@ -228,7 +228,7 @@ function init_gear_sets()
 		head="Null Masque",neck="Vim Torque +1",ear1="Schere Earring",ear2="Dedition Earring",
 		body="Boii Lorica +3",hands="Sakpata's Gauntlets",ring1=gear.left_moonlight,ring2="Chirich Ring +1",
 		back="Null Shawl",waist="Sweordfaetels +1",legs="Sakpata's Cuisses",feet="Tatenashi Sune-ate +1"}
-	sets.Harness=set_combine(sets.STP, {body="Volte Harnesss"})
+	sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 	
 	-- Weapons sets
 	sets.weapons.Naegling= {main="Naegling", sub="Blurred shield +1"}
