@@ -52,11 +52,7 @@ function init_gear_sets()
     sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs={name="Cab. Breeches +2",priority=62}})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet={name="Rev. Leggings +4",priority=92}})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet={name="Cab. Leggings +4",priority=73}})
-    sets.precast.JA['Rampart'] = {ammo={name="Sapience Orb",priority=3},
-        head={name="Cab. Coronet +4",priority=126},neck={name="Moonlight Necklace",priority=1},ear1={name="Cryptic Earring",priority=40},ear2={name="Alabaster Earring",priority=100},
-        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Apeile Ring +1",priority=7},ring2={name="Eihwaz Ring",priority=70},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Chev. Sabatons +3",priority=52}}
-
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head={name="Cab. Coronet +4",priority=126},ear2={name="Alabaster Earring",priority=100},ear1={name="Cryptic Earring",priority=40}}) 
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body={name="Cab. Surcoat +2",priority=118}})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet={name="Chev. Sabatons +3",priority=52}})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --body="Cab. Surcoat +2"
