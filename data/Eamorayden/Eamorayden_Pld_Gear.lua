@@ -31,17 +31,17 @@ function init_gear_sets()
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
         head={name="Loess Barbuta +1",priority=105},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Apeile Ring +1",priority=7},ring2={name="Eihwaz Ring",priority=70},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Eschite Greaves",priority=98}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Chev. Sabatons +3",priority=52}}
 
     sets.Enmity.DT = {ammo={name="Sapience Orb",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Moonlight Necklace",priority=1},ear1={name="Cryptic earring",priority=40},ear2={name="Friomisi Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=7},ring2={name="Murky Ring",priority=2},
-        back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 		
     sets.Enmity.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
         body={name="Chev. Cuirass +2",priority=141},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",Priority=15},ring2={name="Murky Ring",priority=5},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=4},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=4},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +3",priority=52}}
 
     
 		
@@ -54,7 +54,7 @@ function init_gear_sets()
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet={name="Cab. Leggings +4",priority=73}})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head={name="Cab. Coronet +4",priority=126}}) 
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body={name="Cab. Surcoat +2",priority=118}})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet={name="Chev. Sabatons +2",priority=42}})
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet={name="Chev. Sabatons +3",priority=52}})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {}) --body="Cab. Surcoat +2"
     --Meva shit for ody bosses 
     sets.precast.JA['Invincible'].DT = set_combine(sets.Enmity.DT,{legs={name="Cab. Breeches +2",priority=62}})
@@ -97,7 +97,7 @@ function init_gear_sets()
    sets.precast.FC ={ ammo={name="Sapience Orb",priority=3},
         head={name="Carmine Mask +1",priority=38},neck={name="Baetyl Pendant",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Leyline Gloves",priority=25},ring1={name="Kishar Ring",priority=2},ring2={name="Prolix Ring",priority=7},
-        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     sets.precast.FC.DT=set_combine(sets.precast.FC,{})
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
@@ -156,15 +156,15 @@ function init_gear_sets()
     sets.midcast.FastRecast={ammo={name="Sapience Orb",priority=3},
         head={name="Chev. Armet +2",priority=135},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=4},ear2={name="Loquac. Earring",priority=4},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=7},ring2={name="Murky Ring",priority=2},
-        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
     
     sets.midcast.FastRecast.DT={ammo={name="Sapience Orb",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Baetyl Pendant",priority=1},ear1={name="Etiolation Earring",priority=5},ear2={name="Loquac. Earring",priority=50},
         body={name="Rev. Surcoat +4",priority=264},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=7},ring2={name="Murky Ring",priority=2},
-        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     
-    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},feet={name="Chev. Sabatons +2",priority=42},ear1={name="Friomisi Earring",priority=2}})
+    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},feet={name="Chev. Sabatons +3",priority=42},ear1={name="Friomisi Earring",priority=2}})
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
     sets.midcast.Flash.DT=set_combine(sets.Enmity.DT,{})
     sets.midcast['Divine Magic'] = set_combine(sets.Enmity.SIRD,{})
@@ -201,7 +201,7 @@ function init_gear_sets()
     sets.midcast.Reprisal.DT= {ammo={name="Sapience Orb",priority=3},
         head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Etiolation Earring",priority=50},ear2={name="Alabaster Earring",priority=100},
         body={name="Sakpata's Plate",priority=171},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
-        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +2",priority=42}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     sets.midcast['Enhancing Magic'] = {ammo={name="Pemphredo Tathlum",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
