@@ -29,8 +29,8 @@ function init_gear_sets()
 	sets.weapons.Daybreak ={main="Daybreak",sub="Diamond Aspis"}
     sets.buff.Sublimation={waist="Embla Sash"}
     sets.buff.DTSublimation={waist="Embla Sash"}
-	sets.buff.Sleep={main="Prime Maul"}
-	sets.WakeUpWeapons={main="Prime Maul"}
+	sets.buff.Sleep={main="Lorg Mor"}
+	sets.WakeUpWeapons={main="Lorg Mor"}
 	
     -- Precast Sets
 
@@ -237,7 +237,7 @@ function init_gear_sets()
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 
-	sets.midcast['Dia II'] = {Main="Prime Maul",sub="Archduke's Shield",ammo="Staunch Tathlum +1",
+	sets.midcast['Dia II'] = {Main="Lorg Mor",sub="Archduke's Shield",ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
@@ -262,7 +262,7 @@ function init_gear_sets()
 
     sets.idle.Magic=set_combine(sets.idle.MDT,{})
     sets.idle.Physical=set_combine(sets.idle.PDT,{})
-    sets.IdleWakeUp = {main="Prime Maul"}
+    sets.IdleWakeUp = {main="Lorg Mor"}
     -- Defense sets
 
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
