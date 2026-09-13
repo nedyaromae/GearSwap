@@ -39,9 +39,9 @@ function init_gear_sets()
         back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=300},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 		
     sets.Enmity.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=40},
-        body={name="Chev. Cuirass +2",priority=141},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",Priority=15},ring2={name="Murky Ring",priority=5},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=4},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +3",priority=52}}
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Cryptic Earring",priority=40},ear2={name="Alabaster Earring",priority=100},
+        body={name="Chev. Cuirass +2",priority=141},hands={name="Macabre Gauntlets +1",priority=89},ring1={name="Defending Ring",Priority=15},ring2={name="Murky Ring",priority=5},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=270},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +3",priority=52}}
 
     
 		
