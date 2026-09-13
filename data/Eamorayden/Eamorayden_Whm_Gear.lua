@@ -76,7 +76,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.
 	
-	sets.ConserveMP = {main="Grioavolr",sub="Mensch Strap +1",ammo="Pemphredo Tathlum",
+	sets.ConserveMP = {main="Grioavolr",ammo="Pemphredo Tathlum",
 		head="Vanya Hood", 
 		back="Solemnity Cape",feet="Kaykaus Boots"}
 		
