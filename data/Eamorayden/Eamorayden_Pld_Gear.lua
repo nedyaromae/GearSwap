@@ -170,8 +170,8 @@ function init_gear_sets()
     sets.midcast['Divine Magic'] = set_combine(sets.Enmity.SIRD,{})
     sets.midcast['Divine Magic'].DT=set_combine(sets.Enmity.DT,{})
 	sets.midcast['Blue Magic'] = set_combine(sets.Enmity.SIRD,{})
-	sets.midcast['Blue Magic']['Blank Gaze'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
-	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
+	sets.midcast['Blue Magic']['Blank Gaze'] = set_combine(sets.Enmity,{})
+	sets.midcast['Blue Magic']['Jettatura'] = set_combine(sets.Enmity,{})
 
     sets.midcast.Cure= {ammo={name="Pemphredo Tathlum",priority=1},
         head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Nourish. Earring +1",priority=4},ear2={name="Chev. Earring +1",priority=3},
