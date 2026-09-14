@@ -157,6 +157,14 @@ function init_gear_sets()
 	sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Leg Sweep"]=set_combine(sets.precast.WS["Armor Break"],{})
 
+	sets.precast.WS["Armor Break"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Full Break"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Weapon Break"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Shield Break"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Shockwave"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+	sets.precast.WS["Leg Sweep"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
+
+
 	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
 		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
