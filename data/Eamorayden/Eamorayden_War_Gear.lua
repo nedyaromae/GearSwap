@@ -1,7 +1,7 @@
 function user_job_setup()
 	-- Options: Override default values
 	state.OffenseMode:options('Normal')
-	state.Weapons:options('Naegling','Loxotic','Chango','ShiningOne')
+	state.Weapons:options('Naegling','Staff','Loxotic','Chango','ShiningOne')
 	state.WeaponskillMode:options('Normal','PDL','Ngai')
 	state.HybridMode:options('Normal','Sakpata','Ngai')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
@@ -151,6 +151,7 @@ function init_gear_sets()
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
+	sets.precast.WS['Shell Crusher']=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Full Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Weapon Break"]=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shield Break"]=set_combine(sets.precast.WS["Armor Break"],{})
@@ -163,7 +164,7 @@ function init_gear_sets()
 	sets.precast.WS["Shield Break"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Shockwave"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
 	sets.precast.WS["Leg Sweep"].Ngai=set_combine(sets.precast.WS["Armor Break"],{})
-
+	sets.precast.WS['Shell Crusher'].Ngais=set_combine(sets.precast.WS["Armor Break"],{})
 
 	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
 		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
