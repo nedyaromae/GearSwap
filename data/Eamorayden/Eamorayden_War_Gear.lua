@@ -2,7 +2,7 @@ function user_job_setup()
 	-- Options: Override default values
 	state.OffenseMode:options('Normal')
 	state.Weapons:options('Naegling','Loxotic','Chango','ShiningOne')
-	state.WeaponskillMode:options('Normal','PDL')
+	state.WeaponskillMode:options('Normal','PDL','Ngai')
 	state.HybridMode:options('Normal','Sakpata')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 
@@ -85,6 +85,11 @@ function init_gear_sets()
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
 		body="Sakpata's Plate",hands="Boii Mufflers +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Boii Cuisses +3",feet="Nyame Sollerets"}
+
+	sets.precast.WS.Ngai= {ammo="Knobkierrie",
+		head="Nyame Helm",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
