@@ -5,7 +5,7 @@ function user_job_setup()
     state.HybridMode:options('Normal')
     state.PhysicalDefenseMode:options('PDT')
 	state.IdleMode:options('Normal','Reraise')
-	state.Weapons:options('Montante','Anguta')
+	state.Weapons:options('Agwu','Lycurgos')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','MP','Twilight'}
 	state.DrainSwapWeaponMode = M{'Always','Never','300','1000'}
@@ -102,7 +102,8 @@ function init_gear_sets()
            
      -- Resting sets
      sets.resting = {}
-           
+    sets.weapons.Agwu={main="Agwu's Claymore",sub="Utu Grip"}
+	sets.weapons.Lycurgos={main="Lycurgos",sub="Utu Grip"}
 	-- Swap to these on Moonshade using WS if at 3000 TP
 --	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
 --	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
@@ -129,10 +130,10 @@ function init_gear_sets()
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
      
-	sets.Kiting = {legs="Carmine Cuisses +1"}
+	sets.Kiting = {ring2="Shneddick Ring"}
 	sets.passive.Reraise = {head="Crepuscular Helm",body="Twilight Mail"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {head="Frenzy Sallet"}
+	sets.buff.Sleep = {head="Vim Torque +1"}
 	sets.buff['Dark Seal'] = {} --head="Fallen's Burgeonet +3"
      
 	-- Engaged sets
