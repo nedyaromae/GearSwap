@@ -104,6 +104,7 @@ function init_gear_sets()
      sets.resting = {}
     sets.weapons.Agwu={main="Agwu's Claymore",sub="Utu Grip"}
 	sets.weapons.Lycurgos={main="Lycurgos",sub="Utu Grip"}
+	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",legs="Sakpata's leggings"}
 	-- Swap to these on Moonshade using WS if at 3000 TP
 --	sets.MaxTP = {ear1="Lugra Earring +1",ear2="Lugra Earring",}
 --	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
