@@ -63,12 +63,12 @@ function init_gear_sets()
 	-- Specific spells
  
 		   
-	sets.midcast.Absorb = set_combine(sets.midcast['Dark Magic'], {back="Ankou's Mantle"})
+	sets.midcast.Absorb = set_combine(sets.midcast['Dark Magic'], {})
            
 
 	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {})
 	
-	sets.DrainWeapon = {main="Misanthropy",sub="Alber Strap"}
+	sets.DrainWeapon = {}
 	
 	--sets.AbsorbWeapon = {main="Liberator",sub="Khonsu",range="Ullr",ammo=empty}
 	--sets.DreadWeapon = {main="Crepuscular Scythe",sub="Utu Grip",} 	
