@@ -3,7 +3,7 @@ function user_job_setup()
 	state.OffenseMode:options('Normal')
 	state.Weapons:options('Naegling','Loxotic','Chango','ShiningOne')
 	state.WeaponskillMode:options('Normal','PDL','Ngai')
-	state.HybridMode:options('Normal','Sakpata')
+	state.HybridMode:options('Normal','Sakpata','Ngai')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 
 	gear.da_jse_back = {name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
@@ -217,6 +217,11 @@ function init_gear_sets()
 	sets.engaged.Sakpata={ammo="Coiste Bodhar", 
 		head="Sakpata's Helm",neck="War. Beads +1",ear1="Schere Earring",ear2="Boii Earring +1",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2=gear.right_moonlight,
+		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
+
+	sets.engaged.Ngai={ammo="Coiste Bodhar", 
+		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Schere Earring",ear2="Boii Earring +1",
+		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu Ring",ring2="Shadow Ring",
 		back=gear.da_jse_back,waist="Sailfi Belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 			
 	--Extra Special Sets
