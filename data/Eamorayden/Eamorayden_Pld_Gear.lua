@@ -164,7 +164,7 @@ function init_gear_sets()
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     
-    sets.midcast.Flash = set_combine(sets.Enmity, {body={name="Rev. Surcoat +4",priority=254},ear1={name="Friomisi Earring",priority=2}})
+    sets.midcast.Flash = set_combine(sets.Enmity,{})
 	sets.midcast.Flash.SIRD = set_combine(sets.midcast.Flash,{})
     sets.midcast.Flash.DT=set_combine(sets.Enmity.DT,{})
     sets.midcast['Divine Magic'] = set_combine(sets.Enmity.SIRD,{})
@@ -194,9 +194,9 @@ function init_gear_sets()
         back=gear.idle_jse_back,{priority=60},waist={name="Sroda Belt",priority=4},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
 		
     sets.midcast.Reprisal = {ammo={name="Sapience Orb",priority=3},
-        head={name="Carmine Mask +1",priority=38},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
+        head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Shabti Cuirass +1",priority=115},hands={name="Leyline Gloves",priority=25},ring1={name="Kishar Ring",priority=3},ring2={name="Murky Ring",priority=6},
-        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Chev. Sabatons +3",priority=52}}
 
     sets.midcast.Reprisal.DT= {ammo={name="Sapience Orb",priority=3},
         head={name="Chev. Armet +2",priority=135},neck={name="Loricate Torque +1",priority=1},ear1={name="Etiolation Earring",priority=50},ear2={name="Alabaster Earring",priority=100},
