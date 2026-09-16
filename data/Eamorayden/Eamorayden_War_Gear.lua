@@ -61,7 +61,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {ammo="Sapience Orb",
-		head="Sakpata's Helm",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		head="Sakpata's Helm",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="",hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs="",feet="Odyssean Greaves"}
 	
@@ -174,7 +174,7 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
-		head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Friomisi Earring",
+		head="Pixie Hairpin +1",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 

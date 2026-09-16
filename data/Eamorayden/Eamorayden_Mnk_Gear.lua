@@ -45,7 +45,7 @@ sets.precast.JA['Chakra'] = {head="Null Masque",neck="Unmoving Collar +1",ear1="
 	-- Fast cast sets for spells
 	
 sets.precast.FC = {ammo="Sapience Orb",
-		head="",neck="Baetyl Pendant",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		head="",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.TaeonFCBody,hands="Leyline Gloves",ring1="Naji's Loop",ring2="Prolix Ring",
 		back="",waist="",legs=gear.FCHercPants,feet=""}
 	
@@ -109,7 +109,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 
 sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
-		head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
+		head="Pixie Hairpin +1",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.str_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 --	 Swap to these on Moonshade using WS if at 3000 TP
