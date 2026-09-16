@@ -77,7 +77,6 @@ function init_gear_sets()
 
 
     -- Weaponskill sets
-
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Coiste Bodhar",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring",
