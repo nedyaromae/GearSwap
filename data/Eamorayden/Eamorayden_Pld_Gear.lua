@@ -208,7 +208,7 @@ function init_gear_sets()
         body={name="Shabti Cuirass +1",priority=115},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Supershear Ring",priority=30},ring2={name="Murky Ring",priority=7},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
 
-    sets.midcast['Enhancing Magic']['Stoneskin']={ammo={name="Staunch Tathlum +1",priority=3},
+    sets.midcast.Stoneskin={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Sakpata's Helm",priority=91},neck={name="Stone Gorget",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Earthcry Earring",priority=6},
         body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Siegel Sash",priority=4},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
