@@ -2849,10 +2849,10 @@ windower.raw_register_event('prerender', function()
 				send_command('gs c update')
 			end
 			
-			if not state.Uninterruptible.value == 'Full' then
+			if state.Uninterruptible.value ~= 'Full' then
 				delayed_cast = ''
 				prepared_action = ''
-				if buffup~= '' then
+				if buffup ~= '' then
 					buffup = ''
 					add_to_chat(123,'Buffup cancelled due to movement.')
 				end
