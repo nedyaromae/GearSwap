@@ -188,7 +188,7 @@ sets.engaged.Meva = {ammo="Coiste Bodhar",
 --	sets.NightIdle = {}
 --   sets.Knockback = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+	sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Herculean Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 --	sets.Skillchain = {legs="Ryuo Hakama"}
 	
 	-- Weapons sets

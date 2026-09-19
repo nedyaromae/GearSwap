@@ -265,7 +265,7 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.TreasureHunter = {head="Volte Cap",waist="Chaac Belt",hands="Volte Bracers"}
-    sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+    sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Herculean Gloves",legs="Taeon Tights",feet="Taeon Boots"}
 
     sets.STP={head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",

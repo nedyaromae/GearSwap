@@ -170,7 +170,7 @@ function init_gear_sets()
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Fu. Bandeau +2",priority=46},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
-        body=gear.TaeonPhalanxBody,{priority=59},hands={name="Taeon Gloves",priority=25},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
+        body=gear.TaeonPhalanxBody,{priority=59},hands={name="Herculean Gloves",priority=20},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Taeon Boots",priority=13}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
