@@ -25,8 +25,8 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {back=gear.stp_jse_back,head="Wakido Kabuto +3"}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
+    sets.precast.JA.Meditate = {back=gear.stp_jse_back,head="Wakido Kabuto +4"}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +4"}
     sets.precast.JA['Blade Bash'] = {}
 	sets.precast.JA['Sekkanoki'] = {}
 	sets.precast.JA['Sengikori'] = {}
