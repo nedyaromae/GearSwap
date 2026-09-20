@@ -55,12 +55,12 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Brutal Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
-       back=gear.fc_jse_back,waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+       back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.precast.WS['Black Halo'] = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
-       back=gear.fc_jse_back,waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+       back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Seraph Strike'] =  {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
