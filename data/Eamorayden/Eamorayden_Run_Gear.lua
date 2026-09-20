@@ -206,7 +206,7 @@ function init_gear_sets()
     sets.idle.Def={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Null Masque",priority=100},neck={name="Loricate Torque +1",priority=20},ear1={name="Alabaster Earring",priority=99},ear2={name="Tuisto Earring",priority=150},
     body={name="Nyame Mail",priority=2136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Fortified Ring",priority=4},
-    back=gear.idle_jse_back,{priority=5},waist={name="Carrier's Sash",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
+    back=gear.idle_jse_back,{priority=5},waist={name="Engraved Belt",priority=9},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
 
     sets.idle.Evasion={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=99},ear2={name="Erilaz Earring +2",priority=10},
@@ -250,7 +250,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body={name="Nyame Mail",priority=136},hands={name="Turms Mittens +1",priority=74},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
-        back=gear.parry_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings +1",priority=76}}
+        back=gear.parry_jse_back,{priority=60},waist={name="Engraved Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings +1",priority=76}}
 
     sets.engaged.Evasion={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Eabani Earring",priority=40},ear2={name="Tuisto Earring",priority=150},
