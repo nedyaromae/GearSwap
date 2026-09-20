@@ -90,10 +90,10 @@ sets.precast.FC = {ammo="Sapience Orb",
 		body="Bhikku Cyclas +2",hands="Bhikku Gloves +2",ring1="Metamorph Ring +1",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 
-	sets.precast.WS['Raging Fists'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
-	sets.precast.WS['Howling Fist'].Ngai = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
-	sets.precast.WS['Dragon Kick'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
-	sets.precast.WS['Tornado Kick'].Ngai = set_combine(sets.precast.WS.Ngai, {ear2="Moonshade Earring"})
+	sets.precast.WS['Raging Fists'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
+	sets.precast.WS['Howling Fist'].Ngai = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
+	sets.precast.WS['Dragon Kick'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
+	sets.precast.WS['Tornado Kick'].Ngai = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
 	sets.precast.WS["Victory Smite"].Ngai=set_combine(sets.precast.WS.Ngai, {ear1="Odr Earring"})
 
 
