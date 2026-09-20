@@ -278,12 +278,12 @@ function init_gear_sets()
     sets.engaged = {ammo="Vanir Battery",
         head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Bunzi's Gloves",ring1="Petrov Ring",Ring2="Chirich Ring +1",
-        back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Null Shawl",waist="Cetl Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.engaged.FullAcc={ammo="Vanir Battery",
         head="Nyame Helm",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Gazu Bracelets +1",ring1="Murky Ring",Ring2="Chirich Ring +1",
-        back="Null Shawl",waist="Grunfeld Rope",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
+        back="Null Shawl",waist="Cetl Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}	
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Divine Caress'] = {hands="Ebers Mitts +2"}
