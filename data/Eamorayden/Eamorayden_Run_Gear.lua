@@ -4,9 +4,9 @@ function user_job_setup()
 
     state.CastingMode:options('Normal','SIRD') 
 	state.IdleMode:options('Def','Idle','Magic') 
-	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos')
+	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos','DDEpeo')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
-	state.HybridMode:options('Parry','Meva','Normal')
+	state.HybridMode:options('Parry','Meva','Normal','DD')
     state.WeaponskillMode:options('Normal','DD')
 
     gear.parry_jse_back ={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}}
@@ -233,12 +233,13 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
 	sets.weapons.Agwu={main="Agwu's Claymore",sub="Utu Grip"}
 	sets.weapons.Lycurgos={main="Lycurgos",sub="Utu Grip"}
     sets.weapons.Epeo={main="Epeolatry",sub="Refined Grip +1"}
+    sets.weapons.DDEpeo={main="Epeolatry",sub="Utu Grip"}
 	--------------------------------------
 	-- Engaged sets
 	--------------------------------------
     
 	 sets.engaged = {ammo={name="Coiste Bodhar",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
+        head={name="Nyame Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Dedition Earring",priority=5},ear2={name="Sherida Earring",priority=6},
         body={name="Ashera Harness",priority=182},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
         back={name="Null Shawl",priority=7},waist={name="Sailfi Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame sollerets",priority=68}}
 
@@ -258,7 +259,7 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
         back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +2",priority=89},feet={name="Turms Leggings +1",priority=76}}
 
 	sets.engaged.DD={ammo={name="Coiste Bodhar",priority=3},
-        head={name="Nyame Helm",priority=91},neck={name="Ainia Collar",priority=10},ear1={name="Cessance Earring",priority=5},ear2={name="Sherida Earring",priority=6},
+        head={name="Nyame Helm",priority=91},neck={name="Ainia Collar",priority=10},ear1={name="Dedition Earring",priority=5},ear2={name="Sherida Earring",priority=6},
         body={name="Ashera Harness",priority=182},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=16},ring2=gear.right_moonlight,{priority=110},
         back={name="Null Shawl",priority=7},waist={name="Ioskeha Belt +1",priority=7},legs={name="Nyame Flanchard",priority=114},feet={name="Carmine Greaves +1",priority=15}}
 
@@ -283,9 +284,9 @@ function select_default_macro_book()
     if player.sub_job == 'BLU' then
         set_macro_page(1, 7)
     elseif player.sub_job == 'DRK' then
-        set_macro_page(3, 5)
+        set_macro_page(3, 7)
     elseif player.sub_job =='SCH' then
-        set_macro_page(5, 5)
+        set_macro_page(5, 7)
     else
         set_macro_page(1,7)
     end
