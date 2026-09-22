@@ -1,8 +1,6 @@
 function user_job_setup()
 
     -- Options: Override default values	
-
-    state.CastingMode:options('Normal','SIRD') 
 	state.IdleMode:options('Def','Refresh','Magic') 
 	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos','DDEpeo')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
