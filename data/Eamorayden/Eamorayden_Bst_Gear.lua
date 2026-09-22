@@ -14,7 +14,7 @@ function user_job_setup()
 user_job_lockstyle()
 	-- Set up Jug Pet cycling 
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode','GenerousArthur','FatsoFargann','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode','GenerousArthur','FatsoFargann'}
 	
 
 	-- Set up Monster Correlation Modes 
@@ -209,7 +209,7 @@ function init_gear_sets()
 	sets.weapons.Agwu={Main="Agwu's Axe",sub="Diamond Aspis"}
 	sets.weapons.Ikengas={main="Ikenga's Axe",sub="Diamond Aspis"}
 	sets.weapons.Naegling={main="Naegling",sub="Diamond Aspis"}
-
+	sets.weapons.Kumbahakarna={main="Kumbhakarna",sub="Diamond Aspis"}
 
 -------------------------------------------------------------------------------------------------------------------
 -- Complete Lvl 76-99 Jug Pet Precast List +Funguar +Courier +Amigo

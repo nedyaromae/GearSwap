@@ -43,7 +43,7 @@ function init_gear_sets()
    	sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body={name="Runeist Coat +4",priority=228}})
 	sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{})
-	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +2",priority=46}})
+	sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head={name="Fu. Bandeau +4",priority=66}})
 	sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body={name="Futhark Coat +2",priority=109}})
 	sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands={name="Runeist Mitons +4",priority=95}})
 	sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet={name="Futhark Boots +2",priority=23}})
@@ -169,7 +169,7 @@ function init_gear_sets()
        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Fu. Bandeau +2",priority=46},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+        head={name="Fu. Bandeau +4",priority=66},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body=gear.TaeonPhalanxBody,{priority=59},hands={name="Herculean Gloves",priority=20},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Herculean Boots",priority=9}}
 
