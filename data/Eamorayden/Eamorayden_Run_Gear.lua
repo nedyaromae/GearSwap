@@ -284,7 +284,7 @@ function select_default_macro_book()
     if player.sub_job == 'BLU' then
         set_macro_page(1, 7)
     elseif player.sub_job == 'DRK' then
-        set_macro_page(3, 7)
+        set_macro_page(1, 7)
     elseif player.sub_job =='SCH' then
         set_macro_page(5, 7)
     else
