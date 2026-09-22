@@ -25,7 +25,7 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {back=gear.stp_jse_back,head="Wakido Kabuto +4"}
+    sets.precast.JA.Meditate = {back=gear.stp_jse_back,head="Wakido Kabuto +4",hands="Sakonji Kote +1"}
     sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +4"}
     sets.precast.JA['Blade Bash'] = {}
 	sets.precast.JA['Sekkanoki'] = {}
@@ -167,7 +167,7 @@ function init_gear_sets()
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
     sets.buff.Sekkanoki = {}
     sets.buff.Sengikori = {}
-    sets.buff['Meikyo Shisui'] = {}
+    sets.buff['Meikyo Shisui'] = {feet="Sakonji Sune-ate +1"}
 end
 
 -- Select default macro book on initial load or subjob change.
