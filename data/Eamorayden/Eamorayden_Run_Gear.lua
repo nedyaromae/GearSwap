@@ -145,11 +145,14 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Flume Belt +1",priority=10},legs={name="Futhark Trousers +4",priority=117},feet={name="Nyame Sollerets",priority=68}}
 
     sets.midcast.Temper={ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Carmine Mask +1",priority=38},neck={name="Hoxne Torque",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Mimir Earring",priority=5},
-        body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring"},{priority=110},ring2=gear.right_stinky,{priority=8},
+        head={name="Carmine Mask +1",priority=38},neck={name="Hoxne Torque",priority=2},ear1={name="Andoaa Earring",priority=10},ear2={name="Mimir Earring",priority=5},
+        body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +4",priority=95},ring1=gear.left_stinky,{priority=5},ring2=gear.right_stinky,{priority=8},
         back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Sworn Sabatons",priority=116}}
 
-    sets.midcast.BarElement=set_combine(sets.midcast.Temper,{head={name="Erilaz Galea +2",priority=101},legs={name="Futhark Trousers +4",priority=117},})
+   sets.midcast.BarElement={ammo={name="Staunch Tathlum +1",priority=3},
+        head={name="Erilaz Galea +2",priority=101},neck={name="Hoxne Torque",priority=2},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=5},
+        body={name="Nyame Mail",priority=136},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring",priority=8},
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Futhark Trousers +4",priority=117},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast.Refresh={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Erilaz Galea +2",priority=101},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=6},
