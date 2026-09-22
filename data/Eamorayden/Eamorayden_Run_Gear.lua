@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('Normal','SIRD') 
-	state.IdleMode:options('Def','Idle','Magic') 
+	state.IdleMode:options('Def','Refresh','Magic') 
 	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos','DDEpeo')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal','DD')
@@ -188,9 +188,9 @@ function init_gear_sets()
 	--------------------------------------
 
     -- Idle sets
-    sets.idle = {ammo={name="Staunch Tathlum +1",priority=3},
-    head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=6},
-    body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2={name="Fortified Ring",priority=4},
+    sets.idle.Refresh = {ammo={name="Homiliary",priority=3},
+    head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=6},
+    body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2={name="Fortified Ring",priority=4},
     back=gear.idle_jse_back,{priority=5},waist={name="Null Belt",priority=2},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
 
     sets.idle.Magic={ammo={name="Staunch Tathlum +1",priority=3},
@@ -209,9 +209,9 @@ function init_gear_sets()
     back=gear.idle_jse_back,{priority=5},waist={name="Engraved Belt",priority=9},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
 
     sets.idle.Evasion={ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=99},ear2={name="Erilaz Earring +2",priority=10},
-        body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
-        back={name="Null Shawl",priority=7},waist={name="Null Belt",priority=5},legs={name="Nyame Flanchard",priority=114},feet={name="Runeist Boots +4",priority=84}}
+    head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=99},ear2={name="Erilaz Earring +2",priority=10},
+    body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
+    back={name="Null Shawl",priority=7},waist={name="Null Belt",priority=5},legs={name="Nyame Flanchard",priority=114},feet={name="Runeist Boots +4",priority=84}}
 
 
 
@@ -224,9 +224,9 @@ sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
  
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 
-    sets.defense.PDT=set_combine(sets.idle,{})
+    sets.defense.PDT=set_combine(sets.idle.Def,{})
     sets.defense.MDT=set_combine(sets.idle.Magic,{})
-    sets.defense.Resist=set_combine(sets.idle,{})
+    sets.defense.Resist=set_combine(sets.idle.Def,{})
     
 	-- Weapons sets
     sets.weapons.Aettir={main="Aettir",sub="Refined Grip +1"}
