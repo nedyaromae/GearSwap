@@ -2,7 +2,7 @@
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Acc','Normal')
-    state.WeaponskillMode:options('Normal', 'Acc','PDL','Mboze')
+    state.WeaponskillMode:options('Normal', 'Acc','PDL')
     state.IdleMode:options('Normal','Aminon')
 	state.HybridMode:options('Normal','DT','Nyame')
     state.CastingMode:options('Normal','Aminon')
