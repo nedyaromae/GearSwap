@@ -165,13 +165,13 @@ function init_gear_sets()
 
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
        head={name="Erilaz Galea +2",priority=101},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Magnetic Earring",priority=5},
-       body={name="Nyame Mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring"},{priority=8},
+       body={name="Nyame Mail",priority=136},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring",priority=8},
        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Fu. Bandeau +2",priority=46},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
         body=gear.TaeonPhalanxBody,{priority=59},hands={name="Herculean Gloves",priority=20},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Taeon Boots",priority=13}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Herculean Boots",priority=9}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 
