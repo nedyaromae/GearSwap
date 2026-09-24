@@ -16,26 +16,6 @@ function user_job_setup()
 	gear.wsd_jse_back = {name="Sucellos's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 
 		-- Additional local binds
-	send_command('bind ^` gs c cycle ElementalMode')
-	send_command('bind @` gs c cycle MagicBurstMode')
-	send_command('bind ^@!` input /ja "Accession" <me>')
-	send_command('bind ^backspace input /ja "Saboteur" <me>')
-	send_command('bind !backspace input /ja "Spontaneity" <t>')
-	send_command('bind @backspace input /ja "Composure" <me>')
-	send_command('bind @f8 gs c toggle AutoNukeMode')
-	send_command('bind != input /ja "Penury" <me>')
-	send_command('bind @= input /ja "Parsimony" <me>')
-	send_command('bind ^delete input /ja "Dark Arts" <me>')
-	send_command('bind !delete input /ja "Addendum: Black" <me>')
-	send_command('bind @delete input /ja "Manifestation" <me>')
-	send_command('bind ^\\\\ input /ma "Protect V" <t>')
-	send_command('bind @\\\\ input /ma "Shell V" <t>')
-	send_command('bind !\\\\ input /ma "Reraise" <me>')
-	send_command('bind @f10 gs c cycle RecoverMode')
-	send_command('bind ^r gs c set skipprocweapons true;gs c reset weaponskillmode;gs c weapons Default;gs c set unlockweapons false')
-	send_command('bind ^q gs c set weapons enspellonly;gs c set unlockweapons true')
-	send_command('bind !r gs c set skipprocweapons true;gs c reset weaponskillmode;gs c set weapons none')
-	send_command('bind !q gs c set skipprocweapons false;gs c set weapons DualProcDaggers;gs c set weaponskillmode proc')
 	
 --	select_default_macro_book()
 end
