@@ -72,19 +72,19 @@ sets.precast.FC = {ammo="Sapience Orb",
 		
 	-- Specific weaponskill sets. 
 
-	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring",legs="Nyame Flanchard",body="Nyame Mail"})
-	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring",hands="Bhikku Gloves +2",body="Nyame Mail"})
+	sets.precast.WS['Raging Fists']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring",legs="Nyame Flanchard"})
+	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ear2="Moonshade Earring",hands="Bhikku Gloves +2",body="Nyame Mail",feet="Nyame Sollerets"})
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {head="Nyame Helm",body="Nyame Mail",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt",hands="Bhikku Gloves +2"})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {back=gear.dex_jse_back})
 	sets.precast.WS['Dragon Kick'] =  {ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Mpaca's Boots"}
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS['Tornado Kick']={ammo="Coiste Bodhar", 
 		head="Mpaca's Cap",neck="Fotia Gorget",ear1="Schere Earring",ear2="Moonshade Earring",
-		body="Nyame Mail",hands="Bhikku Gloves +2",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Mpaca's Boots"}
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
+		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Bhikku Gloves +2",ring1="Metamorph Ring +1",ring2="Murky Ring",
@@ -98,13 +98,13 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 
 
-	sets.precast.WS['Raging Fists'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
-	sets.precast.WS['Howling Fist'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Raging Fists'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble",})
+	sets.precast.WS['Howling Fist'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble",body="Nyame Mail",feet="Nyame Sollerets"})
 	sets.precast.WS['Asuran Fists'].PDL    = set_combine(sets.precast.WS.PDL, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt",ammo="Crepuscular Pebble"})
 	sets.precast.WS["Victory Smite"].PDL   = set_combine(sets.precast.WS.PDL, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral'].PDL   = set_combine(sets.precast.WS.PDL, {back=gear.dex_jse_back,ear1="Mache Earring +1"})
-	sets.precast.WS['Dragon Kick'].PDL    = set_combine(sets.precast.WS.PDL, {body="Bhikku Cyclas +2",ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
-	sets.precast.WS['Tornado Kick'].PDL    = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Dragon Kick'].PDL    = set_combine(sets.precast.WS.PDL, {body="Nyame Mail",ear2="Moonshade Earring",ammo="Crepuscular Pebble",feet="Nyame Sollerets"})
+	sets.precast.WS['Tornado Kick'].PDL    = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble",body="Nyame Mail",legs="Nyame Flanchard",feet="Nyame Sollerets"})
 
 
 
