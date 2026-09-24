@@ -122,7 +122,7 @@ function init_gear_sets()
 
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
+        body="Nyame Mail",hands="Gleti's Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.Reraise = set_combine(sets.idle, {head="Crepuscular Helm",body="Twilight Mail"})

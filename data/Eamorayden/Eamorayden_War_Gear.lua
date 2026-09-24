@@ -78,7 +78,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Knobkierrie",
 		head="Agoge Mask +4",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Boii Mufflers +3",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS.PDL={ammo="Knobkierrie",
@@ -145,7 +145,7 @@ function init_gear_sets()
 
 	sets.precast.WS["Requiescat"] ={ammo="Coiste Bodhar",
 		head="Agoge Mask +4",neck="Fotia Gorget",ear1="Schere Earring",ear2="Boii Earring +1",
-		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Boii Mufflers +3",ring1="Metamorph Ring +1",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Sakpata's Leggings"}
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
@@ -170,17 +170,17 @@ function init_gear_sets()
 
 	sets.precast.WS["Raiden Thrust"]= {ammo="Knobkierrie",
 		head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Thrud Earring",
-		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 		head="Pixie Hairpin +1",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
-		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS['Sanguine Blade']={ammo="Knobkierrie",
 		head="Pixie Hairpin +1",neck="War. Beads +1",ear1="Moonshade Earring",ear2="Friomisi Earring",
-		body="Nyame Flanchard",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Cornelia's Ring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Archon Ring",ring2="Cornelia's Ring",
 		back=gear.wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
