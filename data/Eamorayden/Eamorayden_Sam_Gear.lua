@@ -163,7 +163,7 @@ function init_gear_sets()
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
     sets.buff.Sekkanoki = {}
     sets.buff.Sengikori = {}
-    sets.buff['Meikyo Shisui'] = {feet="Sakonji Sune-ate +1"}
+    sets.buff['Meikyo Shisui'] = {feet="Sakonji Sune-ate +2"}
 end
 
 -- Select default macro book on initial load or subjob change.
