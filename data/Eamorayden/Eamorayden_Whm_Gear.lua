@@ -276,7 +276,7 @@ function init_gear_sets()
 		back=gear.fc_jse_back,waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 		-- Engaged sets
     sets.engaged = {ammo="Vanir Battery",
-        head="Nyame Helm",neck="Lissome Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+        head="Nyame Helm",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Nyame Mail",hands="Bunzi's Gloves",ring1="Petrov Ring",Ring2="Chirich Ring +1",
         back="Null Shawl",waist="Cetl Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
