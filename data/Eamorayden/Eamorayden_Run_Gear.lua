@@ -211,12 +211,12 @@ function init_gear_sets()
 
     sets.idle.Evasion={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=99},ear2={name="Erilaz Earring +2",priority=10},
-    body={name="Runeist Coat +4",priority=228},hands={name="Runeist Mitons +4",priority=95},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
+    body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
     back={name="Null Shawl",priority=7},waist={name="Null Belt",priority=5},legs={name="Nyame Flanchard",priority=114},feet={name="Runeist Boots +4",priority=84}}
 
 
 
-sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
+sets.Kiting={ring1k={name="Shneddick Ring",priority=4},}
 	--------------------------------------
     -- Defense sets
     --------------------------------------
