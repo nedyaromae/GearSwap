@@ -298,22 +298,7 @@ function init_gear_sets()
     head={name="Null Masque",priority=100},neck={name="Coatl Gorget +1",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2=gear.right_moonlight,{priority=110},
     back=gear.idle_jse_back,{priority=60},waist={name="Null Belt",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
-
-    sets.idle.ConvertMP= {ammo={name="Homiliary",priority=3},
-    head={name="Chev. Armet +2",priority=135},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
-    back=gear.idle_jse_back,{priority=60},waist={name="Flume Belt +1",priority=2},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
-
-    sets.idle.Adds= {ammo={name="Homiliary",priority=3},
-    head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=4},ring2={name="Murky Ring",priority=1},
-    back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
-
-    sets.idle.Block={ammo={name="Staunch Tathlum +1",priority=3},
-    head={name="Chev. Armet +2",priority=135},neck={name="Hoxne Torque",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-    back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Sakpata's Leggings",priority=68}}
-
+    
     sets.Harness=set_combine(sets.idle.Aminon,{body={name="Volte Harness",priority=136}})
 
 	--------------------------------------
