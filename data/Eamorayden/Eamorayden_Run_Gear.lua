@@ -216,7 +216,7 @@ function init_gear_sets()
 
 
 
-sets.Kiting={ring1k={name="Shneddick Ring",priority=4},}
+sets.Kiting={ring1={name="Shneddick Ring",priority=4},}
 	--------------------------------------
     -- Defense sets
     --------------------------------------
