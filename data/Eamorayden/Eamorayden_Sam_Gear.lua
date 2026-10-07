@@ -110,7 +110,7 @@ function init_gear_sets()
     sets.Phalanx_Received={body="Valorous Mail"}
 
     sets.idle = {ammo="Staunch Tathlum +1",
-		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
+		head="Wakido Kabuto +4",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
 		body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
