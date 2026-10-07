@@ -267,7 +267,7 @@ function init_gear_sets()
 
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Sworn Crown",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
+		body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",

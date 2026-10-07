@@ -113,7 +113,7 @@ function init_gear_sets()
            
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Chirich Ring +1",
+		body="Adamantite Armor",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Chirich Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 

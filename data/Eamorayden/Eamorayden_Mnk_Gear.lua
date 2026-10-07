@@ -133,7 +133,7 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
+		body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	-- Defense sets
