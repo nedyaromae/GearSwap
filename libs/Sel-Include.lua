@@ -579,7 +579,7 @@ function default_zone_change(new_id,old_id)
 	useItemName = ''
 	useItemSlot = ''
 
-	if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
+	if world.area:startswith('Abyssea') or data.areas.proc:contains(world.area) then
 		state.SkipProcWeapons:set('False')
 	else
 		state.SkipProcWeapons:reset()

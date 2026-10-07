@@ -502,7 +502,6 @@ function set_macro_page(set,book)
 	end
 end
 
-
 -- Function for optionally including files if they exist.
 function optional_include(filename)
 	if filename:startswith('User') then
