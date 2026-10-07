@@ -438,7 +438,7 @@ function init_include()
 	-- New implementation of tick.
 	windower.raw_register_event('prerender', function()
 		if not (os.clock() > tickdelay) then return end
-		gearswap.refresh_globals(false)
+		gearswap.refresh_globals()
 		
 		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (just_acted() or moving or silent_check_disable()) then
 			prepared_action = ''
@@ -701,12 +701,11 @@ end
 function handle_actions(spell, action)
 	-- Init an eventArgs that allows cancelling.
 	local eventArgs = {handled = false, cancel = false}
-
 	mote_vars.set_breadcrumbs:clear()
+	gearswap.refresh_globals()
 
 	-- Get the spell mapping, since we'll be passing it to various functions and checks.
 	local spellMap = get_spell_map(spell)
-	gearswap.refresh_globals(false)
 
 	-- General filter checks to see whether this function should be run.
 	-- If eventArgs.cancel is set, cancels this function, not the spell.
@@ -2310,8 +2309,9 @@ function sub_job_change(newSubjob, oldSubjob)
 end
 	
 -- Register event to fix Gearswap ignoring the event status for status_change.
-windower.register_event('status change', function(newStatus, oldStatus)
-	if oldStatus == 4 --[[event]] then
+windower.raw_register_event('status change', function(newStatus, oldStatus)
+	if oldStatus == 4 --[[event status]] then
+		gearswap.refresh_globals()
 		status_change(newStatus, oldStatus)
 	end
 end)
