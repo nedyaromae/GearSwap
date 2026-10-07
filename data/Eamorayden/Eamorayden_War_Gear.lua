@@ -208,7 +208,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Sakpata's Helm",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
+		body="Adamantite Armor",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",

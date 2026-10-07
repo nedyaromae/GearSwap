@@ -139,7 +139,7 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 	-- Defense sets
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
+        body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Murky Ring",
         back="Shadow Mantle",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 

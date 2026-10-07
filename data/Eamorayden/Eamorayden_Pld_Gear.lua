@@ -210,7 +210,7 @@ function init_gear_sets()
 
     sets.midcast.Stoneskin={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Sworn Crown",priority=141},neck={name="Stone Gorget",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Earthcry Earring",priority=6},
-        body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
+        body={name="Adamantite Armor",priority=182},hands={name="Sakpata's Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
         back=gear.fastcast_jse_back,{priority=60},waist={name="Siegel Sash",priority=4},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast['Enhancing Magic'].DT= {ammo={name="Crepuscular Pebble",priority=3},
