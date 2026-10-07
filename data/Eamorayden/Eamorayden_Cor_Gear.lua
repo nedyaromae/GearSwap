@@ -246,11 +246,10 @@ function init_gear_sets()
     
     -- Resting sets
 	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
-
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-        body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Murky Ring",
+        body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Chirich Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
         sets.idle.Aminon= {ammo=gear.RAbullet,
