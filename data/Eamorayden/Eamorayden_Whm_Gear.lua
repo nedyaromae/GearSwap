@@ -251,8 +251,8 @@ function init_gear_sets()
 		back=gear.fc_jse_back,waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
-		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Mimir Earring",
-		body="Ebers Bliaut +2",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
+		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
+		body="Ebers Bliaut +2",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
