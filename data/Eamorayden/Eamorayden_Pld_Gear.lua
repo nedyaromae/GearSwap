@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal','DT') 
-	state.IdleMode:options('Idle','Magic','Aminon') 
+	state.IdleMode:options('Idle','Magic','Aminon','Def') 
 	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','SakpataSriv','Aminon')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
@@ -293,6 +293,12 @@ function init_gear_sets()
     head={name="Sakpata's Helm",priority=91},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
     body={name="Adamantite Armor",priority=182},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Shadow Ring",priority=6},ring2={name="Murky Ring",priority=7},
     back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+
+
+    sets.idle.Def={ammo={name="Staunch Tathlum +1",priority=3},
+    head={name="Sworn Crown",priority=141},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
+    body={name="Adamantite Armor",priority=182},hands={name="Sworn Gauntlets",priority=96},ring1={name="Fortified Ring",priority=3},ring2={name="Murky Ring",priority=4},
+    back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.Aminon={ammo={name="Vanir Battery",priority=3},
     head={name="Null Masque",priority=100},neck={name="Coatl Gorget +1",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
