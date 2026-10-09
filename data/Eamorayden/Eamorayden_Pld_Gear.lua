@@ -286,7 +286,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Sworn Crown",priority=141},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Chev. Earring +1",priority=6},
-    body={name="Sakpata's Plate",priority=136},hands={name="Sworn Gauntlets",priority=96},ring1={name="Fortified Ring",priority=3},ring2={name="Murky Ring",priority=4},
+    body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Fortified Ring",priority=3},ring2={name="Murky Ring",priority=4},
     back=gear.idle_jse_back,{priority=60},waist={name="Carrier's Sash",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
 
     sets.idle.Magic={ammo={name="Vanir Battery",priority=3},
