@@ -205,7 +205,7 @@ function init_gear_sets()
 
     sets.midcast.Flash= {Main="Grioavolr",sub="Clerisy Strap +1",ammo="Sapience Orb",
 		head="Null Masque",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Cryptic Earring",
-		body="Inyanga Jubbah +2",hands="Nyame Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
+		body="Inyanga Jubbah +2",hands="Sworn Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
 		back=gear.fc_jse_back,waist="Embla Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
     sets.midcast.Flash.DT=set_combine(sets.midcast.Flash,{})
 		
