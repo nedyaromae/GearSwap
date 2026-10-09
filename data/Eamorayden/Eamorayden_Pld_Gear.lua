@@ -3,7 +3,7 @@ function user_job_setup()
     -- Options: Override default values	
 
     state.CastingMode:options('SIRD','Normal','DT') 
-	state.IdleMode:options('Idle','Magic','Aminon','Def') 
+	state.IdleMode:options('Idle','Magic','Def','Aminon',) 
 	state.Weapons:options('SakpataDuban','SakpataAegis','BrilSriv','SakpataSriv','Aminon')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.AutoEmblem = M(false, 'Auto Emblem')
