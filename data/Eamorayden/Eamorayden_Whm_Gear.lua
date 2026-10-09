@@ -231,7 +231,7 @@ function init_gear_sets()
 
 	sets.HPCure={main="Daybreak",sub="Diamond Aspis",ammo="Sapience Orb",
 		head="Sworn Crown",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
-		body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
+		body="Adamantite Armor",hands="Sworn Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
 		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
@@ -252,7 +252,7 @@ function init_gear_sets()
 
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Mimir Earring",
-		body="Ebers Bliaut +2",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
+		body="Ebers Bliaut +2",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Null Shawl",waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
@@ -267,7 +267,7 @@ function init_gear_sets()
 
 	sets.defense.PDT = {ammo="Crepuscular Pebble",
 		head="Sworn Crown",neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
+		body="Adamantite Armor",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Null Belt",legs="Sworn Brais",feet="Sworn Sabatons"}
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
