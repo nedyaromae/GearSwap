@@ -302,7 +302,7 @@ function init_gear_sets()
 
     sets.idle.Aminon={ammo={name="Vanir Battery",priority=3},
     head={name="Null Masque",priority=100},neck={name="Coatl Gorget +1",priority=2},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
-    body={name="Adamantite Armor",priority=182},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2=gear.right_moonlight,{priority=110},
+    body={name="Adamantite Armor",priority=182},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2={name="Vexer Ring +1",priority=55},
     back=gear.idle_jse_back,{priority=60},waist={name="Null Belt",priority=7},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
     sets.Harness=set_combine(sets.idle.Aminon,{body={name="Volte Harness",priority=136}})
