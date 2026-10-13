@@ -36,12 +36,10 @@ function user_job_setup()
     gear.RostamPathB={name="Rostam", augments={'Path: B',}}
     gear.RostamPathC={name="Rostam", augments={'Path: C',}}
     user_job_lockstyle()
-    dwbodge()
 
     -- Additional local binds
 
     select_default_macro_book()
-
 end
 
 -- Define sets and vars used by this job file.
@@ -351,8 +349,4 @@ end
 function user_job_lockstyle()
 
 	windower.chat.input('/lockstyleset 009')
-end
-
-function dwbodge()
-    windower.chat.input('//gs c weapons initialize')
 end
