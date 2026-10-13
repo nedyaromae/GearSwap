@@ -191,7 +191,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle.Refresh = {ammo={name="Homiliary",priority=3},
     head={name="Null Masque",priority=100},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=6},
-    body={name="Runeist Coat +4",priority=228},hands={name="Sworn Gauntlets",priority=96},ring1=gear.left_moonlight,{priority=109},ring2={name="Fortified Ring",priority=4},
+    body={name="Runeist Coat +4",priority=228},hands={name="Sworn Gauntlets",priority=96},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
     back=gear.idle_jse_back,{priority=5},waist={name="Null Belt",priority=2},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
 
     sets.idle.Magic={ammo={name="Staunch Tathlum +1",priority=3},
