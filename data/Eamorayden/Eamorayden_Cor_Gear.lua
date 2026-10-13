@@ -40,6 +40,7 @@ function user_job_setup()
     -- Additional local binds
 
     select_default_macro_book()
+
 end
 
 -- Define sets and vars used by this job file.
