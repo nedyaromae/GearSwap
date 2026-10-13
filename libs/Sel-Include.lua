@@ -275,7 +275,6 @@ function init_include()
 	check_internal_weapons = false
 	fixed_pos = ''
 	custom_runes = {}
-	can_dual_wield = ''
 
 	-- Buff tracking that buffactive can't detect
 	lastwarcry = ''
@@ -651,11 +650,19 @@ end
 -- Non item-based global settings to check on load.
 function global_on_load()
 	if world.area then
+		if windower.packets.last_outgoing(0x100) and windower.packets.last_incoming(0x0AC) then
+			if windower.packets.last_outgoing(0x100) > windower.packets.last_incoming(0x0AC) then
+				set_dual_wield:schedule(5)
+			else
+				set_dual_wield()
+			end
+		else
+			set_dual_wield:schedule(5)
+		end
+
 		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
 		end
-		
-		set_dual_wield()
 		
 		if data.areas.cities:contains(world.area) then
 			in_town = true
@@ -2259,7 +2266,6 @@ end
 
 -- Called when the player's subjob changes.
 function sub_job_change(newSubjob, oldSubjob)
-	can_dual_wield = ''
 	set_dual_wield:schedule(5)
 	if user_setup then
 		user_setup()
