@@ -3049,7 +3049,7 @@ function set_dual_wield()
 			local traits = T(windower.ffxi.get_abilities().job_traits)
 			local initialize = false
 			if can_dual_wield == '' then
-				initalize = true
+				initialize = true
 			end
 			can_dual_wield = traits:any(function(v) return gearswap.res.job_traits[v].english == 'Dual Wield' end)
 			if initialize then
