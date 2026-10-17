@@ -64,7 +64,10 @@ function init_gear_sets()
 	sets.RewardAxesDW = {}
 
 	sets.precast.JA.Charm = {}
-	sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Taeon Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+	sets.Phalanx_Received= {ammo="Crepuscular Pebble",
+		head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
+        body=gear.TaeonPhalanxBody,hands="Taeon Gloves",ring1="Defending Ring",ring2="Murky Ring",
+        back="Solemnity Cape",waist="Plat. Mog. Belt",legs="Taeon Tights",feet="Taeon Boots"}
 
 	sets.precast.FC = {ammo="Sapience Orb",
         head="",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",

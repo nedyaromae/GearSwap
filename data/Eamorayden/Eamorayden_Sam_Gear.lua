@@ -107,7 +107,11 @@ function init_gear_sets()
 	
     sets.Reraise = {head="Crepuscular Helm",body="Twilight Mail"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-    sets.Phalanx_Received={body="Valorous Mail"}
+   
+    sets.Phalanx_Received={ammo="Staunch Tathlum +1",
+        head="Kasuga Kabuto +2",neck="Loricate Torque +1",ear1="Dedition Earring",ear2="Kasuga Earring +2",
+        body="Valorous Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Murky Ring",
+        back="Null Shawl",waist="Sweordfaetels +1",legs="Kasuga Haidate +2",feet="Nyame Sollerets"}
 
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Wakido Kabuto +4",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",

@@ -188,7 +188,12 @@ sets.engaged.Meva = {ammo="Coiste Bodhar",
 --	sets.NightIdle = {}
 --   sets.Knockback = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Herculean Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+
+	sets.Phalanx_Received={ammo="Crepuscular Pebble",
+		head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
+        body=gear.TaeonPhalanxBody,hands="Herculean Gloves",ring1="Defending Ring",ring2="Murky Ring",
+        back=gear.dex_jse_back,waist="Plat. Mog. Belt",legs="Taeon Tights",feet="Taeon Boots"}
+
 --	sets.Skillchain = {legs="Ryuo Hakama"}
 	
 	-- Weapons sets

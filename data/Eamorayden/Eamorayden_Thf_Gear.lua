@@ -26,7 +26,10 @@ function init_gear_sets()
     --------------------------------------
 
 	sets.TreasureHunter = {waist="Chaac Belt",feet="Skulk. Poulaines +1",ammo="Per. Lucky Egg"}
-    sets.Phalanx_Received={head="Taeon Chapeau",body=gear.TaeonPhalanxBody,hands="Herculean Gloves",legs="Taeon Tights",feet="Taeon Boots"}
+    sets.Phalanx_Received={ammo="Crepuscular Pebble",
+		head="Taeon Chapeau",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
+        body=gear.TaeonPhalanxBody,hands="Herculean Gloves",ring1="Defending Ring",ring2="Murky Ring",
+        back="Solemnity Cape",waist="Plat. Mog. Belt",legs="Taeon Tights",feet="Taeon Boots"}
   --  sets.Kiting = {ring2="Shneddick Ring"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}
