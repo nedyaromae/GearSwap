@@ -201,7 +201,7 @@ function init_gear_sets()
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
-		head="Crepuscular Helm",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
+		head="Crepuscular Helm",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Alabaster Earring",
 		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.vit_wsd_jse_back,waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
@@ -241,7 +241,10 @@ function init_gear_sets()
 	sets.buff.Retaliation = {}
 	sets.buff.Sleep= {neck="Vim Torque +1"}
 	sets.buff.Restraint = {}
-	sets.Phalanx_Received = {head="Odyssean Helm",body="Yorium Cuirass",hands="Souv. Handsch. +1",legs="Sakpata's leggings",feet="Souveran Schuhs +1"}
+	sets.Phalanx_Received={ammo="Staunch Tathlum +1", 
+		head="Odyssean Helm",neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Alabaster Earring",
+		body="Yorium Cuirass",hands="Souv. Handsch. +1",ring1="Murky Ring",ring2="Defending Ring",
+		back="Null Shawl",waist="Plat. Mog. Belt",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Refresh_Received ={waist="Gishdubar Sash"}
 	sets.Kiting = {ring2="Shneddick Ring"}
