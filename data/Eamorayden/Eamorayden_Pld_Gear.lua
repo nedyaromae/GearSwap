@@ -183,10 +183,15 @@ function init_gear_sets()
         body={name="Sakpata's Plate",priority=136},hands={name="Macabre Gauntlets +1",priority=89},ring1=gear.left_moonlight,{priority=110},ring2={name="Murky Ring",priority=5},
         back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=200},legs={name="Founder's Hose",priority=54},feet={name="Odyssean Greaves",priority=20}}
 
+    sets.HPDown={ammo={name="Sapience Orb",priority=3},
+        head={name="Carmine Mask +1",priority=38},neck={name="Orunmila's Torque",priority=1},ear1={name="Enchanter's Earring +1",priority=8},ear2={name="Loquac. Earring",priority=4},
+        body={name="Valorous Mail",priority=61},hands={name="Leyline Gloves",priority=25},ring1={name="Metamorph Ring +1",priority=2},ring2={name="Prolix Ring",priority=7},
+        back=gear.fastcast_jse_back,{priority=60},waist={name="Null Belt",priority=6},legs={name="Founder's Hose",priority=54},feet={name="Chev. Sabatons +3",priority=52}}
+
    sets.HPCure={ammo={name="Sapience Orb",priority=1},
-        head={name="Souv. Schaller +1",priority=280},neck={name="Unmoving Collar +1",priority=200},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
-        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-       back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Souv. Diechlings +1",priority=162},feet={name="Souveran Schuhs +1",priority=227}}
+        head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=10},ear1={name="Tuisto Earring",priority=150},ear2={name="Cryptic Earring",priority=45},
+        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Apeile Ring +1",priority=7},ring2={name="Eihwaz Ring",priority=70},
+       back=gear.CP_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Souv. Diechlings +1",priority=162},feet={name="Souveran Schuhs +1",priority=227}}
 
     sets.midcast.Cure.DT=  {ammo={name="Pemphredo Tathlum",priority=1},
         head={name="Sakpata's Helm",priority=91},neck={name="Unmoving Collar +1",priority=200},ear1={name="Cryptic Earring",priority=40},ear2={name="Chev. Earring +1",priority=3},
