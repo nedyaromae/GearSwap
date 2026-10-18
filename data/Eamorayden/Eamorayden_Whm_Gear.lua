@@ -230,7 +230,7 @@ function init_gear_sets()
 	sets.midcast.Dispelga = set_combine(sets.midcast['Enfeebling Magic'],{main="Daybreak"})
 
 	sets.HPCure={main="Daybreak",sub="Diamond Aspis",ammo="Sapience Orb",
-		head="Sworn Crown",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
+		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
 		body="Adamantite Armor",hands="Sworn Gauntlets",ring1="Supershear Ring",ring2="Eihwaz Ring",
 		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 
