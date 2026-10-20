@@ -350,7 +350,6 @@ function init_gear_sets()
 	-- Buff sets
 	sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {neck="Vim Torque +1"}
 	sets.buff.Hasso = {hands="Wakido Kote +3"}
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
     sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
