@@ -3043,24 +3043,10 @@ warcry_tp_bonus = get_warcry_tp_bonus()
 function set_dual_wield()
 	-- Checks Job Traits directly. Will always recognize DW appropriately for all jobs (NIN ,DNC, THF, BLU)
 	local traits = T(windower.ffxi.get_abilities().job_traits)
-	local initialize = false
-	
-	if can_dual_wield == '' then
-		initialize = true
-	end
-	
 	can_dual_wield = traits:any(function(v) return gearswap.res.job_traits[v].english == 'Dual Wield' end)
 
-	if initialize then
-		send_command('gs c weapons initialize')
-	end
+	send_command('gs c weapons initialize')
 end
-
-windower.raw_register_event('incoming chunk', function(id, data)
-    if id == 0x0AC then
-        set_dual_wield()
-    end
-end)
 
 function get_closest_mob_id_by_name(name)
 	local mob = get_closest_mob_by_name(name)

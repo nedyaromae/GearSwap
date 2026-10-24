@@ -37,6 +37,7 @@ function init_gear_sets()
 	sets.Kiting = {ring2="Shneddick Ring"} --feet="Skd. Jambeaux +1"
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Sleep = {}
 	
 	sets.buff['Sneak Attack'] = {}
 	sets.buff['Trick Attack'] = {}

@@ -323,6 +323,7 @@ function init_gear_sets()
 	sets.buff['Dark Seal'] = {} --head="Fallen's Burgeonet +3"
 	sets.buff.Souleater = {}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Sleep = {head="Frenzy Sallet"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
