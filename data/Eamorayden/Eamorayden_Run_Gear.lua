@@ -2,7 +2,7 @@ function user_job_setup()
 
     -- Options: Override default values	
 	state.IdleMode:options('Def','Refresh','Magic') 
-	state.Weapons:options('Epeo','DDEpeo','Aettir','Agwu','Lycurgos')
+	state.Weapons:options('Epeo','DDEpeo','Aettir','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal','DD')
     state.WeaponskillMode:options('Normal','DD')
