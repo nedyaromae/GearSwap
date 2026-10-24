@@ -2,7 +2,7 @@ function user_job_setup()
 
     -- Options: Override default values	
 	state.IdleMode:options('Def','Refresh','Magic') 
-	state.Weapons:options('Epeo','Aettir','Agwu','Lycurgos','DDEpeo')
+	state.Weapons:options('Epeo','DDEpeo','Aettir','Agwu','Lycurgos')
 	state.UnlockWeapons = M(true, 'Unlock Weapons')
 	state.HybridMode:options('Parry','Meva','Normal','DD')
     state.WeaponskillMode:options('Normal','DD')
@@ -165,9 +165,9 @@ function init_gear_sets()
         back=gear.enmity_jse_back,{priority=60},waist={name="Sroda Belt",priority=5},legs={name="Futhark Trousers +4",priority=117},feet={name="Sworn Sabatons",priority=116}}
 
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
-       head={name="Erilaz Galea +2",priority=101},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Magnetic Earring",priority=5},
-       body={name="Adamantite Armor",priority=182},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2={name="Defending Ring",priority=8},
-       back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
+       head={name="Erilaz Galea +2",priority=101},neck={name="Hoxne Torque",priority=2},ear1={name="Magnetic Earring",priority=10},ear2={name="Tuisto Earring",priority=150},
+       body={name="Adamantite Armor",priority=182},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
+       back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Fu. Bandeau +4",priority=66},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
