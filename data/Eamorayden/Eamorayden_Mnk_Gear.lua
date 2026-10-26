@@ -86,7 +86,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
 		back=gear.str_jse_back,waist="Moonbow Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
-		head="Mpaca's Cap",neck="Null Loop",ear1="Moonshade Earring",ear2="Bhikku Earring +1",
+		head="Mpaca's Cap",neck="Null Loop",ear1="Alabaster Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Bhikku Gloves +2",ring1="Metamorph Ring +1",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
 

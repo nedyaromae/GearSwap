@@ -149,7 +149,7 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Sakpata's Leggings"}
 	
 	sets.precast.WS["Armor Break"]={ammo="Pemphredo Tathlum",
-		head="Sakpata's Helm",neck="Null Loop",ear1="Crep. Earring",ear2="Boii Earring +1",
+		head="Sakpata's Helm",neck="Null Loop",ear1="Alabaster Earring",ear2="Boii Earring +1",
 		body="Pumm. Lorica +4",hands="Boii Mufflers +3",ring1="Murky Ring",ring2="Metamor. Ring +1",
 		back="Null shawl",waist="Null Belt",legs="Pumm. Cuisses +4",feet="Pumm. Calligae +4"}
 
@@ -201,7 +201,7 @@ function init_gear_sets()
 		back="Null Shawl",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 
 	sets.idle.Weak={ammo="Staunch Tathlum +1",
-		head="Crepuscular Helm",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Alabaster Earring",
+		head="Crepuscular Helm",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
 		body="Twilight Mail",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.vit_wsd_jse_back,waist="Carrier's Sash",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
@@ -212,7 +212,7 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Null Belt",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 		
 	sets.midcast.Warp=	{ammo="Staunch Tathlum +1",
-		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Ran Earring",
+		head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Ran Earring",ear2="Eabani Earring",
 		body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Murky Ring",ring2="Defending Ring",
 		back="Null Shawl",waist="Audumbla Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
 
@@ -242,7 +242,7 @@ function init_gear_sets()
 	sets.buff.Sleep= {neck="Vim Torque +1"}
 	sets.buff.Restraint = {}
 	sets.Phalanx_Received={ammo="Staunch Tathlum +1", 
-		head="Odyssean Helm",neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Alabaster Earring",
+		head="Odyssean Helm",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Eabani Earring",
 		body="Yorium Cuirass",hands="Souv. Handsch. +1",ring1="Murky Ring",ring2="Defending Ring",
 		back="Null Shawl",waist="Plat. Mog. Belt",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
