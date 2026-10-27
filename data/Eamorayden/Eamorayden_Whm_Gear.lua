@@ -181,7 +181,7 @@ function init_gear_sets()
 		back=gear.fc_jse_back,waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
 		
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
-		head=empty,neck="Null Loop",ear1="Alabaster Earring",ear2="Ebers Earring +1",
+		head=empty,neck="Null Loop",ear1="Alabaster Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Metamorph Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Theo. Pant. +4",feet="Theo. Duckbills +4"}
 		
