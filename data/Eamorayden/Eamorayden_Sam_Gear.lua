@@ -72,7 +72,7 @@ function init_gear_sets()
     
     sets.precast.WS['Tachi: Ageha'] = {ammo="Pemphredo Tathlum",
 		head="Wakido Kabuto +4",neck="Null Loop",ear1="Alabaster Earring",ear2="Kasuga Earring +2",
-		body="Kasuga Domaru +2",hands="Wakido Kote +4",ring1="Metamorph Ring +1",ring2="Murky Ring",
+		body="Wakido Domaru +4",hands="Wakido Kote +4",ring1="Metamorph Ring +1",ring2="Murky Ring",
 		back="Null Shawl",waist="Null Belt",legs="Wakido Haidate +4",feet="Wakido Sune. +4"}
 		
     sets.precast.WS['Tachi: Hobaku'] = set_combine(sets.precast.WS['Tachi: Ageha'], {})
