@@ -133,7 +133,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'] = {ammo={name="Coiste Bodhar",priority=3},
     head={name="Sakpata's Helm",priority=91},neck={name="Null Loop",priority=50},ear1={name="Mache Earring +1",priority=4},ear2={name="Alabaster Earring",priority=100},
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=92},ring1={name="Cornelia's Ring",priority=6},ring2={name="Epaminondas's Ring",priority=8},
-    back=gear.wsd_jse_back,{priority=5}waist={name="Fotia Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
+    back=gear.wsd_jse_back,{priority=5},waist={name="Fotia Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
     sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS['Chant du Cygne'],{})
     sets.precast.WS['Atonement'] = set_combine(sets.Enmity, {ear1={name="Friomisi Earring",priority=2}})
     sets.precast.WS['Atonement'].DT=set_combine(sets.Enmity.DT,{})
