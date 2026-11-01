@@ -129,6 +129,10 @@ function init_gear_sets()
     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=92},ring1={name="Sroda Ring",priority=5},ring2=gear.right_moonlight,{priority=110},
     back=gear.wsd_jse_back,{priority=7},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
+     sets.precast.WS['Knights of Round']=set_combine(sets.precast.WS.DD,{ear1="Hoxne Earring"})
+     sets.precast.WS['Knights of Round'].PDL=set_combine(sets.precast.WS.PDL,{ear1="Hoxne Earring"})
+
+
     sets.precast.WS['Requiescat'].DT=set_combine(sets.precast.WS['Requiescat'],{})
 	sets.precast.WS['Chant du Cygne'] = {ammo={name="Coiste Bodhar",priority=3},
     head={name="Sakpata's Helm",priority=91},neck={name="Null Loop",priority=50},ear1={name="Mache Earring +1",priority=4},ear2={name="Alabaster Earring",priority=100},
