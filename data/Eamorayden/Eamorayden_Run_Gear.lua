@@ -28,12 +28,12 @@ function init_gear_sets()
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
         head={name="Halitus Helm",priority=88},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Cryptic Earring",priority=40},
         body={name="Emet Harness +1",priority=61},hands={name="Kurys Gloves",priority=25},ring1={name="Eihwaz Ring",priority=70},ring2={name="Supershear Ring",priority=30},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +3",priority=100},feet={name="Erilaz Greaves +2",priority=38}}
+        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Erilaz Leg Guards +3",priority=100},feet={name="Erilaz Greaves +3",priority=48}}
     
     sets.Enmity.SIRD={ammo={name="Staunch Tathlum +1",priority=3}, 
         head={name="Erilaz Galea +2",priority=101},neck={name="Moonlight Necklace",priority=2},ear1={name="Alabaster Earring",priority=100},ear2={name="Magnetic Earring",priority=5},
        body={name="Adamantite Armor",priority=182},hands={name="Rawhide Gloves",priority=75},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-       back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Erilaz Greaves +2",priority=38}}
+       back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Erilaz Greaves +3",priority=48}}
 
     -- Precast sets to enhance JAs
    
@@ -197,12 +197,12 @@ function init_gear_sets()
     sets.idle.Magic={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Sworn Crown",priority=141},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=4},
     body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2={name="Shadow Ring",priority=7},
-    back=gear.enmity_jse_back,{priority=60},waist={name="Null Belt",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Erilaz Greaves +2",priority=38}}
+    back=gear.enmity_jse_back,{priority=60},waist={name="Null Belt",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Erilaz Greaves +3",priority=48}}
 
 	sets.idle.ResistCharm={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Sworn Crown",priority=141},neck={name="Unmoving Collar +1",priority=200},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=6},
     body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1={name="Murky Ring",priority=3},ring2=gear.right_moonlight,{priority=110},
-    back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Erilaz Greaves +2",priority=38}}
+    back={name="Solemnity Cape",priority=5},{priority=60},waist={name="Null Belt",priority=20},legs={name="Sworn Brais",priority=164},feet={name="Erilaz Greaves +3",priority=48}}
 
     sets.idle.Def={ammo={name="Staunch Tathlum +1",priority=3},
     head={name="Sworn Crown",priority=141},neck={name="Loricate Torque +1",priority=20},ear1={name="Alabaster Earring",priority=99},ear2={name="Tuisto Earring",priority=150},
@@ -247,7 +247,7 @@ sets.Kiting={ring1={name="Shneddick Ring",priority=4},}
     sets.engaged.Meva={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Sworn Crown",priority=141},neck={name="Futhark Torque +1",priority=45},ear1={name="Eabani Earring",priority=45},ear2={name="Erilaz Earring +2",priority=6},
         body={name="Runeist Coat +4",priority=228},hands={name="Turms Mittens +1",priority=74},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +3",priority=100},feet={name="Erilaz Greaves +2",priority=38}}
+        back=gear.parry_jse_back,{priority=60},waist={name="Null Belt",priority=5},legs={name="Erilaz Leg Guards +3",priority=100},feet={name="Erilaz Greaves +3",priority=48}}
 
     sets.engaged.Parry={ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Sworn Crown",priority=141},neck={name="Futhark Torque +1",priority=45},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
