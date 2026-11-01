@@ -53,21 +53,22 @@ function init_gear_sets()
 	
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Tachi: Fudo'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Fudo'].PDL = set_combine(sets.precast.WS.PDL, {})
    
-	
     sets.precast.WS['Tachi: Shoha'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Shoha'].PDL = set_combine(sets.precast.WS.PDL, {})
     
-
     sets.precast.WS['Tachi: Rana'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Rana'].PDL = set_combine(sets.precast.WS.PDL, {})
   
-
     sets.precast.WS['Tachi: Kasha'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Kasha'].PDL = set_combine(sets.precast.WS.PDL, {})
   
-
     sets.precast.WS['Tachi: Gekko'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Gekko'].PDL = set_combine(sets.precast.WS.PDL, {})
     
-
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Tachi: Yukikaze'].PDL = set_combine(sets.precast.WS.PDL, {})
     
     sets.precast.WS['Tachi: Ageha'] = {ammo="Pemphredo Tathlum",
 		head="Wakido Kabuto +4",neck="Null Loop",ear1="Alabaster Earring",ear2="Kasuga Earring +2",
@@ -86,6 +87,20 @@ function init_gear_sets()
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Kasuga Earring +2",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+sets.precast.WS['Tachi: Goten'] = set_combine(sets.precast.WS['Tachi: Jinpu'], {})
+sets.precast.WS['Tachi: Goten'].PDL = set_combine(sets.precast.WS['Tachi: Jinpu'].PDL, {})
+
+ sets.precast.WS['Tachi: Kagero'] = set_combine(sets.precast.WS['Tachi: Jinpu'], {})
+ sets.precast.WS['Tachi: Kagero'].PDL = set_combine(sets.precast.WS['Tachi: Jinpu'].PDL, {})
+
+ sets.precast.WS['Tachi: Koki'] = set_combine(sets.precast.WS['Tachi: Jinpu'], {})
+sets.precast.WS['Tachi: Koki'].PDL = set_combine(sets.precast.WS['Tachi: Jinpu'].PDL, {})
+
+
+
+
+
 
 		
     
