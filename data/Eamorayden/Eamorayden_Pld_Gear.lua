@@ -369,6 +369,8 @@ function select_default_macro_book()
         set_macro_page(3, 5)
     elseif player.sub_job =='SCH' then
         set_macro_page(5, 5)
+    elseif player.sub_job =='RUN' then
+        set_macro_page(7,5)
     else
         set_macro_page(1,5)
     end
