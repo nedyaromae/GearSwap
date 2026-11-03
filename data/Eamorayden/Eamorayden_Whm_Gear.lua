@@ -102,9 +102,9 @@ function init_gear_sets()
 		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
-	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +2"})
+	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +3"})
 	sets.midcast.LightWeatherCure=set_combine(sets.midcast.Cure,{waist="Hachirin-No-Obi"})
-	sets.midcast.LightWeatherCureSolace=set_combine(sets.midcast.LightWeatherCure,{body="Ebers Bliaut +2"})
+	sets.midcast.LightWeatherCureSolace=set_combine(sets.midcast.LightWeatherCure,{body="Ebers Bliaut +3"})
 	sets.midcast.Curaga=set_combine(sets.midcast.Cure,{})
     sets.midcast.Curaga.DT=set_combine(sets.midcast.Curaga.SIRD,{})
 	sets.midcast.LightWeatherCuraga=set_combine(sets.midcast.Curaga,{waist="Hachirin-No-Obi"})
@@ -116,7 +116,7 @@ function init_gear_sets()
 
     sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
-		body="Ebers Bliaut +2",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
+		body="Ebers Bliaut +3",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.CP_jse_back,waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
 
     sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})	
@@ -126,14 +126,14 @@ function init_gear_sets()
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
 
-	sets.midcast.MeleeCureSolace=set_combine(sets.midcast.MeleeCure,{body="Ebers Bliaut +2"})
+	sets.midcast.MeleeCureSolace=set_combine(sets.midcast.MeleeCure,{body="Ebers Bliaut +3"})
 	sets.midcast.MeleeLightWeatherCure=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
 	sets.midcast.MeleeLightWeatherCuraga=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi",body="Ebers Bliaut +2"})
+	sets.midcast.MeleeLightWeatherCureSolace=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi",body="Ebers Bliaut +3"})
 
 	sets.midcast.Cursna = {Main="Gada",sub="Genmei Shield",ammo="Sapience Orb",
 		head="Vanya Hood",neck="Debilis Medallion",ear1="Meili Earring",ear2="Ebers Earring +1",
-		body="Ebers Bliaut +2",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
+		body="Ebers Bliaut +3",hands="Fanatic Gloves",ring1="Menelaus's Ring",ring2="Haoma's Ring",
 		back=gear.fc_jse_back,waist="Bishop's Sash",legs="Theo. Pant. +4",feet="Vanya Clogs"}
 
     sets.midcast.StatusRemoval = {Main="Queller Rod",sub="Diamond Aspis",ammo="Sapience Orb",
@@ -177,7 +177,7 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Mimir Earring",
-		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
+		body="Ebers Bliaut +3",hands="Ebers Mitts +2",ring1="Murky Ring",ring2="Stikini Ring",
 		back=gear.fc_jse_back,waist="Embla Sash",legs="Piety Pantaln. +3",feet="Ebers Duckbills +2"}
 		
 	sets.midcast.Impact = {main="Bunzi's Rod",sub="Diamond Aspis",ammo="Pemphredo Tathlum",
@@ -239,7 +239,7 @@ function init_gear_sets()
 
 	sets.midcast['Dia II'] = {Main="Lorg Mor",sub="Archduke's Shield",ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
-		body="Ebers Bliaut +2",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
+		body="Ebers Bliaut +3",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
 
     sets.Refresh_Received = {waist="Gishdubar Sash"}
@@ -247,17 +247,17 @@ function init_gear_sets()
 
     sets.idle={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
-		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Defending Ring",
+		body="Ebers Bliaut +3",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Defending Ring",
 		back=gear.fc_jse_back,waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.PDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ran Earring",
-		body="Ebers Bliaut +2",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
+		body="Ebers Bliaut +3",hands="Sworn Gauntlets",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Carrier's Sash",legs="Sworn Brais",feet="Sworn Sabatons"}
 
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Alabaster Earring",ear2="Night Earring",
-		body="Ebers Bliaut +2",hands="Bunzi's Gloves",ring1="Murky Ring",ring2="Shadow Ring",
+		body="Ebers Bliaut +3",hands="Bunzi's Gloves",ring1="Murky Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bunzi's Pants",feet="Ebers Duckbills +2"}
 
     sets.idle.Magic=set_combine(sets.idle.MDT,{})
@@ -272,7 +272,7 @@ function init_gear_sets()
 		-- Resting sets
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
-		body="Ebers Bliaut +2",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
+		body="Ebers Bliaut +3",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
 		back=gear.fc_jse_back,waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
 		-- Engaged sets
     sets.engaged = {ammo="Vanir Battery",
