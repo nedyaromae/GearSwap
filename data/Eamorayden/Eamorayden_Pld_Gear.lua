@@ -130,7 +130,7 @@ function init_gear_sets()
     back=gear.wsd_jse_back,{priority=7},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sakpata's Leggings",priority=68}}
 
      sets.precast.WS['Knights of Round']=set_combine(sets.precast.WS.DD,{ear1="Hoxne Earring"})
-     sets.precast.WS['Knights of Round'].PDL=set_combine(sets.precast.WS.PDL,{ear1="Hoxne Earring"})
+     sets.precast.WS['Knights of Round'].PDL=set_combine(sets.precast.WS.PDL,{ear1="Hoxne Earring",hands="Sakpata's Gauntlets",neck="Fotia Gorget"})
 
 
     sets.precast.WS['Requiescat'].DT=set_combine(sets.precast.WS['Requiescat'],{})
