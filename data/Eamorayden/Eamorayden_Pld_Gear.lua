@@ -269,8 +269,11 @@ function init_gear_sets()
         body={name="Valorous Mail",priority=61},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=6},
         back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Souveran Schuhs +1",priority=227}}
 
-    sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
-	
+    sets.midcast.Phalanx.DT={main={name="Sakpata's Sword",priority=100},sub={name="Priwen",priority=80},ammo={name="Crepuscular Pebble",priority=3},
+        head={name="Sworn Crown",priority=141},neck={name="Hoxne Torque",priority=1},ear1={name="Mimir Earring",priority=12},ear2={name="Andoaa Earring",priority=4},
+        body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=239},ring1=gear.left_moonlight,{priority=110},ring2={name="Murky Ring",priority=6},
+        back={name="Weard Mantle",{priority=39}},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sakpata's Cuisses",priority=114},feet={name="Sworn Sabatons",priority=116}}
+
 	sets.midcast.Phalanx.SIRD = {ammo={name="Staunch Tathlum +1",priority=3},
         head={name="Souv. Schaller +1",priority=280},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Alabaster Earring",priority=100},
         body={name="Yorium Cuirass",priority=113},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Defending Ring",priority=7},ring2={name="Murky Ring",priority=5},
@@ -325,8 +328,10 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
     sets.defense.PDT=set_combine(sets.idle,{})
     sets.defense.MDT=set_combine(sets.idle.Magic,{})
-    sets.defense.MEVA=set_combine(sets.idle.Magic,{})
-    
+    sets.defense.MEVA={ammo={name="Vanir Battery",priority=3},
+     head={name="Sworn Crown",priority=141},neck={name="Warder's Charm +1",priority=1},ear1={name="Tuisto Earring",priority=150},ear2={name="Night Earring",priority=4},
+     body={name="Sakpata's Plate",priority=136},hands={name="Sakpata's Gauntlets",priority=91},ring1={name="Apeile Ring +1",priority=6},ring2={name="Murky Ring",priority=7},
+    back=gear.idle_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=116}}
 	-- Weapons sets
     sets.weapons.SakpataDuban = {main="Sakpata's Sword",sub="Duban"} --normal tank shit
     sets.weapons.Cleave = {main="Malevolence",sub="Duban"} --rdm AE cleaving 
