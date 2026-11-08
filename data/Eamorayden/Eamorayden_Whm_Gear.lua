@@ -6,6 +6,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','SIRD')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
+	state.WeaponskillMode:options('Normal', 'PDL')
 	state.Weapons:options('None','Maxentius','Daybreak')
 	state.AutoCelerity 			= M(false, 'Auto Celerity Mode')
     state.AutoCaress = M(false, 'Auto Caress Mode')
@@ -56,11 +57,24 @@ function init_gear_sets()
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
        back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+	   sets.precast.WS.PDL = {ammo="Crepuscular Pebble",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
+       back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		
 		
     sets.precast.WS['Black Halo'] = {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
        back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+	   sets.precast.WS['Black Halo'].PDL = {ammo="Crepuscular Pebble",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
+       back=gear.fc_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
+
 
     sets.precast.WS['Seraph Strike'] =  {ammo="Oshasha's treatise",
         head="Nyame Helm",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
