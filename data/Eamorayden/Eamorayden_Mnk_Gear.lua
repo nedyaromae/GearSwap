@@ -38,7 +38,11 @@ function init_gear_sets()
 
 sets.precast.JA['Chi Blast'] = {head="Hes. Crown"}
 	
-sets.precast.JA['Chakra'] = {head="Null Masque",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",hands="Hes. Gloves",body="Anch. Cyclas +2",ring1="Eihwaz Ring",ring2="Supershear Ring",waist="Plat. Mog. Belt",Legs="Nyame Flanchard",Feet="Nyame Sollerets"}
+sets.precast.JA['Chakra'] = {ammo="",
+		head="Null Masque",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
+		body="Anch. Cyclas +2",hands="Hes. Gloves",ring1="Eihwaz Ring",ring2="Vexer Ring +1",
+		back="Moonbeam Cape",waist="Plat. Mog. Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
 
 
 
@@ -100,7 +104,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 
 	sets.precast.WS['Raging Fists'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble",})
 	sets.precast.WS['Howling Fist'].PDL   = set_combine(sets.precast.WS.PDL, {ear2="Moonshade Earring",ammo="Crepuscular Pebble",body="Nyame Mail",feet="Nyame Sollerets"})
-	sets.precast.WS['Asuran Fists'].PDL    = set_combine(sets.precast.WS.PDL, {body="Bhikku Cyclas +2",ring1="Sroda Ring",legs="Nyame Flanchard",feet="Nyame Sollerets",waist="Fotia Belt",ammo="Crepuscular Pebble"})
+	sets.precast.WS['Asuran Fists'].PDL    = set_combine(sets.precast.WS.PDL, {head="Nyame Helm",body="Nyame Mail",ring1="Sroda Ring",feet="Nyame Sollerets",waist="Fotia Belt",ammo="Crepuscular Pebble"})
 	sets.precast.WS["Victory Smite"].PDL   = set_combine(sets.precast.WS.PDL, {ear1="Odr Earring"})
 	sets.precast.WS['Shijin Spiral'].PDL   = set_combine(sets.precast.WS.PDL, {back=gear.dex_jse_back,ear1="Mache Earring +1"})
 	sets.precast.WS['Dragon Kick'].PDL    = set_combine(sets.precast.WS.PDL, {body="Nyame Mail",ear2="Moonshade Earring",ammo="Crepuscular Pebble",feet="Nyame Sollerets"})

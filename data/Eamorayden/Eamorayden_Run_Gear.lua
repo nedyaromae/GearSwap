@@ -50,9 +50,9 @@ function init_gear_sets()
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
 	sets.precast.JA['One for All'] ={ammo={name="Sapience Orb",priority=3},
-        head={name="Null Masque",priority=100},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=99},ear2={name="Tuisto Earring",priority=150},
-        body={name="Runeist Coat +4",priority=228},hands={name="Nyame Gauntlets",priority=91},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
+        head={name="Sworn Crown",priority=141},neck={name="Unmoving Collar +1",priority=200},ear1={name="Alabaster Earring",priority=99},ear2={name="Tuisto Earring",priority=150},
+        body={name="Runeist Coat +4",priority=228},hands={name="Sworn Gauntlets",priority=96},ring1=gear.left_moonlight,{priority=109},ring2=gear.right_moonlight,{priority=110},
+        back={name="Moonbeam Cape",priority=250},waist={name="Plat. Mog. Belt",priority=250},legs={name="Sworn Brais",priority=164},feet={name="Sworn Sabatons",priority=119}}
     
 	
 	-- Pulse sets, different stats for different rune modes, stat aligned.
@@ -168,12 +168,12 @@ function init_gear_sets()
     sets.midcast.Aquaveil={ammo={name="Staunch Tathlum +1",priority=3},
        head={name="Erilaz Galea +2",priority=101},neck={name="Hoxne Torque",priority=2},ear1={name="Magnetic Earring",priority=10},ear2={name="Tuisto Earring",priority=150},
        body={name="Adamantite Armor",priority=182},hands={name="Rawhide Gloves",priority=75},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
-       back=gear.enmity_jse_back,{priority=60},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
+       back={name="Moonbeam Cape",priority=250},waist={name="Audumbla Sash",priority=8},legs={name="Carmine Cuisses +1",priority=130},feet={name="Taeon Boots",priority=13}}
 	
 	sets.midcast.Phalanx = {ammo={name="Staunch Tathlum +1",priority=3},
-        head={name="Fu. Bandeau +4",priority=66},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Tuisto Earring",priority=150},
+        head={name="Fu. Bandeau +4",priority=66},neck={name="Hoxne Torque",priority=4},ear1={name="Alabaster Earring",priority=100},ear2={name="Erilaz Earring +2",priority=5},
         body=gear.TaeonPhalanxBody,{priority=59},hands={name="Herculean Gloves",priority=20},ring1={name="Murky Ring",priority=7},ring2=gear.right_moonlight,{priority=110},
-        back=gear.enmity_jse_back,{priority=60},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Herculean Boots",priority=9}}
+        back={name="Moonbeam Cape",priority=250},waist={name="Plat. Mog. Belt",priority=250},legs={name="Taeon Tights",priority=47},feet={name="Herculean Boots",priority=9}}
 
     sets.midcast.Phalanx.DT=set_combine(sets.midcast.Phalanx,{})
 
