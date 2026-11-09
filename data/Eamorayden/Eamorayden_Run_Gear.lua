@@ -11,6 +11,7 @@ function user_job_setup()
     gear.enmity_jse_back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}}
     gear.fc_jse_back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
 	gear.idle_jse_back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','DEF+50',}},
+    gear.dimi_jse_back= {name="Ogma's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     select_blu_spells()
 	-- Additional local binds
 	
@@ -102,12 +103,12 @@ function init_gear_sets()
     sets.precast.WS["Dimidiation"]= {ammo={name="Knobkierrie",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=7},ear1={name="Moonshade Earring",priority=4},ear2={name="Odr Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=6},ring2={name="Cornelia's Ring",priority=11},
-        back={name="Null Shawl",priority=8},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+        back= gear.dimi_jse_back,{priority=8},waist={name="Plat. Mog. Belt",priority=300},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
         sets.precast.WS["Dimidiation"].DD={ammo={name="Knobkierrie",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=7},ear1={name="Moonshade Earring",priority=4},ear2={name="Odr Earring",priority=1},
         body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=6},ring2={name="Cornelia's Ring",priority=11},
-        back={name="Null Shawl",priority=8},waist={name="Sailfi Belt +1",priority=3},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+        back= gear.dimi_jse_back,{priority=8},waist={name="Sailfi Belt +1",priority=3},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
 
         sets.precast.WS.DT=set_combine(sets.precast.WS,{})
 
