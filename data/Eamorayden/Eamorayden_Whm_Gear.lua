@@ -1,6 +1,6 @@
 -- Setup vars that are user-dependent.  Can override this in a sidecar file.
 function user_job_setup()
-    state.IdleMode:options('PDT','MDT','Normal','Magic','Physical')
+    state.IdleMode:options('PDT','MDT','Normal')
 	state.PhysicalDefenseMode:options('PDT')
 	state.OffenseMode:options('Normal','FullAcc')
     state.CastingMode:options('Normal','SIRD')
