@@ -99,6 +99,12 @@ function init_gear_sets()
 
 
     sets.precast.WS["Shockwave"]=set_combine(sets.precast.WS["Armor Break"],{})
+     sets.precast.WS["Shockwave"].DD=ammo={name="Coiste Bodhar",priority=3},
+        head={name="Nyame Helm",priority=91},neck={name="Fotia Gorget",priority=7},ear1={name="Hoxne Earring",priority=4},ear2={name="Erilaz Earring +2",priority=1},
+        body={name="Nyame Mail",priority=136},hands={name="Nyame Gauntlets",priority=91},ring1={name="Niqmaddu Ring",priority=6},ring2={name="Cornelia's Ring",priority=11},
+        back=gear.dimi_jse_back,{priority=8},waist={name="Fotia Belt",priority=3},legs={name="Nyame Flanchard",priority=114},feet={name="Nyame Sollerets",priority=68}}
+
+
 
     sets.precast.WS["Dimidiation"]= {ammo={name="Knobkierrie",priority=3},
         head={name="Nyame Helm",priority=91},neck={name="Rep. Plat. Medal",priority=7},ear1={name="Moonshade Earring",priority=4},ear2={name="Odr Earring",priority=1},
