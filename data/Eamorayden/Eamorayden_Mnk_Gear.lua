@@ -92,7 +92,7 @@ sets.precast.FC = {ammo="Sapience Orb",
 	sets.precast.WS['Shell Crusher'] = {ammo="Pemphredo Tathlum",
 		head="Mpaca's Cap",neck="Null Loop",ear1="Alabaster Earring",ear2="Bhikku Earring +1",
 		body="Bhikku Cyclas +2",hands="Bhikku Gloves +2",ring1="Metamorph Ring +1",ring2="Murky Ring",
-		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +2",feet="Anch. Gaiters +4"}
+		back="Null Shawl",waist="Null Belt",legs="Bhikku Hose +3",feet="Anch. Gaiters +4"}
 
 	sets.precast.WS['Raging Fists'].Ngai  = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
 	sets.precast.WS['Howling Fist'].Ngai = set_combine(sets.precast.WS.Ngai, {ear1="Moonshade Earring"})
@@ -160,22 +160,22 @@ sets.precast.WS["Cataclysm"]={ammo="Knobkierrie",
 	sets.engaged = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +3",feet="Malignance Boots"}
 
 		sets.engaged.Acc = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Bhikku Earring +1",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +3",feet="Malignance Boots"}
 	-- Defensive melee hybrid sets
 sets.engaged.Meva = {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back="Null Shawl",waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Malignance Boots"}	
+		back="Null Shawl",waist="Moonbow Belt +1",legs="Bhikku Hose +3",feet="Malignance Boots"}	
 
 	sets.engaged.Ngai= {ammo="Coiste Bodhar", 
 		head="Bhikku Crown +2",neck="Mnk. Nodowa +1",ear1="Schere Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +2",feet="Nyame Sollerets"}	
+		back=gear.dex_jse_back,waist="Moonbow Belt +1",legs="Bhikku Hose +3",feet="Nyame Sollerets"}	
 	-- Hundred Fists/Impetus melee set mods
 	
 	sets.engaged.HF = set_combine(sets.engaged, {})

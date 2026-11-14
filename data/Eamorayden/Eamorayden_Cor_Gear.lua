@@ -254,14 +254,14 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
-        body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shneddick Ring",ring2="Chirich Ring +1",
+        body="Adamantite Armor",hands="Nyame Gauntlets",ring1="Shadow Ring",ring2="Chirich Ring +1",
         back="Null Shawl",waist="Null Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
         sets.idle.Aminon= {ammo=gear.RAbullet,
         head="Null Masque",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
-    
+    sets.Kiting = {ring2="Shneddick Ring"}
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",
