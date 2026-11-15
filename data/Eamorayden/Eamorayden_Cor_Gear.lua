@@ -130,7 +130,7 @@ function init_gear_sets()
     sets.precast.WS['Wasp Sting']= {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Mache Earring +1",
         body="Nyame mail",hands="Chasseur's Gants +3",ring1="Epona's Ring",ring2="Cornelia's Ring",
-        back=gear.aeolian_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.precast.WS['Evisceration'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
