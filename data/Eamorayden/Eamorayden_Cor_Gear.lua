@@ -31,6 +31,7 @@ function user_job_setup()
     gear.agi_wsd_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     gear.macc_fc_jse_back= {name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
     gear.dw_tp_jse_back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
+    gear.aeolian_jse_back={name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     
     gear.LanunPathA={name="Lanun Knife", augments={'Path: A',}}
     gear.RostamPathB={name="Rostam", augments={'Path: B',}}
@@ -126,6 +127,11 @@ function init_gear_sets()
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS,{})
 
+    sets.precast.WS['Wasp Sting']= {ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Mache Earring +1",
+        body="Nyame mail",hands="Chasseur's Gants +3",ring1="Epona's Ring",ring2="Cornelia's Ring",
+        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
 	sets.precast.WS['Evisceration'] = {ammo=gear.WSbullet,
         head="Nyame Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
         body="Nyame mail",hands="Chasseur's Gants +3",ring1="Epona's Ring",ring2="Cornelia's Ring",
@@ -198,7 +204,7 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head="Nyame Helm",neck="Sibyl Scarf",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Cornelia's Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
+        back=gear.aeolian_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Wildfire']  = {ammo=gear.MAbullet,
         head="Nyame Helm",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
@@ -261,7 +267,7 @@ function init_gear_sets()
         head="Null Masque",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
         back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
-    sets.Kiting = {ring2="Shneddick Ring"}
+    sets.Kiting = {ring1="Shneddick Ring"}
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Null Masque",neck="Warder's Charm +1",ear1="Night Earring",ear2="Eabani Earring",

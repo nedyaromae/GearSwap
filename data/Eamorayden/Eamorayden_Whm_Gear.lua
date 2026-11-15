@@ -16,7 +16,7 @@ user_job_lockstyle()
 		-- Additional local binds
 	gear.CP_jse_back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%'}}
 	gear.fc_jse_back={name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%'}}
-	gear.bh_jse_back={name="Alaunus's Cape", augments={'MND+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
+	gear.bh_jse_back={name="Alaunus's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     select_default_macro_book()
 end
 
@@ -71,7 +71,7 @@ function init_gear_sets()
        back=gear.bh_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	   sets.precast.WS['Black Halo'].PDL = {ammo="Crepuscular Pebble",
-        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Hoxne Earring",ear2="Moonshade Earring",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Hoxne Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Epaminondas's Ring",
        back=gear.bh_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
