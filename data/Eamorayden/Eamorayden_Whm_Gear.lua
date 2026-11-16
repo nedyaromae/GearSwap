@@ -114,7 +114,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {Main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
+		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pantaloons +3",feet="Sworn Sabatons"}
 
     sets.midcast.Cure.DT=set_combine(sets.midcast.Cure.SIRD,{})	
 	sets.midcast.CureSolace=set_combine(sets.midcast.Cure,{body="Ebers Bliaut +3"})
@@ -127,19 +127,19 @@ function init_gear_sets()
     sets.midcast.Cure.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.CP_jse_back,waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
+		back=gear.CP_jse_back,waist="Emphatikos Rope",legs="Ebers Pantaloons +3",feet="Theo. Duckbills +4"}
 
     sets.midcast.CureSolace.SIRD={main="Queller Rod",sub="Diamond Aspis",ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Loricate Torque +1",ear1="Glorious Earring",ear2="Nourish. Earring +1",
 		body="Ebers Bliaut +3",hands=gear.Chironic_Sirdgloves,ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.CP_jse_back,waist="Emphatikos Rope",legs="Ebers Pant. +2",feet="Theo. Duckbills +4"}
+		back=gear.CP_jse_back,waist="Emphatikos Rope",legs="Ebers Pantaloons +3",feet="Theo. Duckbills +4"}
 
     sets.midcast.Curaga.SIRD=set_combine(sets.midcast.Cure.SIRD,{})	
 
 	sets.midcast.MeleeCure={ammo="Staunch Tathlum +1",
 		head="Ebers Cap +2",neck="Cleric's Torque",ear1="Alabaster Earring",ear2="Nourish. Earring +1",
 		body="Theo. Bliaut +4",hands="Theo. Mitts +4",ring1="Murky Ring",ring2="Defending Ring",
-		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Kaykaus Boots"}
+		back=gear.CP_jse_back,waist="Plat. Mog. Belt",legs="Ebers Pantaloons +3",feet="Kaykaus Boots"}
 
 	sets.midcast.MeleeCureSolace=set_combine(sets.midcast.MeleeCure,{body="Ebers Bliaut +3"})
 	sets.midcast.MeleeLightWeatherCure=set_combine(sets.midcast.MeleeCure,{waist="Hachirin-No-Obi"})
@@ -247,7 +247,7 @@ function init_gear_sets()
 	sets.HPCure={main="Daybreak",sub="Diamond Aspis",ammo="Sapience Orb",
 		head="Ebers Cap +2",neck="Unmoving Collar +1",ear1="Alabaster Earring",ear2="Tuisto Earring",
 		body="Adamantite Armor",hands="Sworn Gauntlets",ring1="Vexer Ring +1",ring2="Eihwaz Ring",
-		back="Moonbeam Cape",waist="Plat. Mog. Belt",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
+		back="Moonbeam Cape",waist="Plat. Mog. Belt",legs="Ebers Pantaloons +3",feet="Sworn Sabatons"}
 
 	sets.midcast.Dia = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.StatusRemoval, sets.TreasureHunter)
@@ -255,7 +255,7 @@ function init_gear_sets()
 	sets.midcast['Dia II'] = {Main="Lorg Mor",sub="Archduke's Shield",ammo="Staunch Tathlum +1",
 		head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +3",hands="Ebers Mitts +2",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pant. +2",feet="Ebers Duckbills +2"}
+		back="Solemnity cape",waist="Obstinate Sash",legs="Ebers Pantaloons +3",feet="Ebers Duckbills +2"}
 
     sets.Refresh_Received = {waist="Gishdubar Sash"}
 	sets.Kiting={ring2={name="Shneddick Ring",priority=4},}
@@ -288,7 +288,7 @@ function init_gear_sets()
 	sets.resting={main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
 		head=gear.Chironic_refreshhat,neck="Warder's Charm +1",ear1="Eabani Earring",ear2="Night Earring",
 		body="Ebers Bliaut +3",hands=gear.Chironic_refreshgloves,ring1="Murky Ring",ring2="Chirich Ring +1",
-		back=gear.fc_jse_back,waist="Fucho-No-Obi",legs="Ebers Pant. +2",feet="Sworn Sabatons"}
+		back=gear.fc_jse_back,waist="Fucho-No-Obi",legs="Ebers Pantaloons +3",feet="Sworn Sabatons"}
 		-- Engaged sets
     sets.engaged = {ammo="Vanir Battery",
         head="Nyame Helm",neck="Null Loop",ear1="Brutal Earring",ear2="Cessance Earring",

@@ -54,7 +54,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +3"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +4"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
@@ -73,9 +73,9 @@ function init_gear_sets()
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +3"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +2"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +3"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +2"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +2"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +3"})
     sets.precast.CorsairRoll["Bolter's Roll"] = {main=gear.RostamPathC,
         head="Null Masque",neck="Loricate Torque +1",ear1="Alabaster Earring",ear2="Chas. Earring +1",
@@ -86,7 +86,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
         body="Mirke Wardecors",hands="Malignance Gloves",ring1="Crepuscular Ring",ring2="Chirich Ring +1",
-        back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Chass. Bottes +2"}
+        back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Chasseur's Bottes +3"}
 		
     sets.precast.CorsairShot.Aminon={ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Ainia Collar",ear1="Dedition Earring",ear2="Crep. Earring",
@@ -250,7 +250,7 @@ function init_gear_sets()
         body="Laksa. Frac +4",hands="Laksamana's gants +4",ring1="Crepuscular Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
-	sets.buff['Triple Shot'] = {head="Oshosi Mask",body="Chasseur's Frac +2",hands="Lanun Gants +4",legs="Oshosi Trousers",feet="Oshosi Leggings"}
+	sets.buff['Triple Shot'] = {head="Oshosi Mask",body="Chasseur's Frac +3",hands="Lanun Gants +4",legs="Oshosi Trousers",feet="Oshosi Leggings"}
     
     -- Sets to return to when not performing an action.
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
