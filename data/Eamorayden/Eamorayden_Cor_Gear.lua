@@ -74,7 +74,7 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +3"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +3"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +2"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +3"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +3"})
     sets.precast.CorsairRoll["Bolter's Roll"] = {main=gear.RostamPathC,
@@ -109,7 +109,7 @@ function init_gear_sets()
         back=gear.macc_fc_jse_back,waist="Null Belt",legs=gear.FCHercPants,feet="Carmine Greaves +1"}
 
     sets.precast.RA = {ammo=gear.RAbullet,  
-        head="Chass. Tricorne +2",neck="Comm. Charm +2",ear1="",ear2="",
+        head="Chass. Tricorne +3",neck="Comm. Charm +2",ear1="",ear2="",
         body="Oshosi Vest",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="",
         back=gear.snapshot_jse_back,waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		

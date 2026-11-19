@@ -30,7 +30,7 @@ function init_gear_sets()
 	
   sets.Enmity = {ammo={name="Sapience Orb",priority=3},
         head={name="Loess Barbuta +1",priority=105},neck={name="Moonlight Necklace",priority=1},ear1={name="Tuisto earring",priority=150},ear2={name="Cryptic Earring",priority=40},
-        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Apeile Ring +1",priority=7},ring2={name="Eihwaz Ring",priority=70},
+        body={name="Souv. Cuirass +1",priority=171},hands={name="Souv. Handsch. +1",priority=239},ring1={name="Apeile Ring +1",priority=7},ring2={name="Apeile Ring",priority=8},
         back=gear.enmity_jse_back,{priority=60},waist={name="Creed Baudrier",priority=39},legs={name="Souv. Diechlings +1",priority=162},feet={name="Chev. Sabatons +3",priority=52}}
 
     sets.Enmity.DT = {ammo={name="Sapience Orb",priority=3},

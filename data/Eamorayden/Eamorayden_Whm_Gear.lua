@@ -273,7 +273,7 @@ function init_gear_sets()
     sets.idle.MDT={main="Daybreak",sub="Diamond Aspis",ammo="Homiliary",
 		head="Null Masque",neck="Warder's Charm +1",ear1="Alabaster Earring",ear2="Night Earring",
 		body="Ebers Bliaut +3",hands="Bunzi's Gloves",ring1="Murky Ring",ring2="Shadow Ring",
-		back="Null Shawl",waist="Null Belt",legs="Bunzi's Pants",feet="Ebers Duckbills +2"}
+		back="Null Shawl",waist="Null Belt",legs="Ebers Pantaloons +3",feet="Ebers Duckbills +2"}
 
     sets.idle.Magic=set_combine(sets.idle.MDT,{})
     sets.idle.Physical=set_combine(sets.idle.PDT,{})
