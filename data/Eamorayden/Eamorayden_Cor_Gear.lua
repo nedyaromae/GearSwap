@@ -285,6 +285,7 @@ function init_gear_sets()
         back=gear.tp_ranger_jse_back,waist="Sweordfaetels +1",legs="Chas. Culottes +3",feet="Malignance Boots"}
 
 sets.precast.Item['Icarus Wing']=set_combine(sets.STP, {})
+sets.precast.Item["Volte Harness"]=set_combine{sets.STP,{body="Volte Harness"}}
 sets.Harness=set_combine(sets.STP, {body="Volte Harness"})
 	-- Weapons sets
 	sets.weapons.DualShooting = {main=gear.LanunPathA,sub="Kustawi +1",range="Fomalhaut"}

@@ -14,7 +14,7 @@ function user_job_setup()
     state.UnlockWeapons = M(true, 'Unlock Weapons')
 user_job_lockstyle()
 		-- Additional local binds
-	gear.CP_jse_back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Cure" potency +10%','Phys. dmg. taken-10%'}}
+	gear.CP_jse_back={ name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Cure" potency +10%','Phys. dmg. taken-10%',}}
 	gear.fc_jse_back={name="Alaunus's Cape", augments={'MND+20','Eva.+20 /Mag. Eva.+20','MND+10','"Fast Cast"+10','Phys. dmg. taken-10%'}}
 	gear.bh_jse_back={name="Alaunus's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
     select_default_macro_book()
@@ -78,7 +78,7 @@ function init_gear_sets()
 
 
     sets.precast.WS['Seraph Strike'] =  {ammo="Oshasha's treatise",
-        head="Nyame Helm",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head="Nyame Helm",neck="Rep. Plat. Medal",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Cornelia's Ring",Ring2="Metamor. Ring +1",
         back=gear.bh_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
