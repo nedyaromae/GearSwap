@@ -10,7 +10,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('Aeolian','Savage','Evisceration')
-
+user_job_lockstyle()
 	state.AmbushMode = M(false, 'Ambush Mode')
 
 

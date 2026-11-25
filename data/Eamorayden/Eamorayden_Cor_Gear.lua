@@ -163,7 +163,7 @@ function init_gear_sets()
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].PDL = {ammo=gear.WSbullet,
-        head="Ikenga's Hat",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Hoxne Earring",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Hoxne Earring",
         body="Ikenga's Vest",hands="Chasseur's Gants +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
         back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Ikenga's Trousers",feet="Lanun Bottes +4"}
 
@@ -188,14 +188,21 @@ function init_gear_sets()
     sets.precast.WS['Split Shot'].PDL = sets.precast.WS['Last Stand'].PDL
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
 
-    sets.precast.WS['Exenterator']=sets.precast.WS
+    sets.precast.WS['Exenterator']={ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Hoxne Earring",
+        body="Nyame Mail",hands="Chasseur's Gants +3",ring1="Dingir Ring",ring2="Cornelia's Ring",
+        back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+
     sets.precast.WS['Exenterator'].Acc={ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Null Loop",ear1="Mache Earring +1",ear2="Chas. Earring +1",
         body="Malignance Tabard",hands="Gazu Bracelets +1",ring1="Cornelia's Ring",ring2="Murky Ring",
         back="Null Shawl",waist="Null Belt",legs="Chasseur's Culottes +3",feet="Malignance Boots"}
-		
 
-	
+    sets.precast.WS['Exenterator'].PDL={ammo=gear.WSbullet,
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Hoxne Earring",
+        body="Nyame Mail",hands="Chasseur's Gants +3",ring1="Sroda Ring",ring2="Cornelia's Ring",
+        back=gear.agi_wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Comm. Charm +2",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Cornelia's Ring",ring2="Dingir Ring",
